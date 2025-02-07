@@ -1,0 +1,20 @@
+Technologies = {
+	icon = generic_propaganda
+
+	visible = {
+        always = yes
+	}
+}
+MOD_countdown_to_victory_cat = {
+
+	icon = border_conflicts
+
+	priority = 95
+	visible_when_empty = yes
+	allowed = {
+		is_playable_country = yes
+	}
+	visible = {
+		has_global_flag = victory_system_active
+	}
+}

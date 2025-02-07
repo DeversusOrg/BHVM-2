@@ -1,0 +1,402 @@
+Every single change in the mod Bulgarian Historical Vanila Multiplayer (BHVM for short)
+
+Field marshal division cap from 24 --> 50 this is logical hence fourth he is a marhsal and should be able to command more divisions
+Reduced the monthly field population growth to -70% , saves are smaller this way
+Special forces min is made to 99999
+Special forces cap is made to 0
+Made spamming 2cw not viable if you want to send more volenteers
+Max divs in the field to send volenteers is now 1
+Tension gained from joining faction is now 0.1
+Factories needed for agency creation is now 1 , made so that every minor can have an agency thereofor stronger agency master
+Made the base pp gain be 2.1 , vanila is 2.0 its made that way so that MIOs dont eat too much pp , over the spam of 5 years 5 mios eat 800 pp in vanila
+Max XP cap for navy , air and land is now 9999
+Made licenses free
+Unit XP gain for training is now 0.001 aka training on Peace time training will instantly train your div , but without it you will wait a bit of time
+Base leader trait gain for xp is now 0.15 , grinding is a bit harder if you dont have pregrinded generals
+Field marshal ratio is 0.1 for grinding the marshall you will gain 0.1 xp if he is on marhsall role
+Mil leader xp scale is now 0.4
+XP gain per overun unit is now 25
+XP gain per encricled unit is now 25
+XP gain from hourly combat is now 0.001 , you gain less xp from hourly battles on your divs 
+Accident chances for air training is now reduced to 0
+Shore bombardment cap is now 0.2 , instead of .15
+When you switch divisions into a diffrent template now it is less , you loose ~0.05% from prevous 
+You gain 0.25 xp from each combat , thats max
+Mission for bombing supply/logi stricking now costs CP aka command power , it increases more the more air wings you have up for bombing the supply 
+More ground crews cost now 10cp isntead of 25 
+More ground crews boosts only 10% instead of 15% , more cp efficent 
+Logi stricking is nerfed , a lot by like 30%
+Port strike delay is now 8 hours , vanila is 2 hours
+Max airwings that can portstrike is 3 , aka 3x100
+You cant grind operativs anymore , as well national coverage is now 1 , in vanila its 0.01
+Max possible training manpower is now 2.5mil
+Ai traiding should be less severe now aka the worse relation you have it wont affect it or the distance away from the ai
+Max slots per state is now 99 , ORDER 99 , made so that when soviets transfer eco to random place it doesnt get fucked
+You get 90% of all factories from an occupied state was 0.5 in vanila
+Radar doesnt lag your game now
+Reliability recovery is now -99.5% less likely 
+Divisions that are in the training que can be trained to lvl 3 aka regulars
+Assigning traits to commanders and marshals now costs 0.05cp
+Max saved focus is 30 days
+Made game run faster than vanila , and to an extention elwolf too lol deversus modding , makes game run for 20 mins from 36-39 gg micro gamers 
+Combat log is max from 14 months , same as air log
+Attache costs 0 pp and 25cp
+Max funds from manufacturing is 500 for MIOs
+Ai should always accept the attache no matter what , well unless youre at war with them
+Supply is buffed pretty much , you gain more supply 
+Railway cooldown to core is 3 days
+Railway cooldwon to non core is 4 days
+You can now move your capital supply hub , it doesnt need 80% cap progress now
+Templates dont cost jack shit
+XP cost for MIOs is now 1xp
+Changed the colour for australia
+Changed the colour for japan
+Changed the colour for mongolia 
+Added a decision that fixes convoy bug
+Added a stat generator for shit , just open hoi4 type debug in console and open a save game with the same mod and then click shit
+Resource prospecting buffed on some places , mainly china
+Buffed Japan with 1 dock 2 civs and 2 mills 
+Mongolia has now custom focus tree and custom ideas and its starts with few more states not huge only 1 mil and 2 civ it had a weaker eco than new zeeland..
+Manchukou now starts with cored and annexed mengukou
+Max saved days on slots is 40 instead of 30
+Motorized rocket arty is now upgradable with "bigger caliber weapons" and the other 3 option of mechanized , you can make it cheaper and have more stats basiacly :P , but not by a whole lot..
+The first doctrines dont cost xp and research time
+the 3rd doctrine now adds a brigade size 
+China owns most of china 
+Difficulty setting shouldnt matter
+Boosting nations with the slinder in the game rules is now impossible and pretty much removed
+Changed some MIOs policies , they are not huge
+Made motorized 1 be researchable for 60 days
+Mongolia and the Soviets start in a tech sharing group
+The black shirt support battalion for italy is actually pretty desent now 
+When you encricle a division and try to disband it , it gives you 0 of the avaible manpower and 0 of the avaible equipment
+The sound for offensive and defenive ping is diffrent , also you can click throught the pings now
+The offensive and defensive pings are now clickable throught them , if someone tries to micro cuck you , now they cant
+There are now planes coming out of the carriers , theres an animation for that now
+The particale for encircled destroyed divs is now grisha with the text : "its zover"
+Some 2 states in japan are now megapolises , and 1 is a metropolis
+Shangai is now a megapolis
+Beiginginigi is now a megapolis too
+Paris is now a megalopolis
+The forest tiles are now named "Lesopolsa" thats the ukrainski name for forest lines
+Field hospitals are now Mental Hospitals
+Reliability upgrades are now called gypsy companies
+The tiles before named urban are now named Gorodskot meaning a dense urban area in ukrainski
+Gurila tactics is now named "Ape tactics"
+Sydney is now a metropolis , in real life sydney was a huge military developed city with a lot of urbanized civilian economic value 
+Added new colour picking for general divisions and marhsals divisions n stuff (stolen from another mod)
+Railway guns have now 0.25 supply consumption 
+Railway guns have now 3000 HP
+Railway guns can be produced with 10 mills , it works correctly even!
+Added decision for AI nations annexing them (example: youre uk and want to annex saf, click decision and caboom , you can also choose to whom it goes you or canada or someone else)
+Elevated engeneering corps now gives 100% more railway gun bombardment aka like 2 more 
+Close combat gives now 5% more shore bombardment
+Jeune École now gives -10% ic cost for convoys
+Added like 5 more new railway network systems in the Soviet unnion , in the states Gomel-Roslalv ; Krimea-Krasnodar (2014) ; Gurney-Uralsk-Astrakhan ; Gorky-Ivanovo ; Tripoli ; Benghasi-Derna ; Chahar-Liaoning ; Nyanza Valey-Upper Nile-Blue Nile-Khratoum; Sicilia-Calabria ; Sardegna ; Corsica ; Khratoum-Aswan ; Added few supply hubs in : Kalinin ; Ivanovo ; Gorky ; Slovenia ; Dali ; Magnitogorsk ; Akhtubinsk ; Kazan ; Rheznev ; Khratoum  
+Made the old tech for special forces be avaible without dlc , imo good small bonuses that you can statmaxxing with tech FR
+SPAA now gets buffs from passive research tech on anti air tree , as deserved and vanila should be the same but pdx doesnt know how2code (needs testing to see if it is better than mot aa)
+Reduced research cost for the first techs on special forces aka it takes less time to research them from 180 days to 120 days seems reasonable to be even in vanila
+Australia starts with cores on the north islands (historicly accurate) 
+Made railways give more resources to state from 1.2 to 1.3 not huge infact its kinda good imo 
+Added a notification for when you are being paradroped/naval invaded it shows which country and in what state , its like current notifications it just mimics it
+Gave brazil Urgay states bcz rightfull land trust
+Gave Mexico Guatemala bcz rightfull land trust 
+Added a generic Continius focus named "recruitment drive" adds 0.3 rec pop 150% mobilization speed and 350 weekly manpower added so small nation players like finland dont complain when thier 8 divs die and say "i hab no manpowur bad mod!!1"
+German focus for memel now gives claims for memel 
+German focus for danzig or war has been locked behind a date , the date is 1st of feb 1939 , after that date you can do your focus
+German focus for barb date locked behind 1941 1st of march  , after that date you can do the focus , you also need to complete both molotov and anti commie pact the focus is now 50 days as well
+German focus around the maginot is now 20 days bcz yes 
+German focus reintegrate luxembourg and the maginot now gives germany core in the state Sonderjyalland aka state number 912 (911 :skull:) , but you also need to control state 912
+Made tile number 11584 an urban tile beacuse it has urban map shit but it isnt an urban tile , this should be in vanila the tile is Venezia in norther italy
+The state "Lazio" aka rome is now a megapolis , cope about it , it was as good as paris back then
+The Japaneese focus for developing china resources now from focus gives in total 36 aluminuim instead of 20
+India/Raj now owns Bhutan, Nepal , Yemen , Oman , Abu Dabi , reason: Its historicly accurate and if india caps not to be out of the game and have some left game impact , japan can go the extra mile to go to yemen or oman to kill india but you get my point
+Recon support company isntead of giving 2*% now gives 3*%
+Maintanence company now is named "Gypsy Company"
+Maintanence company 2nd tech now gives 0.02 aka 2% to armor , instead of 0.01 aka 1% lol
+Train 1 now takes 50% less time to research
+Tank modules (97% of them) now dont cost any resources , might make a submod in the feature if issue for it ( i wasnt able to make it into a game rule )
+Now if you naval invade finland , it will teleport your armies back from where they came
+Once the yugo war is over , as well as the greek one , ethopia becomes demilitarized so that ape italy doesnt go hold it or do some stupid naval invasions
+Finland has a on_daily thingy that demilitarizes every state EXPECT the capital one , that way hes forced to join the war on the axis saide but he doesnt get invaded and so there is no finland front basiacly
+Easy option for china game rule spawns in 54 divs in total , and hard option spawns in 160 divs , around 2k air , and 40 veterans juntas division and like 2k air mainly figter 1s
+#TODO MANU FOCUS TREES FOR NATIONS , SOME GAME RULES , AND TADUH , RESOURCES FOR MODULES AND 1ST DOCTRINES FOR AIR AND NAVAL!
+Playable nations, aka ones with focus trees:
+Germany
+France
+Italy
+Britain
+Hungary
+Romania
+Bulgaria
+(S)pain 
+~Norway
+Finland
+South africa
+India
+Siam
+Mongolia
+Soviets
+Japan
+Manchukou
+Australia
+New Zeeland
+Brazil
+Mexico
+USA
+Canada
+Empty focus countries are:
+Netherlands
+Venezuala
+Sweden
+Iran
+Iraq
+BLM
+Yugoslavia
+Greece
+French focus "Defensive stratagems" is now 35 days only
+Added the special forces branch for japan back #vanila
+Unhid the french focus effects for focus "Infantry Tanks"
+Oh also AI annex decisions , american shared fighter , host tool , and a lot A LOT OF GAME RULES LIKE STUPID AMOUNT OF THEM
+
+
+Fixed some ideas , added few ideas, fixed some on actions , added some ai annex stuff , made saf form silly nation without portugal states and added localization for ideas
+
+Added a juggle button in the industry tab , once you research it , it reserts the actual tech so you can do it unlimited amount of times 
+Nerfed Mongolia focus tree for eco and , mostly military branch stuff remove a lot of bonuses  for tech and nerfed few ideas , changed the Nano atom focus to give 2x150% instead of 1x300% , inviting soviet companies now requires for soviets to have made the merge tank plants also nerfed some companies to be at level 4 not 6 , society reforms focus needs to be done after a certain date
+Added naval invasions succefull land warnings to prevent silen naval invason
+Did some Germany focus rebalancing , did all the yapp of users from RB
+Removed greece divs
+Removed focus trees for NOR , POL , BEL and Greece aka made them empty
+Made Bulgaria focuses up to modern vanila checksum
+Made Finland focuses up to modern vanila checksum
+Removed Focus "First vienna award " from germany
+Made the focus for the italy to join faction 1 day bcz theyd already join in 
+Moved eco from yemen and oman back to the uk
+Added few regions to the tag BLM so people can grind planning there
+Fixed desync in mp
+Fixed events for VP system
+
+Fixed some local shit
+
+Added a alternative no asia scenario with usa , usa has 1 less research slot and the navy is cut by ~50% 
+
+Nerfed allied generals , buffed spanish generals , nerfed soviet generals fixed the lend lease air for USA , nerfed alt-asia uk and france , nerfed asia uk and france , added decision to remove noob state for indochina if its no asia 
+
+Added a game rule for purgable soviet generals (you might still get "cowed by stalin" on the pregrinds) 
+Total mob is now called "Total Economic Morbilization"
+Fixed SAF annex into UK
+Fixed Yugoslavian air purchaes spirit
+Molotov packt now instead of always wanting 850k manpower , has now a game rule requirement for the manpower its either no grinding or allied pregrinds only
+Anti license trolling has been implemented 
+Made recon like vanila
+Made the navy spliting task force glitch not lag as much the game ( there will be a part 2 to this )
+Fixed Hungary focus tree , also added claims for slovakia 
+Made force attack and last stand like vanila ( for what ever reason they werent vania ) 
+Made french stockpile and navy teleport to IRE , france has a decision to annex them and gain back thier stuff
+Made italy get that one state borering france after france caps
+Removed swedish magic technology
+Nerfed Allied minor generals by a small bit
+Buffed spanish generals , now has double ranger and 1+ defense
+Prob fixed the wasteland africa crash
+Fixed french no asia noob state mods to indochina to be avaible only when no asia/alt asia is selected
+Added a decision for france to get the belguim congo after cap
+Added an artilery tech rush decisions as well
+Localized a few stuff
+Soviet focus "Superior war machines" now needs basic meduim in order to do
+Soviet focus "Foreign Experst" now gives Germany an event for resources , soviets also get resources , this is cut in vanila and made into a diffrent focus thats somewhere in "The comintern" branch
+Did all the changes promised in "Iron Water"
+
+
+Fixed a lot of hoost tool stuff , and now gives events 
+Gave japan pregrinds a commando +1 buffed manchu pregrind , fixed italian 2nd pregrind aka 2+ more traits , buffed a tiny wee bit german pregrinds giving them 1+ defense on the dday one
+Gave some skill 1+ on some gens
+Buffed mongolia with 1 extra starting civ , that is in non core territory lol
+Gorila on plains now has proper localization
+Changed LL decision to be proper
+Fixed all the broken localization stuff from "Iron Water"
+Stuff to do , add the swiss gold for Germany as a game rule ofc , add the no china war only decisions pushes stuff to be real and to work
+Reverted decryption commented out stuff aka + some attack against the decrypted nation
+
+Nerfed china eco 
+Nerfed jap ger and sov generals
+New game rule for fighters against fascism
+Nerfed baltic eco , nerfed china eco w 5 civs and 2 mills and 1 dokcyard
+Fixed some stuff about auto tech rush
+Fixed spanish and japan focus trees
+
+
+Up to vanila stuff
+Updated local stuff , added some stuff to USA lend lease and shared frame stuff
+Reichcoms game rule for germany , either pupet or compliance
+
+Desync fix
+
+Fixed some anti cheat stuff
+Fixed some stuff about the soviet focus tree eco wise
+Nerfed mongolia eco focuses again , specificly conc farm acts , gives less mills and civs and slots as well
+Fixed french focus tree for eco in syria
+Fixed MW not giving another brigade size
+New cheat sound effect when you cheat
+
+
+Shayed update:
+Pregrind for Spain changed , removed urban specialist and forest trait for 1 general , but 1 has both or smt like that
+"Franco CP nerf" , added a game rule for it
+Added a boosted research for UK when in no asia 
+Usa is more nerfed in alt asia - made its fleet even smaller , less states BUT now they get thier resources from the biggest resource states
+2 Atlantic islands in the sub direct middle are now british , cuz uk has a decision for it aperently
+Axis now in total from all the capped minors and annexed now should get around 300k guns in total , NOT VERY VANILA 
+In alt asia , Australia Has 300k more manpower cuz no india 
+Changed the date for Germany when can it do Danzig or war , its jan instead of feb now
+Made the hosttool dynamic for player settings , aka where it apears is not scripted now (in the future steal fullchyord s pause rights and fix tagswitch)
+Spanish generals are now diffrent in alt asia/no asia , they are less pregrinded
+Japan game impact is now a simulator for no asia / alt asia , it makes it so that "Japan" takes the rubber islands away from the Allies
+Simulator for spanish mechanized ( mutually exclusive with an "annexexed" spain) should also be a game rule?
+Changed the cost for ger focus for benelux , its 20 days , changed the cost for usa focus for usa war plan divs , its 5% more planning speed , 70 days for that focus is a pure scam
+Changed the amount of spawned factories by the AI , lamao bloat kekw rolf ~20 more factories in total
+When romania is given finland , the territories for finland now stay demilitirized , expect the states which finland looses aka karalija
+Czeko tree now made so you cant go non hist, kept in for the eco
+Nerfed luxembourg factories by 2 , -2 mills
+
+Changed non occupied states to have 1 manpower and no supply buildings
+Made supply decision to be avaible for faction leader and for the tags ITA GER SOV JAP and FRA , JAP is special , if SIA is gone or AI controlled its avaible for japan
+Added a decision special for italy , so that if they fully control the med islands , they can get Ticino via the decision but they have to make the focus "Towards a Greater Italy" , so then they can press the decision and after that form greater italy
+Made it so that when ever france annexes ireland when it has caput , it no longer gets irish economy only a single dockyard for convoys 
+Fixed Hungary not being vanila , now its completly vanila for Trainon. Fixed Brazil focus tree. France has 1 less organizer. Fixed finland having its capital demilitirzed , when yugo and greece cap , ethopia is no longer demilitarized
+Changed how some scripting works in the pregrinded gens actions 
+made italy start with 42 compliance in ethopia
+japan now gets around ~70k guns , mainly gun 1s and 1k support eq
+nerfed the non vanila black shirt battalion still no body would use it tho.
+Italy now starts with irregular inf ,  but the catch is that you can edit it , you cant add more irregular battalions , but you can add inf and others to improvise!
+Land doctrine deep battle no longer gives to all armor ( aka tds spaa spg ) break 10% , only to regular tanks ( heavies meduims lights )
+some more optimization for supply buildings in the non occupied states.
+Made it so that you cant exploit off the AI like guns also made it not justify if its AI and has claims yada yada 
+added a funny game rule for fucking up your production day 1 , it will spare you 5-6 days of 50% retention aka if you delete your inf eq line day 1 , you can just place another one 1 day later
+Made rhineland not lag your game for a bit , the focus
+actually made the tooltip for adding extra cores in poland for germany bcz thx pdx <3 
+changed where the host tool is at.
+hanged AI not to disgruntle attache 
+changed uk focuses for dockyards  -2 less 1st dockyard focus and 2 more 2nd dockyard focus , aka repair dockyards focus and naval rearmament
+Added compliance to guyana states 
+made italy start with more compliance in colonies
+Toilet anans das.
+
+In the future i promise to add mios for allied and axis tank countries and it will work , its just scrapped bcz i cant be bothered to do it rn. 
+(WORK IN PROGRESS: AXIS/ALLIED MINORS HAVING MIOS FROM BIG MAJOR COUNTRY , ONLY GAME RULED RN , not anymore commented it out last second lol)
+
+Fixed Britsh requirments for annexing minors
+Made AIs who have generic trees to rush industry proper
+Made the spanish mech be more sigma, more game rules option for a bulgaria direct lend lease etc
+Fixed some continouis focuses
+"Vanila" Eco for denmark and norway
+Fixed some land doctrine bs
+Buffed romania by 1 single civ xd
+Nerfed france by 2 civs in africa and syria colonies , 1 from afirca 1 from syria
+Fixed some loading tips , added local to new options for mech lend lease
+
+Fixed plane lend lease , now gives fighter meduim airplanes
+Fixed brazil right path being broke
+Made gun 3 to be in 1940 march 1st
+Vanilaied an USA focus 
+
+Added game rule for minors MIOs , SAF CAN HUN and SPR have a decision to gain MIOs from majors.
+Fixed NZL tree a bit
+Spain when AI not to go closed eco from focus
+Some gay shit in the anti cheat shit , fixed and redone
+Motorized 2 no longer gives motorized battalion , motorized 1 does
+
+Mongolia now has chief of org instead of red army organizer (-6% org)
+Added a decision for NZL FRA AST to gain xp from SCW , FRA 125 , NZL AST 50
+Reworked the anti cheat system , 3.0! Now gives idea to the cheating country so you can not play amongus anymore.
+Changed stuff around for mongolia spirits , changed some focuses for mongolia , nerfed thier eco quite a lot -6 mills but +3 civs from conc farm acts
+Germany now isnt shadowich balance
+Lend lease button for hungary
+
+Added a real gfx for the cheating events (why so serious? Does it jonk when youre jonklering?)
+
+Added some few options to the host tool , resistancee compliacne remove cores freeing pupet declare war (no work) tagswitch (no work)
+Buffed england pregrinds +1 planning
+Added brazil pregrinds for tanks fuck you shadow
+
+
+Time to feast your slop work! 
+Less bloat in the ai nations , regarding eco
+Minks is now a supply hub
+Couple of new game rules , vanila balance etc etc
+Fixed a minor bug where NOR divs spawned inside finland
+Updated quite a lot the host tool yet again
+Rebalanced germany focus tree a bit
+Fixed italian ethopia triggering the anti cheat
+Added a special gui to display all game rules and changed game rules
+Fixing the fixes of the fix for the fixes yknow fix
+Fix mod fix bhvm
+Idk bazil has been touched with game rules ofc
+
+
+GDU 1.15:
+
+Optimized the game quite a bit ig
+Updated the game to be more vanila with 1.15
+Fixed a bug where you turn off equipment in div for flame tank and it gives the terrain buffs but not the stats , now when you turn it off it gives nothing as it should be
+Fixed a lot of states for the new update
+Changed how brazil looks , might revert of change it a bit depending on what people say
+Buffed sov gens , fixed ger gens
+Fixed a few focus tree bugs
+(Shadow did this)He fixed some vanila bugs that were repetetive
+Fixed Mongolia not doing its focuses properly
+And back again to what i did xd ,
+Added game rules for the new funny raids stuff
+Added game rules for the new funny tech stuff from the dlc , check what the game rules say for each one
+
+Fixed naval invasion and paradrop pop up , fixed some land doctrine stuff , fixed the sick and wounded traits , fixed the japan and sov closed eco stuff
+
+Fixed some AI stuff , like guaranteed what they deploy etc
+Made the save game files smaller
+Did some stuff in the country selection tab , only playable countries now
+Did some stuff to the buildings
+Fixed colour schemes for countries
+Added 2 more game rules for GER , about MEFO and eco path
+Fixed a bug where a RK caps it gives it to the enemy and not GER
+Fixed some game rule stuff about traits
+Buffed MLRS
+Brought back topbar BHVM resources
+Brought back upgrades for MLRS
+Shadow:Railroaded some sov focuses;made gun 3 and gun 2 earlier for some reason;changed SHC 45=>50 hard attack
+
+Changed a lot of the pregrinds , mainly nerfs to: GER , HUN , BUL , CAN , SAF , AST , JAP ; Buffs to: SOV , ENG , MAN
+Returned the old dates for gun 3 and gun 2 cuz shadow is silly and has no idea how balance works :)
+
+Gutted the save game files a tiny wee bit smaller by that i mean ~5mbs smaller
+Liquidated turkey
+Buffed bulgaria only dday wall , added a manpower gain from the lendlease mech program , buffed bul caudillo 25+ extra command power
+Fixed repeating errors
+Improved game stability
+Improved game speed from semi fast on 4 speed to fast on 4 speed
+Improved 3-2 speed to be faster
+Made AI dumber
+Reworked mongolia - will go into further detail for that one later
+Made it so that when romania looses transilvania to get some extra 2 civs and 2 mills into muntenia so it isnt a fully sub nation
+Changed the first focus for soviets for air
+Updated occupation laws
+Changed BUL FRA CAN ENG GER  SPR SOV pregrinds a bit TLDR; 1+ extra pregrind for spain stronger eng pregrind +1 attack on a ger general added ranger to bul pregrinds , eng has lvl 8 instead of lvl 6 pregrind can +1 planning fra 1+ planning
+HOPEFULLY made the sick and wounded impossible to roll if the game rule is on
+Changed how the german pupets equipment goes when they "capitulate"
+Fixed some more repeating errors
+Removed refusing for transilvania and czeks
+Hopefully nothing bad for england
+Belguim hopefully doesnt explode anymore
+Made the cheating sound effect less loud
+Reworked mongolia a bit
+Mongolian rework in question: Those who know
+MON: 
+Reworked how the economy works
+Added 5 new focuses which can dicate your future economy and reworked a lot of spirits for how mongolian army works
+Skibidriosil guy now has 6 attack 5 defense and 3 logistics
+Choosing between Traditional and Motorized army has huge impact as mongolia now , horse is not very very good and your mech is now even better , you gain 2+ hp per mech battalion for Motorized and 6+ hp per horse battalion for traditional
+New branches for air and navy for mongolia!!
+Buffed every single army path , now having its quirks and buffs
+Fixed air focus main buffs 
+The plundering: There are 3 options south , east and west , south gives you the most amount of factories but the least amount of manpower  , east gives you the most amount of manpower but no factories , west gives you a balance of manpower and industry
+What ever option you pick for the plundering , you will get a buff for that region later down the focus tree and there the concentrated farm acts will be applied aka you get the eco there
+You can now gain a tiny wee bit amount of oil as mongolia so you dont starve the soviet as much , plus its hist accurate ;)

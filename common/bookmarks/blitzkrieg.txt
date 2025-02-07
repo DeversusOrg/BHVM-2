@@ -1,0 +1,346 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1939.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "GER"
+	
+		FRA = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+		USA = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression_3
+				air_war_plans_division_focus
+				USA_war_department
+				new_deal
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_arsenal_of_democracy
+				USA_selective_training_act
+			}
+		}
+		ENG = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				ENG_george_vi
+				british_austerity_idea
+				ENG_colonial_elite
+			}
+			focuses = {
+				ENG_war_with_japan
+				bomber_command_focus
+				maud_focus
+			}
+			
+		}
+		GER = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas = { #TODO_Danne Make sure these spirits display the proper numbers!
+				GER_mefo_bills_1939_fake_ns
+				GER_army_1939_fake_ns
+				GER_wehrwirtschaft_fake_ns
+			}
+			focuses = {
+				GER_shatter_usas_hegemony
+				GER_war_with_the_ussr
+				GER_mittelafrika
+			}
+		}
+		ITA = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				vittorio_emanuele_albania_ethiopia
+				ITA_camicie_nere
+				ITA_pact_of_steel
+			}
+			focuses = {
+				ITA_battaglioni_d_assalto
+				ITA_by_blood_alone
+				ITA_ferrea_mole_ferreo_cuore
+			}			
+		}
+		JAP = {
+			history = JAP_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				state_shintoism
+				JAP_guide_the_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}		
+		}
+		SOV = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = communism
+			ideas = {
+				SOV_anti_soviet_military_thinking_banned_navy
+				SOV_second_five_year_plan_fake_1939_ns
+				SOV_purged_junior_army_officers_2
+			}
+			focuses = {
+				SOV_found_the_comecon
+				SOV_father_of_nations
+				SOV_patriarch_of_all_russia
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC ####
+		"CAN"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				NZL_bob_semple_tank
+				NZL_independent_new_zealand
+				NZL_maori_volunteers
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag
+				SAF_history_of_segregation
+			}
+			focuses = {
+				SAF_secure_interests_in_africa
+				SAF_support_the_german_coup
+				SAF_anti_colonialist_crusade
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+
+		HUN = {
+			minor = yes
+			history = "HUN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			available = {  NOT = { has_dlc = "Gotterdammerung" } }
+			ideas = {
+				HUN_treaty_of_triannon_3
+				HUN_interventionism
+				HUN_strengthen_fascists
+			}
+			focuses = {
+				HUN_elect_a_king
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				ROM_preserve_greater_romania
+				ROM_iron_guard
+			}
+			focuses = {
+				ROM_balkans_dominance
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}
+		
+		"CHI"={
+			minor = yes
+			history = "CHI_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				CHI_army_corruption_2
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_renegotiate_the_unequal_treaties
+				CHI_invite_the_flying_tigers
+				CHI_war_of_resistance
+			}
+		}
+		"MAN"={
+			minor = yes
+			history = "MAN_BLITZKRIEG_DESC"
+			ideology = fascism
+			ideas = {
+				MAN_kwantung_veto
+				MAN_five_year_plan_industry
+				MAN_low_legitimacy_4
+			}
+			focuses = {
+				MAN_alliance_with_the_kwantung_army
+				MAN_develop_aluminum_sources
+				MAN_the_two_emperors
+			}
+		}
+		"MEX"={
+			minor = yes
+			history = "MEXICO_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				MEX_church_power_1
+				MEX_politicised_army
+				MEX_ejido_worker_militias
+				MEX_capital_reserves
+			}
+			focuses = {
+				MEX_focus_bolivarian_alliance
+				MEX_focus_aztec_eagles
+				MEX_focus_the_gold_shirts
+			}
+		}
+
+		"SPR"={
+			minor = yes
+			history = "SPAIN_BLITZKRIEG_DESC"
+			ideology = fascism
+			ideas = {
+				SPA_carlism_4
+				SPA_recovering_from_civil_war
+			}
+			focuses = {
+				SPA_expand_the_axis_gold_trade
+				SPA_the_spanish_miracle
+				SPA_retake_gibraltar
+			}
+		}
+		
+		"BUL"={
+			minor = yes
+			history = "BUL_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				BUL_bulgarian_irredentism
+				BUL_imro_01
+				BUL_national_industry_01
+			}
+			focuses = {
+				BUL_the_third_bulgarian_empire
+				BUL_the_return_of_ferdinand_i
+				BUL_bulgaria_on_the_three_seas
+			}
+		}
+		FIN={
+			minor = yes
+			history = FIN_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas = {
+				FIN_sisu_3
+				FIN_fortification_effort
+				FIN_repurposed_small_industries
+			}
+			focuses = {
+				FIN_winter_warfare
+				FIN_the_lone_wolf
+				FIN_long_range_patrols
+			}
+		}
+		BRA = {
+			minor = yes
+			history = BRA_BLITZKRIEG_DESC
+			ideology = neutrality
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				BRA_estado_novo_dummy_idea
+				BRA_radio_nacional_idea
+				BRA_army_dummy_idea
+			}
+			focuses = {
+				BRA_cooperation_in_the_americas
+				BRA_smoking_cobras
+				BRA_senta_a_pua
+			}
+		}
+
+		HUN = {
+			minor = yes
+			history = "HUN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				HUN_gombos_trade_treaty
+				HUN_hungarian_national_defense_association_horthyist
+				HUN_levente_associations_act_of_defense_and_secret_rearmament
+			}
+			focuses = {
+				wuw_HUN_demand_carpathian_ruthenia # could also be wuw_HUN_promote_hungarianism
+				wuw_HUN_the_turan
+				wuw_HUN_proclaim_greater_hungary
+			}
+		}
+	}
+}

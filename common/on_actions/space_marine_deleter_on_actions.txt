@@ -1,0 +1,61 @@
+on_actions = {
+    on_weekly = {
+        effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_game_rule = {
+                            rule = space_marine_deleter
+                            option = Allowed
+                        }
+                    }
+                }
+                every_country_division = {
+                    limit = {
+                        #probabaly works only if majority is inf and minority is armor , not the other way around
+                        division_has_majority_template = infantry
+                        OR = {
+                            division_has_battalion_in_template = light_armor
+                            division_has_battalion_in_template = medium_armor
+                            division_has_battalion_in_template = heavy_armor
+                            division_has_battalion_in_template = super_heavy_armor
+                        }
+                    }
+                    PREV = {
+                        if = {
+                            limit = {
+                                NOT = {
+                                    has_template = "Illegal Template Detected-oppinion rejected"
+                                }
+                            }
+                            division_template = {
+                                name = "Illegal Template Detected-oppinion rejected"
+                                is_locked = yes
+                                division_names_group = USA_INF_01
+                                priority = 0
+                                template_counter = 0
+                                regiments = {
+                                    infantry = { x = 0 y = 0 }
+                                    infantry = { x = 0 y = 1 }
+                                    infantry = { x = 0 y = 2 }
+                                    infantry = { x = 0 y = 3 }
+                                }
+                                support = {
+                                }
+                            }
+                        }
+                    }
+                    change_division_template = {
+                        division_template = "Illegal Template Detected-oppinion rejected"
+                    }
+                    PREV = {
+                        delete_unit_template_and_units = {
+                            division_template = "Illegal Template Detected-oppinion rejected"
+                            disband = yes #give em back thier stockpile atleast
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

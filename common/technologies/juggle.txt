@@ -1,0 +1,24 @@
+technologies = {
+	Juggle_1 = {
+		research_cost = 0
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle_1 = 0
+			}
+		}
+		allow = {
+			has_game_rule = {
+				rule = juggle_slot
+				option = ALLOWED
+			}
+		}
+		ai_will_do = {
+			factor = -100
+		}
+	}
+}

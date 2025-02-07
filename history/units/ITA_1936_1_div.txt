@@ -1,0 +1,144 @@
+﻿division_template = {
+	name = "1-Div-Training"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
+	}
+}
+division_template = {
+	name = "MP"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+	}
+}
+division_template = {
+	name = "Banda Irregolare Libica"		
+	division_names_group = ITA_COL_02
+	override_model = ITA_irregular_infantry_alt_0_entity
+	template_counter = 66
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1 DIV Training"
+		location = 9904
+		division_template = "1-Div-Training"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+}
+
+
+
+
+
+
+####### Starting Production Queue #######
+instant_effect = { 
+	if = { 
+		limit = { is_tutorial = no } 
+
+		##### Equipments #####
+		add_equipment_production = { 
+			equipment = { 
+				type = infantry_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 4 
+			progress = 0.1 
+			efficiency = 50 
+			industrial_manufacturer = mio:ITA_beretta_organization
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = support_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.3 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_brescia_arsenal_organization
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = light_tank_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.4 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_fiat_organization
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = motorized_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.4 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_lancia_organization
+		} 
+	}
+} 

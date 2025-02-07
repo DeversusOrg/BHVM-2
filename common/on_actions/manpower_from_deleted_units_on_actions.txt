@@ -1,0 +1,87 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            ENG = {
+                add_manpower = 425000
+            }
+            SOV = {
+                add_manpower = 950000
+            }
+            GER = {
+                add_manpower = 300000
+            }
+            NOR = {
+                add_manpower = 300000
+            }
+            FRA = {
+                add_manpower = 500000
+            }
+            ITA = {
+                add_manpower = 600000
+            }
+            FIN = {
+                add_manpower = 75000
+            }
+            HUN = {
+                add_manpower = 50000
+            }
+            ROM = {
+                add_manpower = 350000
+            }
+            BUL = {
+                add_manpower = 12000
+            }
+            BRA = {
+                add_manpower = 100000
+            }
+            CAN = {
+                add_manpower = 80000
+            }
+            USA = {
+                add_manpower = 450000
+            }
+            MEX = {
+                add_manpower = 100000
+            }
+            SAF = {
+                add_manpower = 50000
+            }
+            RAJ = {
+                add_manpower = 100000
+            }
+            AST = {
+                add_manpower = 100000
+            }
+            NZL = {
+                add_manpower = 10000
+            }
+            SIA = {
+                add_manpower = 50000
+            }
+            MAN = {
+                add_manpower = 80000
+            }
+            JAP = {
+                add_manpower = 600000
+            }
+            MON = {
+                add_manpower = 35000
+            }
+            BEL = {
+                add_manpower = 275000
+            }
+            HOL = {
+                add_manpower = 70000
+            }
+            CZE = {
+                add_manpower = 130000
+            }
+            AUS = {
+                add_manpower = 60000
+            }
+            BLM = {
+                add_manpower = 99999999
+            }
+        }
+    }
+}

@@ -1,0 +1,225 @@
+add_namespace = horsttool
+add_namespace = hosttool
+
+news_event = {
+	id = horsttool.1
+	title = "Horsttool"
+	desc = " [From.Getname] gave [Root.cheat_selected] to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Ja... Commandant"
+		clear_variable=this.selected_cheat
+		clear_variable=this.target_country
+	}
+}
+
+news_event = {
+	id = horsttool.2
+	title = "Snek teleported again"
+	desc = " You little shit"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Im gonna break your kneecaps snek"
+		add_political_power = -1
+	}
+}
+news_event = {
+	id = horsttool.3
+	title = "Prod stuff"
+	desc = " Someone fucked up"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "LAG MOMENT LOL"
+	}
+}
+
+news_event = {
+	id = hosttool.1
+	title = "Hosttool"
+	desc = " [From.Getname] gave [Root.cheat_selected] to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+		clear_variable=this.selected_cheat 
+		clear_variable=this.target_country
+	}
+}
+
+news_event = {
+	id = hosttool.2
+	title = "Hosttool"
+	
+	desc = " [From.Getname] gave one military factory to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}
+}
+news_event = {
+	id = hosttool.3
+	title = "Hosttool"
+	desc = " [From.Getname] gave one civilian factory to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.4
+	title = "Hosttool"
+	desc = " [From.Getname] gave 50pp to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.5
+	title = "Hosttool"
+	desc = " [From.Getname] gave 50 Army XP to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}
+}
+news_event = {
+	id = hosttool.6
+	title = "Hosttool"
+	desc = " [From.Getname] gave 50 Naval XP to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}
+}
+
+news_event = {
+	id = hosttool.7
+	title = "Hosttool"
+	desc = hosttool.7.desc
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}
+}
+
+
+news_event = {
+	id = hosttool.69
+	title = hosttool.69.t
+	desc = hosttool.69.desc
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = hosttool.69.a
+	}	
+}
+
+news_event = {
+	id = hosttool.10
+	title = "Hosttool"
+	desc = " [From.Getname] gave 10ws to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.11
+	title = "Hosttool"
+	desc = " [From.Getname] gave 10st to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.12
+	title = "Hosttool"
+	desc = " [From.Getname] gave 5 steel to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.13
+	title = "Hosttool"
+	desc = " [From.Getname] gave 5 tung to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.14
+	title = "Hosttool"
+	desc = " [From.Getname] gave 5 alu to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.15
+	title = "Hosttool"
+	desc = " [From.Getname] gave 5 oil to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.16
+	title = "Hosttool"
+	desc = " [From.Getname] gave 5 chrom to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}
+news_event = {
+	id = hosttool.17
+	title = "Hosttool"
+	desc = " [From.Getname] gave 5 rubber to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}	
+}

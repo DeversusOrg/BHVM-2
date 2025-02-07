@@ -1,0 +1,543 @@
+on_actions = {
+    on_weekly = { ### PEACE TRAINING
+        effect = {
+            if = { 
+                every_country = {
+                    limit = {
+                        is_playable_country = yes
+                        has_war = no
+                        has_game_rule = { rule = peace_training_xp option = on }
+                        NOT = { has_idea = peace_training_xp }
+                    }
+                    add_ideas = peace_training_xp
+                }
+            }
+            if = { 
+                every_country = {
+                    limit = {
+                        is_playable_country = yes
+                        has_war = no
+                        has_game_rule = { rule = peace_training_xp option = off }
+                        NOT = { has_idea = peace_training_no_xp }
+                    }
+                    add_ideas = peace_training_no_xp
+                }
+            }
+        }
+    }
+	on_startup = { ### NO COLLABS COUNTRIES
+        effect = {
+            if = { 
+                every_country = {
+                    limit = {
+                        is_playable_country = yes
+						is_ai = yes
+                    }
+					has_game_rule = {
+						rule = no_collabs
+						option = off
+					}
+					can_create_collaboration_government = no
+                }
+            }
+            if = { 
+                every_country = {
+                    limit = {
+                        is_playable_country = yes
+						is_ai = yes
+                    }
+                    has_game_rule = {
+						rule = no_collabs
+						option = on
+					}
+					can_create_collaboration_government = yes
+                }
+            }
+        }
+    }
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = { NOT = { is_ai = yes } }
+				if = {
+					limit = { has_idea = ai_limit }
+					remove_idea = ai_limit
+				}
+				if = {
+					limit = { has_idea = blm_ai }
+					remove_idea = blm_ai
+				}
+				if = {
+					limit = { has_idea = ai_idea }
+					remove_idea = ai_idea
+				}
+			}
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			# Greece dockyards
+			47 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			768 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			769 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			153 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			#When adding the extra civs that these minors would go from focus u remove the building slots so have to add them
+			812 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			977 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			152 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
+			808 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			107 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
+			106 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			108 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			47 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
+			37 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 6
+			}
+			911 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			110 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 8
+			}
+			142 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			921 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			912 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			118 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			46 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			743 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			7 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			6 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			4 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 8
+			}
+			9 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			44 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 9
+			}
+			105 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			596 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			10 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+
+				add_extra_state_shared_building_slots = 3
+			}
+			762 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+
+				add_extra_state_shared_building_slots = 3
+			}
+			88 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			91 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			191 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			113 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+
+		}
+	}
+    on_startup = {
+		effect = {
+			IF = {
+				limit = {
+					AST = { is_ai = yes }
+				}
+				AST = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					IRE = { is_ai = yes }
+				}
+				IRE = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					CAN = { is_ai = yes }
+				}
+				CAN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					NZL = { is_ai = yes }
+				}
+				NZL = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					BRA = { is_ai = yes }
+				}
+				BRA = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					HUN = { is_ai = yes }
+				}
+				HUN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					BUL = { is_ai = yes }
+				}
+				BUL = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					ROM = { is_ai = yes }
+				}
+				ROM = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					MEX = { is_ai = yes }
+				}
+				MEX = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					SAF = { is_ai = yes }
+				}
+				SAF = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					RAJ = { is_ai = yes }
+				}
+				RAJ = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					SIA = { is_ai = yes }
+				}
+				SIA = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					MAN = { is_ai = yes }
+				}
+				MAN = { add_ideas = ai_limit}
+			}
+			if = { 
+                every_country = {
+                    limit = {
+                        is_playable_country = yes
+                        has_war = no
+                        has_game_rule = { rule = peace_training_xp option = on }
+                        NOT = { has_idea = peace_training_xp }
+                    }
+                    add_ideas = peace_training_xp
+                }
+            }
+            if = { 
+                every_country = {
+                    limit = {
+                        is_playable_country = yes
+                        has_war = no
+                        has_game_rule = { rule = peace_training_xp option = off }
+                        NOT = { has_idea = peace_training_no_xp }
+                    }
+                    add_ideas = peace_training_no_xp
+                }
+            }
+        }
+    }
+}

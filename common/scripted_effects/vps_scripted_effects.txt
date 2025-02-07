@@ -1,0 +1,423 @@
+victory_requierements = {
+	set_variable = { VICTORY_CON = 0 }
+	if = { limit = { any_country = { allies = yes controls_state = 450 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 447 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 16 } } add_to_variable = { var =  VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 20 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 439 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 613 } } add_to_variable = { var = VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 219 } } add_to_variable = { var =  VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 217 } } add_to_variable = { var =  VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 224 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 7 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON > 6 }
+		}
+		set_global_flag = { flag = VIC value = 4 }	
+		every_country = {
+			if ={
+				limit = {is_playable_country = yes}
+				add_timed_idea = {
+					idea = victory_con_allies_2
+					days= 365
+				}
+			}	
+		}	
+	}
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON = 6 }
+		}
+		set_global_flag = { flag = VIC value = 3 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = victory_con_allies_1
+		}			
+	}
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON = 5 }
+		}
+		set_global_flag = { flag = VIC value = 0 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = {
+				victory_con
+			}
+		}	
+	}
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON = 4 }
+		}
+		set_global_flag = { flag = VIC value = 2 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = victory_con_axis_1
+		}			
+	}
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON < 4 }
+		}
+		set_global_flag = { flag = VIC value = 1 }	
+		every_country = {
+			if ={
+				limit = {is_playable_country = yes}
+				add_timed_idea = {
+					idea = victory_con_axis_2
+					days= 365
+				}
+			}	
+		}	
+	}
+
+	
+}
+check_vp_control = {
+    if = {
+        limit = {
+            controls_state = var:captured_state
+        }
+        return = yes
+    }
+    else = {
+        return = no
+    }
+}
+
+check_pending_captures = {
+    if = {
+        limit = {
+            has_variable = captured_state
+            NOT = { controls_state = var:captured_state }
+        }
+        clear_variable = captured_state
+    }
+}
+
+initilize_victory_system = {
+	# state = 613 #Nanjing
+	# state = 439 #Dehli
+	# state = 447 #Alexandria
+	# state = 450 #Benghasi
+	# state = 7 #Amsterdam
+	# state = 16 #Paris
+	# state = 20 #Lyon
+	# state = 224 #Bryansk
+	# state = 219 #Moscow
+	# state = 217 #Stalingrad
+
+	set_variable = {
+		var = global.axis_score
+		value = 0
+	}
+	set_variable = {
+		var = global.allies_score
+		value = 0
+	}
+
+	set_global_flag = victory_system_active
+	every_country = {
+		limit = {
+			is_axis_country = yes
+		}
+		if = {
+			limit = {
+				controls_state = 613 #Nanjing
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 439 #Dehli
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 447 #Alexandria
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 450 #Benghasi
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 7 #Amsterdam
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 16 #Paris
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 20 #Lyon
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 224 #Bryansk
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 219 #Moscow
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 217 #Stalingrad
+			}
+			add_to_variable = {
+				var = global.axis_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.axis_score
+				min = 0
+				max = 10
+			}
+		}
+	}
+
+	every_country = {
+		limit = {
+			is_allied_country = yes
+		}
+		if = {
+			limit = {
+				controls_state = 613 #Nanjing
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 439 #Dehli
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 447 #Alexandria
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 450 #Benghasi
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 7 #Amsterdam
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 16 #Paris
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 20 #Lyon
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 224 #Bryansk
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 219 #Moscow
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 217 #Stalingrad
+			}
+			add_to_variable = {
+				var = global.allies_score
+				value = 1
+			}
+			clamp_variable = {
+				var = global.allies_score
+				min = 0
+				max = 10
+			}
+		}
+	}
+
+}
+
+

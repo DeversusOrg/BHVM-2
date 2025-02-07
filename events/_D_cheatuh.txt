@@ -1,0 +1,88 @@
+﻿add_namespace = cheat
+
+news_event = {
+	id = cheat.1
+	title = "Cheated Equipment Detected a Mf"
+	desc = "Mf has equipment with upgrades exceeding the allowed limits!"
+	picture = GFX_news_hack
+
+    is_triggered_only = yes
+
+    trigger = {
+        equipment_upgrade_exceeds_limit = yes
+    }
+
+    option = {
+        name = "Well.Atleast it works!"
+    }
+}
+news_event = {
+    id = cheat.2
+    title = "Mf has exceeded building limits!"
+    desc = "Mf has exceeded the defined building limit in [From.GetStateName]! The state has buildings over the acceptable limit: [From.GetBuildingType]."
+    picture = GFX_news_hack
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Very Impressive, Hallal"
+    }
+}
+news_event = {
+    id = cheat.3
+    title = "Double Doctrine/Tech Violation Detected!"
+    desc = "Someone did double doctrine or industry."
+    picture = GFX_news_hack
+    
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            random_country = {
+                limit = {
+                    has_country_flag = double_land_doctrine
+                    has_country_flag = double_industry
+                    has_country_flag = double_naval_doctrine
+                    has_country_flag = double_air_doctrine
+                }
+            }
+        }
+        clr_country_flag = double_land_doctrine
+        clr_country_flag = double_industry
+        clr_country_flag = double_naval_doctrine
+        clr_country_flag = double_air_doctrine
+    }
+    option = {
+        name = "Check a country with an idea that says what cheat they did!!"
+        clr_country_flag = double_land_doctrine
+        clr_country_flag = double_industry
+        clr_country_flag = double_naval_doctrine
+        clr_country_flag = double_air_doctrine
+    }
+}
+
+news_event = {
+    id = cheat.4
+    title = "Illegal Trait Combination Detected"
+    desc = "A country has been caught with an illegal trait combination!"
+    picture = GFX_news_hack
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            random_country = {
+                limit = {
+                    any_unit_leader = {
+                        has_trait = hax
+                    }
+                }
+                save_event_target_as = cheating_country
+            }
+        }
+    }
+
+    option = {
+        name = "Mf has a leader with the 'hax' trait!Check country ideas!"
+    }
+}
+

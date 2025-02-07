@@ -1,0 +1,582 @@
+on_actions = {
+    on_startup = {
+		effect = {
+            SOV = { 
+				country_event = {
+					id = bftb_turkey.4
+					days = 75
+				}
+			}
+			
+			##### Turning King Edward's abdication into an on_startup event instead of MTTH to help performance####
+			ENG = {
+				country_event = {
+					id = britain.16
+					days = 20
+				}
+				country_event = {
+					id = mtg_britain.1
+					days = 190
+				}
+				country_event = {
+					id = britain.22
+					days = 513
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 12000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 260
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 100
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 180
+					producer = ENG
+					variant_name = "Light Tank Mk. VI"
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 230
+				}
+				country_event = {
+					id = DOD_yugoslavia.20
+					days = 912
+				}
+				#if = {
+				#	limit = {
+				#		has_game_rule = {
+				#			rule = allied_engine_bonus
+				#			option = on
+				#		}
+				#	}
+				#	add_tech_bonus = {
+				#		name = lastorical_allied_engine_bonus_name
+				#		bonus = 1.0
+				#		uses = 1
+				#		technology = engines_4
+				#	}
+				#}
+			}
+			GER = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 25000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 900
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 600
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 350
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 750
+					producer = GER
+					variant_name = "Panzer I Ausf. A"
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 60
+				}
+				country_event = {
+					id = DOD_yugoslavia.20
+					days = 912
+				}
+			}
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 8000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 30000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 800
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 2500
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 220
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 1230
+					producer = FRA
+					variant_name = "H-35"
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 115
+				}
+				country_event = {
+					id = DOD_yugoslavia.20
+					days = 912
+				}
+			}
+			JAP = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 6000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 32000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 801
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 25
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 400
+					producer = JAP
+					variant_name = "Type 95 Ha-Go"
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 60
+				}
+			}
+            CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 8000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 300
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 60
+				}
+			}
+			USA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 12000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 400
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 110
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 300
+				}
+				#if = {
+				#	limit = {
+				#		has_game_rule = {
+				#			rule = allied_engine_bonus
+				#			option = on
+				#		}
+				#	}
+				#	add_tech_bonus = {
+				#		name = lastorical_allied_engine_bonus_name
+				#		bonus = 1.0
+				#		uses = 1
+				#		technology = engines_4
+				#	}
+				#}
+			}
+			HUN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 5000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 20
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 3
+				}
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 50
+				}
+			}
+			ROM = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 10000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 303
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 90
+				}
+			}
+			ITA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 5000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 25000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 900
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 200
+					producer = ITA
+					variant_name = "L3/35"
+				}
+				country_event = {
+					id = DOD_yugoslavia.20
+					days = 912
+				}
+			}
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 18000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 70000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 400
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 1800
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					amount = 1300
+					producer = SOV
+					variant_name = "T-26TU mod. 1933"
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_2
+					amount = 1000
+					producer = SOV
+					variant_name = "BT-7"
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 300
+				}
+			}
+			BUL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1200
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 70
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 50
+				}
+                add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 20
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 3
+				}
+			}
+			SIA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 3500
+				}
+			}
+			MAN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 5000
+				}
+			}
+			BRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 4000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 100
+				}
+			}
+			MEX = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 6000
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 60
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 24
+				}
+			}
+			#IRE = {
+			#	add_equipment_to_stockpile = {
+			#		type = infantry_equipment_1
+			#		amount = 276
+			#	}
+			#}
+			CAN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3000
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 30
+				}
+                add_equipment_to_stockpile = {
+					type = convoy
+					amount = 30
+                }
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 6
+				}
+			}
+			RAJ = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 3600
+				}
+                add_equipment_to_stockpile = {
+					type = convoy
+					amount = 25
+                }
+			}
+			AST = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1200
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 100
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 7
+				}
+			}
+			NZL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1200
+				}
+			}
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 4
+				}
+                add_equipment_to_stockpile = {
+					type = convoy
+					amount = 20
+				}
+			}
+			FIN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 6600
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 200
+				}
+                add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 8
+				}
+                add_equipment_to_stockpile = {
+					type = convoy
+					amount = 50
+				}
+			}
+			NOR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 8300
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 200
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 12
+				}
+			}
+            BEL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 20000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 150
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 12
+				}
+			}
+            HOL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 23300
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 600
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 35
+				}
+			}
+            AUS = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 15800
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 100
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 28
+				}
+			}
+            CZE = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 19800
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 420
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 24
+				}
+			}
+			ALB = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 4000
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 100
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 6
+				}
+			}
+			YUG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 24000
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 750
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 350
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 32
+				}
+			}
+			GRE = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 13400
+				}
+                add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 230
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 25
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 18
+				}
+			}
+			BLM = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 99999999
+				}
+			}
+        }
+    }
+}

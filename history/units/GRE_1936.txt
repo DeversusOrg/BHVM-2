@@ -1,0 +1,22 @@
+﻿
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+}

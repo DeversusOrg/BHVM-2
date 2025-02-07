@@ -1,0 +1,78 @@
+add_namespace = BHVM_swiss_gold
+
+# First Swiss Gold Trade Event
+country_event = {
+    id = BHVM_swiss_gold.1
+    title = BHVM_swiss_gold.1.t
+    desc = BHVM_swiss_gold.1.desc
+    picture = GFX_report_event_generic_sign_treaty2
+
+    is_triggered_only = yes
+
+    option = {
+        name = BHVM_swiss_gold.1.a
+        add_ideas = swiss_gold_trade_1
+    }
+}
+
+# Second Swiss Gold Trade Event
+country_event = {
+    id = BHVM_swiss_gold.2
+    title = BHVM_swiss_gold.2.t
+    desc = BHVM_swiss_gold.2.desc
+    picture = GFX_report_event_generic_sign_treaty2
+
+    is_triggered_only = yes
+
+    option = {
+        name = BHVM_swiss_gold.2.a
+        swap_ideas = {
+            remove_idea = swiss_gold_trade_1
+            add_idea = swiss_gold_trade_2
+        }
+    }
+}
+
+# Final Swiss Gold Trade Event
+country_event = {
+    id = BHVM_swiss_gold.3
+    title = BHVM_swiss_gold.3.t
+    desc = BHVM_swiss_gold.3.desc
+    picture = GFX_report_event_generic_sign_treaty2
+
+    is_triggered_only = yes
+
+    option = {
+        name = BHVM_swiss_gold.3.a
+        swap_ideas = {
+            remove_idea = swiss_gold_trade_2
+            add_idea = swiss_gold_trade_3
+        }
+    }
+}
+
+# Removal Event
+country_event = {
+    id = BHVM_swiss_gold.4
+    title = BHVM_swiss_gold.4.t
+    desc = BHVM_swiss_gold.4.desc
+    picture = GFX_report_event_generic_sign_treaty2
+    
+    is_triggered_only = yes
+
+    option = {
+        name = BHVM_swiss_gold.4.a
+        if = {
+            limit = { has_idea = swiss_gold_trade_1 }
+            remove_ideas = swiss_gold_trade_1
+        }
+        if = {
+            limit = { has_idea = swiss_gold_trade_2 }
+            remove_ideas = swiss_gold_trade_2
+        }
+        if = {
+            limit = { has_idea = swiss_gold_trade_3 }
+            remove_ideas = swiss_gold_trade_3
+        }
+    }
+}

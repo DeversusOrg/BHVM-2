@@ -1,0 +1,11 @@
+scripted_gui = {
+    check_gamerules_bhvm_ui  = {
+        context_type = decision_category
+        window_name = "check_gamerules_bhvm_ui_window"
+    }
+
+    check_non_default_rules_ui  = {
+        context_type = decision_category
+        window_name = "check_non_default_rules_ui_window"
+    }
+}

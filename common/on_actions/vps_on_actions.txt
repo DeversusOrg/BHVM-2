@@ -1,0 +1,95 @@
+on_actions = {
+	on_daily_GER = {
+		effect = {
+			if = {
+				limit = {
+					GER = { has_war_with = SOV }
+					has_game_rule = {
+						rule = rb_vps_system
+						option = on
+					}
+				}
+				#victory_requierements = yes
+				initilize_victory_system = yes
+			}
+		}
+	}
+
+	on_startup = { 
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rb_vps_system
+						option = on
+					}
+				}
+				set_global_flag = { flag = VIC value = 0 }
+				set_variable = {
+					global.axis_score = 0
+				}
+				set_variable = {
+					global.allies_score = 0
+				}
+			}
+		}
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = rb_vps_system
+						option = on
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = {
+						victory_con
+					}
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rb_vps_system
+						option = on
+					}
+					FROM.FROM = {
+						is_victory_point_state = yes
+					}
+				}
+				ROOT = { #gained control
+					set_variable = {
+						var = captured_state
+						value = FROM.FROM.id
+					}
+					if = {
+						limit = {
+							is_allied_country = yes
+						}
+						country_event = {
+							id = vps.1
+							days = 10
+						}
+					}
+					else_if = {
+						limit = { 
+							is_axis_country = yes
+						}
+						country_event = {
+							id = vps.2
+							days = 10
+						}
+					}
+				}
+			}
+		}
+	}	
+}

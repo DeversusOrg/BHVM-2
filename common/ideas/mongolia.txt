@@ -1,0 +1,622 @@
+ideas = {
+
+    country = {
+        MON_political_freezing = {
+
+			picture = SPR_crush_the_revolution
+
+			allowed = {
+				original_tag = MON
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = 0.1
+				disabled_ideas = 1
+			}
+		}
+#####################ECONOMY#####################
+        MON_economic_disaster_1 = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes 
+            }
+            picture = usa_great_depression_3
+
+            rule = {
+				can_access_market = no
+			}
+            
+            modifier = {
+                consumer_goods_factor = 0.45
+                global_building_slots_factor = -0.25
+                production_speed_buildings_factor = -0.3
+                industrial_capacity_factory = -0.6
+                industrial_capacity_dockyard = -0.7
+                license_tech_difference_speed = -0.25
+                license_production_speed = -0.15
+                stability_factor = -0.1
+                economy_cost_factor = 0.2
+                trade_laws_cost_factor = 0.2
+                mobilization_laws_cost_factor = -0.15
+            }
+        }
+        MON_economic_disaster_2 = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes 
+            }
+            picture = usa_great_depression_2
+
+            rule = {
+				can_access_market = no
+			}
+            
+            modifier = {
+                consumer_goods_factor = 0.25
+                global_building_slots_factor = -0.2
+                production_speed_buildings_factor = -0.15
+                industrial_capacity_factory = -0.35
+                industrial_capacity_dockyard = -0.35
+                license_tech_difference_speed = -0.15
+                license_production_speed = -0.125
+                stability_factor = -0.05
+                economy_cost_factor = 0.1
+                trade_laws_cost_factor = 0.1
+                mobilization_laws_cost_factor = -0.1
+            }
+        }
+        MON_economic_disaster_3 = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes 
+            }
+            picture = usa_great_depression
+
+            rule = {
+				can_access_market = no
+			}
+            
+            modifier = {
+                consumer_goods_factor = 0.15
+                global_building_slots_factor = -0.15
+                production_speed_buildings_factor = -0.075
+                industrial_capacity_factory = -0.175
+                industrial_capacity_dockyard = -0.175
+                license_tech_difference_speed = -0.05
+                license_production_speed = -0.1
+                stability_factor = 0.03
+                economy_cost_factor = -0.125
+                trade_laws_cost_factor = -0.125
+                mobilization_laws_cost_factor = 0.1
+            }
+        }
+        MON_economic_bloom = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes 
+            }
+            picture = chi_hyper_inflation5
+
+            rule = {
+				can_access_market = yes
+			}
+            
+            modifier = {
+                consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.05
+                global_building_slots_factor = 0.25
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.125
+                industrial_capacity_dockyard = 0.125
+                license_tech_difference_speed = 0.125
+                license_production_speed = 0.125
+                economy_cost_factor = -0.2
+                trade_laws_cost_factor = -0.2
+                mobilization_laws_cost_factor = 0.2
+                production_lack_of_resource_penalty_factor = 0.1
+                local_resources_factor = 0.15
+            }
+        }
+        MON_religious_taxation = {
+
+			picture = SPR_seize_the_gold_reserves
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.125
+			}		
+		
+		}
+        MON_mobilize_the_workers_idea = {
+
+			picture = YUG_all_yugoslavian_regiments
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+#####################ECONOMY#####################
+        MON_buddhist_compromise_idea = {
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed_civil_war = {
+
+			}
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.125
+				weekly_manpower = 150
+                monthly_population = 0.3
+				mobilization_speed = -0.15
+				conscription = 0.001
+			}
+		}
+        MON_soviet_science = {
+			picture = por_nation_in_arms
+
+			allowed_civil_war = {
+
+			}
+			modifier = {
+				research_speed_factor = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+        MON_illitarate_majority = {
+			picture = eng_tackle_capitalism
+
+			allowed_civil_war = {
+
+			}
+			modifier = {
+				research_speed_factor = -0.20
+				consumer_goods_factor = -0.05
+                monthly_population = 0.1
+			}
+		}
+
+        MON_military_advisors_in_china = {
+			picture = SPR_nationalist_remnants
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				experience_gain_army = 0.165
+			}
+		}
+        MON_com_propaganda = {
+			picture = generic_communism_drift_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.1
+                drift_defence_factor = 0.35
+			}
+		}
+        MON_a61 = {
+			picture = generic_fascism_banned
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				fascism_drift = -0.045
+                fascism_acceptance = -50
+			}
+		}
+        MON_plan_ulaan_ayuul = {
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+                party_popularity_stability_factor = 0.25
+                stability_weekly = 0.0025
+			}
+		}
+        MON_superior_modern_horse_power = {
+			picture = ITA_bandits_war
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			#gives 8% more HP to mechanized units
+			modifier = {
+				custom_modifier_tooltip = MON_mech_HP_tooltip
+                army_org_factor = 0.05
+                motorized_attack_factor = 0.175
+                motorized_defence_factor = 0.175
+                mechanized_defence_factor = 0.075
+                mechanized_attack_factor = 0.075
+                experience_gain_motorized_training_factor = 0.25
+                experience_gain_motorized_combat_factor = 0.25
+                experience_gain_mechanized_training_factor = 0.25
+                experience_gain_mechanized_combat_factor = 0.25
+                experience_gain_motorized_rocket_brigade_training_factor = 0.25
+                experience_gain_motorized_rocket_brigade_combat_factor = 0.25
+			}
+            equipment_bonus = {
+                motorized_rocket_equipment = {
+                    soft_attack = 0.15
+                    breakthrough = 0.2
+                    hard_attack = 2
+                    defense = 0.35
+					build_cost_ic = 0.25
+					instant = yes
+				}
+            }
+			equipment_bonus = {
+                mechanized_equipment = {
+                    breakthrough = 0.15
+                    hard_attack = 1
+                    defense = 0.03
+					hardness = -0.15
+					build_cost_ic = -0.05
+					instant = yes
+				}
+            }
+		}
+        MON_classic_horse_power = {
+			picture = ETH_national_studs
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			#gives 24% more HP to cav units with tech
+			
+			modifier = {
+				custom_modifier_tooltip = MON_horse_HP_tooltip
+				org_loss_when_moving = -0.25
+				cavalry_attack_factor = 0.4
+				cavalry_defence_factor = 0.5
+				experience_gain_cavalry_training_factor = 0.4
+				experience_gain_cavalry_combat_factor = 0.4
+				experience_gain_recon_training_factor = 0.4
+				experience_gain_recon_combat_factor = 0.4
+				high_command_cost_factor = -0.5
+				command_power_gain = 0.2
+			}
+		}
+        MON_new_generals = {
+			picture = generic_communist_army
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                max_command_power = 40
+                command_power_gain = 0.15
+                army_leader_start_logistics_level = 1
+                army_leader_start_planning_level = 1
+				army_leader_cost_factor = -0.5 
+				unit_leader_as_advisor_cp_cost_factor = -0.3
+                high_command_cost_factor = -0.1
+			}
+		}
+        MON_organized_squads = {
+			picture = generic_war_preparation
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = 0.05
+				conscription = 0.05
+			    experience_gain_infantry_training_factor = 0.1825
+                experience_gain_infantry_combat_factor = 0.1825
+                army_infantry_attack_factor = 0.185
+                army_infantry_defence_factor = 0.185
+                winter_attrition_factor = -0.3
+                no_supply_grace = 72
+                army_org_factor = 0.125
+                resistance_growth_on_our_occupied_states = 0.5
+                resistance_target_on_our_occupied_states = 0.5
+                army_armor_attack_factor = -0.05
+                army_armor_defence_factor -0.05
+			}
+			equipment_bonus = {
+                infantry_equipment = {
+                    soft_attack = 0.02
+                    breakthrough = 0.02
+					build_cost_ic = -0.05
+					instant = yes
+				}
+            }
+		}
+		MON_mori_bosdog = { #war buffs focus heheheaw the horse is coming
+			picture = SOV_desperate_measures_ns_nsb_ccp_sov_compatibility
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				supply_consumption_factor = -0.02
+				army_attack_speed_factor = -0.15
+				acclimatization_cold_climate_gain_factor = 0.05
+				winter_attrition_factor = -0.05
+				dig_in_speed_factor = 0.2
+				army_defence_factor = 0.125
+				training_time_factor = -0.15
+				weekly_manpower = 750
+				conscription_factor = 0.25
+				command_power_gain = 0.15
+			}
+		}
+		MON_will_figthing = {
+			picture = SWE_neither_death_nor_dishonor
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = 0.1
+			    supply_combat_penalties_on_core_factor = -0.25
+				supply_consumption_factor = -0.15
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				army_defence_against_major_factor = 0.125
+				army_attack_against_major_factor = 0.125
+				acclimatization_cold_climate_gain_factor = 0.35
+				winter_attrition_factor = -0.3
+				dig_in_speed_factor = 0.25
+				experience_loss_factor = -0.15
+				max_dig_in = 3.5
+				recon_factor_while_entrenched = 0.5
+			}
+		}
+		MON_SOV_tank_engenieering = {
+			picture = man_five_year_plan_tank
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.065
+				industrial_capacity_factory = 0.05
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.15
+					reliability = -0.10
+					armor_value  = -0.1
+				}
+			}
+		}
+		MON_GER_tank_engeneering = {
+			picture = generic_acquire_tanks
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_morale_factor = 0.1
+				army_armor_attack_factor = 0.125
+				army_armor_defence_factor = 0.125
+				experience_gain_medium_armor_training_factor = 0.15
+				experience_gain_medium_armor_combat_factor = 0.15
+			}
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = 0.165
+					reliability = 0.15
+					soft_attack = 0.065
+					hard_attack = 0.075
+					armor_value  = 0.2
+				}
+			}
+		}
+		MON_future_apcs= {
+			picture = FRA_motorized_focus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_strength_factor = 0.125
+				army_org_factor = 0.05
+				experience_gain_armored_car_training_factor = 0.2
+				experience_gain_armored_car_combat_factor = 0.2
+				experience_gain_armored_car_recon_training_factor = 0.6
+				experience_gain_armored_car_recon_combat_factor = 0.6
+				army_speed_factor = 0.05
+				planning_speed = 0.15
+				equipment_conversion_speed = 0.2
+				equipment_capture_factor = 0.015
+			}
+			equipment_bonus = {
+				armored_car_equipment = {
+					instant = yes
+					maximum_speed = 0.1
+					build_cost_ic = 0.25
+					reliability = 0.25
+					soft_attack = 0.35
+					hard_attack = 0.35
+				}
+			}
+		}
+		
+		MON_SOV_subs = {
+			allowed = {
+				always = no
+			}
+			is_in_war = {
+				
+			}
+
+			picture = can_wartime_prices_and_trade_board
+				
+			modifier = {
+				industrial_factory_donations = 4
+			}
+		}
+		MON_infra_rebuilding = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+				
+			modifier = {
+				production_speed_infrastructure_factor = 0.65
+				production_cost_infrastructure_factor = -0.15
+			}
+		}
+		MON_air_engenuity = {
+			picture = NORDIC_airforce_monarchist
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			   air_fuel_consumption_factor = -0.1
+			   experience_gain_air_factor = 0.2
+			   air_equipment_upgrade_xp_cost = -0.25
+			   strat_bomber_equipment_design_cost_factor = -0.1
+			   air_superiority_bonus_in_combat = 0.1
+			   air_bombing_targetting = 0.25
+			   air_strategic_bomber_bombing_factor = 0.1
+			   air_wing_xp_loss_when_killed_factor = -0.5
+			   air_range = 0.1
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05 
+					instant = yes
+					air_ground_attack = 0.1
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.05 
+					instant = yes
+					air_ground_attack = 0.1
+				}
+			}
+		}
+    }
+}

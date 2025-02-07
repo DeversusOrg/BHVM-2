@@ -1,0 +1,81 @@
+focus_tree = {
+	id = empty_focus
+	
+	country = {
+		factor = 0
+		
+		# NEUTRALS
+		modifier = {
+			add = 10
+			tag = PER
+		}
+		modifier = {
+			add = 100
+			tag = BLM
+		}
+		modifier = {
+			add = 100
+			tag = SWE
+		}
+		modifier = {
+			add = 100
+			tag = HOL
+		}
+		modifier = {
+			add = 10
+			tag = VEN
+		}
+		modifier = {
+			add = 10
+			tag = IRQ
+		}
+		modifier = {
+			add = 10
+			tag = IRN
+		}
+		# ANNEXED SOV FOOD
+		modifier = {
+			add = 100
+			tag = EST
+		}
+		modifier = {
+			add = 100
+			tag = LAT
+		}
+		modifier = {
+			add = 100
+			tag = LIT
+		}
+		# ANNEXED NEUTRALS (AXIS FOOD)
+		modifier = {
+			add = 100
+			tag = DEN
+		}
+		#BALKAN
+		modifier = {
+			add = 10
+			tag = YUG
+		}
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+		modifier = {
+			add = 100
+			tag = POL
+		}
+		modifier = {
+			add = 1000
+			tag = BEL
+		}
+		modifier = {
+			add = 100
+			tag = NOR
+		}
+		modifier = {
+			add = 100
+			tag = AUS
+		}
+	}
+	default = no
+}

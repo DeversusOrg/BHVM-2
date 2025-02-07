@@ -1,0 +1,246 @@
+add_namespace = tech_rush
+
+country_event = {
+	id = tech_rush.1
+	title = tech_rush.1.t
+	desc = tech_rush.1.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.1.a
+		BLM = { 
+			set_technology = {
+				gw_artillery = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.2
+	title = tech_rush.2.t
+	desc = tech_rush.2.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.2.a
+		BLM = { 
+			set_technology = {
+				interwar_antiair = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.3
+	title = tech_rush.3.t
+	desc = tech_rush.3.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.3.a
+		BLM = { 
+			set_technology = {
+				interwar_antitank = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tech_rush.4
+	title = tech_rush.4.t
+	desc = tech_rush.4.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.4.a
+		BLM = { 
+			set_technology = {
+				mechanised_infantry = 1
+			}
+			create_equipment_variant = {
+				name = "Cheap Mechanised"
+				type = mechanized_equipment_1
+				parent_version = 0
+				upgrades = {
+					mech_cost_upgrade = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.5
+	title = tech_rush.5.t
+	desc = tech_rush.5.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.5.a
+		BLM = { 
+			set_technology = {
+				improved_infantry_weapons = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.6
+	title = tech_rush.6.t
+	desc = tech_rush.6.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.6.a
+		BLM = { 
+			set_technology = {
+				artillery1 = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.7
+	title = tech_rush.7.t
+	desc = tech_rush.7.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.7.a
+		BLM = { 
+			set_technology = {
+				antiair2 = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.8
+	title = tech_rush.8.t
+	desc = tech_rush.8.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.8.a
+		BLM = { 
+			set_technology = {
+				antitank2 = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.9
+	title = tech_rush.9.t
+	desc = tech_rush.9.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.9.a
+		BLM = { 
+			set_technology = {
+				amphibious_mechanized_infantry = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.10
+	title = tech_rush.10.t
+	desc = tech_rush.10.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.10.a
+		BLM = { 
+			set_technology = {
+				antitank5 = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.11
+	title = tech_rush.11.t
+	desc = tech_rush.11.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.11.a
+		BLM = { 
+			set_technology = {
+				artillery4 = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.12
+	title = tech_rush.12.t
+	desc = tech_rush.12.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.12.a
+		BLM = { 
+			set_technology = {
+				antiair5 = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = tech_rush.13
+	title = tech_rush.13.t
+	desc = tech_rush.13.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.13.a
+		BLM = { 
+			set_technology = {
+				advanced_infantry_weapons = 1
+			}
+		}
+	}
+}
+

@@ -1,0 +1,1804 @@
+operations = {
+
+    ITA_get_ticino = {
+        fire_only_once = yes 
+        
+        icon = GFX_decision_generic_form_nation
+
+        allowed = {
+            original_tag = ITA
+        }
+        available = {
+            has_completed_focus = ITA_towards_a_greater_italy
+            original_tag = ITA
+            controls_state = 852 # Istria
+			controls_state = 736 # Litorale
+			controls_state = 160 # Veneto
+			controls_state = 39 # Alto Adige
+			controls_state = 850 # Trentino
+			controls_state = 159 # Lombardia
+			controls_state = 158 # Piedmonte
+			controls_state = 161 # Emilia Romagna
+			controls_state = 162 # Toscana 
+			controls_state = 157 # Abruzzo
+			controls_state = 2 # Latium
+			controls_state = 849 # Puglia
+			controls_state = 117 # Campania
+			controls_state = 156 # Calabria
+			controls_state = 115 # Sicilia
+			controls_state = 114 # Sardegna
+            controls_state = 1 # Corsica
+            controls_state = 118 # Giblatar
+            controls_state = 116 # Malta
+            controls_state = 182 # Crete
+            controls_state = 183 # Cyprus
+            controls_state = 164 # Epir
+            controls_state = 187 # Gay islands
+
+        }
+        visible = { 
+            NOT = {
+                ITA = { 
+                    controls_state = 846
+                }
+            }
+        }
+        complete_effect = {
+            transfer_state = 846
+        }
+    }
+
+    ITA_annex_ROM = {
+            # icon used to be here rip icon 04/29/2024
+        targets = {
+            ROM
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ITA
+            ROM = { is_ai = yes }
+            date > 1939.01.01
+        }
+        visible = {
+            original_tag = ITA
+            ROM = { is_ai = yes }
+            is_ai = NO
+            country_exists = ROM
+        }
+        complete_effect = {
+            ITA = { 
+                set_technology = { fuel_refining2 = 1				popup = no }
+                set_technology = { fuel_refining3 = 1				popup = no }
+                set_technology = { fuel_refining4 = 1				popup = no }
+                set_technology = { fuel_refining5 = 1 				popup = no }
+            }
+            hidden_effect = {
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
+            }
+            ITA = { annex_country = { target = ROM transfer_troops = yes }}
+            every_state = {
+                limit = {
+                    is_core_of = ROM
+                    is_controlled_by = ITA
+                }
+                set_compliance = 100
+            }
+        }
+    }
+    ITA_annex_BUL = {
+        # icon used to be here rip icon 04/29/2024
+         targets = {
+            BUL
+        }
+        fire_only_once = yes
+
+         available = {
+            original_tag = ITA
+            BUL = { is_ai = yes }
+            date > 1938.05.01
+        }
+        visible = {
+            original_tag = ITA
+            BUL = { is_ai = yes }
+            is_ai = NO
+            country_exists = BUL
+        }
+        complete_effect = {
+            annex_country = { target = BUL transfer_troops = yes }
+            every_state = {
+                limit = {
+                        is_core_of = BUL
+                        is_controlled_by = ITA
+                    }
+                set_compliance = 100
+            }
+        }
+    }
+    ITA_give_BUL_to_ROM = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            BUL
+        }
+        fire_only_once = yes
+
+         available = {
+            original_tag = ITA
+            BUL = { is_ai = yes }
+            date > 1938.05.01
+        }
+        visible = {
+            original_tag = ITA
+            BUL = { is_ai = yes }
+            is_ai = NO
+            country_exists = BUL
+        }
+        complete_effect = {
+            ROM = { 
+                annex_country = { target = BUL transfer_troops = yes }
+                every_state = {
+                    limit = {
+                            is_core_of = BUL
+                            is_controlled_by = ROM
+                        }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    GER_annex_HUN = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            HUN
+        }
+        fire_only_once = yes
+
+         available = {
+            original_tag = GER
+            HUN = { is_ai = yes }
+            date > 1938.12.01
+         }
+        visible = {
+            original_tag = GER
+            HUN = { is_ai = yes }
+            is_ai = NO
+            country_exists = HUN
+        }
+        complete_effect = {
+            annex_country = { target = HUN transfer_troops = yes }
+            every_state = {
+                limit = {
+                    is_core_of = HUN
+                    is_controlled_by = GER
+                }
+                set_compliance = 100
+            }
+        }
+    }
+    GER_give_HUN_to_ITA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            HUN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            HUN = { is_ai = yes }
+            date > 1938.12.01
+        }
+        visible = {
+            original_tag = GER
+            HUN = { is_ai = yes }
+            is_ai = NO
+            country_exists = HUN
+        }
+        complete_effect = {
+            ITA = { 
+                annex_country = { target = HUN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = HUN
+                        is_controlled_by = ITA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    GER_give_HUN_to_ROM = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            HUN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            HUN = { is_ai = yes }
+            date > 1938.12.01
+        }
+        visible = {
+            original_tag = GER
+            HUN = { is_ai = yes }
+            is_ai = NO
+            country_exists = HUN
+        }
+        complete_effect = {
+            ROM = { 
+                annex_country = { target = HUN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = HUN
+                        is_controlled_by = ROM
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    GER_give_FIN_to_ROM = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            FIN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            FIN = { is_ai = yes }
+            date > 1938.12.01
+        }
+        visible = {
+            original_tag = GER
+            FIN = { is_ai = yes }
+            is_ai = NO
+            country_exists = FIN
+        }
+        complete_effect = {
+            ROM = {
+                set_country_flag = annexed_FIN 
+                annex_country = { target = FIN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = FIN
+                        is_controlled_by = ROM
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    GER_annex_SPR = {
+		icon = GFX_decision_eng_trade_unions_support
+		fire_only_once = yes
+
+		available = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			date > 1939.01.01
+            NOT = {
+                OR = {
+                    has_country_flag = GER_started_ll_mech
+                    has_country_flag = GER_started_ll_mech_bul
+                }
+            }
+		}
+		visible = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			is_ai = NO
+            NOT = {
+                OR = {
+                    has_country_flag = GER_started_ll_mech
+                    has_country_flag = GER_started_ll_mech_bul
+                }
+            }
+			country_exists = SPR
+		}
+		complete_effect = {
+			GER = { add_to_faction = SPR }
+            set_country_flag = annexed_SPR
+			SPR = {
+				add_ideas = SPR_GER_ai
+				add_ideas = free_trade
+			}
+			SPR = {	
+				set_technology = {
+				    excavation1 = 1
+				}
+				set_technology = {
+				    excavation2 = 1
+				}
+				set_technology = {
+				    excavation3 = 1
+				}
+				set_technology = {
+				    excavation4 = 1
+				}
+			}
+			416 = {
+				set_building_level = {
+				    type = infrastructure
+				    level = 5
+				    instant_build = yes
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
+			174 = {
+				set_building_level = {
+				    type = infrastructure
+				    level = 5
+				    instant_build = yes
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
+			410 = {
+				set_building_level = {
+				    type = infrastructure
+				    level = 5
+				    instant_build = yes
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
+		}
+	}
+    GER_mech_delivery_SPR = {
+	    icon = GFX_decision_generic_industry
+		#fire_only_once = yes
+
+		available = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			date > 1939.01.01
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_SPR
+                    has_country_flag = GER_started_ll_mech_bul
+                    has_country_flag = GER_started_ll_mech
+                }
+            }
+            OR = {
+                has_game_rule = {
+                    rule = spanish_production
+                    option = ger_mech
+                }
+                has_game_rule = {
+                    rule = spanish_production
+                    option = mixer
+                }
+            }
+		}
+		visible = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			is_ai = NO
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_SPR
+                    has_country_flag = GER_started_ll_mech_bul
+                    has_country_flag = GER_started_ll_mech
+                }
+            }
+			country_exists = SPR
+            OR = {
+                has_game_rule = {
+                    rule = spanish_production
+                    option = ger_mech
+                }
+                has_game_rule = {
+                    rule = spanish_production
+                    option = mixer
+                }
+            }
+		}
+		complete_effect = {
+            activate_mission = GER_recieving_ll_mech_1a
+            set_country_flag = GER_started_ll_mech
+			SPR = {	
+				set_technology = {
+				    mechanised_infantry = 1
+				}
+                create_equipment_variant = {
+                    name = "Cheap Mechanised"
+                    type = mechanized_equipment_1
+                    parent_version = 0
+                    upgrades = {
+                        mech_cost_upgrade = 5
+                    }
+                }
+			}
+		}
+	}
+    GER_mech_delivery_SPR_to_BUL = {
+	    icon = GFX_decision_generic_industry
+		#fire_only_once = yes
+
+		available = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			date > 1939.01.01
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_SPR
+                    has_country_flag = GER_started_ll_mech
+                    has_country_flag = GER_started_ll_mech_bul
+                }
+            }
+            OR = {
+                has_game_rule = {
+                    rule = spanish_production
+                    option = bul_mech
+                }
+                has_game_rule = {
+                    rule = spanish_production
+                    option = mixer
+                }
+            }
+		}
+		visible = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			is_ai = NO
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_SPR
+                    has_country_flag = GER_started_ll_mech
+                    has_country_flag = GER_started_ll_mech_bul
+                }
+            }
+			country_exists = SPR
+            OR = {
+                has_game_rule = {
+                    rule = spanish_production
+                    option = bul_mech
+                }
+                has_game_rule = {
+                    rule = spanish_production
+                    option = mixer
+                }
+            }
+		}
+		complete_effect = {
+            BUL = {
+                activate_mission = GER_recieving_ll_mech_bul_1a
+                add_country_leader_trait = bul_caudillo
+            }
+            set_country_flag = GER_started_ll_mech_bul
+			SPR = {	
+				set_technology = {
+				    mechanised_infantry = 1
+				}
+                create_equipment_variant = {
+                    name = "Cheap Mechanised"
+                    type = mechanized_equipment_1
+                    parent_version = 0
+                    upgrades = {
+                        mech_cost_upgrade = 5
+                    }
+                }
+			}
+		}
+	}
+    GER_close_mech_LL = {
+		icon = GFX_decision_generic_industry
+
+        available = {
+			#If youre going to add a button for bulgaria , add a stop gap button
+		}
+
+		visible = {	
+            original_tag = GER
+            SPR = { is_ai = yes }
+            country_exists = SPR
+            has_country_flag = GER_started_ll_mech
+		}
+
+		complete_effect = {
+			clr_country_flag = GER_started_ll_mech
+		}
+	}
+    GER_close_mech_LL_bul = {
+		icon = GFX_decision_generic_industry
+
+        available = {
+			#If youre going to add a button for bulgaria , add a stop gap button
+		}
+
+		visible = {	
+            original_tag = GER
+            SPR = { is_ai = yes }
+            country_exists = SPR
+            has_country_flag = GER_started_ll_mech_bul
+		}
+
+		complete_effect = {
+            BUL = {
+                remove_country_leader_trait = bul_caudillo
+            }
+			clr_country_flag = GER_started_ll_mech_bul
+		}
+	}
+    GER_recieving_ll_mech_bul_1a = {
+        allowed = {  
+            original_tag = BUL
+        }
+        available = {
+            NOT = { GER = { has_country_flag = GER_started_ll_mech_bul } }
+        }
+        icon = generic_army_support
+        is_good = yes
+        activation = { always = no }
+        days_mission_timeout = 30
+    
+        timeout_effect = {
+            SPR = {
+                if = {
+                    limit = { date > 1943.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 4000 }
+                }
+                else_if = {
+                    limit = { date > 1942.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3700 }
+                }
+                else_if = {
+                    limit = { date > 1941.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3400 }
+                }
+                else_if = {
+                    limit = { date > 1940.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2550 }
+                }
+                else_if = {
+                    limit = { date > 1939.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1600 }
+                }
+                else = {
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 }
+                }
+            }
+            if = {
+                limit = { date > 1943.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 4000 producer = SPR } }
+                BUL ={ add_manpower = 60000 }
+            }
+            else_if = {
+                limit = { date > 1942.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3700 producer = SPR } }
+                BUL ={ add_manpower = 45000 }
+            }
+            else_if = {
+                limit = { date > 1941.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3400 producer = SPR } }
+                BUL ={ add_manpower = 35000 }
+            }
+            else_if = {
+                limit = { date > 1940.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2550 producer = SPR } }
+                BUL ={ add_manpower = 25000 }
+            }
+            else_if = {
+                limit = { date > 1939.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1600 producer = SPR } }
+                BUL ={ add_manpower = 25000 }
+            }
+            else = {
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 producer = SPR } }
+                BUL ={ add_manpower = 15000 }
+            }
+            activate_mission = GER_recieving_ll_mech_bul_2a
+        }
+    }
+    GER_recieving_ll_mech_bul_2a = {
+        allowed = {  
+            original_tag = BUL
+        }
+        available = {
+            NOT = { GER = { has_country_flag = GER_started_ll_mech_bul } }
+        }
+        icon = generic_army_support
+        is_good = yes
+        activation = { always = no }
+        days_mission_timeout = 30
+    
+        timeout_effect = {
+            SPR = {
+                if = {
+                    limit = { date > 1943.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 4000 }
+                }
+                else_if = {
+                    limit = { date > 1942.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3700 }
+                }
+                else_if = {
+                    limit = { date > 1941.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3400 }
+                }
+                else_if = {
+                    limit = { date > 1940.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2550 }
+                }
+                else_if = {
+                    limit = { date > 1939.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1600 }
+                }
+                else = {
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 }
+                }
+            }
+            if = {
+                limit = { date > 1943.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 4000 producer = SPR } }
+                BUL ={ add_manpower = 60000 }
+            }
+            else_if = {
+                limit = { date > 1942.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3700 producer = SPR } }
+                BUL ={ add_manpower = 45000 }
+            }
+            else_if = {
+                limit = { date > 1941.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3400 producer = SPR } }
+                BUL ={ add_manpower = 35000 }
+            }
+            else_if = {
+                limit = { date > 1940.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2550 producer = SPR } }
+                BUL ={ add_manpower = 25000 }
+            }
+            else_if = {
+                limit = { date > 1939.12.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1600 producer = SPR } }
+                BUL ={ add_manpower = 25000 }
+            }
+            else = {
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 producer = SPR } }
+                BUL ={ add_manpower = 15000 }
+            }
+            activate_mission = GER_recieving_ll_mech_bul_1a    
+        }
+    }
+
+    GER_recieving_ll_mech_1a = {
+        allowed = {  
+            original_tag = GER
+        }
+        available = {
+            NOT = { has_country_flag = GER_started_ll_mech }
+        }
+        icon = generic_army_support
+        is_good = yes
+        activation = { always = no }
+        days_mission_timeout = 30
+    
+        timeout_effect = {
+            SPR = {
+                if = {
+                    limit = { date > 1943.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 }
+                }
+                else_if = {
+                    limit = { date > 1942.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 }
+                }
+                else_if = {
+                    limit = { date > 1941.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 }
+                }
+                else_if = {
+                    limit = { date > 1940.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2100 }
+                }
+                else_if = {
+                    limit = { date > 1939.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1350 }
+                }
+                else = {
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 }
+                }
+            }
+            if = {
+                limit = { date > 1943.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1942.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1941.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1940.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2100 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1939.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1350 producer = SPR } }
+            }
+            else = {
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 producer = SPR } }
+            }
+            activate_mission = GER_recieving_ll_mech_2a    
+        }
+    }
+    GER_recieving_ll_mech_2a = {
+        allowed = {  
+            original_tag = GER
+        }
+        available = {
+            NOT = { has_country_flag = GER_started_ll_mech }
+        }
+        icon = generic_army_support
+        is_good = yes
+        activation = { always = no }
+        days_mission_timeout = 30
+    
+        timeout_effect = {
+            SPR = {
+                if = {
+                    limit = { date > 1943.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 }
+                }
+                else_if = {
+                    limit = { date > 1942.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 }
+                }
+                else_if = {
+                    limit = { date > 1941.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 }
+                }
+                else_if = {
+                    limit = { date > 1940.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2100 }
+                }
+                else_if = {
+                    limit = { date > 1939.12.31 }
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1350 }
+                }
+                else = {
+                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 }
+                }
+            }
+            if = {
+                limit = { date > 1943.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1942.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1941.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1940.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2100 producer = SPR } }
+            }
+            else_if = {
+                limit = { date > 1939.12.31 }
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1350 producer = SPR } }
+            }
+            else = {
+                GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 producer = SPR } }
+            }
+            activate_mission = GER_recieving_ll_mech_1a    
+        }
+    }
+    
+	GER_annex_FIN = {
+		targets = {
+            FIN
+        }
+		fire_only_once = yes
+
+		available = {
+			original_tag = GER
+			FIN = { is_ai = yes }
+			date > 1939.01.01
+		}
+		visible = {
+			original_tag = GER
+			FIN = { is_ai = yes }
+			is_ai = NO
+			country_exists = FIN
+		}
+		complete_effect = {
+			GER = { add_to_faction = FIN }
+			FIN = {
+				add_ideas = SPR_GER_ai
+			}
+		}
+	}
+    #FRA_annex_SAF = {
+    #    # icon used to be here rip icon 04/29/2024
+    #    targets = {
+    #        SAF
+    #    }
+    #    fire_only_once = yes
+    #
+    #    available = {
+    #        original_tag = FRA
+    #        SAF = { is_ai = yes }
+    #        date > 1939.02.01
+    #    }
+    #    visible = {
+    #        original_tag = FRA
+    #        SAF = { is_ai = yes }
+    #        is_ai = NO
+    #        country_exists = SAF
+    #    }
+    #    complete_effect = {
+    #        FRA = { 
+    #            annex_country = { target = SAF transfer_troops = yes }
+    #                every_state = {
+    #                limit = {
+    #                    is_core_of = SAF
+    #                    is_controlled_by = FRA
+    #                }
+    #                set_compliance = 100
+    #            }
+    #        }
+    #    }
+    #}
+    #FRA_annex_CAN = {
+    #    # icon used to be here rip icon 04/29/2024
+    #    targets = {
+    #        CAN
+    #    }
+    #    fire_only_once = yes
+    #
+    #    available = {
+    #        original_tag = FRA
+    #        CAN = { is_ai = yes }
+    #       date > 1939.02.01
+    #    }
+    #    visible = {
+    #        original_tag = FRA
+    #        CAN = { is_ai = yes }
+    #        is_ai = NO
+    #        country_exists = CAN
+    #    }
+    #    complete_effect = {
+    #        FRA = { 
+    #            annex_country = { target = CAN transfer_troops = yes }
+    #                every_state = {
+    #                limit = {
+    #                    is_core_of = CAN
+    #                    is_controlled_by = FRA
+    #                }
+    #                set_compliance = 100
+    #            }
+    #        }
+    #    }
+    #}
+    FRA_annex_IRE = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            IRE
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = FRA
+            IRE = { is_ai = yes }
+            #date > 1940.01.01
+            FRA = {has_capitulated = yes}
+        }
+        visible = {
+            original_tag = FRA
+            IRE = { is_ai = yes }
+            is_ai = NO
+            country_exists = IRE
+        }
+        complete_effect = {
+            hidden_effect = {
+                113 = {
+                    set_building_level = {
+                        type = industrial_complex
+                        level = 0
+                    }
+                    set_building_level = {
+                        type = arms_factory
+                        level = 0
+                    }
+                }
+                134 = {
+                    set_building_level = {
+                        type = industrial_complex
+                        level = 0
+                    }
+                    set_building_level = {
+                        type = arms_factory
+                        level = 0
+                    }
+                }
+                135 = {
+                    set_building_level = {
+                        type = industrial_complex
+                        level = 0
+                    }
+                    set_building_level = {
+                        type = arms_factory
+                        level = 0
+                    }
+                }
+            }
+            FRA = { 
+                annex_country = { target = IRE transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = IRE
+                        is_controlled_by = FRA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_CAN = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            CAN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            is_ai = NO
+            country_exists = CAN
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = CAN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = CAN
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_CAN_into_FRA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            CAN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            is_ai = NO
+            country_exists = CAN
+        }
+        complete_effect = {
+            FRA = { 
+                annex_country = { target = CAN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = CAN
+                        is_controlled_by = FRA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_CAN_into_SAF = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            CAN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            CAN = { is_ai = yes }
+            is_ai = NO
+            country_exists = CAN
+        }
+        complete_effect = {
+            SAF = { 
+                annex_country = { target = CAN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = CAN
+                        is_controlled_by = SAF
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_SAF = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            SAF
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            is_ai = NO
+            country_exists = SAF
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = SAF transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = SAF
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_SAF_into_FRA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            SAF
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            is_ai = NO
+            country_exists = SAF
+        }
+        complete_effect = {
+            FRA = { 
+                annex_country = { target = SAF transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = SAF
+                        is_controlled_by = FRA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_SAF_into_CAN = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            SAF
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            SAF = { is_ai = yes }
+            is_ai = NO
+            country_exists = SAF
+        }
+        complete_effect = {
+            CAN = { 
+                annex_country = { target = SAF transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = SAF
+                        is_controlled_by = CAN
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_AST = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            AST
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            AST = { is_ai = yes }
+            date > 1937.01.01
+        }
+        visible = {
+            original_tag = ENG
+            AST = { is_ai = yes }
+            is_ai = NO
+            country_exists = AST
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = AST transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = AST
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_RAJ = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            RAJ
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            RAJ = { is_ai = yes }
+            date > 1938.01.01
+        }
+        visible = {
+            original_tag = ENG
+            RAJ = { is_ai = yes }
+            is_ai = NO
+            country_exists = RAJ
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = RAJ transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = RAJ
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                    add_dynamic_modifier = { modifier = ENG_no_raj_allowed  }
+                }
+            }
+        }
+    }
+    ENG_give_RAJ_to_AST = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            RAJ
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            RAJ = { is_ai = yes }
+            date > 1937.01.01
+        }
+        visible = {
+            original_tag = ENG
+            RAJ = { is_ai = yes }
+            is_ai = NO
+            country_exists = RAJ
+        }
+        complete_effect = {
+            AST = { 
+                annex_country = { target = RAJ transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = RAJ
+                        is_controlled_by = AST
+                    }
+                    set_compliance = 100
+                    add_dynamic_modifier = { modifier = ENG_no_raj_allowed  }
+                }
+            }
+        }
+    }
+    ENG_give_AST_to_RAJ = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            AST
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            AST = { is_ai = yes }
+            date > 1937.01.01
+        }
+        visible = {
+            original_tag = ENG
+            AST = { is_ai = yes }
+            is_ai = NO
+            country_exists = AST
+        }
+        complete_effect = {
+            RAJ = { 
+                annex_country = { target = AST transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = AST
+                        is_controlled_by = RAJ
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_MEX = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            MEX
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            MEX = { is_ai = yes }
+            date > 1940.01.01
+        }
+        visible = {
+            original_tag = ENG
+            MEX = { is_ai = yes }
+            is_ai = NO
+            country_exists = MEX
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = MEX transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = MEX
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_BRA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            BRA
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            BRA = { is_ai = yes }
+            date > 1940.01.01
+        }
+        visible = {
+            original_tag = ENG
+            BRA = { is_ai = yes }
+            is_ai = NO
+            country_exists = BRA
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = BRA transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = BRA
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_give_MEX_to_USA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            MEX
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            MEX = { is_ai = yes }
+            date > 1940.01.01
+        }
+        visible = {
+            original_tag = ENG
+            MEX = { is_ai = yes }
+            is_ai = NO
+            country_exists = MEX
+        }
+        complete_effect = {
+            USA = { 
+                annex_country = { target = MEX transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = MEX
+                        is_controlled_by = USA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_give_BRA_to_USA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            BRA
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            BRA = { is_ai = yes }
+            date > 1940.01.01
+        }
+        visible = {
+            original_tag = ENG
+            BRA = { is_ai = yes }
+            is_ai = NO
+            country_exists = BRA
+        }
+        complete_effect = {
+            USA = { 
+                annex_country = { target = BRA transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = BRA
+                        is_controlled_by = USA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    AST_annex_NZL = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            NZL
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = AST
+            NZL = { is_ai = yes }
+        }
+        visible = {
+            original_tag = AST
+            NZL = { is_ai = yes }
+            is_ai = NO
+            country_exists = NZL
+        }
+        complete_effect = {
+            AST = { 
+                annex_country = { target = NZL transfer_troops = yes }
+                every_state = {
+                    limit = {
+                        is_core_of = NZL
+                    }
+                    add_core_of = AST
+                }
+            }
+        }
+    }
+    JAP_annex_SIA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            SIA
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = JAP
+            SIA = { is_ai = yes }
+        }
+        visible = {
+            original_tag = JAP
+            SIA = { is_ai = yes }
+            is_ai = NO
+            country_exists = SIA
+        }
+        complete_effect = {
+           JAP = {
+                annex_country = { target = SIA transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = SIA
+                        is_controlled_by = JAP
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    JAP_give_SIA_to_MAN = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            SIA
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = JAP
+            SIA = { is_ai = yes }
+        }
+        visible = {
+            original_tag = JAP
+            SIA = { is_ai = yes }
+            is_ai = NO
+            country_exists = SIA
+        }
+        complete_effect = {
+           MAN = {
+                annex_country = { target = SIA transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = SIA
+                        is_controlled_by = MAN
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    JAP_annex_MAN = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            MAN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = JAP
+            MAN = { is_ai = yes }
+        }
+        visible = {
+            original_tag = JAP
+            MAN = { is_ai = yes }
+            is_ai = NO
+            country_exists = MAN
+        }
+        complete_effect = {
+            JAP = {
+                annex_country = { target = MAN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = MAN
+                        is_controlled_by = JAP
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    SOV_annex_MON = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            MON
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = SOV
+            MON = { is_ai = yes }
+            date > 1940.01.01
+        }
+        visible = {
+            original_tag = SOV
+            IRE = { is_ai = yes }
+            is_ai = NO
+            country_exists = MON
+        }
+        complete_effect = {
+            SOV = { 
+                annex_country = { target = MON transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = MON
+                    }
+                    add_core_of = SOV
+                }
+            }
+        }
+    }
+}
+political_actions = {
+
+	move_capital_to_cascablanca = {
+		fire_only_once = no
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 461
+			}
+		}
+	}
+    FRA_no_asia_noobah = {
+        fire_only_once = yes
+        icon = GFX_decision_eng_trade_unions_demand
+        allowed = {
+            original_tag = FRA
+        }
+        visible = {
+            BLM = {
+				controls_state = 282
+			}
+            original_tag = FRA
+        }
+        complete_effect = {
+            670 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+            671 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+            741 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+            286 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+            728 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+        }
+    }
+    FRA_get_BEL_colonies = {
+        fire_only_once = yes
+        icon = GFX_decision_hol_exchange_intelligence_data
+        allowed = {
+            original_tag = FRA
+        }
+        visible = {
+            has_capitulated = yes
+            original_tag = FRA
+        }
+        available = {
+			date > 1940.5.5
+		}
+        complete_effect = {
+            transfer_state = 295
+            transfer_state = 538
+            transfer_state = 718
+            transfer_state = 768
+            transfer_state = 769
+            transfer_state = 890
+            transfer_state = 888
+            transfer_state = 889
+            transfer_state = 888
+        }
+    }
+	move_capital_to_gabon = {
+		fire_only_once = no
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 539
+			}
+		}
+	}
+    move_capital_to_capetown = {
+		fire_only_once = no
+		allowed = {
+			tag = CAN
+		}
+		visible = {
+            NOT = { capital = 276 }
+			tag = CAN
+			controls_state = 681
+		}
+		complete_effect = {
+			set_capital = {
+				state = 681
+			}
+		}
+	}
+    move_capital_to_ottawa = {
+		fire_only_once = no
+		allowed = {
+			tag = CAN
+		}
+		visible = {
+            NOT = { capital = 681 }
+			tag = CAN
+			controls_state = 276
+		}
+		complete_effect = {
+			set_capital = {
+				state = 276
+			}
+		}
+	}
+	ITA_demand_crete = {
+		fire_only_once = yes
+		allowed = {
+			tag = ITA
+		}
+		visible = {
+			BUL = {
+				controls_state = 182
+			}
+		}
+		complete_effect = {
+			ITA = { transfer_state = 182 }
+		}
+	}
+    ITA_give_greece_to_bul = {
+		fire_only_once = yes
+		allowed = {
+			tag = ITA
+		}
+		visible = {
+			ITA = {
+				controls_state = 47
+                controls_state = 185
+                controls_state = 186
+			}
+		}
+		complete_effect = {
+			BUL = { 
+                transfer_state = 47
+                transfer_state = 185
+                transfer_state = 186
+            }
+		}
+	}
+    JAP_give_indo_to_SIA = {
+		fire_only_once = yes
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			JAP = {
+				controls_state = 741
+                controls_state = 670
+                controls_state = 671
+                controls_state = 286
+			}
+		}
+		complete_effect = {
+			SIA = { 
+                transfer_state = 741
+                transfer_state = 670
+                transfer_state = 671
+                transfer_state = 286
+            }
+		}
+	}
+	fin_war_eco = {
+		fire_only_once = yes
+		allowed = {
+			tag = FIN
+		}
+		available = {
+			SOV = {
+				has_completed_focus = SOV_secure_leningrad
+			}
+		}
+		visible = {
+			tag = FIN
+		}
+		complete_effect = {
+			add_ideas = war_economy
+		}
+	}
+
+	fin_extensive_con = {
+		fire_only_once = yes
+		allowed = {
+			tag = FIN
+		}
+		available = {
+			SOV = {
+				has_completed_focus = SOV_secure_leningrad
+			}
+		}
+		visible = {
+			tag = FIN
+		}
+		complete_effect = {
+			add_ideas = extensive_conscription
+		}
+	}
+    USA_share_frame = {
+		icon = generic_air
+        fire_only_once = yes
+		visible = {
+			original_tag = USA
+		}
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+				AUS = { has_tech = improved_small_airframe }
+				CAN = { has_tech = improved_small_airframe }
+				RAJ = { has_tech = improved_small_airframe }
+				SAF = { has_tech = improved_small_airframe }
+				ENG = { has_tech = improved_small_airframe }
+				FRA = { has_tech = improved_small_airframe }
+			}
+            OR = {
+				date > 1938.1.1
+			}
+		}
+
+		complete_effect = {
+			set_technology = {
+			    improved_small_airframe = 1
+			}
+		}
+	}
+    USA_share_frame_heavy = {
+		icon = generic_air
+        fire_only_once = yes
+		visible = {
+			original_tag = USA
+		}
+
+		fire_only_once = yes
+
+		available = {
+			OR = {
+				AUS = { has_tech = improved_medium_airframe }
+				CAN = { has_tech = improved_medium_airframe }
+				RAJ = { has_tech = improved_medium_airframe }
+				SAF = { has_tech = improved_medium_airframe }
+				ENG = { has_tech = improved_medium_airframe }
+				FRA = { has_tech = improved_medium_airframe }
+			}
+            OR = {
+				date > 1938.6.1
+			}
+		}
+
+		complete_effect = {
+			set_technology = {
+                improved_medium_airframe = 1
+			}
+		}
+	}
+}

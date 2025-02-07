@@ -1,0 +1,16 @@
+technologies = {
+	fullhouse_horses = { #from focus!!!
+		cavalry = {
+			max_strength = 6
+		}
+	}
+	fullhouse_mech = { #from focus!!!
+		mechanized = {
+			max_strength = 2
+		}
+		motorized = {
+			max_strength = 2
+		}
+	}
+}
+

@@ -1,0 +1,36 @@
+on_actions = {
+	on_naval_invasion = {
+		effect = { 
+			THIS = {
+				if = {
+					limit = {
+						NOT = { CONTROLLER = { tag = ROOT } }
+						NOT = { CONTROLLER = { has_country_flag = notif_disable_inv_warning } }
+					}
+					CONTROLLER = {
+						set_country_flag = ui_show_invasion_warning
+						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invader_country = ROOT }
+					}
+				}
+			}
+		}
+	}
+	on_paradrop = {
+		effect = { 
+			THIS = {
+				if = {
+					limit = {
+						NOT = { CONTROLLER = { tag = ROOT } }
+						NOT = { CONTROLLER = { has_country_flag = notif_disable_para_warning } }
+					}
+					CONTROLLER = {
+						set_country_flag = ui_show_paradrop_warning
+						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invader_country = ROOT }
+					}
+				}
+			}
+		}
+	}
+}

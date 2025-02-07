@@ -1,0 +1,553 @@
+ideas = {
+	country = {
+		double_land_cheater_idea = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_generic_warning
+			visible = {
+				always = yes
+			}
+			modifier = {
+				# No actual modifiers; this is purely for identification.
+			}
+		}
+		double_air_cheater_idea = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_generic_warning
+			visible = {
+				always = yes
+			}
+			modifier = {
+				# No actual modifiers; this is purely for identification.
+			}
+		}
+		double_navy_cheater_idea = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_generic_warning
+			visible = {
+				always = yes
+			}
+			modifier = {
+				# No actual modifiers; this is purely for identification.
+			}
+		}
+		double_industry_cheater_idea = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_generic_warning
+			visible = {
+				always = yes
+			}
+			modifier = {
+				# No actual modifiers; this is purely for identification.
+			}
+		}
+		illegal_trait_config_cheater_idea = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_generic_warning
+			visible = {
+				always = yes
+			}
+			modifier = {
+				# No actual modifiers; this is purely for identification.
+			}
+		}
+		SOV_cheap_trade = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = can_wartime_prices_and_trade_board
+			
+			targeted_modifier = {
+				tag = SOV
+				trade_cost_for_target_factor = -0.8 #pay only half too
+			}
+		}
+		anti_troll = {
+			picture = trollol
+			cancel = {
+				date > 1936.01.05
+			}
+			allowed = {
+				always = no				# Added via actions for game rules
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.5
+			}
+		}
+		swiss_gold_trade_1 = {
+            picture = chi_hyper_inflation
+            
+            modifier = {
+                production_factory_max_efficiency_factor = 0.03
+                consumer_goods_factor = -0.10
+                research_speed_factor = 0.01
+                production_speed_buildings_factor = 0.03
+            }
+        }
+        
+        swiss_gold_trade_2 = {
+            picture = chi_hyper_inflation3
+            
+            modifier = {
+                production_factory_max_efficiency_factor = 0.06
+                consumer_goods_factor = -0.20
+                research_speed_factor = 0.02
+                production_speed_buildings_factor = 0.06
+            }
+        }
+        
+        swiss_gold_trade_3 = {
+            picture = chi_hyper_inflation5
+            
+            modifier = {
+                production_factory_max_efficiency_factor = 0.10
+                consumer_goods_factor = -0.25
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = 0.10
+            }
+        }
+		boost_research = {
+			picture = generic_fighter_production_diverted
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				infantry_weapons = 0.15
+				artillery = 0.15
+				air_equipment = 0.15
+			}
+			modifier = {
+				global_building_slots_factor = 0.1
+			}
+		}
+		victory_con_axis_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+			}
+            
+            picture = generic_morale_bonus
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_global_flag = { flag = VIC value = 1 }
+                    }
+                    GER = {news_event = { id = redbaron.1 } }
+                }
+            }
+            cancel = { 
+                NOT = {
+                	has_global_flag = { flag = VIC value = 1 }
+				}
+            }
+
+        }
+
+        victory_con_allies_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+			
+			modifier = {
+			}
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_global_flag = { flag = VIC value = 4 }
+                    }
+                    GER = {news_event = { id = redbaron.2 } }
+                }
+            }
+            cancel = { 
+				NOT = {
+                	has_global_flag = { flag = VIC value = 4 }
+				}
+            }	
+        }
+        victory_con = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}
+
+            on_remove = {
+            }
+            cancel = { 
+                NOT = {
+                	has_global_flag = { flag = VIC value = 0 }
+				}
+            }	    
+    	}
+		victory_con_axis_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}
+
+            on_remove = {
+            }
+            cancel = { 
+                NOT = {
+                	has_global_flag = { flag = VIC value = 2 }
+				}
+            }	    
+    	}
+		victory_con_allies_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}
+
+            on_remove = {
+            }
+            cancel = { 
+                NOT = {
+                	has_global_flag = { flag = VIC value = 3 }
+				}
+            }	    
+    	}
+		SPR_GER_ai = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SPR_relocate_the_gold_reserves
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 1
+				mic_to_target_factor = 1
+			}
+		}
+		ai_limit = {
+			cancel = {
+				is_ai = no
+			}
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			allowed = {
+				is_ai = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -10
+				production_factory_max_efficiency_factor = -10
+				conscription = -10
+				consumer_goods_factor = 100
+				conversion_cost_civ_to_mil_factor = 100
+				conversion_cost_mil_to_civ_factor = 100
+				ai_desired_divisions_factor = -1000
+			}
+		}
+		sov_no_tradebacks = {
+			cancel = {
+				SOV = {
+					has_war = yes
+				}
+			}
+			allowed = {
+				always = no				# Added via game rule
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_lack_of_resource_penalty_factor = -1
+			}
+		}
+		blm_ai = {
+			cancel = {
+				is_ai = no
+			}
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			allowed = {
+				is_ai = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -10
+				production_factory_max_efficiency_factor = -10
+				conscription = -10
+				consumer_goods_factor = 100
+				conversion_cost_civ_to_mil_factor = 100
+				conversion_cost_mil_to_civ_factor = 100
+				ai_desired_divisions_factor = -1000
+				lend_lease_tension = 99
+				ai_license_acceptance = -1000
+				navy_intel_to_others = -1000
+				army_intel_to_others = -1000
+				airforce_intel_to_others = -1000
+			}
+		}
+
+		ai_idea = {
+			cancel = {
+				is_ai = no
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			allowed = {
+				is_ai = yes
+			}
+			modifier = {
+				enemy_operative_capture_chance_factor = -2
+				conversion_cost_civ_to_mil_factor = 100
+				conversion_cost_mil_to_civ_factor = 100
+				enemy_operative_detection_chance = -200
+				trade_laws_cost_factor = 10000
+				justify_war_goal_time = 100
+				enemy_justify_war_goal_time = 100
+			}
+		}
+
+		peace_training_xp = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				OR = {
+					has_war = yes
+					AND = {
+						tag = SPR
+						OR = {								
+									GER = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+								}
+					}
+				}
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				experience_gain_army_unit_factor = 1
+				experience_gain_army = 0.2
+				training_time_army_factor = -0.85
+				air_training_xp_gain_factor = 9
+				experience_gain_navy_unit_factor = 10
+				attrition = -1
+				air_accidents_factor = -9
+				naval_accidents_chance = -9
+				mobilization_speed = 2
+				army_fuel_consumption_factor = -9
+				air_fuel_consumption_factor = -9
+				navy_fuel_consumption_factor = -9
+				repair_speed_factor = 100
+			}
+		}
+		peace_training_no_xp = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				OR = {
+					has_war = yes
+					AND = {
+						tag = SPR
+						OR = {								
+									GER = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+								}
+					}
+				}
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				
+				experience_gain_army_unit_factor = 1
+				training_time_army_factor = -0.85
+				air_training_xp_gain_factor = 9
+				experience_gain_navy_unit_factor = 10
+				attrition = -1
+				air_accidents_factor = -9
+				naval_accidents_chance = -9
+				mobilization_speed = 2
+				army_fuel_consumption_factor = -9
+				air_fuel_consumption_factor = -9
+				navy_fuel_consumption_factor = -9
+				repair_speed_factor = 100
+			}	
+		}
+		tradeback_is_cancer = {
+			allowed = {
+				always = no
+			}
+			picture = can_wartime_prices_and_trade_board
+			removal_cost=-1
+			rule = {
+				can_access_market = no
+			}
+			modifier={
+				production_lack_of_resource_penalty_factor = -1
+			}
+		}
+		no_market = {
+			allowed = {
+				always = no
+			}
+			picture = neutrality_idea
+			removal_cost=-1
+			rule = {
+				can_access_market = no
+			}
+		}
+		fix_production_idea = { 
+			modifier = { 
+				production_factory_start_efficiency_factor = 0.8
+			} 
+		}
+		SPR_offensive = {
+			allowed = {
+				always = yes
+			}
+			cancel = {
+				has_war = no
+			}
+			removal_cost = -1
+			picture = saf_ossewabrandwag_2
+			modifier = {
+				war_support_factor = 0.2
+			}
+		}
+		tradeback_is_cancer_no_export = {
+			allowed = {
+				always = no
+			}
+			picture = can_wartime_prices_and_trade_board
+			removal_cost=-1
+			modifier={
+				production_lack_of_resource_penalty_factor = -1
+				min_export = -1
+			}
+		}
+		no_vols= {
+			picture = air_support_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = -100
+				air_volunteer_cap = -1000
+			}
+		}
+    }
+}
