@@ -14,7 +14,7 @@ NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE = 10000			-- vanilla 150, cha
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 6           -- more spam more spam more spam
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
 
-
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0					-- Based on number of armies.
 NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
@@ -181,7 +181,12 @@ NDefines_Graphics.NGraphics.SUPPLY_ICON_NUMBERS_CUTOFF = 900.0       -- where we
 NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 1000  -- At what camera distance the resource name/amount text disappears.
 
 
-
+NDefines.NProject.RECRUIT_SCIENTIST_COST = { -- Amount of pp to hire a scientist based on available scientist
+		10,			-- pp cost if no available scientist
+		10,			-- pp cost if 1 available scientist
+		10,			-- pp cost if 2 available scientist
+		10			-- pp cost if more than 2 available scientist
+	}
 
 NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "BHVM"
 NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "BHVM"
