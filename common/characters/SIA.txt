@@ -77,11 +77,11 @@ characters={
 					original_tag = SIA
 				}
 				traits = {
-					army_armored_2
+					army_infantry_3
 				}
 				cost = 100
 				ai_will_do = {
-					factor = 1.000
+					factor = 5.000
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
@@ -233,7 +233,7 @@ characters={
 				}
 				cost = 100
 				ai_will_do = {
-					factor = 1.000
+					factor = 5.000
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
@@ -353,11 +353,11 @@ characters={
 					original_tag = SIA
 				}
 				traits = {
-					army_chief_morale_2
+					army_chief_morale_3
 				}
 				cost = 100
 				ai_will_do = {
-					factor = 1.000
+					factor = 5.000 #supply sucks
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!

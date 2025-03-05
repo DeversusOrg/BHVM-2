@@ -142,12 +142,8 @@ NDefines.NOperatives.DIPLOMATIC_PRESSURE_DAILY_XP_GAIN = 0
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate Germany/Japan building slot changes in order to support more of their eco being in their cores.
 
 
-NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
-NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0.0
-NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
 
-NDefines_Graphics.NGraphics.MIN_TRAIN_WAGON_COUNT = 1
-NDefines_Graphics.NGraphics.MAX_TRAIN_WAGON_COUNT = 1
+
 
 NDefines.NInterface.MINIMAP_PING_DELAY_BETWEEN_PINGS = 0.5 --vanilla 0.30 -- delay between consecative pings
 
@@ -180,6 +176,17 @@ NDefines_Graphics.NGraphics.SUPPLY_ICON_UNUSED_CUTOFF = 900.0        -- where we
 NDefines_Graphics.NGraphics.SUPPLY_ICON_NUMBERS_CUTOFF = 900.0       -- where we stop showing numbers on hubs (ignored for selected and problem hubs)
 NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 1000  -- At what camera distance the resource name/amount text disappears.
 
+
+NDefines_Graphics.NGraphics.MIN_TRAIN_WAGON_COUNT = 1  -- How many wagons can a train have. MIN
+NDefines_Graphics.NGraphics.MAX_TRAIN_WAGON_COUNT = 3  -- How many wagons can a train have. MAX
+NDefines_Graphics.NGraphics.TRAIN_MAP_SPEED = 7
+NDefines_Graphics.NMapMode.RADAR_RANGE_STRIPES_COLOR = { 0.0, 0.0, 1.0, 0.14 }
+NDefines_Graphics.NMapMode.RADAR_RANGE_COLOR = { 0.0, 0.0, 1.0, 1.0 }
+NDefines_Graphics.NMapMode.RADAR_RANGE_ALLIED_COLOR = { 0.0, 0.647, 1.0, 1.0 }
+NDefines_Graphics.NMapMode.RADAR_RANGE_SELECTED_COLOR = { 1.0, 1.0, 0.0, 1.0 }
+NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0	
+NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
+NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
 
 NDefines.NProject.RECRUIT_SCIENTIST_COST = { -- Amount of pp to hire a scientist based on available scientist
 		10,			-- pp cost if no available scientist

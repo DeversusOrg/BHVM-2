@@ -42,6 +42,7 @@ if = {
 			basic_medium_airframe = 1
 			basic_small_airframe = 1
 			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"
@@ -52,11 +53,25 @@ if = {
 			naval_bomber1 = 1
 			early_bomber = 1
 			CAS1 = 1
+			early_transport_plane = 1
 		}
 	}
 }
-
-load_oob = "ENG_Motorized"
+if = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	give_guarantee = BEL
+}
+if = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	give_guarantee = IRQ
+	IRQ = {
+		give_military_access = ENG
+	}
+}
 
 set_research_slots = 4
 
@@ -80,9 +95,22 @@ set_technology = {
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
-	radio_detection = 1
 	fuel_silos = 1
 	fuel_refining = 1
+}
+
+complete_special_project = {
+	project = sp:sp_air_radar
+	scientist = ENG_robert_watson_watt
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.6
+}
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.5
 }
 
 if = {
@@ -170,6 +198,16 @@ if = {
 	}
 }
 
+IF = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	load_oob = "ENG_LAR_Motorized"
+	ELSE = {
+		load_oob = "ENG_Motorized"
+	}
+}
+
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
@@ -179,7 +217,7 @@ add_ideas = {
 }
 	
 
-set_convoys = 700
+set_convoys = 1000
 
 # DIPLOMACY
 if = {
@@ -190,7 +228,7 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = MAL
+		target = ISR
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
@@ -218,9 +256,30 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = BRM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	#set_autonomy = {
+	#	target = EGY
+	#	autonomous_state = autonomy_dominion
+	#	freedom_level = 0.2
+	#}
+	set_autonomy = {
+		target = KUW
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+
 	else = {
 		puppet = MAL
 		puppet = RAJ
+		puppet = JOR
+		puppet = PAL
+		#puppet = EGY
+		puppet = KUW
+		puppet = OMA
 	}
 }
 
@@ -267,8 +326,12 @@ if = {
 	complete_national_focus = uk_mediterranean_focus
 	complete_national_focus = uk_asia_focus
 	complete_national_focus = uk_commonwealth_focus
+	complete_national_focus = uk_industrial_focus
+	complete_national_focus = ENG_vickers_experimental_facility_focus
+	complete_national_focus = ENG_steady_as_she_goes
 
 	give_guarantee = POL
+
 	if = {
 		limit = {
 			NOT = {
@@ -321,7 +384,24 @@ if = {
 				cv_fighter1 = 1
 			}
 		}
-}
+	}
+	if = {
+		limit = {
+			has_dlc = "Gotterdammerung"
+			has_guaranteed = BEL
+		}
+		diplomatic_relation = { 
+			country = BEL
+			relation = guarantee 
+			active = no
+		}
+	}
+
+	complete_special_project = {
+		project = sp:sp_naval_torpedo_cruiser
+		scientist = ENG_charles_goodeve
+		state = 127
+	}
 
 	set_technology = {
 		
@@ -350,8 +430,8 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
+		cavity_magnatron = 1
+		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -560,6 +640,18 @@ recruit_character = ENG_sylvia_pankhurst
 recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_thomas_moore
+
+recruit_character = ENG_john_cockcroft
+recruit_character = ENG_charles_goodeve
+recruit_character = ENG_nevil_shute
+recruit_character = ENG_robert_watson_watt
+
+if = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	recruit_character = ENG_jack_churchill 
+}
 
 
 

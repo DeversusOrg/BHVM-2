@@ -1691,6 +1691,7 @@ characters={
 			available = {
 				is_subject = no
 				NOT = { has_completed_focus = DEN_start_the_rearmament }
+				NOT = { DEN_christmas_moller = { is_hired_as_advisor = yes }}
 			}
 			traits = {
 				disarmament_proponent 

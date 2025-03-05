@@ -1552,11 +1552,11 @@ technologies = {
 	}
 
 	tech_trucks = {
-
 		enable_subunits = {
 			mot_anti_tank_brigade
 			mot_artillery_brigade
 			mot_anti_air_brigade
+			motorized
 		}
 
 		enable_equipments = {
@@ -1618,9 +1618,7 @@ technologies = {
 	
 	motorised_infantry = {
 
-		enable_subunits = {
-			motorized
-		}
+		
 
 		enable_equipments = {
 			motorized_equipment_1

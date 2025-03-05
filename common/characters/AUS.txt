@@ -217,6 +217,7 @@ characters = {
 							ruling_only = yes 
 							character = AUS_karl_renner
 						}
+						has_country_flag = AUS_no_overseer_needed_flag
 					}
 				}
 

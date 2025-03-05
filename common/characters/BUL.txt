@@ -2054,7 +2054,7 @@ characters = {
 		}
 	}
 	
-	BUL_bogdan_filov_fascism = { #TODO_Manu: THIS GUY IS SPLIT INTO TWO VERSIONS -> SHOULD UNIFY
+	BUL_bogdan_filov_fascism = { #MM: THIS GUY IS SPLIT INTO TWO VERSIONS -> SHOULD UNIFY
 		advisor = {
 			slot = political_advisor
 			idea_token = BUL_bogdan_filov_fascism

@@ -73,16 +73,6 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 9843
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
 			name_order = 5
 		}
 		location = 11761
@@ -104,16 +94,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
-		}
-		location = 11761
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
@@ -153,16 +133,6 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 12
-		}
-		location = 10068
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
 			name_order = 13
 		}
 		location = 4140
@@ -184,16 +154,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
-		}
-		location = 4140
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
 		}
 		location = 4140
 		division_template = "Sanjiao Jun"
@@ -233,16 +193,6 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 12026
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
 			name_order = 21
 		}
 		location = 6828
@@ -264,16 +214,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 23
-		}
-		location = 6828
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
 		}
 		location = 6828
 		division_template = "Sanjiao Jun"
@@ -313,16 +253,6 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 28
-		}
-		location = 10000
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
 			name_order = 29
 		}
 		location = 7014
@@ -349,16 +279,6 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
-		location = 7014
-		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
 	}
 
 	division = {
@@ -515,66 +435,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 48
-		}
-		location = 1069
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 49
-		}
-		location = 1069
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 50
-		}
-		location = 1069
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 51
-		}
-		location = 1069
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 52
-		}
-		location = 1069
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 53
-		}
-		location = 1069
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 54
 		}
 		location = 1069
 		division_template = "Juntuán"

@@ -23,7 +23,7 @@ leader_traits = {
 
 	bul_caudillo = {
 		random = no
-		max_command_power = 125
-		command_power_gain_mult = 0.5
+		max_command_power = 165
+		command_power_gain_mult = 0.65
 	}
 }

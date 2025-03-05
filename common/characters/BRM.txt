@@ -1,4 +1,78 @@
 characters={
+	BRM_archibald_cochrane = {
+		name = BRM_archibald_cochrane
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BRM_archibald_cochrane
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BRM_ne_win = {
+		name = BRM_ne_win
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BRM_ne_win
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { burmese_way_to_socialism_trait }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BRM_ba_maw = {
+		name = BRM_ba_maw
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BRM_ba_maw
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { mon_dynasty_descendant }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BRM_u_nu = {
+		name = BRM_u_nu
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BRM_u_nu
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { anti_colonialist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BRM_myat_phaya_lat = {
+		name = BRM_myat_phaya_lat
+		portraits = {
+			civilian={
+				large = GFX_portrait_BRM_myat_phaya_lat
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { konbuang_dynasty_descendant }
+			expire = "1956.1.1.1"
+			id = -1
+		}
+	}
+
 	BRM_acgs={
 		advisor={
 			slot = air_chief

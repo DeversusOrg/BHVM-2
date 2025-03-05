@@ -168,7 +168,7 @@ characters = {
 			
 			country_leader = {
 				ideology = despotism
-				traits = { }
+				traits = { HUN_the_habsburg_prince }
 				expire = "1965.1.1.1"
 				id = -1
 			}

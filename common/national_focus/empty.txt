@@ -25,14 +25,6 @@ focus_tree = {
 			add = 10
 			tag = VEN
 		}
-		modifier = {
-			add = 10
-			tag = IRQ
-		}
-		modifier = {
-			add = 10
-			tag = IRN
-		}
 		# ANNEXED SOV FOOD
 		modifier = {
 			add = 100

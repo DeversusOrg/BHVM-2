@@ -3,7 +3,7 @@ characters = {
 		name = "Sayyid Mir Muhammad Alim Khan" 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_Sayyid_Mir_Muhammad_Alim_Khan
+				large = GFX_portrait_TAJ_alim_khan
 			}
 		}
 		country_leader = {

@@ -7,11 +7,12 @@ state={
 	state_category = town
 
 	history={
-		owner = FRA
+		owner = LEB
 		victory_points = {
 			792 5 
 		}
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
 			air_base = 5
 			792 = {
@@ -19,7 +20,7 @@ state={
 			}
 		}
 
-		add_core_of = BLM
+		add_core_of = LEB
 	}
 
 	provinces={

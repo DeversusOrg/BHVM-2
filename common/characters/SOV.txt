@@ -516,6 +516,10 @@ characters = {
 			cost = 50
 			ai_will_do = {
 				base = 1
+				modifier = {
+					factor = 5
+					NOT = { has_character = SOV_semyon_timoshenko }
+				}
 			}
 		}
 
@@ -1718,6 +1722,10 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 0.5
+				modifier = {
+					factor = 5
+					NOT = { has_character = SOV_semyon_timoshenko }
+				}
 			}
 		}
 
@@ -1753,6 +1761,10 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				base = 1
+				modifier = {
+					factor = 5
+					NOT = { has_character = SOV_semyon_timoshenko }
+				}
 			}
 		}
 

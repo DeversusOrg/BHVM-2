@@ -597,6 +597,10 @@
 
 		available = {
 			any_state = {
+				OR = {
+					is_core_of = SYR
+					is_core_of = LEB
+				}
 				is_owned_or_subject_trigger = yes
 			}
 		}
@@ -619,13 +623,39 @@
 						state = 554
 						state = 553
 					}
-					OWNER = { is_owned_or_subject_trigger = yes }	
+					is_owned_or_subject_trigger = yes 
 					NOT = {
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_colonial_industry_target
+			}
+			IF = {
+				limit = {
+					SYR = {
+						is_subject_of = ROOT
+					}
+				}
+				SYR = {
+					add_autonomy_score = { 
+						value = -150
+						localization = FRA_invest_in_syria
+					}	
+				}
+			}
+			IF = {
+				limit = {
+					LEB = {
+						is_subject_of = ROOT
+					}
+				}
+				LEB = {
+					add_autonomy_score = { 
+						value = -150
+						localization = FRA_invest_in_syria
+					}	
+				}
 			}
 		}
 	}
