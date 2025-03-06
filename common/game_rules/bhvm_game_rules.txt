@@ -917,6 +917,23 @@ juggle_slot = {
 		desc = "There is NO special juggle slot(Not Recommmended)"
 	}
 }
+
+sf_multiplier = {
+	name = "Special Forces Multiplier"
+	group = "BHVM game rules"
+	icon = "GFX_decision_category_generic"
+	option = {
+		name = capped
+		text = "RSF cap is almost vanilla"
+		desc = "Every nation has the same SF cap , unless national ideas(NOT RECOMMENDED)"
+	}
+	default = {
+		name = uncapped
+		text = "GSF are boosted"
+		desc = "The important SF nations have a higher SF cap(Recommmended)"
+	}
+}
+
 ger_pupets = {
 	name = "German Pupet"
 	group = "BHVM game rules"

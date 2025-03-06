@@ -22,8 +22,8 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (whi
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0158                     -- reduced so there won't be copuis amount of mass mob and the save games to be smaller
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999						    -- Unlimited special forces
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.00                        -- Unlimited special forces
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200						    -- Lets go back to vanilla!! Game rule for "unlimited" special forces
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.03                        -- Lets go back to vanilla!! Game rule for "unlimited" special forces
 
 
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license

@@ -35,6 +35,29 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					has_game_rule = {
+						rule = sf_multiplier
+						option = uncapped
+					}
+				}
+				FIN = { add_ideas = 3x_sf }
+				GER = { add_ideas = 4x_sf }
+				ITA = { add_ideas = 3x_sf }
+				ENG = { add_ideas = 6x_sf }
+				USA = { add_ideas = 6x_sf }
+				BRA = { add_ideas = 3x_sf }
+				JAP = { add_ideas = 8x_sf }
+				AST = { add_ideas = 2x_sf }
+				RAJ = { add_ideas = 2x_sf }
+				FRA = { add_ideas = 2x_sf }
+			}
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
 					has_game_rule = { rule = vanila_bonuses option = on-overall }
 				}
 				GER = {

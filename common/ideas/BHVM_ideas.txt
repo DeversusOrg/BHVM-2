@@ -549,5 +549,75 @@ ideas = {
 				air_volunteer_cap = -1000
 			}
 		}
+		2x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 200
+			}
+		}
+		3x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 400
+			}
+		}
+		4x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 600
+			}
+		}
+		5x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 800
+			}
+		}
+		6x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 1000
+			}
+		}
+		7x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 1200
+			}
+		}
+		8x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 1500
+			}
+		}
     }
 }
