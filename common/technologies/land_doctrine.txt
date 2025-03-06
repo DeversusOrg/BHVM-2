@@ -169,35 +169,10 @@ technologies = {
 		xor={
 			armored_spearhead
 		}
-		motorized = {
+		category_mobile_and_mobile_combat_sup = {
 			maximum_speed = 0.1
 			default_morale = 0.2
-		}
-		armored_car = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		mot_artillery_brigade = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		mot_anti_tank_brigade = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		mot_anti_air_brigade = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		mechanized = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		amphibious_mechanized = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		
+		}	
 		
 		path = {
 			leads_to_tech = mass_motorization 
@@ -511,15 +486,9 @@ technologies = {
 
 		enable_tactic = tactic_breakthrough
 		
-		motorized = {
+		category_vehicle_infantry = {
 			max_organisation = 5
 		}
-		mechanized = {
-			max_organisation = 5
-		}
-		amphibious_mechanized = {
-			max_organisation = 5
-		}		
 
 		
 		path = {
@@ -900,6 +869,7 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
 		enable_tactic = tactic_guerrilla_tactics
+		enable_tactic = tactic_sf_ambush
 
 		allow = {
 			has_game_rule = {
@@ -949,6 +919,7 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
 		enable_tactic = tactic_guerrilla_tactics_plains
+		enable_tactic = tactic_sf_ambush
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -1707,6 +1678,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		enable_tactic = tactic_sf_barrage
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -2249,13 +2221,11 @@ technologies = {
 		category_tanks = {
 			max_organisation = 1
 		}
-		category_all_armor = {
-			morale = 0.10
-		}
 		armored_car = {
 			max_organisation = 1
 		}
 		coordination_bonus = 0.1
+		enable_tactic = tactic_sf_barrage
 		
 		path = {
 			leads_to_tech = assault_breakthrough 
@@ -2472,7 +2442,9 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
-		
+		category_cavalry = {
+			breakthrough = 0.05
+		}
 		enable_tactic = tactic_infantry_charge
 		
 		path = {
@@ -2945,7 +2917,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 
 		enable_tactic = tactic_relentless_assault
-		
+		enable_tactic = tactic_sf_barrage
 		path = {
 			leads_to_tech = deep_operations
 			research_cost_coeff = 1
@@ -3609,6 +3581,7 @@ technologies = {
 		}
 
 		enable_tactic = tactic_guerrilla_tactics
+		enable_tactic = tactic_sf_ambush
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -3709,6 +3682,7 @@ technologies = {
 		resistance_growth_on_our_occupied_states = 0.25 
 
 		enable_tactic = tactic_guerrilla_tactics_plains
+		enable_tactic = tactic_sf_ambush
 		
 		doctrine = yes	
 		research_cost = 4.5

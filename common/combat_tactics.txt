@@ -72,6 +72,7 @@ tactic_assault = {
 	trigger = {
 		is_attacker = yes
 		phase = no
+		has_artillery_ratio > 0.1
 	}
 	
 	active = yes
@@ -729,7 +730,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	
 	combat_width = -0.5
 	attacker = -0.7
-	defender = -0.5
+	defender = -0.6
 }
 tactic_guerrilla_tactics_plains = { #People's army defender tactic. also for German volksturm branch.
 	is_attacker = no
@@ -757,6 +758,7 @@ tactic_guerrilla_tactics_plains = { #People's army defender tactic. also for Ger
 	combat_width = -0.5
 	attacker = -0.7
 	defender = -0.5
+	defender = -0.6
 }
 
 tactic_human_wave_tactics = { #People's army attacker tactic
@@ -944,6 +946,7 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	attacker = 0.2
 	defender = -0.2
 }
+
 
 tactic_urban_defense = { 
 	is_attacker = no
@@ -1145,3 +1148,5 @@ tactic_sf_ambush = { #countered by mouse holing
 	defender = 0.25
 	attacker_org_damage_modifier = -0.10
 }
+
+
