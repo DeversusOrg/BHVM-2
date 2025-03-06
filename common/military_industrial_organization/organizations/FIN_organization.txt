@@ -32,28 +32,21 @@ FIN_valtion_panssaritehdas_organization = {
 		x = 8.5
 	}
 
-	remove_trait = { generic_mio_trait_heavy_tank_improvements generic_mio_trait_heavy_tank_specialization }
-
-	override_trait = {
-		token = generic_mio_trait_modular_construction
-
-		position = { x=3 y=1 }
-		relative_position_id = generic_mio_trait_medium_tank_improvements
-	}
+	remove_trait = { generic_mio_trait_heavy_tank_specialization }
 
 	override_trait = {
 		token = generic_mio_trait_light_tank_specialization
 
-		position = { x=-1 y=3 }
-		relative_position_id = generic_mio_trait_modular_construction
+		position = { x=-1 y=2 }
+		relative_position_id = generic_mio_trait_adaptable_chassis
 		mutually_exclusive= { generic_mio_trait_medium_tank_specialization }
 	}
 	
 	override_trait = {
 		token = generic_mio_trait_medium_tank_specialization
 
-		position = { x=1 y=3 }
-		relative_position_id = generic_mio_trait_modular_construction
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_adaptable_chassis
 		mutually_exclusive= { generic_mio_trait_light_tank_specialization }
 	}
 
@@ -84,9 +77,9 @@ FIN_valtion_panssaritehdas_organization = {
 		special_trait_background = yes
 
 		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_modular_construction
+		relative_position_id = generic_mio_trait_adaptable_chassis
 		
-		any_parent = { generic_mio_trait_modular_construction }
+		any_parent = { generic_mio_trait_adaptable_chassis }
 		
 		available = {
 			owner = {
@@ -106,8 +99,7 @@ FIN_valtion_panssaritehdas_organization = {
 		icon = GFX_generic_mio_department_icon_tank_general_production
 		special_trait_background = yes
 
-		position = { x=1 y=0 }
-		relative_position_id = FIN_mio_trait_salvaged_and_retooled
+		position = { x=9 y=0 }
 		
 		available = {
 			owner = {

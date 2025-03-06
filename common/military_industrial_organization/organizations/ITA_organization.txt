@@ -143,6 +143,10 @@ ITA_crda_organization = {
 				tag = BUL 
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = HUN 
+				has_dlc = "Gotterdammerung"
+			}
 		}
 	}
 	
@@ -176,6 +180,13 @@ ITA_crda_organization = {
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = HUN }
+			}
+			FROM = { controls_state = 736 } #LITORALE (Trieste) 
+		}
 	}
 
 	add_trait = { 
@@ -185,6 +196,12 @@ ITA_crda_organization = {
 		special_trait_background = yes
 
 		position = { x=9 y=0 }
+
+		visible = {
+			FROM = {
+				original_tag = ITA
+			}
+		}
 		
 		available = {
 			FROM = {

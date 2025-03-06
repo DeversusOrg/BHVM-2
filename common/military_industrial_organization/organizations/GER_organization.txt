@@ -21,10 +21,14 @@ GER_porsche_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = GER 
+			original_tag = GER 
 			AND = {
-				tag = MEX 
+				original_tag = MEX 
 				has_dlc = "Man the Guns"
+			}
+			AND = {
+				original_tag = IRQ 
+				has_dlc = "Graveyard of Empires"
 			}
 			NOR_AAT = yes
 			AND = {
@@ -47,13 +51,13 @@ GER_porsche_organization = {
 
 		IF = {
 			limit = {
-				FROM = { tag = MEX }
+				FROM = { original_tag = MEX }
 			}
 			FROM = { is_in_faction_with = GER }
 		}
-		ELSE_IF = {
+		IF = {
 			limit = {
-				FROM = { tag = NOR }
+				FROM = { original_tag = NOR }
 			}
 			FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
@@ -279,34 +283,42 @@ GER_porsche_organization = {
 }
 
 GER_henschel_organization = {
-	include = generic_mobile_tank_organization
+	include = generic_infantry_tank_organization
 	icon = GFX_idea_henschel
 	
 	allowed = {	
 		OR = {
-			tag = GER 
+			original_tag = GER 
 			AND = {
-				tag = BUL
+				original_tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
 			AND = {
-				tag = ETH
+				original_tag = ETH
 				has_dlc = "By Blood Alone"
 			}
 			AND = {
-                tag = SPR
-            }
+				tag = PER
+				has_dlc = "Graveyard of Empires"
+				has_dlc = "Arms Against Tyranny"
+			}
 			AND = {
                 tag = HUN
             }
+			AND = {
+                tag = SPR
+            }
 		}
 	}
-	
 	
 	visible = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
 			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
+		IF = {
+			limit = { FROM = { original_tag = PER } }
+			FROM = { has_completed_focus = PER_german_tanks }
 		}
 	}
 
@@ -346,7 +358,10 @@ GER_henschel_organization = {
 			}
 		}
 		IF = {
-            limit = { FROM = { original_tag = SPR } }
+			limit = { FROM = { original_tag = PER } }
+			FROM = { has_completed_focus = PER_german_tanks }
+		}
+		limit = { FROM = { original_tag = SPR } }
 			custom_trigger_tooltip = {
 				tooltip = gain_axis_mio_access_tt
 				FROM = {
@@ -366,7 +381,30 @@ GER_henschel_organization = {
             NOT = { has_war_with = GER }
         } 
 	}
-	
+
+	override_trait = {
+		token = generic_mio_trait_light_tank_specialization
+
+		position = { x=-1 y=1 }
+		relative_position_id = GER_mio_trait_technical_superiority
+		any_parent = { GER_mio_trait_technical_superiority }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_medium_tank_specialization
+
+		position = { x=0 y=1 }
+		relative_position_id = GER_mio_trait_technical_superiority
+		any_parent = { GER_mio_trait_technical_superiority }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_heavy_tank_specialization
+
+		position = { x=1 y=1 }
+		relative_position_id = GER_mio_trait_technical_superiority
+		any_parent = { GER_mio_trait_technical_superiority }
+	}
 
 	add_trait = {
 		token = GER_mio_trait_hoesch_facilities
@@ -408,8 +446,7 @@ GER_henschel_organization = {
 		icon = GFX_generic_mio_department_icon_facilities
 		special_trait_background = yes
 
-		position = { x=0 y=1 }
-		relative_position_id = GER_mio_trait_hoesch_facilities
+		position = { x=8 y=0 }
 
 		visible = {
 			FROM = { original_tag = GER }
@@ -432,6 +469,88 @@ GER_henschel_organization = {
 
 		ai_will_do = {
 			base = 2
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_steel_wheel_design
+		name = GER_mio_trait_steel_wheel_design
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_quality
+		special_trait_background = yes
+
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_interleaved_track_wheels
+
+		any_parent = { generic_mio_trait_interleaved_track_wheels generic_mio_trait_overlapped_track_wheels }
+
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		equipment_bonus = {
+			reliability = 0.03
+			breakthrough = 0.05
+			armor_value = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.03
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_telescopic_sight
+		name = GER_mio_trait_telescopic_sight
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		special_trait_background = yes
+
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+
+		position = { x=-0 y=1 }
+		relative_position_id = generic_mio_trait_turret_sights
+
+		any_parent = { generic_mio_trait_turret_sights }
+
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+			breakthrough = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.03
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_technical_superiority
+		name = GER_mio_trait_technical_superiority
+		icon = GFX_generic_mio_department_icon_tank_general_quality
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_adaptable_chassis
+
+		any_parent = { generic_mio_trait_adaptable_chassis }
+
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		equipment_bonus = {
+			defense = 0.05
+			soft_attack = 0.05
+			armor_value = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.03
 		}
 	}
 }
@@ -544,7 +663,7 @@ GER_man_organization = {
 	add_trait = {
 		token = GER_mio_trait_schachtellaufwerk 
 		name = GER_mio_trait_schachtellaufwerk 
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_quality
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_quality
 		special_trait_background = yes
 
 		position = { x=-1 y=1 }
@@ -2637,7 +2756,7 @@ GER_arado_flugzeugwerke_organization = {
 
 		available = {
 			FROM = {
-				has_tech = jet_engines
+				is_special_project_completed = sp:sp_air_jet_engine
 			}
 		}
 

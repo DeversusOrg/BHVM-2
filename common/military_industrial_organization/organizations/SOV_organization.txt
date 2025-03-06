@@ -159,7 +159,7 @@ SOV_morozov_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_174_flag
 			}
@@ -196,7 +196,7 @@ SOV_morozov_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_112_flag
 			}
@@ -233,7 +233,7 @@ SOV_morozov_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
 			}
@@ -301,7 +301,7 @@ SOV_astrov_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_174_flag
 			}
@@ -338,7 +338,7 @@ SOV_astrov_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_112_flag
 			}
@@ -375,7 +375,7 @@ SOV_astrov_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
 			}
@@ -447,6 +447,11 @@ SOV_okmo_organization = {
 		}
 	}
 
+	override_trait = {
+		token = generic_mio_trait_thick_armor
+		position = { x=2 y=1 }
+	}
+
 	add_trait = { 
 		token = SOV_mio_trait_merge_plant_no_174
 		name = SOV_merge_tank_plant
@@ -473,7 +478,7 @@ SOV_okmo_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_174_flag
 			}
@@ -510,7 +515,7 @@ SOV_okmo_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_112_flag
 			}
@@ -547,7 +552,7 @@ SOV_okmo_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
 			}
@@ -616,7 +621,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_174_flag
 			}
@@ -653,7 +658,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_112_flag
 			}
@@ -690,7 +695,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
 			}
@@ -708,16 +713,19 @@ SOV_kirov_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = SOV 
+			original_tag = SOV
 			AND = {
 				tag = MON
+				tag = BEL
+				has_dlc = "Gotterdammerung"
 			}
 		}
 	}
-	visible = {
+
+	available = {
 		IF = {
 			limit = {
-				FROM = { original_tag = MON }
+				FROM = { NOT = { original_tag = SOV } }
 			}
 			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
@@ -762,7 +770,7 @@ SOV_kirov_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_174_flag
 			}
@@ -799,7 +807,7 @@ SOV_kirov_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_112_flag
 			}
@@ -836,7 +844,7 @@ SOV_kirov_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag
 			}
@@ -929,7 +937,7 @@ SOV_nevskoye_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
 				add_tech_bonus = {
@@ -979,7 +987,7 @@ SOV_nevskoye_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
 			}
@@ -1111,7 +1119,7 @@ SOV_rubin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
 				add_tech_bonus = {
@@ -1161,7 +1169,7 @@ SOV_rubin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
 			}
@@ -1305,7 +1313,7 @@ SOV_black_sea_shipyard_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
 				add_tech_bonus = {
@@ -1355,7 +1363,7 @@ SOV_black_sea_shipyard_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
 			}
@@ -1494,7 +1502,7 @@ SOV_sevastopol_marine_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
 				add_tech_bonus = {
@@ -1544,7 +1552,7 @@ SOV_sevastopol_marine_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
 			}
@@ -1644,6 +1652,12 @@ SOV_mig_design_bureau_organization = {
 	}
 
 	available = {
+		IF = { #Dissolve Bureau Purge
+			limit = {
+				FROM = { original_tag = SOV }
+			}
+			FROM = { NOT = { has_country_flag = SOV_mig_design_bureau_dissolved_flag } }
+		}
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
@@ -1697,7 +1711,7 @@ SOV_mig_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_28_flag
 			}
@@ -1734,7 +1748,7 @@ SOV_mig_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_150_flag
 				add_resource = {
@@ -1776,7 +1790,7 @@ SOV_mig_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_vef_plant_flag
 				add_tech_bonus = {
@@ -1814,6 +1828,12 @@ SOV_ilyushin_design_bureau_organization = {
 	}
 	
 	available = {
+		IF = { #Dissolve Bureau Purge
+			limit = {
+				FROM = { original_tag = SOV }
+			}
+			FROM = { NOT = { has_country_flag = SOV_ilyushin_design_bureau_dissolved_flag } }
+		}
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
@@ -1881,7 +1901,7 @@ SOV_ilyushin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_28_flag
 			}
@@ -1918,7 +1938,7 @@ SOV_ilyushin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_150_flag
 				add_resource = {
@@ -1960,7 +1980,7 @@ SOV_ilyushin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_vef_plant_flag
 				add_tech_bonus = {
@@ -1986,6 +2006,15 @@ SOV_yakovlev_design_bureau_organization = {
 	
 	allowed = {	
 		original_tag = SOV
+	}
+
+	available = {
+		IF = { #Dissolve Bureau Purge
+			limit = {
+				FROM = { original_tag = SOV }
+			}
+			FROM = { NOT = { has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag } }
+		}
 	}
 
 	add_trait = { 
@@ -2014,7 +2043,7 @@ SOV_yakovlev_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_28_flag
 			}
@@ -2051,7 +2080,7 @@ SOV_yakovlev_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_150_flag
 				add_resource = {
@@ -2093,7 +2122,7 @@ SOV_yakovlev_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_vef_plant_flag
 				add_tech_bonus = {
@@ -2118,6 +2147,15 @@ SOV_tupolev_design_bureau_organization = {
 	icon = GFX_idea_tupolev_design_bureau
 	allowed = {	
 		original_tag = SOV
+	}
+
+	available = {
+		IF = { #Dissolve Bureau Purge
+			limit = {
+				FROM = { original_tag = SOV }
+			}
+			FROM = { NOT = { has_country_flag = SOV_tupolev_design_bureau_dissolved_flag } }
+		}
 	}
 
 	tree_header_text = {
@@ -2210,7 +2248,7 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_28_flag
 			}
@@ -2247,7 +2285,7 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_150_flag
 				add_resource = {
@@ -2289,7 +2327,7 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_vef_plant_flag
 				add_tech_bonus = {
@@ -2425,7 +2463,7 @@ SOV_grabin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_nkmz_plant_flag
 			}
@@ -2462,7 +2500,7 @@ SOV_grabin_design_bureau_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_magnitogorsk_metallurgical_plant_flag
 			}
@@ -2567,7 +2605,7 @@ SOV_tula_arms_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_nkmz_plant_flag
 			}
@@ -2604,7 +2642,7 @@ SOV_tula_arms_plant_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_magnitogorsk_metallurgical_plant_flag
 			}
@@ -2638,6 +2676,10 @@ SOV_gaz_organization = {
 			AND = {
 				tag = BRA
 				has_dlc = "Trial of Allegiance" #TODO MH fix DLC
+			}
+			AND = {
+				tag = AFG
+				has_dlc = "Graveyard of Empires"
 			}
 			AND = {
 				tag = MON
@@ -2707,34 +2749,40 @@ SOV_gaz_organization = {
 		}
 		IF = {
 			limit = {
+				FROM = { original_tag = AFG }
+			}
+			FROM = { has_completed_focus = AFG_truck_factory }
+		}
+		IF = {
+			limit = {
 				FROM = { original_tag = MON }
 			}
-			FROM = { has_completed_focus = MON_invite_soviet_companies }
+			FROM = { has_completed_focus = MON_invite_soviet_companies  }
 		}
 	}
 
 	add_trait = { 
-			token = SOV_mio_trait_merge_automobile_tool_plant
-			name = SOV_merge_materiel_plant_1_motorized
-			#icon = GFX_generic_mio_department_icon_facilities
-			icon = GFX_generic_mio_department_icon_motorized_mechanized_production
-			special_trait_background = yes
+		token = SOV_mio_trait_merge_automobile_tool_plant
+		name = SOV_merge_materiel_plant_1_motorized
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_department_icon_motorized_mechanized_production
+		special_trait_background = yes
 
-			position = { x=@materiel_1_X y=@materiel_1_Y }
-			
-			visible = {
-				FROM = { original_tag = SOV }
-			}
+		position = { x=@materiel_1_X y=@materiel_1_Y }
+		
+		visible = {
+			FROM = { original_tag = SOV }
+		}
 
-			available = {
-				FROM = {
-					has_full_control_of_state = 252 #GORKY
-				}
-				FROM = {
-					has_completed_focus = SOV_merge_tank_and_materiel_plants
-				}
-				#Only exists in this MIO
+		available = {
+			FROM = {
+				has_full_control_of_state = 252 #GORKY
 			}
+			FROM = {
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			#Only exists in this MIO
+		}
 
 			production_bonus = {
 				production_cost_factor = @motorized_production_cost_factor
@@ -2815,7 +2863,7 @@ SOV_gaz_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_nkmz_plant_flag
 			}
@@ -2852,7 +2900,7 @@ SOV_gaz_organization = {
 		}
 
 		on_complete = {
-			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_magnitogorsk_metallurgical_plant_flag
 			}
