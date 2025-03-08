@@ -1,7 +1,7 @@
 state = {
 	id = 454
 	name = "STATE_454" #ISRAEL IT IS CALLED PALLESTINE IN THE GAME BUT IT WILL BE CALLED ISRAEL IN THE GAME
-	manpower = 933142
+	manpower = 1333142
 	
 	state_category = rural
 

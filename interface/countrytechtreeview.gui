@@ -239,6 +239,7 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+				
 
 			}
 
@@ -308,6 +309,14 @@ guiTypes = {
 				position = { x = 140 y = 1140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
+			}
+			#juggle
+			gridboxtype = {
+				name = "Juggle_3_tree"
+				position = { x = 334 y = 402 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 		}
 
@@ -538,7 +547,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
+			#juggle
+			gridboxtype = {
+				name = "Juggle_4_tree"
+				position = { x = 334 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -1150,6 +1166,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"
 			}
+			#juggle 
+			gridboxtype = {
+				name = "Juggle_5_tree"
+				position = { x = 334 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -1503,6 +1527,13 @@ guiTypes = {
 				name = "gw_artillery_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "Juggle_6_tree"
+				position = { x = 334 y = 72 }
+				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -3759,6 +3790,14 @@ guiTypes = {
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+			}
+			#juggle 
+			gridboxtype = {
+				name = "Juggle_2_tree"
+				position = { x = 834 y = 12 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 
 		}
