@@ -573,32 +573,43 @@ operations = {
             }
             if = {
                 limit = { date > 1943.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 4000 producer = SPR } }
-                BUL ={ add_manpower = 60000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 producer = SPR } }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1942.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3700 producer = SPR } }
-                BUL ={ add_manpower = 45000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 producer = SPR } }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1941.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3400 producer = SPR } }
-                BUL ={ add_manpower = 35000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 producer = SPR } }
+                BUL ={ add_manpower = 100000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1940.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2550 producer = SPR } }
-                BUL ={ add_manpower = 25000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2900 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
+            }
+            else_if = {
+                limit = { date > 1940.5.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
             }
             else_if = {
                 limit = { date > 1939.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1600 producer = SPR } }
-                BUL ={ add_manpower = 25000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2000 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
+            }
+            else_if = {
+                limit = { date > 1939.5.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1300 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
             }
             else = {
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 producer = SPR } }
-                BUL ={ add_manpower = 15000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 900 producer = SPR } }
             }
             activate_mission = GER_recieving_ll_mech_bul_2a
         }
@@ -643,32 +654,43 @@ operations = {
             }
             if = {
                 limit = { date > 1943.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 4000 producer = SPR } }
-                BUL ={ add_manpower = 60000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 producer = SPR } }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1942.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3700 producer = SPR } }
-                BUL ={ add_manpower = 45000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 producer = SPR } }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1941.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3400 producer = SPR } }
-                BUL ={ add_manpower = 35000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 producer = SPR } }
+                BUL ={ add_manpower = 100000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1940.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2550 producer = SPR } }
-                BUL ={ add_manpower = 25000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2900 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
+            }
+            else_if = {
+                limit = { date > 1940.5.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
             }
             else_if = {
                 limit = { date > 1939.12.31 }
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1600 producer = SPR } }
-                BUL ={ add_manpower = 25000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2000 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
+            }
+            else_if = {
+                limit = { date > 1939.5.31 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1300 producer = SPR } }
+                BUL ={ add_manpower = 50000 }
             }
             else = {
-                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 producer = SPR } }
-                BUL ={ add_manpower = 15000 }
+                BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 900 producer = SPR } }
             }
             activate_mission = GER_recieving_ll_mech_bul_1a    
         }
@@ -715,14 +737,20 @@ operations = {
             if = {
                 limit = { date > 1943.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 producer = SPR } }
+                GER ={ add_manpower = 50000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1942.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 producer = SPR } }
+                GER ={ add_manpower = 50000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1941.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 producer = SPR } }
+                GER ={ add_manpower = 20000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1940.12.31 }
@@ -779,14 +807,20 @@ operations = {
             if = {
                 limit = { date > 1943.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 producer = SPR } }
+                GER ={ add_manpower = 50000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1942.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 producer = SPR } }
+                GER ={ add_manpower = 50000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1941.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 producer = SPR } }
+                GER ={ add_manpower = 20000 }
+                ITA = { add_offsite_building = { type = arms_factory level = 1 } }
             }
             else_if = {
                 limit = { date > 1940.12.31 }
