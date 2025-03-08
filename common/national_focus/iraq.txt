@@ -6901,7 +6901,11 @@ focus_tree = {
 				}
 			}
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		bypass = {
 			SAU = {
 				OR = {
@@ -6958,7 +6962,11 @@ focus_tree = {
 				}
 			}
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		bypass = {
 
 		}
@@ -7006,7 +7014,11 @@ focus_tree = {
 			is_subject = no
 			has_government = fascism
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		bypass = {
 
 		}
@@ -7060,7 +7072,11 @@ focus_tree = {
 			is_subject = no
 			has_government = fascism
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		bypass = {
 
 		}
@@ -7114,7 +7130,11 @@ focus_tree = {
 		ai_will_do = {
 			base = 1
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		available = {
 			is_subject = no
 			has_government = fascism
