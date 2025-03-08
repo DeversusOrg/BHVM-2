@@ -160,6 +160,8 @@ is_allied_country = {
 		original_tag = CHI
 		original_tag = ETH
 		original_tag = ISR
+		original_tag = SYR
+		original_tag = LEB
 	}
 }
 is_vichy_france = {

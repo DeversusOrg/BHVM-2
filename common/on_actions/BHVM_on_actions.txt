@@ -518,27 +518,9 @@ on_actions = {
 			}
 			IF = {
 				limit = {
-					ISR = { is_ai = yes }
-				}
-				ISR = { add_ideas = ai_limit}
-			}
-			IF = {
-				limit = {
 					IRQ = { is_ai = yes }
 				}
 				IRQ = { add_ideas = ai_limit}
-			}
-			IF = {
-				limit = {
-					LEB = { is_ai = yes }
-				}
-				LEB = { add_ideas = ai_limit}
-			}
-			IF = {
-				limit = {
-					SYR = { is_ai = yes }
-				}
-				SYR = { add_ideas = ai_limit}
 			}
 			IF = {
 				limit = {

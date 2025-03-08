@@ -64,6 +64,7 @@ AFA = "countries/Afar.txt"
 
 BLM = "countries/Black.txt"
 SOL = "countries/Solomon.txt"
+
 # REICHSKOMMISSARIATS (no cores) (European)
 RKB = "countries/Reichskommisariat Belgien.txt"
 RKN = "countries/Reichskommisariat Niederlande.txt"
@@ -131,3 +132,4 @@ ASY = "countries/Assyria.txt"
 BHR = "countries/Bahrain.txt"
 IMO = "countries/Omani Imamate.txt"
 BLC = "countries/Balochistan.txt"
+AOI = "countries/Italian East Africa.txt"

@@ -42,11 +42,11 @@ on_actions = {
 				}
 				FIN = { add_ideas = 3x_sf }
 				GER = { add_ideas = 4x_sf }
-				ITA = { add_ideas = 3x_sf }
+				ITA = { add_ideas = 4x_sf }
 				ENG = { add_ideas = 6x_sf }
 				USA = { add_ideas = 6x_sf }
 				BRA = { add_ideas = 3x_sf }
-				JAP = { add_ideas = 8x_sf }
+				JAP = { add_ideas = XX_sf }
 				AST = { add_ideas = 2x_sf }
 				RAJ = { add_ideas = 2x_sf }
 				FRA = { add_ideas = 2x_sf }
@@ -957,6 +957,11 @@ on_actions = {
 					BLM = {
 						country_event = { id = tech_rush.13 days = 1300 } #gun3
 					}
+					#BLM = {
+					#	country_event = { id = tech_rush.14 days = 1800 } #mech2
+					#}
+					# I will come back to this later
+					#TODO: add MECH2 game rules
 			}
 			if = {
                 limit = {

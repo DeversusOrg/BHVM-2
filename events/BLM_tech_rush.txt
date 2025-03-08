@@ -244,3 +244,26 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = tech_rush.14
+	title = tech_rush.14.t
+	desc = tech_rush.14.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = tech_rush.14.a
+		BLM = { 
+			create_equipment_variant = {
+				name = "Cheap Mechanised-2"
+				type = mechanized_equipment_2
+				parent_version = 0
+				upgrades = {
+					mech_cost_upgrade = 5
+				}
+			}
+		}
+	}
+}
