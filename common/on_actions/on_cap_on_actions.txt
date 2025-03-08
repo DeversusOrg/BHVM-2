@@ -9,19 +9,33 @@ on_actions = {
 					NOT = { FRA = { has_country_flag = france_tp} }
 				}
 
-			FRA = { 
-				set_country_flag = france_tp
-				transfer_units_fraction = {
-					target = IRE
-					size = 1
-					stockpile_ratio = 1
-					army_ratio = 0
-					navy_ratio = 1
-					air_ratio = 1
-						keep_unit_leaders_trigger = {
-							always = yes
+				FRA = { 
+					set_country_flag = france_tp
+					transfer_units_fraction = {
+						target = IRE
+						size = 1
+						stockpile_ratio = 1
+						army_ratio = 0
+						navy_ratio = 1
+						air_ratio = 1
+							keep_unit_leaders_trigger = {
+								always = yes
 						}
 					}					
+				}
+				FRA = {
+					annex_country = { target = SYR transfer_troops = yes }
+					annex_country = { target = LEB transfer_troops = yes }
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = SYR
+								is_core_of = LEB
+							}
+							is_controlled_by = FRA
+						}
+						set_compliance = 100
+					}
 				}
 			}
 		}

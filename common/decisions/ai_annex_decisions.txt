@@ -1170,6 +1170,69 @@ operations = {
             }
         }
     }
+    ENG_annex_KUW = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            KUW
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            KUW = { is_ai = yes }
+            date > 1937.01.01
+        }
+        visible = {
+            original_tag = ENG
+            KUW = { is_ai = yes }
+            is_ai = NO
+            country_exists = KUW
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = KUW transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = KUW
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+    ENG_annex_ISR = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            ISR
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = ENG
+            ISR = { is_ai = yes }
+            date > 1937.01.01
+        }
+        visible = {
+            original_tag = ENG
+            ISR = { is_ai = yes }
+            is_ai = NO
+            country_exists = ISR
+        }
+        complete_effect = {
+            ENG = { 
+                annex_country = { target = ISR transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = ISR
+                        is_controlled_by = ENG
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
+
     ENG_annex_RAJ = {
         # icon used to be here rip icon 04/29/2024
         targets = {
@@ -1191,7 +1254,7 @@ operations = {
         complete_effect = {
             ENG = { 
                 annex_country = { target = RAJ transfer_troops = yes }
-                    every_state = {
+                every_state = {
                     limit = {
                         is_core_of = RAJ
                         is_controlled_by = ENG
@@ -1223,7 +1286,7 @@ operations = {
         complete_effect = {
             AST = { 
                 annex_country = { target = RAJ transfer_troops = yes }
-                    every_state = {
+                every_state = {
                     limit = {
                         is_core_of = RAJ
                         is_controlled_by = AST

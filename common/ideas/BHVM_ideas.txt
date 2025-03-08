@@ -616,8 +616,38 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				special_forces_min = 1500
+				special_forces_min = 1200
 			}
 		}
+		9x_sf= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 1400
+			}
+		}
+		XX_sf = {
+			picture = BRA_air_force
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_min = 2000
+			}
+		}
+		#test_refinery = {
+		#	picture = SOV_russian_corporate_state_ccp_sov_compatibility
+		#	allowed_civil_war = {
+		#		always = yes
+		#	}
+		#	modifier = {
+		#		repair_speed_synthetic_refinery_factor = 1
+		#	}
+		#	removal_cost = -1
+		#}
     }
 }
