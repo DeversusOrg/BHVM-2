@@ -400,3 +400,21 @@ Fixed air focus main buffs
 The plundering: There are 3 options south , east and west , south gives you the most amount of factories but the least amount of manpower  , east gives you the most amount of manpower but no factories , west gives you a balance of manpower and industry
 What ever option you pick for the plundering , you will get a buff for that region later down the focus tree and there the concentrated farm acts will be applied aka you get the eco there
 You can now gain a tiny wee bit amount of oil as mongolia so you dont starve the soviet as much , plus its hist accurate ;)
+
+Sigma Sigma Boy update
+
+Updated to the new GOE dlc
+Made railways , syntehtic refs , supply hubs , state aa , radar to take way less damage from strat bombing
+Made convoys not to eat fuel like a 6.2L V12 engine
+Special forces tech is back since it was a nothing burger
+Special forces game rule for nations , special forces matter again for minors. Majors and important SF nations have modefiers that you can see in game
+Made it so that when france caps it auto annexes the levant pupets
+More jiggle physcis!! i mean~~ more juggle slots so you dont have to go to industry tab everytime
+ISRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEL!! I suggest UK to not annex it for the the capital supply hub lol
+Traning the 1 div you start with gives way less xp than before 
+Pregrinds for almost every nation has been changed from what has been last time , here are the new pregrinds and whats been changed:
+RAJ AST BRA CAN SAF ENG GER SOV - All nerfed , FRA pregrind has been buffed. To put it shortly , mass stat debloat but not really
+Changed the spain simulator a bit.
+
+
+
