@@ -10,7 +10,7 @@ state={
 		owner = YUG
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 5
+			industrial_complex = 6
 			air_base = 2
 
 		}
