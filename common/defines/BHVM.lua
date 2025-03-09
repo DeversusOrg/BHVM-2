@@ -1,3 +1,10 @@
+NDefines.NProject.RECRUIT_SCIENTIST_COST = { -- Amount of pp to hire a scientist based on available scientist
+		10,			-- pp cost if no available scientist
+		10,			-- pp cost if 1 available scientist
+		10,			-- pp cost if 2 available scientist
+		10			-- pp cost if more than 2 available scientist
+	}
+
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 999 -- Lag days
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 999 -- pause days
 NDefines.NGame.GAME_SPEED_SECONDS = { 100.0, 0.25, 0.19, 0.06, 0.0 } 
@@ -13,6 +20,7 @@ NDefines.NDiplomacy.TENSION_FACTION_JOIN = 0.1
 NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE = 10000			-- vanilla 150, changed in attempt to make capitulations look more reasonable. extra bonus when deciding who to capitulate to (applied to capital holder)
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 6           -- more spam more spam more spam
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
+
 
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
@@ -46,7 +54,7 @@ NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999                            -- WAS 500 || XP Cap
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999			                    -- WAS 500 || XP Cap
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999		                    -- WAS 500 || XP Cap
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0001 	-- vilkata defines , not to be a complete 0 but not to be a complete something
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0 	-- vilkata defines 0015
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.20	-- vilkata defines
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.15 	-- vilkata defines
 NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.3 	-- vilkata defines
@@ -82,6 +90,7 @@ NDefines.NTrade.RELATION_TRADE_FACTOR = 0				-- Trade factor is modified by Opin
 
 
 
+NDefines.NAI.RESEARCH_AHEAD_OF_TIME_FACTOR = 0
 NDefines.NAI.GENERATE_WARGOAL_ANTAGONIZE_SCALE = 0
 NDefines.NAI.BASE_DISTANCE_TO_CARE = 0                -- Countries that are too far away are less interesting in diplomacy
 NDefines.NAI.DIPLO_PREFER_OTHER_FACTION = 0

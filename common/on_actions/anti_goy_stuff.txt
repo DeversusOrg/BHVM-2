@@ -6,12 +6,18 @@ on_actions = {
                     is_ai = no
                     equipment_upgrade_exceeds_limit = yes
                 }
-                news_event = {
-                    id = cheat.1
-                    days = 0
-                    from = PREV
+                if = {
+                    limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                    news_event = {
+                        id = cheat.1
+                        days = 0
+                        from = PREV
+                    }
                 }
-                sound_effect = "cheat_sound_effect"
+                if = {
+                    limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                    sound_effect = "cheat_sound_effect"
+                }
             }
         }
     }
@@ -29,14 +35,21 @@ on_actions = {
                     }
                     # Broadcast the event globally
                     every_country = {
-                        news_event = {
-                            id = cheat.2
-                            days = 0
-                            from = ROOT   # Use ROOT to refer to the violating country
-                            state = THIS  # Pass the state information
+                        
+                        if = {
+                            limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                            news_event = {
+                                id = cheat.2
+                                days = 0
+                                from = ROOT   # Use ROOT to refer to the violating country
+                                state = THIS  # Pass the state information
+                            }
                         }
                     }
-                    sound_effect = "cheat_sound_effect"
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                        sound_effect = "cheat_sound_effect"
+                    }
                 }
             }
         }
@@ -150,13 +163,19 @@ on_actions = {
                         idea = illegal_trait_config_cheater_idea
                         days = 8
                     }
-                    every_country = {
-                        news_event = {
-                            id = cheat.4
-                            days = 0
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                        every_country = {
+                            news_event = {
+                                id = cheat.4
+                                days = 0
+                            }
                         }
                     }
-                    sound_effect = "cheat_sound_effect"
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                        sound_effect = "cheat_sound_effect"
+                    }
                 }
             }
         }
@@ -289,13 +308,20 @@ on_actions = {
                         idea = double_land_cheater_idea
                         days = 8
                     }
-                    every_country = {
-                        news_event = {
-                            id = cheat.3
-                            days = 0
+                    
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                        every_country = {
+                            news_event = {
+                                id = cheat.3
+                                days = 0
+                            }
                         }
                     }
-                    sound_effect = "cheat_sound_effect"
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                        sound_effect = "cheat_sound_effect"
+                    }
                 }
             }
             every_country = {
@@ -367,11 +393,17 @@ on_actions = {
                     days = 8
                 }
                 every_country = {
-                    news_event = {
-                        id = cheat.3
-                        days = 0
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                        news_event = {
+                            id = cheat.3
+                            days = 0
+                        }
                     }
-                    sound_effect = "cheat_sound_effect"
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                        sound_effect = "cheat_sound_effect"
+                    }
                 }
             }
             every_country = {
@@ -420,11 +452,17 @@ on_actions = {
                     days = 8
                 }
                 every_country = {
-                    news_event = {
-                        id = cheat.3
-                        days = 0
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                        news_event = {
+                            id = cheat.3
+                            days = 0
+                        }
                     }
-                    sound_effect = "cheat_sound_effect"
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                        sound_effect = "cheat_sound_effect"
+                    }
                 }
             }
             every_country = {
@@ -520,11 +558,17 @@ on_actions = {
                     days = 8
                 }
                 every_country = {
-                    news_event = {
-                        id = cheat.3
-                        days = 0
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_event_flag } }
+                        news_event = {
+                            id = cheat.3
+                            days = 0
+                        }
                     }
-                    sound_effect = "cheat_sound_effect"
+                    if = {
+                        limit = { NOT = { has_country_flag = mute_cheat_sound_flag } }
+                        sound_effect = "cheat_sound_effect"
+                    }
                 }
             }
             every_country = {

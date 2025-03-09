@@ -445,11 +445,6 @@ acoustic_guerilla_tatctics = {
 		text = "RBanned"
 		desc = "Gurilla Tatics are not able to be Selected"
 	}
-	option = {
-		name = PLAINS
-		text = "PPlains"
-		desc = "Guerilla Tatics are RNOT able to get rolled on plains"
-	}
 }
 space_marine_deleter = {
 	name = "Mixing inf and armor"
@@ -558,18 +553,18 @@ soviet_focus_buffs = {
 	}
 }
 barb_gorila = {
-	name = "Gorila On Barb settings"
+	name = "Guerilla On Barb settings"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_tank"
 	default = {
 		name = ALLOWED
-		text = "GSoviets can do gorila warfare"
-		desc = "Soviets can pick the mass mob doctrine(RECOMENDED?)"
+		text = "GSoviets can do guerilla warfare"
+		desc = "Soviets can pick the guerilla warfare (tactic) doctrine tech(RECOMENDED?)"
 	}
 	option = {
 		name = DISALLOWED
-		text = "RSoviets cannot do gorila warfare"
-		desc = "Soviets can't pick the mass mob doctrine(NOT REALLY RECOMENDED)"
+		text = "RSoviets cannot do guerilla warfare"
+		desc = "Soviets can't pick the guerilla warfare (tactic) doctrine tech(NOT REALLY RECOMENDED)"
 	}
 }
 sov_tashek_tungsten = {
@@ -606,12 +601,12 @@ auto_tech_rush = {
 	name = "Auto Tech Rush"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_research"
-	option = {
+	default = {
 		name = on
 		text = "ROn"
 		desc = "There will be decisions for auto-tech rushing (Recommmended)"
 	}
-	default = {
+	option = {
 		name = off
 		text = "GOff"
 		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended , If noob)"
@@ -626,20 +621,20 @@ vanila_bonuses = {
 		text = "1Real100%Balance"
 		desc = "Swedish Swiss and Denmark bonuses will apply to Italy Germany and England , swiss bonuses only to France(Not exactly Recommmended)"
 	}
-	default = {
+	option = {
 		name = on-axis
 		text = "KAxis-Bias"
-		desc = "Swedish Swiss and Denmark bonuses will apply to Italy and Germany(Recomended)"
+		desc = "Swedish Swiss and Denmark bonuses will apply to Italy and Germany(Not Recommmended)"
 	}
 	option = {
 		name = on-allies
 		text = "5Allies-Bias"
 		desc = "Swedish and Swiss bonuses will apply to England , swiss bonuses only to France(Not Recommmended)"
 	}
-	option = {
+	default = {
 		name = off
 		text = "YOff"
-		desc = "Absolutely no bonuses from vanila based countries(Not Recommmended)"
+		desc = "Absolutely no bonuses from vanila based countries(Recommmended)"
 	}
 }
 #upgradable_amb_mech = {
@@ -691,12 +686,12 @@ mental_hospitals = {
 	name = "Allow Hospital 2"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_cavalry"
-	default = {
+	option = {
 		name = on
 		text = "GOn"
 		desc = "You're ALLOWED to research Mental Hospital technology(Recommmended)"
 	}
-	option = {
+	default = {
 		name = off
 		text = "ROff"
 		desc = "You're NOT ALLOWD TO research Mental Hospital technology(Not Recommmended)"
@@ -732,33 +727,8 @@ spanish_franco_cp = {
 		desc = "Spain doesn't get CP from franco focus and less CP gain"
 	}
 }
-spanish_production = {
-	name = "Spanish Production"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_industry"
-	option = {
-		name = ger_mech
-		text = "GGerman Lend Lease for Mech"
-		desc = "It progresivly gets better as more time passes"
-	}
-	option = {
-		name = bul_mech
-		text = "BGerman-Bulgarian Lend Lease for Mech"
-		desc = "It progresivly gets better as more time passes , for bulgaria"
-	}
-	default = {
-		name = mixer
-		text = "4Germany can choose either BUL or GER"
-		desc = "It progresivly gets better as more time passes , Germany can choose between itself and bulgaria"
-	}
-	option = {
-		name = off
-		text = "RGermany doesn't get a button for Mech lend lease"
-		desc = "No DDAY wall :("
-	}
-}
 brazil_nerf = {
-	name = "Brazil Eco & Rubber Nerf"
+	name = "Brazil Rubber Nerf"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_industry"
 	option = {
@@ -768,7 +738,7 @@ brazil_nerf = {
 	option = {
 		name = on
 		text = "Brazil is nerfed"
-		desc = "Brazil right side eco is nerfed and rubber is reduced by ~66%"
+		desc = "Brazil rubber is reduced by ~50%"
 	}
 }
 no_market = {
@@ -805,12 +775,12 @@ ger_eco = {
 	name = "Germany eco paths allownonce "
 	group = "BHVM game rules"
 	icon = "GFX_decision_category_generic_arms_trade"
-	default = {
+	option = {
 		name = both
 		text = "GOn-All"
 		desc = "Germany can go both left and right side(Recommmended)"
 	}
-	option = {
+	default = {
 		name = left_ban
 		text = "RLeft Ban"
 		desc = "Germany cannot do left side of the eco tree(Not Recommmended)"
@@ -891,12 +861,12 @@ sov_purges = {
 	name = "Soviet general purges"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_assassination"
-	default = {
+	option = {
 		name = yes
 		text = "GOn"
 		desc = "There is a chance that top SOV generals will get purged(Recommmended)"
 	}
-	option = {
+	default = {
 		name = no
 		text = "PNone"
 		desc = "There is no chance that top SOV will get purged(Not balanced)"
@@ -982,6 +952,21 @@ no_asia_gamemode = {
 		name = off
 		text = "GOff"
 		desc = "With Asia(Recommmended)"
+	}
+}
+playable_mongolia = {
+	name = "Playable Mongolia?"
+	group = "BHVM game rules"
+	icon = "GFX_decision_category_generic_prospect_for_resources"
+	default = {
+		name = no
+		text = "GNo"
+		desc = "Mongolia gets day 1 annexed (Recommmended)"
+	}
+	option = {
+		name = yes
+		text = "RYes"
+		desc = "Mongolia is playable (Not Recommmended)"
 	}
 }
 china_war_difficulty = {

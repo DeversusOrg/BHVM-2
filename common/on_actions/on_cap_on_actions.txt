@@ -113,37 +113,13 @@ on_actions = {
 							}
 						}
 					}
-					if = {
-						limit = {
-							country_exists = ITA
-						}
-						ITA = {
-							transfer_state = 99
-							transfer_state = 911
-							transfer_state = 37
-						}
-					}
-					else = {
-						GER = {
-							transfer_state = 99
-							transfer_state = 911
-							transfer_state = 37
-						}
-					}
-					if = {
-						limit = {
-							country_exists = GER
-						}
-						GER = {
-							transfer_state = 912
-							country_event = denmark_occupation_event.2
-							transfer_state = 910
-						}
-					}
-					else = {
-						ITA = {
-							transfer_state = 912
-						}
+					GER = {
+						transfer_state = 99
+						transfer_state = 911
+						transfer_state = 37
+						transfer_state = 912
+						country_event = denmark_occupation_event.2
+						transfer_state = 910
 					}
 				}
 				else_if = {
@@ -159,41 +135,17 @@ on_actions = {
 							}
 						}
 					}
-					if = {
-						limit = {
-							country_exists = ITA
-						}
-						ITA = {
-							transfer_state = 99
-							transfer_state = 911
-							transfer_state = 37
-						}
-					}
-					else = {
-						GER = {
-							transfer_state = 99
-							transfer_state = 911
-							transfer_state = 37
-						}
-					}
-					if = {
-						limit = {
-							country_exists = GER
-						}
-						GER = {
-							transfer_state = 912
-							transfer_state = 910
-						}
-					}
-					else = {
-						ITA = {
-							transfer_state = 912
-						}
+					GER = {
+						transfer_state = 99
+						transfer_state = 911
+						transfer_state = 37
+						transfer_state = 912
+						transfer_state = 910
 					}
 				}
 			}
 		}
-	}	
+	}
     on_capitulation = {
 		# Yugoslavia
 		effect = {

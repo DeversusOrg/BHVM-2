@@ -169,10 +169,35 @@ technologies = {
 		xor={
 			armored_spearhead
 		}
-		category_mobile_and_mobile_combat_sup = {
+		motorized = {
 			maximum_speed = 0.1
 			default_morale = 0.2
-		}	
+		}
+		armored_car = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+		mot_artillery_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+		mot_anti_tank_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+		mot_anti_air_brigade = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+		mechanized = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+		amphibious_mechanized = {
+			maximum_speed = 0.1
+			default_morale = 0.2
+		}
+		
 		
 		path = {
 			leads_to_tech = mass_motorization 
@@ -486,9 +511,15 @@ technologies = {
 
 		enable_tactic = tactic_breakthrough
 		
-		category_vehicle_infantry = {
+		motorized = {
 			max_organisation = 5
 		}
+		mechanized = {
+			max_organisation = 5
+		}
+		amphibious_mechanized = {
+			max_organisation = 5
+		}		
 
 		
 		path = {
@@ -919,17 +950,12 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
 		enable_tactic = tactic_guerrilla_tactics_plains
-		enable_tactic = tactic_sf_ambush
 		
 		doctrine = yes	
 		research_cost = 4.5
 		
 		allow = {
 			OR = {
-				has_game_rule = {
-					rule = acoustic_guerilla_tatctics
-					option = PLAINS
-				}
 				has_game_rule = {
 					rule = acoustic_guerilla_tatctics
 					option = ALLOWED
@@ -1459,6 +1485,7 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 4.5
+		enable_tactic = tactic_sf_barrage
 		
 		categories = {
 			land_doctrine
@@ -1677,8 +1704,8 @@ technologies = {
 			leads_to_tech = forward_observers 
 			research_cost_coeff = 1
 		}
-
 		enable_tactic = tactic_sf_barrage
+
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -2221,6 +2248,9 @@ technologies = {
 		category_tanks = {
 			max_organisation = 1
 		}
+		category_all_armor = {
+			morale = 0.10
+		}
 		armored_car = {
 			max_organisation = 1
 		}
@@ -2442,9 +2472,7 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
-		category_cavalry = {
-			breakthrough = 0.05
-		}
+		
 		enable_tactic = tactic_infantry_charge
 		
 		path = {
@@ -2918,6 +2946,7 @@ technologies = {
 
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_sf_barrage
+		
 		path = {
 			leads_to_tech = deep_operations
 			research_cost_coeff = 1
@@ -3335,21 +3364,7 @@ technologies = {
 		attrition = -0.1 #take 10% less attrition losses
 
 		
-		enable_tactic = tactic_human_wave_tactics
-
-		allow = {
-			OR = {
-				NOT = { tag = SOV }
-				AND = {
-					tag = SOV
-					has_game_rule = {
-						rule = barb_gorila
-						option = ALLOWED
-					}
-				}
-			}
-		}
-		
+		enable_tactic = tactic_human_wave_tactics		
 		
 		path = {
 			leads_to_tech = human_infantry_offensive
@@ -3520,10 +3535,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = guerilla_warfare_not_on_plains
-			research_cost_coeff = 2
-		}
-		path = {
 			leads_to_tech = guerilla_warfare_disabled
 			research_cost_coeff = 2
 		}
@@ -3563,7 +3574,6 @@ technologies = {
 		xp_unlock_cost = 100
 		xor = {
 			guerilla_warfare_disabled
-			guerilla_warfare_not_on_plains
 		}
 		out_of_supply_factor = -0.30
 		category_army = {
@@ -3573,15 +3583,23 @@ technologies = {
 		resistance_growth_on_our_occupied_states = 0.25 
 		
 		allow = {
-				has_game_rule = {
-					rule = acoustic_guerilla_tatctics
-					option = ALLOWED
+			has_game_rule = {
+				rule = acoustic_guerilla_tatctics
+				option = ALLOWED
+			}
+			OR = {
+				NOT = { tag = SOV }
+				AND = {
+					tag = SOV
+					has_game_rule = {
+						rule = barb_gorila
+						option = ALLOWED
+					}
 				}
-				
+			}
 		}
 
 		enable_tactic = tactic_guerrilla_tactics
-		enable_tactic = tactic_sf_ambush
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -3617,7 +3635,6 @@ technologies = {
 
 		xor = {
 			guerilla_warfare
-			guerilla_warfare_not_on_plains
 		}
 
 		allow = {
@@ -3665,66 +3682,6 @@ technologies = {
 		
 		ai_research_weights = {
 			industry = 2.0
-		}
-	}
-	guerilla_warfare_not_on_plains = {
-		xor={
-			guerilla_warfare
-			guerilla_warfare_disabled
-		}
-		xp_research_type = army
-		xp_unlock_cost = 100
-		out_of_supply_factor = -0.30
-		category_army = {
-			default_morale = 0.2
-		}
-		
-		resistance_growth_on_our_occupied_states = 0.25 
-
-		enable_tactic = tactic_guerrilla_tactics_plains
-		enable_tactic = tactic_sf_ambush
-		
-		doctrine = yes	
-		research_cost = 4.5
-		
-		allow = {
-			OR = {
-				has_game_rule = {
-					rule = acoustic_guerilla_tatctics
-					option = PLAINS
-				}
-				has_game_rule = {
-					rule = acoustic_guerilla_tatctics
-					option = ALLOWED
-				}
-			}
-		}
-
-		categories = {
-			land_doctrine
-			cat_mass_assault
-		}
-
-		
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 1 y = 14 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-		}
-		
-		ai_research_weights = {
-			armor = 2.0
 		}
 	}
 	masterful_blitz = {

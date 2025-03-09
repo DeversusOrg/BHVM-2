@@ -34,6 +34,27 @@ on_actions = {
 	on_startup = {
 		effect = {
 			if = {
+				limit ={
+					has_game_rule = {
+						rule = playable_mongolia
+						option = no
+					}
+				}
+				SOV = { 
+					annex_country = { target = MON transfer_troops = yes }
+					every_state = {
+						limit = {
+							is_core_of = MON
+						}
+						add_core_of = SOV
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = {
 				limit = {
 					has_game_rule = {
 						rule = sf_multiplier
@@ -931,7 +952,7 @@ on_actions = {
 						country_event = { id = tech_rush.4 days = 330 } #mech
 					}
 					BLM = {
-						country_event = { id = tech_rush.5 days = 740 } #gun2
+						country_event = { id = tech_rush.5 days = 710 } #gun2
 					}
 					BLM = {
 						country_event = { id = tech_rush.6 days = 810 } #aa2

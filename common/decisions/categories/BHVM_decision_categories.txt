@@ -1,3 +1,10 @@
+mute_cheat_sound_category = {
+	priority = 999999
+	visible = {
+		always = yes
+	}
+}
+
 SOV_spain = {
 	visible = {
 		OR = {

@@ -11,47 +11,39 @@ mongolia_industry = {
 	}
 
 	ai_national_focuses = {
-		MON_buddhist_compromise
+		MON_indusrial
+        MON_upgrade_eco
+        MON_diversefy_roads
+        MON_railway
+        MON_self_development
+        MON_more_jobs
+        MON_more_mills
+        MON_buddhist_compromise
         MON_religious_taxations
-        MON_cooperation_with_buddhists
         MON_remove_religious_figureheads
-        MON_army
-        MON_doctrine
+        MON_cooperation_with_buddhists
         MON_government_reforms
-        MON_anti_fascist_campaing
-        MON_china_help
-        MON_communist_propagnda
-        MON_stabalize_the_country
-        MON_indusrial
-        MON_spirit_of_genkhis
-        MON_follow_soviet
         MON_society_reforms
         MON_new_constitution
-        MON_invite_soviet_scientists
-        MON_force_out
-        MON_unite_steppes
-        MON_give_up_tanatuva
-        MON_soviet_subsidies
-        MON_mobilize_the_workers
-        MON_mineral_exploration
-        MON_upgrade_eco
-        MON_railway
-        MON_diversefy_roads
-        MON_self_development
-        MON_weapon_production
         MON_civilian_bastion
         MON_grande_economy
+        MON_unite_steppes
+        MON_human_reorganization
+        MON_plunder_south
+        MON_soviet_subsidies
+        MON_communist_propagnda
+        MON_stabalize_the_country
+        MON_mobilize_the_workers
         MON_economic_bloom
         MON_soviet_styled_economy
-        MON_more_mills
-        MON_more_jobs
-        MON_mountain_development
+        MON_mineral_exploration
         MON_sloting
 	}
 
 	
 	research = {
-		industry = 1000
+        industry = 10000
+        electronics = 1000
 		air_equipment = -1000
 		air_doctrine = -1000
 	}

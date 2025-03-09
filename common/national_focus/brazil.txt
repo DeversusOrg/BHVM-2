@@ -250,13 +250,7 @@ focus_tree = {
 						tooltip = production_speed_arms_factory_factor_tt
 					}
 				}
-				ELSE_IF = {
-					limit = {
-						has_game_rule = {
-							rule = brazil_nerf
-							option = on
-						}
-					}
+				ELSE = {
 					add_to_variable = {
 						BRA_estado_novo_production_speed_arms_factory_factor = 0.02
 						tooltip = production_speed_arms_factory_factor_tt
@@ -284,13 +278,8 @@ focus_tree = {
 						BRA_estado_moderno_production_speed_arms_factory_factor = 0.05
 						#tooltip = production_speed_arms_factory_factor_tt
 					}
-				}IF = {
-					limit = {
-						has_game_rule = {
-							rule = brazil_nerf
-							option = on
-						}
-					}
+				}
+				ELSE = {
 					add_to_variable = {
 						BRA_estado_moderno_production_speed_arms_factory_factor = 0.02
 						#tooltip = production_speed_arms_factory_factor_tt
@@ -330,9 +319,23 @@ focus_tree = {
 			IF = {
 				limit = { has_dynamic_modifier = { modifier = BRA_estado_novo_modifier } }
 				custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
-				add_to_variable = {
-					BRA_estado_novo_production_factory_max_efficiency_factor = 0.02
-					tooltip = production_factory_max_efficiency_factor_tt
+				IF = {
+					limit = {
+						has_game_rule = {
+							rule = brazil_nerf
+							option = off
+						}
+					}
+					add_to_variable = {
+						BRA_estado_novo_production_factory_max_efficiency_factor = 0.05
+						tooltip = production_factory_max_efficiency_factor_tt
+					}
+				}
+				ELSE = {
+					add_to_variable = {
+						BRA_estado_novo_production_factory_max_efficiency_factor = 0.02
+						tooltip = production_factory_max_efficiency_factor_tt
+					}
 				}
 				add_to_variable = {
 					BRA_estado_novo_consumer_goods_factor = -0.05
@@ -345,9 +348,23 @@ focus_tree = {
 			}
 			ELSE = {
 				custom_effect_tooltip = BRA_modify_estado_moderno_ns_intro
-				add_to_variable = {
-					BRA_estado_moderno_production_factory_max_efficiency_factor = 0.02
-					tooltip = industrial_capacity_factory_tt
+				IF = {
+					limit = {
+						has_game_rule = {
+							rule = brazil_nerf
+							option = off
+						}
+					}
+					add_to_variable = {
+						BRA_estado_novo_production_factory_max_efficiency_factor = 0.05
+						tooltip = production_factory_max_efficiency_factor_tt
+					}
+				}
+				ELSE = {
+					add_to_variable = {
+						BRA_estado_novo_production_factory_max_efficiency_factor = 0.02
+						tooltip = production_factory_max_efficiency_factor_tt
+					}
 				}
 				add_to_variable = {
 					BRA_estado_moderno_consumer_goods_factor = -0.05
