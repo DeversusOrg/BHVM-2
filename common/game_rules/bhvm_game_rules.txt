@@ -445,6 +445,11 @@ acoustic_guerilla_tatctics = {
 		text = "RBanned"
 		desc = "Gurilla Tatics are not able to be Selected"
 	}
+	option = {
+		name = PLAINS
+		text = "PPlains"
+		desc = "Guerilla Tatics are RNOT able to get rolled on plains"
+	}
 }
 space_marine_deleter = {
 	name = "Mixing inf and armor"
@@ -712,6 +717,31 @@ finish_support_comp = {
 		desc = "Finland DOES NOT have its companies avaible(Not Recommmended)"
 	}
 }
+spanish_production = {
+	name = "Spanish Production"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_industry"
+	option = {
+		name = ger_mech
+		text = "GGerman Lend Lease for Mech"
+		desc = "It progresivly gets better as more time passes"
+	}
+	option = {
+		name = bul_mech
+		text = "BGerman-Bulgarian Lend Lease for Mech"
+		desc = "It progresivly gets better as more time passes , for bulgaria"
+	}
+	default = {
+		name = mixer
+		text = "4Germany can choose either BUL or GER"
+		desc = "It progresivly gets better as more time passes , Germany can choose between itself and bulgaria"
+	}
+	option = {
+		name = off
+		text = "RGermany doesn't get a button for Mech lend lease"
+		desc = "No DDAY wall :("
+	}
+}
 spanish_franco_cp = {
 	name = "Spanish Franco CP"
 	group = "BHVM game rules"
@@ -896,6 +926,11 @@ sf_multiplier = {
 		name = capped
 		text = "RSF cap is almost vanilla"
 		desc = "Every nation has the same SF cap , unless national ideas(NOT RECOMMENDED)"
+	}
+	option = {
+		name = unlimited
+		text = "YSF is unlimted"
+		desc = "Every nation has unlimited SF cap!(NOT RECOMMENDED)"
 	}
 	default = {
 		name = uncapped

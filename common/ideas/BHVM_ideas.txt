@@ -295,6 +295,8 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -10
 				production_factory_max_efficiency_factor = -10
+				conscription = -10
+				consumer_goods_factor = 100
 				conversion_cost_civ_to_mil_factor = 100
 				conversion_cost_mil_to_civ_factor = 100
 				ai_desired_divisions_factor = -1000
@@ -408,7 +410,7 @@ ideas = {
 			picture = generic_infantry_bonus
 			modifier = {
 				experience_gain_army_unit_factor = 1
-				experience_gain_army = 0.4
+				experience_gain_army = 0.3
 				training_time_army_factor = -0.85
 				air_training_xp_gain_factor = 9
 				experience_gain_navy_unit_factor = 10
@@ -547,57 +549,67 @@ ideas = {
 				air_volunteer_cap = -1000
 			}
 		}
-		2x_sf= {
+		sf_cap_2X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
+			#removal_cost = -1
 			modifier = {
 				special_forces_min = 200
 			}
 		}
-		3x_sf= {
+		sf_cap_3X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
+			#removal_cost = -1
 			modifier = {
 				special_forces_min = 400
 			}
 		}
-		4x_sf= {
+		sf_cap_4X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
+			#removal_cost = -1
 			modifier = {
 				special_forces_min = 600
 			}
 		}
-		5x_sf= {
+		sf_cap_5X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
+			#removal_cost = -1
 			modifier = {
 				special_forces_min = 800
 			}
 		}
-		6x_sf= {
+		sf_cap_6X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
+			#removal_cost = -1
 			modifier = {
 				special_forces_min = 1000
 			}
 		}
-		7x_sf= {
+		sf_cap_7X= {
+			picture = eng_special_air_service
+			allowed_civil_war = {
+				always = yes
+			}
+			#removal_cost = -1
+			modifier = {
+				special_forces_min = 1200
+			}
+		}
+		sf_cap_8X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
@@ -607,45 +619,35 @@ ideas = {
 				special_forces_min = 1200
 			}
 		}
-		8x_sf= {
+		sf_cap_9X= {
 			picture = eng_special_air_service
 			allowed_civil_war = {
 				always = yes
 			}
-			removal_cost = -1
-			modifier = {
-				special_forces_min = 1200
-			}
-		}
-		9x_sf= {
-			picture = eng_special_air_service
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
+			#removal_cost = -1
 			modifier = {
 				special_forces_min = 1400
 			}
 		}
-		XX_sf = {
+		sf_cap_10X = {
+			picture = BRA_air_force
+			allowed_civil_war = {
+				always = yes
+			}
+			#removal_cost = -1
+			modifier = {
+				special_forces_min = 2000
+			}
+		}
+		unlimited_sf_cap = {
 			picture = BRA_air_force
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				special_forces_min = 2000
+				special_forces_min = 9999
 			}
 		}
-		#test_refinery = {
-		#	picture = SOV_russian_corporate_state_ccp_sov_compatibility
-		#	allowed_civil_war = {
-		#		always = yes
-		#	}
-		#	modifier = {
-		#		repair_speed_synthetic_refinery_factor = 1
-		#	}
-		#	removal_cost = -1
-		#}
     }
 }

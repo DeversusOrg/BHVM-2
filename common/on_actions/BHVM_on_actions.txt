@@ -57,14 +57,6 @@ on_actions = {
     }
 	on_monthly = {
 		effect = {
-			if = {
-				every_country = {
-					limit = {
-						is_ai = yes
-					}
-					add_ideas = ai_limit
-				}
-			}
 			every_country = {
 				limit = { NOT = { is_ai = yes } }
 				if = {
@@ -446,13 +438,95 @@ on_actions = {
 	}
     on_startup = {
 		effect = {
-			if = {
-				every_country = {
-					limit = {
-						is_ai = yes
-					}
-					add_ideas = ai_limit
+			IF = {
+				limit = {
+					AST = { is_ai = yes }
 				}
+				AST = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					IRE = { is_ai = yes }
+				}
+				IRE = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					CAN = { is_ai = yes }
+				}
+				CAN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					NZL = { is_ai = yes }
+				}
+				NZL = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					BRA = { is_ai = yes }
+				}
+				BRA = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					HUN = { is_ai = yes }
+				}
+				HUN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					BUL = { is_ai = yes }
+				}
+				BUL = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					ROM = { is_ai = yes }
+				}
+				ROM = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					MEX = { is_ai = yes }
+				}
+				MEX = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					SAF = { is_ai = yes }
+				}
+				SAF = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					RAJ = { is_ai = yes }
+				}
+				RAJ = { add_ideas = ai_limit}
+			}
+            IF = {
+				limit = {
+					SIA = { is_ai = yes }
+				}
+				SIA = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					MAN = { is_ai = yes }
+				}
+				MAN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					IRQ = { is_ai = yes }
+				}
+				IRQ = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					PER = { is_ai = yes }
+				}
+				PER = { add_ideas = ai_limit}
 			}
 			if = { 
                 every_country = {

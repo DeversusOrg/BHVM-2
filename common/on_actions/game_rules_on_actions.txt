@@ -58,22 +58,71 @@ on_actions = {
 				limit = {
 					has_game_rule = {
 						rule = sf_multiplier
+						option = unlimited
+					}
+				}
+				every_country = {
+					add_ideas = unlimited_sf_cap
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = sf_multiplier 
 						option = uncapped
 					}
 				}
-				FIN = { add_ideas = 3x_sf }
-				GER = { add_ideas = 4x_sf }
-				ITA = { add_ideas = 4x_sf }
-				ENG = { add_ideas = 6x_sf }
-				USA = { add_ideas = 6x_sf }
-				BRA = { add_ideas = 3x_sf }
-				JAP = { add_ideas = XX_sf }
-				AST = { add_ideas = 2x_sf }
-				RAJ = { add_ideas = 2x_sf }
-				FRA = { add_ideas = 2x_sf }
+				FIN = { add_ideas = sf_cap_3X }
+				GER = { add_ideas = sf_cap_4X }
+				ITA = { add_ideas = sf_cap_4X }
+				ENG = { add_ideas = sf_cap_6X }
+				USA = { add_ideas = sf_cap_6X }
+				BRA = { add_ideas = sf_cap_3X }
+				JAP = { add_ideas = sf_cap_10X }
+				AST = { add_ideas = sf_cap_2X }
+				RAJ = { add_ideas = sf_cap_2X }
+				FRA = { add_ideas = sf_cap_2X }
 			}
 		}
 	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sf_multiplier
+						option = unlimited
+					}
+				}
+				every_country = {
+					if = {
+						limit = { NOT = { has_idea = unlimited_sf_cap } }
+						add_ideas = unlimited_sf_cap
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = sf_multiplier
+						option = uncapped
+					}
+				}
+				FIN = { if = { limit = { NOT = { has_idea = sf_cap_3X } } add_ideas = sf_cap_3X } }
+				GER = { if = { limit = { NOT = { has_idea = sf_cap_4X } } add_ideas = sf_cap_4X } }
+				ITA = { if = { limit = { NOT = { has_idea = sf_cap_4X } } add_ideas = sf_cap_4X } }
+				ENG = { if = { limit = { NOT = { has_idea = sf_cap_6X } } add_ideas = sf_cap_6X } }
+				USA = { if = { limit = { NOT = { has_idea = sf_cap_6X } } add_ideas = sf_cap_6X } }
+				BRA = { if = { limit = { NOT = { has_idea = sf_cap_3X } } add_ideas = sf_cap_3X } }
+				JAP = { if = { limit = { NOT = { has_idea = sf_cap_10X } } add_ideas = sf_cap_10X } }
+				AST = { if = { limit = { NOT = { has_idea = sf_cap_2X } } add_ideas = sf_cap_2X } }
+				RAJ = { if = { limit = { NOT = { has_idea = sf_cap_2X } } add_ideas = sf_cap_2X } }
+				FRA = { if = { limit = { NOT = { has_idea = sf_cap_2X } } add_ideas = sf_cap_2X } }
+			}
+		}
+	}
+
 	
 	on_startup = {
 		effect = {
