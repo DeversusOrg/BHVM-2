@@ -9542,6 +9542,12 @@ focus_tree = {
 		relative_position_id = GER_anschluss
 		cost = 5
 		available = {
+			NOT = {
+				has_game_rule = {
+					rule = ger_supreme_leader
+					option = DISALLOWED
+				}
+			}
 			surrender_progress < 0.1
 			custom_trigger_tooltip = { 
 				tooltip = GER_demonstration_of_military_achievements_trigger

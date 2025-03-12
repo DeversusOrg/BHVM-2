@@ -2119,7 +2119,6 @@ shared_focus = {
 	y = 0
 
 	dynamic = yes
-
 	offset = {
 		x = 4
 		y = 0
@@ -2158,7 +2157,14 @@ shared_focus = {
 		}
 		value = GFX_goal_generic_build_airforce
 	}
-
+	available = {
+		NOT = {
+			has_game_rule = {
+				rule = ac_brazil
+				option = DISALLOWED
+			}
+		}
+	}
 	cost = 5
 
 	ai_will_do = {

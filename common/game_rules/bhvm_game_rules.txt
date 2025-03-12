@@ -960,12 +960,12 @@ ac_brazil = {
 	icon = "GFX_decision_SWE_set_air_budget"
 	default = {
 		name = ALLOWED
-		text = "RSF cap is almost vanilla"
+		text = "RBrazil AC is allowed"
 		desc = "Brazil CAN do its air focuses and joins allies day 1(Recommmended)"
 	}
 	option = {
 		name = DISALLOWED
-		text = "GBrazil AC is allowed"
+		text = "GBrazil AC is BANNED"
 		desc = "Brazil can't do its air focuses and doesnt join allies day 1 of WW2(NOT RECOMMENDED)"
 	}
 }

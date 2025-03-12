@@ -8805,7 +8805,7 @@ focus = {
 		relative_position_id = SOV_policy_of_collective_security
 		cost = 5
 		
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0

@@ -67,7 +67,19 @@ on_actions = {
 						days = 1
 					}
 				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ac_brazil
+							option = ALLOWED
+						}
+					}
+					ENG = {
+						add_to_faction = BRA
+					}
+				}
 			}
+			
 			if = {
 				limit = {
 					FROM = {
