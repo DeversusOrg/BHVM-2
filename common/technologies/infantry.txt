@@ -2104,7 +2104,12 @@ technologies = {
 			name = infantry_folder
 			position = { x = 2 y = @1943 }
 		}
-		
+		allow = {
+			has_game_rule = {
+				rule = mech_2_tech
+				option = ALLOWED
+			}
+		}
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -2137,7 +2142,12 @@ technologies = {
 			name = infantry_folder
 			position = { x = 0 y = @1942 }
 		}
-		
+		allow = {
+			has_game_rule = {
+				rule = mech_2_tech
+				option = ALLOWED
+			}
+		}
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized

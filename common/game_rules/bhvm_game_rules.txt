@@ -918,6 +918,22 @@ juggle_slot = {
 	}
 }
 
+mech_2_tech = {
+	name = "Mechanized 2 (Amtrac 2 too)"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = ALLOWED
+		text = "GALLOWED"
+		desc = "Mech 2 and amtrac 2 onwards are researchable(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RDISALLOWED"
+		desc = "Mech 2 is NOT researchable(Not Recommmended)"
+	}
+}
+
 sf_multiplier = {
 	name = "Special Forces Multiplier"
 	group = "BHVM game rules"
@@ -938,7 +954,36 @@ sf_multiplier = {
 		desc = "The important SF nations have a higher SF cap(Recommmended)"
 	}
 }
-
+ac_brazil = {
+	name = "Brazil AC"
+	group = "BHVM game rules"
+	icon = "GFX_decision_SWE_set_air_budget"
+	default = {
+		name = ALLOWED
+		text = "RSF cap is almost vanilla"
+		desc = "Brazil CAN do its air focuses and joins allies day 1(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "GBrazil AC is allowed"
+		desc = "Brazil can't do its air focuses and doesnt join allies day 1 of WW2(NOT RECOMMENDED)"
+	}
+}
+ger_supreme_leader = {
+	name = "German Supreme Leader focuses"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_GER_flag"
+	default = {
+		name = ALLOWED
+		text = "GGermany can do the focuses"
+		desc = "Demonstration of military achievements is allowed(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RGermany CAN'T do the focuses"
+		desc = "Demonstration of military achievements iS DISALLOWED(NOT RECOMMENDED)"
+	}
+}
 ger_pupets = {
 	name = "German Pupet"
 	group = "BHVM game rules"
