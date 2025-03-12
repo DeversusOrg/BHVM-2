@@ -4654,7 +4654,7 @@ focus_tree = {
 	focus = {
 		id = uk_iraq_focus
 		available = {
-			#always = no
+			date > 1940.2.1
 		} #UK at war with fascist/commie. iraq is fascist/commie
 
 		bypass = {
