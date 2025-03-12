@@ -208,18 +208,18 @@ defined_text = {
 		localization_key = vp_alies_owns
 	}
 }
-defined_text = {
-    name = GetVPCaptureStatus
-    text = {
-        trigger = {
-            has_variable = captured_state
-        }
-        localization_key = vps_pending_capture
-    }
-}
-text = {
-    trigger = {
-        has_variable = captured_state
-    }
-    localization_key = vp_contested
-}
+#defined_text = {
+#   name = GetVPCaptureStatus
+#    text = {
+#        trigger = {
+#            has_variable = captured_state
+#        }
+#        localization_key = vps_pending_capture
+#    }
+#}
+#text = {
+#    trigger = {
+#        has_variable = captured_state
+#    }
+#    localization_key = vp_contested
+#}

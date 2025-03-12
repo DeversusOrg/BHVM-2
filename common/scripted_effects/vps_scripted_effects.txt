@@ -82,31 +82,31 @@ victory_requierements = {
 
 	
 }
-check_vp_control = {
-    if = {
-        limit = {
-            controls_state = var:captured_state
-        }
-        return = yes
-    }
-    else = {
-        return = no
-    }
-}
+#check_vp_control = {
+#    if = {
+#        limit = {
+#            controls_state = var:captured_state
+#        }
+#        return = yes
+#    }
+#    else = {
+#        return = no
+#    }
+#}
 
-check_pending_captures = {
-    if = {
-        limit = {
-            has_variable = captured_state
-            NOT = { controls_state = var:captured_state }
-        }
-        clear_variable = captured_state
-    }
-}
+#check_pending_captures = {
+#    if = {
+#        limit = {
+#            has_variable = captured_state
+#            NOT = { controls_state = var:captured_state }
+#        }
+#        clear_variable = captured_state
+#    }
+#}
 
 initilize_victory_system = {
 	# state = 613 #Nanjing
-	# state = 439 #Dehli
+	# state = 439 #Delhi
 	# state = 447 #Alexandria
 	# state = 450 #Benghasi
 	# state = 7 #Amsterdam
@@ -146,7 +146,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 439 #Dehli
+				controls_state = 439 #Delhi
 			}
 			add_to_variable = {
 				var = global.axis_score
