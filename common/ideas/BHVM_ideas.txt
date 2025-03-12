@@ -1,4 +1,18 @@
 ideas = {
+	hidden_ideas = {
+		war_ai = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				ai_desired_divisions_factor = -1000
+			}
+			removal_cost = -1
+		}
+	}
 	country = {
 		double_land_cheater_idea = {
 			allowed = {

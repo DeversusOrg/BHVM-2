@@ -3,6 +3,23 @@ on_actions = {
 		effect = {
 			if = {
                 limit = {
+                    FROM = { 
+                        OR = {
+                            tag = DEN
+                            tag = NOR 
+                            tag = POL
+                            tag = CHI
+                            tag = HOL
+                            tag = BEL
+                            tag = YUG
+                            tag = GRE
+                        }
+                    }
+                }
+                FROM = { add_ideas = war_ai }
+            }
+			if = {
+                limit = {
                     FROM = { tag = CHI }
                     has_game_rule = china_war_difficulty
                 }
