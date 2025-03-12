@@ -416,5 +416,19 @@ Pregrinds for almost every nation has been changed from what has been last time 
 RAJ AST BRA CAN SAF ENG GER SOV - All nerfed , FRA pregrind has been buffed. To put it shortly , mass stat debloat but not really
 Changed the spain simulator a bit.
 
+Peactime training with xp gives now 0.36 xp per day
+Completely removed brazil pregrinds
+Nerfed minor allied pregrinds a bit , instead of starting with example inf leader , they have officers which means they grind said trait faster if need
+Made AI war annexed nations like yugo china poland etc etc to NOT spawn any divs anymore , also removed cav from china
+Fixed some raj events
+New game rules , for mech 2 , for german supreme leader focus minitree , for brazil ac - it also joins allies day 1 if its eneabled 
+Made usa plane lend lease button to be from december not july of 1939
+Date locked uk focus for IRQ to be from 1940 febuary
+Buffed algerian resources by quite a bit
+Removed france rejecting rhineland
+Added iraq and brazil lend lease for air , iraq is only avaible when axis has taken africa and iraq has not capped. If in case that iraq caps the air should get sent back to germany
+
+
+
 
 
