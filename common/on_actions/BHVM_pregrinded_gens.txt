@@ -20,26 +20,6 @@ on_actions = {
 					}
 					add_ideas = no_vols
 				}
-				BRA = {
-					add_corps_commander_role = {
-						character = BRA_candido_mariano
-						traits = {  career_officer jungle_rat organizer commando }
-						skill = 5
-						attack_skill = 4
-						defense_skill = 3
-						planning_skill = 4
-						logistics_skill = 2
-					}
-					add_corps_commander_role = {
-						character = BRA_olympio_falconiere_da_cunha
-						traits = { career_officer offensive_doctrine  }
-						skill = 4
-						attack_skill = 3
-						defense_skill = 2
-						planning_skill = 3
-						logistics_skill = 2
-					}
-				}
 				BUL = {
 					add_corps_commander_role = {
 						character = BUL_georgi_markov
@@ -804,26 +784,6 @@ on_actions = {
 						}
 					}
 					add_ideas = no_vols
-				}
-				BRA = {
-					add_corps_commander_role = {
-						character = BRA_candido_mariano
-						traits = {  career_officer jungle_rat organizer commando }
-						skill = 5
-						attack_skill = 4
-						defense_skill = 3
-						planning_skill = 4
-						logistics_skill = 2
-					}
-					add_corps_commander_role = {
-						character = BRA_olympio_falconiere_da_cunha
-						traits = { career_officer offensive_doctrine  }
-						skill = 4
-						attack_skill = 3
-						defense_skill = 2
-						planning_skill = 3
-						logistics_skill = 2
-					}
 				}
 				FRA = {
 					add_corps_commander_role = {
