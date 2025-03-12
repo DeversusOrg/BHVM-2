@@ -3,6 +3,9 @@ state={
 	id=460
 	name="STATE_460" # Constantine
 	manpower = 2343837
+	resources={
+		oil=2 
+	}
 	
 	state_category = town
 
