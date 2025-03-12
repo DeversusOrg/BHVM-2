@@ -615,6 +615,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			}
 			NOT = { has_country_flag = sending_ll_to_ger }
 		}
@@ -638,6 +639,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			}
 			has_country_flag = sending_ll_to_ger
 		}
@@ -658,6 +660,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			} 
 		}
 		available = {
@@ -691,6 +694,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			} 
 		}
 		available = {
@@ -726,6 +730,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			}
 			NOT = { has_country_flag = sending_ll_to_hun }
 		}
@@ -749,6 +754,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			}
 			has_country_flag = sending_ll_to_hun
 		}
@@ -769,6 +775,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			} 
 		}
 		available = {
@@ -802,6 +809,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			} 
 		}
 		available = {
@@ -841,6 +849,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			}
 			NOT = { has_country_flag = sending_ll_to_ger_nav }
 			has_equipment = {
@@ -867,6 +876,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			}
 			has_country_flag = sending_ll_to_ger_nav
 		}
@@ -887,6 +897,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			} 
 		}
 		available = {
@@ -917,6 +928,7 @@ E_ll = {
 				original_tag = BUL
 				original_tag = FIN
 				original_tag = SPR
+				original_tag = IRQ
 			} 
 		}
 		available = {
@@ -938,6 +950,134 @@ E_ll = {
 			activate_mission = GER_recieving_navs_ll_1		
 		}
 	}
+	IRQ_start_ll = {
+		icon = GFX_decision_generic_air
+	
+		visible = {    
+			OR = {
+				original_tag = ITA
+				original_tag = HUN
+				original_tag = ROM
+				original_tag = BUL
+				original_tag = FIN
+				original_tag = SPR
+				original_tag = GER
+			}
+			NOT = { has_country_flag = sending_ll_to_irq }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = axis_controls_suez_tt
+				any_country = {
+					is_in_faction_with = GER
+					controls_state = 447 #Alexandria
+					controls_state = 446 #Cairo
+					controls_state = 452 #Suez
+				}
+			}
+			IRQ = {
+				exists = yes
+				NOT = { has_capitulated = yes }
+			}
+		}
+	
+		complete_effect = {
+			activate_mission = IRQ_recieving_ll_1
+			set_country_flag = sending_ll_to_irq
+		}
+	}
+	
+	IRQ_close_ll = {
+		icon = GFX_decision_generic_air
+	
+		visible = {    
+			OR = {
+				original_tag = ITA
+				original_tag = HUN
+				original_tag = ROM
+				original_tag = BUL
+				original_tag = FIN
+				original_tag = SPR
+				original_tag = GER
+			}
+			has_country_flag = sending_ll_to_irq
+		}
+	
+		complete_effect = {
+			clr_country_flag = sending_ll_to_irq
+		}
+	}
+	
+	IRQ_recieving_ll_1 = {
+		allowed = {     
+			OR = { 
+				original_tag = ITA
+				original_tag = HUN
+				original_tag = ROM
+				original_tag = BUL
+				original_tag = FIN
+				original_tag = SPR
+				original_tag = GER
+			} 
+		}
+		available = {
+			NOT = { has_country_flag = sending_ll_to_irq }
+		}
+		icon = generic_army_support
+		is_good = yes
+		activation = { always = no }
+		days_mission_timeout = 30
+	
+		timeout_effect = {
+			if = { 
+				limit = { 
+					has_country_flag = sending_ll_to_irq 
+				}  
+				send_equipment = { equipment = small_plane_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = large_plane_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = small_plane_cas_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = medium_plane_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = medium_plane_fighter_airframe amount = 10000 target = IRQ }
+			}
+			activate_mission = IRQ_recieving_ll_2        
+		}
+	}
+	
+	IRQ_recieving_ll_2 = {
+		allowed = {     
+			OR = { 
+				original_tag = ITA
+				original_tag = HUN
+				original_tag = ROM
+				original_tag = BUL
+				original_tag = FIN
+				original_tag = SPR
+				original_tag = GER
+			} 
+		}
+		available = {
+			NOT = { has_country_flag = sending_ll_to_irq }
+		}
+		icon = generic_army_support
+		is_good = yes
+		activation = { always = no }
+		days_mission_timeout = 30
+	
+		timeout_effect = {
+			if = { 
+				limit = { 
+					has_country_flag = sending_ll_to_irq
+				}  
+				send_equipment = { equipment = small_plane_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = large_plane_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = small_plane_cas_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = medium_plane_airframe amount = 10000 target = IRQ }
+				send_equipment = { equipment = medium_plane_fighter_airframe amount = 10000 target = IRQ }
+			}
+			activate_mission = IRQ_recieving_ll_1        
+		}
+	}
+	
 	# ALLIES
 	# ALLIES
 	# ALLIES

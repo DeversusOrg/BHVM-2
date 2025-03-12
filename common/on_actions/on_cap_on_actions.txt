@@ -40,6 +40,34 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = IRQ
+				}
+				IRQ = {
+					transfer_units_fraction = {
+						target = GER
+						size = 1
+						stockpile_ratio = 1
+						army_ratio = 0
+						navy_ratio = 0
+						air_ratio = 1
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
+					}
+					every_owned_state = {
+						teleport_armies = {
+							to_state = 64 #Berlin
+						}
+					}
+				}
+			}
+		}
+	}
+	
 	on_state_control_changed = {
         effect = {
             if = {

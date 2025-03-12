@@ -73,7 +73,9 @@ technologies = {
 	}
 
 	thermonuclear_bombs = {
-	
+		#available = {
+		#	date > 1945.12.1
+		#}
 		start_year = 1950
 		research_cost = 5
 		
