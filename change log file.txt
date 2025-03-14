@@ -428,7 +428,4 @@ Buffed algerian resources by quite a bit
 Removed france rejecting rhineland
 Added iraq and brazil lend lease for air , iraq is only avaible when axis has taken africa and iraq has not capped. If in case that iraq caps the air should get sent back to germany
 
-
-
-
-
+Added a new formable for iraq if axis wins africa. They get core on sirya , lebanon , israel , jordan , kuwait , norther egypt.

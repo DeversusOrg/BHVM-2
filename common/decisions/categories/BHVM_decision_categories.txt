@@ -1,5 +1,5 @@
 mute_cheat_sound_category = {
-	priority = 999999
+	priority = -1000
 	visible = {
 		always = yes
 	}
@@ -55,7 +55,7 @@ game_check = {
         always = yes
     }
 
-    priority = 1000
+    priority = -1000
     
     scripted_gui = check_gamerules_bhvm_ui
     
@@ -73,9 +73,20 @@ game_check_changed = {
         always = yes
     }
 
-    priority = 1000
+    priority = -1000
     
     scripted_gui = check_non_default_rules_ui
     
     visible_when_empty = yes
+}
+
+form_levant_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_arabia
+
+	allowed = {
+		original_tag = IRQ
+	}
 }
