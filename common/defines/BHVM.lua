@@ -142,6 +142,13 @@ NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_AI_ACCEPTANCE_SCORE_INCREASE = 0
 NDefines.NOperatives.DIPLOMATIC_PRESSURE_MAX_TENSION_REQUIREMENTS_DECREASE = 0
 NDefines.NOperatives.DIPLOMATIC_PRESSURE_DAILY_XP_GAIN = 0
 
+NDefines.NOperatives.OPERATIVE_CAPTURE_DURATION_IN_DAYS = 1
+NDefines.NOperatives.OPERATIVE_MIN_DAYS_FORCED_INTO_HIDING = 1
+NDefines.NOperatives.OPERATIVE_MAX_DAYS_FORCED_INTO_HIDING = 1
+NDefines.NOperatives.OPERATIVE_MIN_DAYS_HARMED = 1
+NDefines.NOperatives.OPERATIVE_MAX_DAYS_HARMED = 1
+NDefines.NOperatives.OPERATIVE_MISSION_DETECTION_CHANCE_FACTOR = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } -- was { 0.0, 1.0, 1.0, 1.0, 0.0, 3.0, 0.1, 0.1, 3.0 }
+
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate Germany/Japan building slot changes in order to support more of their eco being in their cores.
 
 
