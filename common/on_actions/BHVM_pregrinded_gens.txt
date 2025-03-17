@@ -174,8 +174,8 @@ on_actions = {
 					}
 					add_corps_commander_role={
 						character = GER_fedor_von_bock
-						traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer ranger organizer }
-						skill=7
+						traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer organizer }
+						skill=6
 						attack_skill=6
 						defense_skill=5
 						planning_skill=5
@@ -183,8 +183,8 @@ on_actions = {
 					}
 					add_corps_commander_role={
 						character = GER_sepp_dietrich
-						traits = { cavalry_leader brilliant_strategist armor_officer panzer_leader ranger organizer }
-						skill=7
+						traits = { cavalry_leader brilliant_strategist armor_officer panzer_leader organizer }
+						skill=6
 						attack_skill=6
 						defense_skill=4
 						planning_skill=4
@@ -192,8 +192,8 @@ on_actions = {
 					}
 					add_corps_commander_role={
 						character = GER_kurt_student
-						traits = { skilled_staffer cavalry_leader commando armor_officer panzer_leader trickster trait_engineer ranger organizer urban_assault_specialist }
-						skill=7
+						traits = { skilled_staffer cavalry_leader commando armor_officer panzer_leader trickster trait_engineer organizer }
+						skill=6
 						attack_skill=6
 						defense_skill=6
 						planning_skill=6
@@ -525,8 +525,8 @@ on_actions = {
 					}
 					add_corps_commander_role={
 						character = GER_fedor_von_bock
-						traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer ranger organizer }
-						skill=7
+						traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer organizer }
+						skill=6
 						attack_skill=6
 						defense_skill=5
 						planning_skill=5
@@ -534,8 +534,8 @@ on_actions = {
 					}
 					add_corps_commander_role={
 						character = GER_sepp_dietrich
-						traits = { cavalry_leader brilliant_strategist armor_officer panzer_leader ranger organizer }
-						skill=7
+						traits = { cavalry_leader brilliant_strategist armor_officer panzer_leader organizer }
+						skill=6
 						attack_skill=6
 						defense_skill=4
 						planning_skill=4
@@ -543,8 +543,8 @@ on_actions = {
 					}
 					add_corps_commander_role={
 						character = GER_kurt_student
-						traits = { skilled_staffer cavalry_leader commando armor_officer panzer_leader trickster trait_engineer ranger organizer urban_assault_specialist }
-						skill=7
+						traits = { skilled_staffer cavalry_leader commando armor_officer panzer_leader trickster trait_engineer organizer }
+						skill=6
 						attack_skill=6
 						defense_skill=6
 						planning_skill=6
