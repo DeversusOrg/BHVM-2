@@ -431,3 +431,8 @@ Added iraq and brazil lend lease for air , iraq is only avaible when axis has ta
 Added a new formable for iraq if axis wins africa. They get core on sirya , lebanon , israel , jordan , kuwait , norther egypt.
 Added some localization to some decisions.
 Moved the mute cheat sound and game rule checks to the bottom of the decisions tab.
+
+Pregrind changed on ger, added back urban and ranger for appropriate gens
+Fixed a lot of reapting in errors in the debugger
+Fixed sick and wounded , they should be working as before
+Added basic train to gre and alb
