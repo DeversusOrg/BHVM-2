@@ -580,35 +580,6 @@ GER_blitzkrieg_poland = {
 		value = 30  # +30 %
 	}
 }
-
-GER_dont_die_in_mountains = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		date < 1942.5.1
-		country_exists = SWI
-		is_historical_focus_on = yes
-	}
-	abort = {
-		OR = {
-			AND = {
-				NOT = { country_exists = FRA }
-				date > 1942.5.1
-			}
-			SWI = {
-				NOt = {has_idea = SWI_swiss_neutrality}
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = ignore
-		id = SWI
-		value = 1000
-	}
-}
-
 GER_war_with_soviets = {
 	allowed = {
 		original_tag = GER
@@ -3478,36 +3449,6 @@ GER_protect_romania = {
 		type = protect
 		id = ROM
 		value = 50
-	}
-}
-
-GER_avoid_war_with_SWI = {
-	allowed = { original_tag = GER }
-	enable = {
-		is_historical_focus_on = yes
-		SWI = {
-			exists = yes
-		}
-	}
-	abort = {
-		OR = {
-			has_wargoal_against = SWI
-			SWI = {
-				NOT = { has_idea = SWI_swiss_neutrality }
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = conquer
-		id = SWI
-		value = -999
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = SWI
-		value = -75
 	}
 }
 

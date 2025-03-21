@@ -3579,10 +3579,10 @@ ETH_italian_occupation_category = {
 		icon = GFX_decision_oppression
 		target_trigger = {
 			FROM = {
-				owner = {
-					tag = ETH # For now - change if making it generic
-					is_government_in_exile = yes
-				}
+				#owner = { #commeneted out due to repeating owner error for some reason
+				#	tag = ETH 
+				#	is_government_in_exile = yes
+				#}
 				is_fully_controlled_by = ROOT
 			}
 		}
@@ -3604,7 +3604,7 @@ ETH_italian_occupation_category = {
 				any_neighbor_state = { is_owned_by = ROOT }
 				owner = {
 					#has_legitimacy < 60
-					faction_leader = { NOT = { has_war_with = ROOT } }
+					#faction_leader = { NOT = { has_war_with = ROOT } } #commeneted out due to reapting error for some reason
 				}
 			}
 		}

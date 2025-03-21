@@ -1691,7 +1691,6 @@ characters={
 			available = {
 				is_subject = no
 				NOT = { has_completed_focus = DEN_start_the_rearmament }
-				NOT = { DEN_christmas_moller = { is_hired_as_advisor = yes }}
 			}
 			traits = {
 				disarmament_proponent 
@@ -1725,63 +1724,6 @@ characters={
 			}
 		}
 	}
-
-	DEN_christmas_moller = {
-		name = DEN_christmas_moller
-		portraits = {
-			civilian = {
-				large = GFX_portrait_DEN_christmas_moller
-				small = GFX_portrait_DEN_christmas_moller_small
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = DEN_christmas_moller
-			allowed = {
-				original_tag = DEN
-				has_dlc = "Arms Against Tyranny"
-			}
-			available = {
-				is_country_leader = no
-				NOT = { has_character_flag = DEN_political_agitator_flag }
-				NOT = { has_completed_focus = DEN_policy_of_disarmament }
-				NOT = { DEN_peter_rochegune_munch = { is_hired_as_advisor = yes }}
-			}
-			traits = {
-				rearmament_proponent 
-			}
-			ai_will_do = {
-				base = 5
-				modifier = {
-					factor = 0.5
-					DEN_historical_ai = yes
-				}
-				modifier = {
-					factor = 5
-					is_subject = yes
-				}
-				modifier = {
-					factor = 10
-					OR = {
-						DEN_rearming_ai = yes
-						DEN_royal_ai = yes					
-						DEN_fascist_ai = yes
-					}
-				}
-			}
-			on_add = {
-				owner = {
-					DEN_advisor_medium_BOP_increase_effect = yes
-				}
-			}
-			on_remove = {
-				owner = {
-					DEN_advisor_medium_BOP_decrease_effect = yes
-				}
-			}
-		}
-	}
-
 	DEN_vilhelm_buhl = {
 		name = DEN_vilhelm_buhl
 		portraits = {
