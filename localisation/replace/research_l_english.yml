@@ -11,3 +11,4 @@
  tech_field_hospital3:0 "Mental Hospital III"
  tech_field_hospital4:0 "Mental Hospital IV""
  MASS_MOBILIZATION_LABEL:0 "BRICK WALL"
+ RESEARCH_TECH_UNUSED:1 "§GClick to research§!\nWithin 40 days, you can choose a new area to research without loss of research time."
