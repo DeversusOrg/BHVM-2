@@ -8,6 +8,9 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_1
 		}
+		armored_car = {
+			soft_attack = 0.1
+		}
 
 		path = {
 			leads_to_tech = interwar_artillery
@@ -160,6 +163,9 @@ technologies = {
 			tank_medium_cannon
 			lc_medium_cannon_turret #Module for Land Cruiser
 			lc_assault_gun #Module for Land Cruiser
+		}
+		armored_car = {
+			soft_attack = 0.1
 		}
 
 		path = {
@@ -335,6 +341,9 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_2
+		}
+		armored_car = {
+			soft_attack = 0.1
 		}
 
 		path = {
@@ -642,7 +651,9 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_1
 		}
-
+		armored_car = {
+			hard_attack = 0.1
+		}
 		enable_equipment_modules = {
 			ship_anti_air_2
 			tank_auto_cannon
@@ -724,7 +735,7 @@ technologies = {
 		category_self_propelled_anti_air = {
 			hard_attack = 0.05
 			ap_attack = 0.05
-			air_attack = 0.125
+			air_attack = 0.15
 		}
 		tech_air_damage_factor = -0.02
 
@@ -772,7 +783,9 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_2
 		}
-
+		armored_car = {
+			hard_attack = 0.1
+		}
 		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
@@ -838,7 +851,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		category_self_propelled_anti_air = {
-			air_attack = 0.05
+			air_attack = 0.1
 		}
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
@@ -945,6 +958,9 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_3
 		}
+		armored_car = {
+			hard_attack = 0.1
+		}
 		category_self_propelled_anti_air = {
 			air_attack = 0.05
 		}
@@ -997,7 +1013,9 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
-		
+		armored_car = {
+			ap_attack = 0.1
+		}
 		enable_equipment_modules = {
 			tank_high_velocity_cannon
 			tank_heavy_cannon
@@ -1170,7 +1188,9 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-
+		armored_car = {
+			ap_attack = 0.1
+		}
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
@@ -1408,7 +1428,9 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
-
+		armored_car = {
+			ap_attack = 0.1
+		}
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
@@ -1538,7 +1560,18 @@ technologies = {
 		}
 
 		is_special_project_tech = yes
-
+		rocket_artillery = {
+			soft_attack = 0.1
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.1
+		}
 		super_heavy_artillery = {
 			soft_attack = 0.1
 		}
@@ -1642,7 +1675,7 @@ technologies = {
 			}
 		}
 
-		static_anti_air_damage_factor = 0.15 #Remember to adjust sp_naval_proximity_fuze_custom_tt when changing value
+		static_anti_air_damage_factor = 0.3 #Remember to adjust sp_naval_proximity_fuze_custom_tt when changing value
 		static_anti_air_hit_chance_factor = 0.3 
 
 		path = {
