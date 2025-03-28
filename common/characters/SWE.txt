@@ -1839,9 +1839,6 @@ characters={
 			}
 			available = { is_country_leader = no }
 			visible = { has_government = fascism }
-			available = {
-				is_country_leader = no
-			}
 			traits = { national_socialist_veterinarian }
 		}
 		name=SWE_birger_furugard
