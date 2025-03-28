@@ -436,3 +436,11 @@ Pregrind changed on ger, added back urban and ranger for appropriate gens
 Fixed a lot of reapting in errors in the debugger
 Fixed sick and wounded , they should be working as before
 Added basic train to gre and alb
+
+Add 2+ planning to dietrich and 1+ logy for von bock also ranger for dietrich gen
+Removed repeating organizer for montgomery
+Added a single commando to ita
+Fixed localization for a game rule and fixed localization for saved up days for research days
+Updated stuff in vanilla 1.16.3 to bhvm
+I FIXED THE READY BUTTON THING WHERE IT DIDNT READY UP , THIS WAS FIXED BEFORE BUT ITS NOW OFICIAL BY PARADOX - should work as proper now tho trolol
+Guerilla MM and MW now have proper stuff for icons and game rule functions , added also a function to MW guerilla to not be pickable by sov if the game rule is real
