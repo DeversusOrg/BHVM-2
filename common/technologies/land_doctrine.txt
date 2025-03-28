@@ -815,10 +815,6 @@ technologies = {
 		conscription = 0.03
 
 		path = {
-			leads_to_tech = werwolf_guerillas 
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = werwolf_guerillas_not_plain 
 			research_cost_coeff = 2
 		}
@@ -826,7 +822,10 @@ technologies = {
 			leads_to_tech = werwolf_guerillas_disabled 
 			research_cost_coeff = 2
 		}
-		
+		path = {
+			leads_to_tech = werwolf_guerillas 
+			research_cost_coeff = 1
+		}
 		doctrine = yes	
 		research_cost = 4.5
 		
@@ -875,6 +874,16 @@ technologies = {
 			has_game_rule = {
 				rule = acoustic_guerilla_tatctics
 				option = ALLOWED
+			}
+			OR = {
+				NOT = { tag = SOV }
+				AND = {
+					tag = SOV
+					has_game_rule = {
+						rule = barb_gorila
+						option = ALLOWED
+					}
+				}
 			}
 		}
 
@@ -932,6 +941,16 @@ technologies = {
 				has_game_rule = {
 					rule = acoustic_guerilla_tatctics
 					option = ALLOWED
+				}
+			}
+			OR = {
+				NOT = { tag = SOV }
+				AND = {
+					tag = SOV
+					has_game_rule = {
+						rule = barb_gorila
+						option = ALLOWED
+					}
 				}
 			}
 		}
@@ -3505,10 +3524,7 @@ technologies = {
 
 		land_reinforce_rate = 0.15		
 		
-		path = {
-			leads_to_tech = guerilla_warfare
-			research_cost_coeff = 1
-		}
+		
 		path = {
 			leads_to_tech = guerilla_warfare_not_on_plains
 			research_cost_coeff = 2
@@ -3517,7 +3533,11 @@ technologies = {
 			leads_to_tech = guerilla_warfare_disabled
 			research_cost_coeff = 2
 		}
-		
+		path = {
+			leads_to_tech = guerilla_warfare
+			research_cost_coeff = 1
+		}
+
 		doctrine = yes	
 		research_cost = 4.5
 		
@@ -3611,8 +3631,8 @@ technologies = {
 	}
 	guerilla_warfare_not_on_plains = {
 		xor={
-			guerilla_warfare
 			guerilla_warfare_disabled
+			guerilla_warfare
 		}
 		xp_research_type = army
 		xp_unlock_cost = 100
@@ -3638,6 +3658,16 @@ technologies = {
 				has_game_rule = {
 					rule = acoustic_guerilla_tatctics
 					option = ALLOWED
+				}
+			}
+			OR = {
+				NOT = { tag = SOV }
+				AND = {
+					tag = SOV
+					has_game_rule = {
+						rule = barb_gorila
+						option = ALLOWED
+					}
 				}
 			}
 		}
@@ -3675,6 +3705,7 @@ technologies = {
 		xp_unlock_cost = 100
 
 		xor = {
+			guerilla_warfare_not_on_plains
 			guerilla_warfare
 		}
 
