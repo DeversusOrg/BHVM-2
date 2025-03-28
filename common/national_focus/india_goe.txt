@@ -396,8 +396,9 @@ focus_tree = {
                     country_event = { id = GOE_RAJ.31 hours = 2  }
                 }
             }
-
-
+            custom_effect_tooltip = generic_skip_one_line_tt 
+            custom_effect_tooltip = AFG_promote_the_counter_elite_tt
+            show_ideas_tooltip = RAJ_jim_corbett
         } 
     }
 
@@ -697,6 +698,13 @@ focus_tree = {
 					THIS = { #This effect appears to be scopeless. Sometimes.
 						save_global_event_target_as = UK_INDIA
 					}
+                    add_dynamic_modifier = { modifier = idea_RAJ_agrarian_society }
+                    set_variable = { RAJ_agrarian_society_conscription_factor = RAJ.RAJ_agrarian_society_conscription_factor } #3
+                    set_variable = { RAJ_agrarian_society_mobilization_laws_cost_factor = RAJ.RAJ_agrarian_society_mobilization_laws_cost_factor } #9
+                    set_variable = { RAJ_agrarian_society_mobilization_speed = RAJ.RAJ_agrarian_society_mobilization_speed } #3
+                    add_ideas = RAJ_marginalized_muslim_community_angry
+                    add_ideas = RAJ_princely_states
+                    add_ideas = RAJ_risk_of_famine
                     ENG = {
                         set_autonomy = {
                             target=PREV
@@ -2380,6 +2388,7 @@ focus_tree = {
                 level = 3
                 start_province = 4709
                 target_province = 4893 
+                build_only_on_allied = yes
             }
             add_ideas = BRA_road_investment
             add_ideas = BRA_rail_investment
@@ -3147,6 +3156,13 @@ focus_tree = {
                     }
                     add_to_tech_sharing_group = commonwealth_research
                     set_cosmetic_tag = RAJ_UK
+                    add_dynamic_modifier = { modifier = idea_RAJ_agrarian_society }
+                    set_variable = { RAJ_agrarian_society_conscription_factor = RAJ.RAJ_agrarian_society_conscription_factor } #3
+                    set_variable = { RAJ_agrarian_society_mobilization_laws_cost_factor = RAJ.RAJ_agrarian_society_mobilization_laws_cost_factor } #9
+                    set_variable = { RAJ_agrarian_society_mobilization_speed = RAJ.RAJ_agrarian_society_mobilization_speed } #3
+                    add_ideas = RAJ_marginalized_muslim_community
+                    add_ideas = RAJ_princely_states
+                    add_ideas = RAJ_risk_of_famine
                     RAJ = {
                         random_character = {
                             limit = {
@@ -3952,10 +3968,8 @@ focus_tree = {
                     irregular_infantry = { x = 2 y = 1 }
                 }
             }
-            hidden_effect = {
-                set_rule = { 
-                    can_send_volunteers = yes # rule to use, e.g.  can_not_declare_war = yes
-                }
+            set_rule = { 
+                can_send_volunteers = yes # rule to use, e.g.  can_not_declare_war = yes
             }
             swap_ideas = {
                 remove_idea = idea_RAJ_pmc
@@ -17347,13 +17361,22 @@ focus_tree = {
         available_if_capitulated = no
 
         completion_reward = {
-            add_doctrine_cost_reduction = {
-                name = RAJ_gurkhas
-                cost_reduction = 0.35
-                uses = 3
-                category = special_forces_doctrine
+            if = {
+                limit = {
+                    has_dlc = "Arms Against Tyranny"
+                }
+                add_doctrine_cost_reduction = {
+                    name = RAJ_gurkhas
+                    cost_reduction = 0.35
+                    uses = 3
+                    category = special_forces_doctrine
+                }
+                add_potential_special_forces_tree = yes
             }
-            add_potential_special_forces_tree = yes
+            else = {
+                army_experience = 100
+            }
+
             division_template = {
                 name = "Gurkha Rifles"
                 is_locked = no
@@ -19132,15 +19155,15 @@ focus_tree = {
                     category = special_forces_doctrine
                 }
             }
-            else = {
-                army_experience = 15
-                navy_experience = 15
-                air_experience = 15
-            }
-            
             army_experience = 30
             navy_experience = 30
             air_experience = 30
+            else = {
+                army_experience = 45
+                navy_experience = 45
+                air_experience = 45
+            }
+            
         }
     }
     
