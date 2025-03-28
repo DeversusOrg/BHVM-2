@@ -463,7 +463,7 @@ space_marine_deleter = {
 	option = {
 		name = BLOCKED
 		text = "RBLOCKED"
-		desc = "You will RNOT Wbe allowed to mix armor and inf in onve division"
+		desc = "You will RNOT Wbe allowed to mix armor and inf in one division"
 	}
 }
 naval_treaties = {
