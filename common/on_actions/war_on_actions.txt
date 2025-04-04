@@ -19,10 +19,10 @@ on_actions = {
                 FROM = { add_ideas = war_ai }
             }
 			if = {
-                limit = {
-                    FROM = { tag = CHI }
-                    has_game_rule = china_war_difficulty
-                }
+                #limit = {
+                #    FROM = { tag = CHI }
+                #    has_game_rule = china_war_difficulty
+                #}
                 if = {
                     limit = {
                         has_game_rule = {
@@ -154,4 +154,51 @@ on_actions = {
 			}
 		}
 	}
+	#added this so noob players dont get ai battleplanned by horse
+	on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_game_rule = { rule = pregrinds_4_factions option = on }
+                        has_game_rule = { rule = pregrinds_4_factions option = axis }
+                        has_game_rule = { rule = pregrinds_4_factions option = allies }
+                    }
+                }
+                if = {
+                    limit = { has_game_rule = { rule = pregrinds_4_factions option = on } }
+                    DEN = { add_ideas = war_ai }
+                    NOR = { add_ideas = war_ai }
+                    POL = { add_ideas = war_ai }
+                    CHI = { add_ideas = war_ai }
+                    HOL = { add_ideas = war_ai }
+                    BEL = { add_ideas = war_ai }
+                    YUG = { add_ideas = war_ai }
+                    GRE = { add_ideas = war_ai }
+                }
+                else_if = {
+                    limit = { has_game_rule = { rule = pregrinds_4_factions option = axis } }
+                    DEN = { add_ideas = war_ai }
+                    NOR = { add_ideas = war_ai }
+                    POL = { add_ideas = war_ai }
+                    CHI = { add_ideas = war_ai }
+                    HOL = { add_ideas = war_ai }
+                    BEL = { add_ideas = war_ai }
+                    YUG = { add_ideas = war_ai }
+                    GRE = { add_ideas = war_ai }
+                }
+                else_if = {
+                    limit = { has_game_rule = { rule = pregrinds_4_factions option = allies } }
+                    DEN = { add_ideas = war_ai }
+                    NOR = { add_ideas = war_ai }
+                    POL = { add_ideas = war_ai }
+                    CHI = { add_ideas = war_ai }
+                    HOL = { add_ideas = war_ai }
+                    BEL = { add_ideas = war_ai }
+                    YUG = { add_ideas = war_ai }
+                    GRE = { add_ideas = war_ai }
+                }
+            }
+        }
+    }
 }

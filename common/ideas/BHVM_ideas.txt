@@ -559,8 +559,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				send_volunteer_size = -100
-				air_volunteer_cap = -1000
+				send_volunteer_size = -9999
+				air_volunteer_cap = -9999
 			}
 		}
 		sf_cap_2X= {

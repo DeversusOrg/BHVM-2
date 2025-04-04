@@ -26,4 +26,12 @@ leader_traits = {
 		max_command_power = 165
 		command_power_gain_mult = 0.65
 	}
+	jew = {
+		consumer_goods_expected_value = -0.01
+		fascism_acceptance = -100
+	}
+	genuis = {
+		research_sharing_per_country_bonus = 0.1
+		research_speed_factor = 0.15
+	}
 }

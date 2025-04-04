@@ -6,6 +6,9 @@ state = {
 	manpower = 136693
 	
 	history = {
+		buildings = {
+			infrastructure = 1
+		}
 		owner = RAJ
 		add_core_of = RAJ
 	}

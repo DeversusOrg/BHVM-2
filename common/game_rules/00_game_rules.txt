@@ -253,7 +253,7 @@ allow_leave_faction = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_LEAVE_FACTION_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = "BLOCKED"
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_LEAVE_FACTION_BLOCKED_DESC"
@@ -314,7 +314,7 @@ allow_coups = {
 		desc = "RULE_ALLOW_COUPS_AI_ONLY_DESC"
 		allow_achievements = yes
 	}
-	option = {
+	default = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
@@ -364,7 +364,7 @@ allow_paratroopers = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_PARATROOPERS_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
@@ -451,7 +451,7 @@ maximum_fort_level = {
 		text = "RULE_OPTION_4"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
-	option = {
+	default = {
 		name = level_5
 		text = "RULE_OPTION_5"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
@@ -487,7 +487,7 @@ allow_scorched_earth = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_SCORCHED_EARTH_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_SCORCHED_EARTH_BLOCKED_DESC"

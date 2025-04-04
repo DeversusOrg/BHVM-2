@@ -15,14 +15,14 @@ state = {
 			industrial_complex = 1
 			air_base = 2
 			4206 = {
-				naval_base = 3
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			1086 3 # Jerusalem
+			1086 10 # Jerusalem
 		}
 		victory_points = {
-			4206 1 # Tel Aviv
+			4206 3 # Tel Aviv
 		}
 		victory_points = {
 			1065 1 # Nazareth

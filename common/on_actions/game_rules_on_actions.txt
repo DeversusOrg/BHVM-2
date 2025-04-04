@@ -1682,4 +1682,31 @@ on_actions = {
 			}
 		}
 	}
+
+		on_daily = {
+			effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = BHVM_sick_wounded
+							option = on
+						}
+					}
+					every_country = {
+						every_unit_leader = {
+							if = {
+								limit = {
+									OR = {
+										has_trait = sick
+										has_trait = wounded
+									}
+								}
+								remove_trait = sick
+								remove_trait = wounded
+							}
+						}
+					}
+				}
+			}
+		}
 }

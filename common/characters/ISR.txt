@@ -15,7 +15,32 @@ characters = {
 		country_leader = {
 			ideology = conservatism
 			traits = {  }
-			expire = "1951.1.1.1"
+			expire = "1938.1.1.1"
+			id = -1
+		}
+
+	}
+	ISR_albert_einstein = {
+
+		name = ISR_albert_einstein
+
+		portraits = {
+			civilian = {
+				large =  "Albert_Einstein.dds"
+				#small = GFX_portrait_ISR_albert_einstein
+			}
+		}
+
+		country_leader = {
+			ideology = conservatism
+			traits = { 
+				jew
+				nuclear_scientist
+				rocket_scientist
+				champion_of_peace_4
+				genuis
+			}
+			expire = "1960.1.1.1"
 			id = -1
 		}
 
