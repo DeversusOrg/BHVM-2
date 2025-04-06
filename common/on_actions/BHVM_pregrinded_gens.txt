@@ -80,6 +80,17 @@ on_actions = {
 						logistics_skill=2
 					}
 				}
+				ROM = { 
+					add_corps_commander_role = {
+						character = ROM_ioan_mihail_racovita #3333
+						traits={ organizer hill_fighter trickster armor_officer infantry_officer career_officer }
+						skill=3
+						attack_skill=3
+						defense_skill=3
+						planning_skill=3
+						logistics_skill=3
+					}
+				}
 				CAN = {
 					add_corps_commander_role = {
 						character = CAN_charles_foulkes
@@ -482,6 +493,17 @@ on_actions = {
 						defense_skill=3
 						planning_skill=5
 						logistics_skill=2
+					}
+				}
+				ROM = { 
+					add_corps_commander_role = {
+						character = ROM_ioan_mihail_racovita #3333
+						traits={ organizer hill_fighter trickster armor_officer infantry_officer career_officer }
+						skill=3
+						attack_skill=3
+						defense_skill=3
+						planning_skill=3
+						logistics_skill=3
 					}
 				}
 				ITA = {

@@ -19,10 +19,10 @@ on_actions = {
                 FROM = { add_ideas = war_ai }
             }
 			if = {
-                #limit = {
-                #    FROM = { tag = CHI }
-                #    has_game_rule = china_war_difficulty
-                #}
+                limit = {
+                    FROM = { tag = CHI }
+                    has_game_rule = china_war_difficulty
+                }
                 if = {
                     limit = {
                         has_game_rule = {
