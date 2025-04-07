@@ -208,7 +208,7 @@
 			CHI = {
 				surrender_progress > 0.3
 			}
-			has_war_with = USA
+			#has_war_with = USA
 		}
 
 		bypass = {
@@ -216,7 +216,6 @@
 				NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
 				CHI = { has_capitulated = yes }
 			}
-			bypass = {
 				OR = {
 					AND = {
 						608 = {
@@ -237,7 +236,6 @@
 					}
 					has_war_with = CHI
 				}
-			}
 		}
 
 		cancel_if_invalid = yes

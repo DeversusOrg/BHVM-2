@@ -140,6 +140,16 @@ on_actions = {
 					country_event = { id = BHVM_swiss_gold.3 days = 2130 }
 					country_event = { id = BHVM_swiss_gold.4 days = 2530 }
 				}
+				JAP = {
+					country_event = { id = AAT_Sweden_ball_bearing.2 days = 1020 }
+					country_event = { id = AAT_Sweden_ball_bearing.remove days = 1720 }
+					country_event = { id = BBA_switzerland_trade.1 days = 1388 }
+					country_event = { id = BBA_switzerland_trade.cancel days = 1705  }
+					country_event = { id = BHVM_swiss_gold.1 days = 1885  }
+					country_event = { id = BHVM_swiss_gold.2 days = 1920 }
+					country_event = { id = BHVM_swiss_gold.3 days = 2130 }
+					country_event = { id = BHVM_swiss_gold.4 days = 2530 }
+				}
 				ITA = {
 					country_event = { id = BBA_switzerland_trade.1 days = 1388 }
 					country_event = { id = BBA_switzerland_trade.cancel days = 1705 }
@@ -151,6 +161,8 @@ on_actions = {
 				USA = {
 					country_event = { id = BBA_switzerland_trade.1 days = 1420 }
 					country_event = { id = BBA_switzerland_trade.cancel days = 1800 }
+					country_event = { id = AAT_Sweden_ball_bearing.2 days = 1020 }
+					country_event = { id = AAT_Sweden_ball_bearing.remove days = 1720 }
 					country_event = { id = BHVM_swiss_gold.1 days = 2000 }
 					country_event = { id = BHVM_swiss_gold.2 days = 2100 }
 					country_event = { id = BHVM_swiss_gold.3 days = 2200 }
@@ -165,6 +177,10 @@ on_actions = {
 					country_event = { id = BHVM_swiss_gold.4 days = 2320 }
 				}
 				FRA = {
+					country_event = { id = BBA_switzerland_trade.1 days = 1420 }
+					country_event = { id = BBA_switzerland_trade.cancel days = 1900 }
+					country_event = { id = AAT_Sweden_ball_bearing.2 days = 1020 }
+					country_event = { id = AAT_Sweden_ball_bearing.remove days = 1720 }
 					country_event = { id = BHVM_swiss_gold.1 days = 1795 }
 					country_event = { id = BHVM_swiss_gold.2 days = 1820 }
 					country_event = { id = BHVM_swiss_gold.3 days = 1950 }
@@ -216,6 +232,16 @@ on_actions = {
 					country_event = { id = BBA_switzerland_trade.1 days = 1388 }
 					country_event = { id = BBA_switzerland_trade.cancel days = 1705 }
 					country_event = { id = BHVM_swiss_gold.1 days = 1885 }
+					country_event = { id = BHVM_swiss_gold.2 days = 1920 }
+					country_event = { id = BHVM_swiss_gold.3 days = 2130 }
+					country_event = { id = BHVM_swiss_gold.4 days = 2530 }
+				}
+				JAP = {
+					country_event = { id = AAT_Sweden_ball_bearing.2 days = 1020 }
+					country_event = { id = AAT_Sweden_ball_bearing.remove days = 1720 }
+					country_event = { id = BBA_switzerland_trade.1 days = 1388 }
+					country_event = { id = BBA_switzerland_trade.cancel days = 1705  }
+					country_event = { id = BHVM_swiss_gold.1 days = 1885  }
 					country_event = { id = BHVM_swiss_gold.2 days = 1920 }
 					country_event = { id = BHVM_swiss_gold.3 days = 2130 }
 					country_event = { id = BHVM_swiss_gold.4 days = 2530 }

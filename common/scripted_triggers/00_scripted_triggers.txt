@@ -225,10 +225,18 @@ check_has_focus_tree_to_switch_to_communism = {
 is_controlled_by_ROOT_or_subject = {
 	custom_trigger_tooltip = {
 		tooltip = is_controlled_by_ROOT_or_subject
-		CONTROLLER = {
-			OR = {
-				tag = ROOT
-				is_subject_of = ROOT
+		#CONTROLLER = {
+		#	OR = {
+		#		tag = ROOT
+		#		is_subject_of = ROOT
+		#	}
+		#}
+		state = {
+			controller = {
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -237,11 +245,21 @@ is_controlled_by_ROOT_or_subject = {
 is_not_controlled_by_ROOT_or_subject = {
 	custom_trigger_tooltip = {
 		tooltip = is_not_controlled_by_ROOT_or_subject
-		CONTROLLER = {
-			NOT = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
+		#CONTROLLER = {
+		#	NOT = {
+		#		OR = {
+		#			tag = ROOT
+		#			is_subject_of = ROOT
+		#		}
+		#	}
+		#}
+		state = {
+			controller = {
+				NOT = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -260,11 +278,20 @@ is_free_or_subject_of_root = {
 is_controlled_by_ROOT_or_ally = {
 	custom_trigger_tooltip = {
 		tooltip = is_controlled_by_ROOT_or_ally
-		CONTROLLER = {
-			OR = {
-				tag = ROOT
-				is_subject_of = ROOT
-				is_in_faction_with = ROOT
+		#CONTROLLER = {
+		#	OR = {
+		#		tag = ROOT
+		#		is_subject_of = ROOT
+		#		is_in_faction_with = ROOT
+		#	}
+		#}
+		state = {
+			controller = {
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 			}
 		}
 	}
@@ -958,9 +985,17 @@ state_is_fully_controlled_by_ROOT_or_subject = {
 		tooltip = state_is_fully_controlled_by_ROOT_or_subject_tt
 		OR = {
 			is_fully_controlled_by = ROOT
-			controller = {
-				is_subject_of = ROOT
-				has_full_control_of_state = PREV
+			#controller = {
+			#	is_subject_of = ROOT
+			#	has_full_control_of_state = PREV
+			#}
+			state = {
+				controller = {
+					OR = {
+						is_subject_of = ROOT
+						has_full_control_of_state = PREV
+					}
+				}
 			}
 		}
 	}
@@ -972,14 +1007,12 @@ state_is_fully_controlled_by_ROOT_subject_or_faction_member = {
 		tooltip = state_is_fully_controlled_by_ROOT_subject_or_faction_member_tt
 		OR = {
 			is_fully_controlled_by = ROOT
-			state = {
-				ROOT = {
-					OR = {
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					}
-					has_full_control_of_state = PREV
+			controller = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
 				}
+				has_full_control_of_state = PREV
 			}
 		}
 	}
@@ -1006,6 +1039,8 @@ is_alpine_state = {
 			state = 153 #Tyrol - AUS 
 			state = 152 #Upper Austria - AUS 
 			state = 4 #Lower Austria 
+			state = 975 #Burgenland
+			state = 976 #Steiermark-Kömten 
 		}
 	}
 }
