@@ -444,3 +444,23 @@ Fixed localization for a game rule and fixed localization for saved up days for 
 Updated stuff in vanilla 1.16.3 to bhvm
 I FIXED THE READY BUTTON THING WHERE IT DIDNT READY UP , THIS WAS FIXED BEFORE BUT ITS NOW OFICIAL BY PARADOX - should work as proper now tho trolol
 Guerilla MM and MW now have proper stuff for icons and game rule functions , added also a function to MW guerilla to not be pickable by sov if the game rule is real
+
+Added Einstein as a leader for israel
+nerfed south axis -6 civs -1mill
+nerfed kuwait lebanon , they got no starting factories now
+nerfed north axis , -4 civs
+Copefully , fixed mp crashing since i hear replace path on states works allegedly
+fixed an issue with how the starting menu is displayed
+Ai war annexed nations shouldnt battleplan with cav now
+fixed default games rules , example fort level and paradrop
+sick and wounded fix #4 
+
+Added the option for germany to annex fin to hun
+Added back the option to "annex" spain for germany
+Mex and brazil stuff for annex should now be visible again
+A lot of repeating error fixing , doesn't really matter for gameplay tho
+Japan from game rule about cool vanilla bonuses gets also bonuses , and fixed up how some nations like fra didnt get some bonuses
+Fixed the china 100 divs issue , now they have only 40 or so and dont train any new ones
+Updated some general abilites 
+Reverted the expiriemtnal fix for mp
+sick and wounded fix #5 (still isnt fixed lol new cs for hoi4 fucked up game ruling mechanics for traits ig)
