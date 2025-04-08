@@ -464,3 +464,4 @@ Fixed the china 100 divs issue , now they have only 40 or so and dont train any 
 Updated some general abilites 
 Reverted the expiriemtnal fix for mp
 sick and wounded fix #5 (still isnt fixed lol new cs for hoi4 fucked up game ruling mechanics for traits ig)
+CS:b84e
