@@ -1094,6 +1094,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
+					is_ai = yes
+					NOT = { has_idea = free_trade }
+				}
+				add_ideas = free_trade
+			}
+			if = {
+				limit = {
 					is_ai = no
 					NOT = { has_idea = closed_economy }
 				}

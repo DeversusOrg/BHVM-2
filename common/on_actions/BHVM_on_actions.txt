@@ -528,6 +528,30 @@ on_actions = {
 				}
 				PER = { add_ideas = ai_limit}
 			}
+			IF = {
+				limit = {
+					SWE = { is_ai = yes }
+				}
+				SWE = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					VEN = { is_ai = yes }
+				}
+				VEN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					PAN = { is_ai = yes }
+				}
+				PAN = { add_ideas = ai_limit}
+			}
+			IF = {
+				limit = {
+					FIN = { is_ai = yes }
+				}
+				FIN = { add_ideas = ai_limit}
+			}
 			if = { 
                 every_country = {
                     limit = {
