@@ -3647,6 +3647,7 @@ focus_tree = {
 			if = {
 				limit = {
 					any_state = {
+						has_state_flag = BUL_historical_bulgarian_claim_flag
 						controller = {
 							OR = {
 								tag = GER
@@ -3656,7 +3657,6 @@ focus_tree = {
 								}
 							}
 						}
-						has_state_flag = BUL_historical_bulgarian_claim_flag
 					}
 				}
 				unlock_decision_tooltip = BUL_demand_our_historical_claims

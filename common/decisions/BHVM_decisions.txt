@@ -1101,7 +1101,7 @@ E_ll = {
 		available = {
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 
@@ -1130,7 +1130,7 @@ E_ll = {
 		available = {
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 
@@ -1156,7 +1156,7 @@ E_ll = {
 			NOT = { has_country_flag = sending_ll_to_eng }
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 		icon = generic_army_support
@@ -1196,7 +1196,7 @@ E_ll = {
 			NOT = { has_country_flag = sending_ll_to_eng }
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 		icon = generic_army_support
@@ -1238,7 +1238,7 @@ E_ll = {
 		available = {
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 
@@ -1267,7 +1267,7 @@ E_ll = {
 		available = {
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 
@@ -1293,7 +1293,7 @@ E_ll = {
 			NOT = { has_country_flag = sending_ll_to_can }
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 		icon = generic_army_support
@@ -1333,7 +1333,7 @@ E_ll = {
 			NOT = { has_country_flag = sending_ll_to_can }
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 		icon = generic_army_support
@@ -1375,7 +1375,7 @@ E_ll = {
 		available = {
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 	
@@ -1405,7 +1405,7 @@ E_ll = {
 		available = {
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 	
@@ -1432,7 +1432,7 @@ E_ll = {
 			NOT = { has_country_flag = sending_ll_to_bra }
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 		icon = generic_army_support
@@ -1473,7 +1473,7 @@ E_ll = {
 			NOT = { has_country_flag = sending_ll_to_bra }
 			OR = {
 				NOT = { original_tag = USA }
-				date > 1939.12.1
+				date > 1940.5.1
 			}
 		}
 		icon = generic_army_support
