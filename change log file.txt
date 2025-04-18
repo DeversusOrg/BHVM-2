@@ -465,3 +465,16 @@ Updated some general abilites
 Reverted the expiriemtnal fix for mp
 sick and wounded fix #5 (still isnt fixed lol new cs for hoi4 fucked up game ruling mechanics for traits ig)
 CS:b84e
+
+Fixed some states with repeating IDs for provinces in different states , this should improve game stability
+Fixed a crash regarding when you capture a facility of any kind
+Integrated "Player led peace conferees" into the mod
+Fixed spain not going free trade if its ai from focus for the 3rd time now? Thank shadow for the 3 git pushes he did and not noticing he changed that again.
+Fixed a focus on bulgaria which game a wargoal against turkey but turkey isnt real so it was bugged - its been removed basiacly 
+Removed difficulty options to not cause any issues , they are all the same now.
+Debloated saves by 5% because all the ai nations that dont go to war dont deploy divs now
+Changed the date when america can send a lend lease from 39 dec to 40 may
+Changed a repeating error in the bulgarian focus tree , added 1.16.5 core gfx stuff so the peace deal errors be gone
+Fixed a crash in the uk tree for a focus trigger
+These british focuses have halfed time aka now are 35 days and said focuses are: Indian Indepence , Indian Autonomy , Develop New zeeland , Hold the Imperial Conference , British Commonwealth Air training plan , Medeterenian bastion and all below that.This is made to make the life of the uk not such a pain in the back.
+CS:c3b4
