@@ -8,6 +8,7 @@ state={
 	}
 
 	history={
+		add_extra_state_shared_building_slots = 2
 		owner = MON
 		victory_points = {
 			4801 10

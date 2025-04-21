@@ -2125,6 +2125,7 @@ focus = {
     }
 
 	completion_reward = {
+		custom_effect_tooltip = MON_plunder_gen_tt
         if = {
             limit = {
                 329 = { is_controlled_by = MON }

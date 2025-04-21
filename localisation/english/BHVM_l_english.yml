@@ -221,6 +221,7 @@
  BRA_recieving_ll_2:0"Brazil is recieving our planes"
  auto_tech_rush:0"Auto tech rush decisions"
  FRA_anti_noob:0"Noob proof"
+ MON_plunder_gen_tt:"This focus will also effect previous states that you've §RPlundered in§!" 
  MON_the_horse_of_the_east:"The Horses of the East §RRises§!"
  MON_mori_bosdog:0 "he Horse of the East §RRises§!"
  MON_indusrial:0"Industrial experts"

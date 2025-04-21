@@ -168,6 +168,6 @@ upgrades = {
 		ap_attack = 0.1
 		maximum_speed = -0.05
 		reliability = -0.06
-		build_cost_ic = 0.06
+		build_cost_ic = 0.067
 	}
 }
