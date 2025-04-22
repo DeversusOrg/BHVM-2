@@ -101,9 +101,13 @@ on_actions = {
             if = {
                 limit = {
                     tag = CHI
+                    OR = {
+                        NOT = { country_exists = MAN }
+                        MAN = { is_ai = yes }
+                    }
                 }
                 JAP = {
-                    add_equipment_to_stockpile = {
+					add_equipment_to_stockpile = {
                         type = infantry_equipment_0
                         amount = 58000
                         producer = CHI
@@ -115,11 +119,61 @@ on_actions = {
                     }
 					add_equipment_to_stockpile = {
                         type = infantry_equipment_1
-                        amount = 12000
+                        amount = 17000
                         producer = CHI
                     }
+                    annex_country = { target = CHI }
+					add_named_threat = { 
+						threat = 17
+						name = CHI_peace
+					}
                 }
             }
+			else_if = {
+				limit = {
+					tag = CHI
+                    OR = {
+                        country_exists = MAN 
+                        MAN = { is_ai = no }
+                    }
+				}
+				MAN = {
+					add_equipment_to_stockpile = {
+                        type = infantry_equipment_0
+                        amount = 28000
+                        producer = CHI
+                    }
+					add_equipment_to_stockpile = {
+                        type = support_equipment_1
+                        amount = 500
+                        producer = CHI
+                    }
+					transfer_state = 621
+					transfer_state = 608
+				}
+				JAP = {
+					add_equipment_to_stockpile = {
+                        type = infantry_equipment_0
+                        amount = 28000
+                        producer = CHI
+                    }
+					add_equipment_to_stockpile = {
+                        type = support_equipment_1
+                        amount = 1500
+                        producer = CHI
+                    }
+					add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 17000
+                        producer = CHI
+                    }
+					annex_country = { target = CHI }
+					add_named_threat = { 
+						threat = 17
+						name = CHI_peace
+					}
+                }
+			}
         }
     }
 	on_capitulation = {

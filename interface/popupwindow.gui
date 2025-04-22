@@ -919,7 +919,7 @@ guiTypes = {
 		#fade_type = linear
 		show_sound = diplomatic_notification
 		hide_sound = menu_close_window
-		click_to_front = yes
+		click_to_front = no
 		
 		background = {
 			name = "Background"
@@ -1040,7 +1040,7 @@ guiTypes = {
 		#fade_type = linear
 		show_sound = diplomatic_notification
 		hide_sound = menu_close_window
-		click_to_front = yes
+		click_to_front = no
 		
 		background = {
 			name = "Background"
