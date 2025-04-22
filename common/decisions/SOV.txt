@@ -4385,7 +4385,7 @@ SOV_gosproyektstroy_decision_category = {
 			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
 		}
 	}
-
+	
 	SOV_gosproyektstroy_focus_civ = {
 		priority = 13
 

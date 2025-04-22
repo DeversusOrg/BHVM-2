@@ -3014,7 +3014,7 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = {
-				has_completed_focus = SOV_the_fourth_international
+				#has_completed_focus = SOV_the_fourth_international
 				SOV_is_left_opposition = yes
 			}
 
@@ -10284,4 +10284,5 @@ ideas = {
 			}
 		}
 
+    }
 }
