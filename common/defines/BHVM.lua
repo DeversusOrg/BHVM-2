@@ -67,7 +67,8 @@ NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a 
 
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.5 --makes redeployement of fighters faster vanilla is 0.02
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player have brain 
-
+NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 10.0 -- How much air superiority reduction to the enemy does our AA guns? Normally each building level = -1 reduction. With this multiplier.
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.25 -- this is buffed by .25 I AM NOT 100% SURE THIS MAKES ANY CHANGE TO SAA (state aa) BUT IT GOODS TO HAVE , IF SHREDS CAS = REMOVED
 
 NDefines.NRailwayGun.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0		-- The percentage of manpower returned when an encircled unit is disbanded
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0

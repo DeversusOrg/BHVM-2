@@ -478,3 +478,17 @@ Changed a repeating error in the bulgarian focus tree , added 1.16.5 core gfx st
 Fixed a crash in the uk tree for a focus trigger
 These british focuses have halfed time aka now are 35 days and said focuses are: Indian Indepence , Indian Autonomy , Develop New zeeland , Hold the Imperial Conference , British Commonwealth Air training plan , Medeterenian bastion and all below that.This is made to make the life of the uk not such a pain in the back.
 CS:c3b4
+
+Made motoroized rocket arty move with a fixed speed of 8kms/h
+Nefed the IC per click for motoroized rocket arty now it costs a tiny bit more to upgrade
+Added some mongolia tooltips for the plundering focuses
+Small error fix for gosproyektstroy designer
+Added a script for china war , so that a noob japan doesnt fuck up the game. Also if its a player manchu , manchu gets 2 states: beijing and norther easter mengukou
+Fixed naval invasion landings warnings , they werent working properly for a bit
+Made the spanish tree not get "view bugged" , so it was just moved to the right a tiny bit.
+All czek refusal scenarios have been removed , to improve gameplay.
+Made it so that strats can bomb again if the SAA is lvl 5. Also buffed them by how much they shoot down the bombing.
+Fixed a bug where the lend lease for mech wasnt visible for germany - now its fixed and germany can lend lease itself mech.
+Fixed a local error where it didnt show the localization for the 10X sf and unlimted sf
+Added an alternative VP system as another game rule.(WIP)
+CS:1283 
