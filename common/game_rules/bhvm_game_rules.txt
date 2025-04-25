@@ -1013,6 +1013,11 @@ rb_vps_system = {
 		text = "ROff"
 		desc = "There is NO VPS(Not Recommmended)"
 	}
+	option = {
+		name = alt
+		text = "YAlternative"
+		desc = "There is a moddefied VP system made for no-asia/alt-asia(Not Recommmended)"
+	}
 }
 no_asia_gamemode = {
 	name = "No Asia gamemode!"

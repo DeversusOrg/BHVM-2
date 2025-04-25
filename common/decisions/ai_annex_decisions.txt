@@ -306,6 +306,73 @@ operations = {
             }
         }
     }
+    GER_mech_delivery_SPR = {
+	    icon = GFX_decision_generic_industry
+		#fire_only_once = yes
+
+		available = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			#date > 1939.01.01
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_SPR
+                    has_country_flag = GER_started_ll_mech_bul
+                    has_country_flag = GER_started_ll_mech
+                }
+            }
+            OR = {
+                has_game_rule = {
+                    rule = spanish_production
+                    option = ger_mech
+                }
+                has_game_rule = {
+                    rule = spanish_production
+                    option = mixer
+                }
+            }
+		}
+		visible = {
+			original_tag = GER
+			SPR = { is_ai = yes }
+			is_ai = NO
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_SPR
+                    has_country_flag = GER_started_ll_mech_bul
+                    has_country_flag = GER_started_ll_mech
+                }
+            }
+			country_exists = SPR
+            OR = {
+                has_game_rule = {
+                    rule = spanish_production
+                    option = ger_mech
+                }
+                has_game_rule = {
+                    rule = spanish_production
+                    option = mixer
+                }
+            }
+		}
+		complete_effect = {
+            activate_mission = GER_recieving_ll_mech_1a
+            set_country_flag = GER_started_ll_mech
+			SPR = {	
+				set_technology = {
+				    mechanised_infantry = 1
+				}
+                create_equipment_variant = {
+                    name = "Cheap Mechanised"
+                    type = mechanized_equipment_1
+                    parent_version = 0
+                    upgrades = {
+                        mech_cost_upgrade = 5
+                    }
+                }
+			}
+		}
+	}
     GER_mech_delivery_SPR_to_BUL = {
 	    icon = GFX_decision_generic_industry
 		#fire_only_once = yes

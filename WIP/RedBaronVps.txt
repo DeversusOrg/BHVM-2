@@ -1,0 +1,41 @@
+namespace = rb_vp
+
+country_event = {
+    id = rb_vp.1
+    title = rb_vp.1.t
+    desc = rb_vp.1.d
+    picture = GFX_report_event_war_declaration
+    is_triggered_only = yes
+    hidden = no
+
+    immediate = {
+        if = {
+            limit = { has_temp_variable = captured_state_id }
+            set_temp_variable = { name = current_vp_state value = captured_state_id }
+        }
+    }
+
+    option = {
+        name = rb_vp.1.a
+    }
+}
+
+country_event = {
+    id = rb_vp.2
+    title = rb_vp.2.t
+    desc = rb_vp.2.d
+    picture = GFX_report_event_war_declaration
+    is_triggered_only = yes
+    hidden = no
+
+    immediate = {
+        if = {
+            limit = { has_temp_variable = captured_state_id }
+            set_temp_variable = { name = current_vp_state value = captured_state_id }
+        }
+    }
+
+    option = {
+        name = rb_vp.2.a
+    }
+}

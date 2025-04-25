@@ -14,7 +14,7 @@ state={
 		}
 		victory_points = { 	10772 15 }
 		victory_points = { 	10898 1 }
-		victory_points = ( 10173 3 }
+		victory_points = { 10173 3 }
 
 	}
 	state_category = town

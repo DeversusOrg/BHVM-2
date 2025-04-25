@@ -208,18 +208,4 @@ defined_text = {
 		localization_key = vp_alies_owns
 	}
 }
-#defined_text = {
-#   name = GetVPCaptureStatus
-#    text = {
-#        trigger = {
-#            has_variable = captured_state
-#        }
-#        localization_key = vps_pending_capture
-#    }
-#}
-#text = {
-#    trigger = {
-#        has_variable = captured_state
-#    }
-#    localization_key = vp_contested
-#}
+#for alt asia these must not be there: 439-aka delhi ; 613-aka nanjing , instead for altasia or noasia we need: 64-aka berlin and 461-aka moroco 
