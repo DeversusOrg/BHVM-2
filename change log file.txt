@@ -491,4 +491,9 @@ Made it so that strats can bomb again if the SAA is lvl 5. Also buffed them by h
 Fixed a bug where the lend lease for mech wasnt visible for germany - now its fixed and germany can lend lease itself mech.
 Fixed a local error where it didnt show the localization for the 10X sf and unlimted sf
 Added an alternative VP system as another game rule.(WIP)
-CS:1283 
+CS:b41b
+
+HOTFIX!
+German lend lease for mech has been fixed , now has a date in which you can click it 
+Improved game stability 
+CS:71e7
