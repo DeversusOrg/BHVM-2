@@ -1,4 +1,4 @@
-
+#There are some vanilla repeating errors inside the file , in this version how ever they are dealt with and are NOT an issue anymore
 on_actions = {
 	on_monthly_AFG = {
 		effect = {
@@ -118,7 +118,7 @@ on_actions = {
 						region = 190 #Pakistan
 					}
 				}
-				add_to_array = { PER.PER_achaemenid_empire_states = THIS }
+				#add_to_array = { PER.PER_achaemenid_empire_states = THIS }
 			}
 			every_state = {
 				limit = {

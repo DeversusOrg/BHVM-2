@@ -1016,7 +1016,7 @@ rb_vps_system = {
 	option = {
 		name = alt
 		text = "YAlternative"
-		desc = "There is a moddefied VP system made for no-asia/alt-asia(Not Recommmended)"
+		desc = "There is a modified VP system made for no-asia/alt-asia(Not Recommmended)"
 	}
 }
 no_asia_gamemode = {

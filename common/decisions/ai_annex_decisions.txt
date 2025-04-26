@@ -313,7 +313,7 @@ operations = {
 		available = {
 			original_tag = GER
 			SPR = { is_ai = yes }
-			#date > 1939.01.01
+			date > 1939.01.01
             NOT = {
                 OR = {
                     has_country_flag = annexed_SPR
