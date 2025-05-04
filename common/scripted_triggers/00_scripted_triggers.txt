@@ -9,7 +9,7 @@
 #	In a script file:
 #
 #	trigger = {
-#		exampel_trigger = yes
+#		example_trigger = yes
 #	}
 #
 
@@ -225,18 +225,10 @@ check_has_focus_tree_to_switch_to_communism = {
 is_controlled_by_ROOT_or_subject = {
 	custom_trigger_tooltip = {
 		tooltip = is_controlled_by_ROOT_or_subject
-		#CONTROLLER = {
-		#	OR = {
-		#		tag = ROOT
-		#		is_subject_of = ROOT
-		#	}
-		#}
-		state = {
-			controller = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
 			}
 		}
 	}
@@ -245,21 +237,11 @@ is_controlled_by_ROOT_or_subject = {
 is_not_controlled_by_ROOT_or_subject = {
 	custom_trigger_tooltip = {
 		tooltip = is_not_controlled_by_ROOT_or_subject
-		#CONTROLLER = {
-		#	NOT = {
-		#		OR = {
-		#			tag = ROOT
-		#			is_subject_of = ROOT
-		#		}
-		#	}
-		#}
-		state = {
-			controller = {
-				NOT = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-					}
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
 				}
 			}
 		}
@@ -278,20 +260,25 @@ is_free_or_subject_of_root = {
 is_controlled_by_ROOT_or_ally = {
 	custom_trigger_tooltip = {
 		tooltip = is_controlled_by_ROOT_or_ally
-		#CONTROLLER = {
-		#	OR = {
-		#		tag = ROOT
-		#		is_subject_of = ROOT
-		#		is_in_faction_with = ROOT
-		#	}
-		#}
-		state = {
-			controller = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+
+#State scope
+is_not_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			NOT = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
 			}
 		}
 	}
@@ -648,16 +635,27 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 }
 
 is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
-	NOT = {
-		AND = {
-			FROM = { original_tag = YUG }
+	is_subject = no
+	if = {
+		limit = {
 			original_tag = ITA
 		}
-		AND = {
-			FROM = { original_tag = DNZ }
+		NOT = { FROM = { original_tag = YUG } }
+	}
+
+	if = {
+		limit = {
 			original_tag = POL
 		}
-		TUR_cannot_form_kurdish_collaboration_government = yes
+		NOT = { FROM = { original_tag = DNZ } }
+	}
+	if = {
+		limit = {
+			original_tag = TUR
+		}
+		NOT = { FROM = { original_tag = KUR } }
+	}
+	NOT = {
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV # if already created one do not create another
@@ -690,12 +688,10 @@ owns_or_subject_of = {
 controls_or_subject_of = {
 	custom_trigger_tooltip = {
 		tooltip = controls_or_subject_of_tt
-		state = {
-			controller = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
+		controller = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
 			}
 		}
 	}
@@ -938,7 +934,6 @@ is_initial_ethiopian_state = {
 
 has_subject_autonomy_feature = {
 	has_dlc = "Together for Victory"
-	#TODO_Manu: More DLCs?
 }
 
 is_organization_of_african_unity_member = {
@@ -985,15 +980,9 @@ state_is_fully_controlled_by_ROOT_or_subject = {
 		tooltip = state_is_fully_controlled_by_ROOT_or_subject_tt
 		OR = {
 			is_fully_controlled_by = ROOT
-			#controller = {
-			#	is_subject_of = ROOT
-			#	has_full_control_of_state = PREV
-			#}
-			state = {
-				controller = {
-					is_subject_of = ROOT
-					has_full_control_of_state = PREV
-				}
+			controller = {
+				is_subject_of = ROOT
+				has_full_control_of_state = PREV
 			}
 		}
 	}
