@@ -497,3 +497,5 @@ HOTFIX!
 German lend lease for mech has been fixed , now has a date in which you can click it 
 Improved game stability 
 CS:71e7
+
+Fixed a tiny bug
