@@ -499,3 +499,11 @@ Improved game stability
 CS:71e7
 
 Fixed a tiny bug
+Note to myself-Must make quite a few changes and shift focus from tfb to vanilla again to add/fix more stuff
+CS:c8ae
+
+Added decision for generic wide use templates , you might have to edit those ones if you dont like them or need changing
+Added a show button for the naval invasion/paradrop UI which zooms your camera to where ever youve been naval invaded
+Updated the MIO xp cost , now its vanilla aka costs 0 XP again
+Updated the tank modules from vanilla
+CS:TBA
