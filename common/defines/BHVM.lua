@@ -41,7 +41,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 40.0 -- base game 30 changed to 40
 
 -- NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 0.9 -- You get 90% of all factories was 0.5
-NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.15
 NDefines.NIndustrialOrganisation.FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 1
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
