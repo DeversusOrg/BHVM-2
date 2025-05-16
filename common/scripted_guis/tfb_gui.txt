@@ -1,14 +1,10 @@
 scripted_gui = {
-
 	custom_naval_invasion_warning = {
 		context_type = player_context
-		 
 		window_name = "custom_naval_invasion_warning"	
-		
 		visible = {  
 			has_country_flag = ui_show_invasion_warning
 		}
-		
 		effects = {
 			ok_button_click = {
 				clr_country_flag = ui_show_invasion_warning
@@ -17,8 +13,12 @@ scripted_gui = {
 				set_country_flag = notif_disable_inv_warning
 				clr_country_flag = ui_show_invasion_warning
 			}
+			show_button_click = {
+				# Go to the saved event target state
+				goto_state = event_target:invaded_state
+				clr_country_flag = ui_show_invasion_warning
+			}
 		}
-		
 		properties = {
 			sender_flag = {
 				image = "[?ui_invader_country.GetFlag]"
@@ -27,18 +27,14 @@ scripted_gui = {
 				image = "[This.GetFlag]"
 			}
 		}
-		
 	}
 
 	custom_paradrop_warning = {
 		context_type = player_context
-		 
 		window_name = "custom_paradrop_warning"	
-		
 		visible = {  
 			has_country_flag = ui_show_paradrop_warning
 		}
-		
 		effects = {
 			ok_button_click = {
 				clr_country_flag = ui_show_paradrop_warning
@@ -47,17 +43,18 @@ scripted_gui = {
 				set_country_flag = notif_disable_para_warning
 				clr_country_flag = ui_show_paradrop_warning
 			}
+			show_button_click = {
+				goto_state = event_target:paradropped_state
+				clr_country_flag = ui_show_paradrop_warning
+			}
 		}
-		
 		properties = {
 			sender_flag = {
 				image = "[?ui_invader_country.GetFlag]"
 			}
 			receiver_flag = {
-				image = "[?ui_invaded_country.GetFlag]"
+				image = "[This.GetFlag]"
 			}
 		}
-		
 	}
-
 }

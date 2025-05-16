@@ -1007,7 +1007,13 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			#shortcut = "RETURN"
 		}
-
+		buttonType = {
+			name = "show_button"
+			position = { x=115 y =170}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Show"
+			buttonFont = "hoi_18mbs"
+		}
 		buttonType = {
 			name = "disable_button"
 			position = { x=200 y =170}
@@ -1128,7 +1134,13 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			#shortcut = "RETURN"
 		}
-
+		buttonType = {
+			name = "show_button"
+			position = { x=115 y =170}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Show"
+			buttonFont = "hoi_18mbs"
+		}
 		buttonType = {
 			name = "disable_button"
 			position = { x=200 y =170}

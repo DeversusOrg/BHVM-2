@@ -2,31 +2,74 @@ on_actions = {
 	on_naval_invasion = {
 		effect = { 
 			THIS = {
+				# Save the current controller before any changes happen otherwise it fucks it up , also this fixes 2 invasion zones fuck up
+				CONTROLLER = { save_global_event_target_as = pre_invasion_controller }
+				
+				# Save the state as an event target
+				save_global_event_target_as = invaded_state
+				
+
 				if = {
 					limit = {
-						NOT = { CONTROLLER = { tag = ROOT } }
-						NOT = { CONTROLLER = { has_country_flag = notif_disable_inv_warning } }
+						event_target:pre_invasion_controller = {
+							is_ai = no
+							NOT = { tag = ROOT }
+							NOT = { has_country_flag = notif_disable_inv_warning }
+						}
 					}
-					CONTROLLER = {
+					event_target:pre_invasion_controller = {
 						set_country_flag = ui_show_invasion_warning
-						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invader_country = ROOT }
+					}
+				}
+				# Also notify the owner if different from controller
+				else_if = {
+					limit = {
+						OWNER = {
+							is_ai = no
+							NOT = { tag = ROOT }
+							NOT = { has_country_flag = notif_disable_inv_warning }
+							NOT = { tag = event_target:pre_invasion_controller }
+						}
+					}
+					OWNER = {
+						set_country_flag = ui_show_invasion_warning
 						set_variable = { ui_invader_country = ROOT }
 					}
 				}
 			}
 		}
 	}
+	
 	on_paradrop = {
 		effect = { 
 			THIS = {
+				CONTROLLER = { save_global_event_target_as = pre_paradrop_controller }
+				save_global_event_target_as = paradropped_state
 				if = {
 					limit = {
-						NOT = { CONTROLLER = { tag = ROOT } }
-						NOT = { CONTROLLER = { has_country_flag = notif_disable_para_warning } }
+						event_target:pre_paradrop_controller = {
+							is_ai = no
+							NOT = { tag = ROOT }
+							NOT = { has_country_flag = notif_disable_para_warning }
+						}
 					}
-					CONTROLLER = {
+					event_target:pre_paradrop_controller = {
 						set_country_flag = ui_show_paradrop_warning
-						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invader_country = ROOT }
+					}
+				}
+				else_if = {
+					limit = {
+						OWNER = {
+							is_ai = no
+							NOT = { tag = ROOT }
+							NOT = { has_country_flag = notif_disable_para_warning }
+							NOT = { tag = event_target:pre_paradrop_controller }
+						}
+					}
+					OWNER = {
+						set_country_flag = ui_show_paradrop_warning
 						set_variable = { ui_invader_country = ROOT }
 					}
 				}

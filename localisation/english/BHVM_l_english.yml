@@ -119,6 +119,59 @@
  sf_cap_9X:0 "9x Special Forces"
  sf_cap_10X:0 "10x Special Forces"
  unlimited_sf_cap:0 "Unlimited Special Forces"
+ l_english:
+ # Template decisions category and decisions
+ templates:0 "Division Templates"
+ templates_desc:0 "Create predefined division templates with a single click."
+ 
+ Hide_Templates:0 "Hide Template Decisions"
+ Hide_Templates_desc:0 "Hide all template decisions to declutter your decision view."
+ 
+ Show_Templates:0 "Show Template Decisions"
+ Show_Templates_desc:0 "Show all template decisions."
+ 
+ cav:0 "Create Cavalry Garrison Template"
+ cav_desc:0 "Create a 25-battalion cavalry division template for garrison duty."
+ 
+ mp_cav:0 "Create Military Police Template"
+ mp_cav_desc:0 "Create a 25-battalion cavalry division with military police support for occupation duties."
+ 
+ a2cw:0 "Create 2W Infantry Template"
+ a2cw_desc:0 "Create a minimal 2-width infantry division template for FALS conversion."
+ 
+ a3cw_conv:0 "Create FALS Convert Template"
+ a3cw_conv_desc:0 "Create a single artillery brigade template for conversion purposes."
+ 
+ a20cw:0 "Create 20W Infantry Template"
+ a20cw_desc:0 "Create a 20-width infantry division (10 battalions) template."
+ 
+ a40cw:0 "Create 40W Infantry Template"
+ a40cw_desc:0 "Create a 40-width infantry division (20 battalions) template."
+ 
+ a50cw:0 "Create 50W Infantry Template"
+ a50cw_desc:0 "Create a 50-width infantry division (25 battalions) template."
+ 
+ a36cwmedtankamtrac:0 "Create Medium Amtrack Tank Template"
+ a36cwmedtankamtrac_desc:0 "Create a combined arms division with medium tanks and amphibious mechanized infantry."
+ 
+ a36cwmedtank:0 "Create Medium Mechanized Tank Template"
+ a36cwmedtank_desc:0 "Create a combined arms division with medium tanks and mechanized infantry."
+ 
+ a36cwheavytank:0 "Create Heavy Mechanized Tank Template"
+ a36cwheavytank_desc:0 "Create a combined arms division with heavy tanks and mechanized infantry."
+ 
+ a36cwheavytankamtrac:0 "Create Heavy Amtrack Tank Template"
+ a36cwheavytankamtrac_desc:0 "Create a combined arms division with heavy tanks and amphibious mechanized infantry."
+ 
+ a40cwmech:0 "Create 40W Mechanized Template"
+ a40cwmech_desc:0 "Create a 40-width fully mechanized infantry division template."
+ 
+ a35cwmarine:0 "Create 35W Marine Template"
+ a35cwmarine_desc:0 "Create a marine division with mechanized and anti-tank support."
+ 
+ a40cmountaneer:0 "Create 40W Mountaineer Template"
+ a40cmountaneer_desc:0 "Create a 40-width mountaineer division template for mountain warfare."
+
  AAT_Sweden_ball_bearing.remove.t:0 "Swedish Ball Bearing Trade Ended"
  AAT_Sweden_ball_bearing.remove.desc:0 "Our ball bearing trade agreement with Sweden has concluded."
  AAT_Sweden_ball_bearing.remove.a:0 "Sacré bleu!"
@@ -188,6 +241,10 @@
 
   PARADROP_WARNING_TEXT: "Forces of §Y[?ui_invader_country.GetNameWithFlag]§! have successfully conducted a §CParadrop§! at [?ui_invaded_state.GetName]!"
   PARADROP_WARNING_DISABLE: "No longer show Enemy Paradrops with this popup."
+  INVASION_WARNING_SHOW: "Show Invasion"
+  INVASION_WARNING_SHOW_TT: "Center the camera on the invaded state"
+  PARADROP_WARNING_SHOW: "Show Paradrop"
+  PARADROP_WARNING_SHOW_TT: "Center the camera on the paradrop location"
  FIN_winter_warfare_a:0"Winter warfare alternative"
  FIN_long_range_patrols_a:0"Long range patrols alternative"
  FRA_no_asia_noobah:0"No asia , give me indochina buildings"

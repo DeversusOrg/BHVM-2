@@ -1573,3 +1573,541 @@ operations = {
 	}
 	
 }
+templates = {
+	Hide_Templates = {
+		icon = decision_generic_decision
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = Clear_Template_Decision
+		}
+	}
+	Show_Templates = {
+		icon = decision_generic_decision
+		visible = {
+			is_ai = no
+			has_country_flag = Clear_Template_Decision
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			clr_country_flag = Clear_Template_Decision
+		}
+	}
+	cav = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Garrison"
+
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					cavalry = { x = 1 y = 4 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 2 y = 3 }
+					cavalry = { x = 2 y = 4 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 3 y = 3 }
+					cavalry = { x = 3 y = 4 }
+					cavalry = { x = 4 y = 0 }
+					cavalry = { x = 4 y = 1 }
+					cavalry = { x = 4 y = 2 }
+					cavalry = { x = 4 y = 3 }
+					cavalry = { x = 4 y = 4 }
+				}
+			}
+		}
+	}
+	mp_cav = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		available = {
+			ROOT = { has_tech = tech_military_police }	
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Military Police"
+
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					cavalry = { x = 1 y = 4 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 2 y = 3 }
+					cavalry = { x = 2 y = 4 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 3 y = 3 }
+					cavalry = { x = 3 y = 4 }
+					cavalry = { x = 4 y = 0 }
+					cavalry = { x = 4 y = 1 }
+					cavalry = { x = 4 y = 2 }
+					cavalry = { x = 4 y = 3 }
+					cavalry = { x = 4 y = 4 }
+				}
+
+				support = 	{
+					military_police = { x = 0 y = 0 }
+				}	
+			}
+		}
+	}
+	a2cw = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "2W Infantry/FALS division"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }			
+				}
+			}
+		}
+	}
+	a3cw_conv = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "FALS convert"
+
+				regiments = {
+					artillery_brigade = { x = 0 y = 0 }	
+				}
+			}
+		}
+	}
+	a20cw = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "20W Infantry/16W MM Infantry"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+				}
+			}
+		}
+	}
+	a40cw = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "40W Infantry/36 MM Infantry"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 2 y = 4 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+					infantry = { x = 3 y = 4 }
+				}
+			}
+		}
+	}
+	a50cw = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "50W Infantry/40 MM Infantry"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 2 y = 4 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+					infantry = { x = 3 y = 4 }
+					infantry = { x = 4 y = 0 }
+					infantry = { x = 4 y = 1 }
+					infantry = { x = 4 y = 2 }
+					infantry = { x = 4 y = 3 }
+					infantry = { x = 4 y = 4 }
+				}
+			}
+		}
+	}
+	a36cwmedtankamtrac = {
+		icon = GFX_decision_generic_tank
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Meduim Amtrack Tank 10/8"
+
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					amphibious_mechanized = { x = 2 y = 0 }
+					amphibious_mechanized = { x = 2 y = 1 }
+					amphibious_mechanized = { x = 2 y = 2 }
+					amphibious_mechanized = { x = 2 y = 3 }
+					amphibious_mechanized = { x = 3 y = 0 }
+					amphibious_mechanized = { x = 3 y = 1 }
+					amphibious_mechanized = { x = 3 y = 2 }
+					amphibious_mechanized = { x = 3 y = 3 }
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+				}
+			}
+		}
+	}
+	a36cwmedtank = {
+		icon = GFX_decision_generic_tank
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Meduim Mechanized Tank 10/8"
+
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+				}
+			}
+		}
+	}
+	a36cwheavytank = {
+		icon = GFX_decision_generic_tank
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Heavy Mechanized Tank 10/8"
+
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					heavy_armor = { x = 1 y = 3 }
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					heavy_armor = { x = 4 y = 0 }
+					heavy_armor = { x = 4 y = 1 }
+				}
+			}
+		}
+	}
+	a36cwheavytankamtrac = {
+		icon = GFX_decision_generic_tank
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Heavy Amtrack Tank 10/8"
+
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					heavy_armor = { x = 1 y = 3 }
+					amphibious_mechanized = { x = 2 y = 0 }
+					amphibious_mechanized = { x = 2 y = 1 }
+					amphibious_mechanized = { x = 2 y = 2 }
+					amphibious_mechanized = { x = 2 y = 3 }
+					amphibious_mechanized = { x = 3 y = 0 }
+					amphibious_mechanized = { x = 3 y = 1 }
+					amphibious_mechanized = { x = 3 y = 2 }
+					amphibious_mechanized = { x = 3 y = 3 }
+					heavy_armor = { x = 4 y = 0 }
+					heavy_armor = { x = 4 y = 1 }
+				}
+			}
+		}
+	}
+	a40cwmech = {
+		icon = GFX_decision_generic_tank
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "Mechanized 40CW"
+
+				regiments = {
+					mechanized = { x = 0 y = 0 }
+					mechanized = { x = 0 y = 1 }
+					mechanized = { x = 0 y = 2 }
+					mechanized = { x = 0 y = 3 }
+					mechanized = { x = 0 y = 4 }
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+					mechanized = { x = 1 y = 3 }
+					mechanized = { x = 1 y = 4 }
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					mechanized = { x = 3 y = 4 }
+				}
+			}
+		}
+	}
+	a35cwmarine = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "35CW Marine"
+
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					marine = { x = 2 y = 4 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mot_anti_tank_brigade = { x = 4 y = 0 }
+				}
+			}
+		}
+	}
+	a40cmountaneer = {
+		icon = generic_military
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = Clear_Template_Decision }
+		}
+		
+		fire_only_once = no
+		#days_remove = 7
+		
+		complete_effect = {
+			division_template = {
+				name = "40CW Mountaneer/32CW with doctrine"
+
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 4 }
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					mountaineers = { x = 1 y = 4 }
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					mountaineers = { x = 2 y = 3 }
+					mountaineers = { x = 2 y = 4 }
+					mountaineers = { x = 3 y = 0 }
+					mountaineers = { x = 3 y = 1 }
+					mountaineers = { x = 3 y = 2 }
+					mountaineers = { x = 3 y = 3 }
+					mountaineers = { x = 3 y = 4 }
+				}
+			}
+		}
+	}
+}
