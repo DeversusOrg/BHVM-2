@@ -1575,7 +1575,6 @@ country_event = {
 	}	
 }
 
-
 # Notification event that FROM has sent industrial support
 country_event = {
 	id = generic.19

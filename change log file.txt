@@ -506,4 +506,4 @@ Added decision for generic wide use templates , you might have to edit those one
 Added a show button for the naval invasion/paradrop UI which zooms your camera to where ever youve been naval invaded
 Updated the MIO xp cost , now its vanilla aka costs 0 XP again
 Updated the tank modules from vanilla
-CS:TBA
+CS:d048
