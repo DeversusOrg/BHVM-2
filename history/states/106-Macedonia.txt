@@ -24,7 +24,7 @@ state={
 	provinces={
 		907 974 3833 3865 3882 6886  
 	}
-	manpower=1974200
+	manpower=1630650 #Another classic paradox i copy state but forget ab the manpower
 	buildings_max_level_factor=1.000
 	state_category=large_town
 
