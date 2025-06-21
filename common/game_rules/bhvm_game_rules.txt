@@ -1054,6 +1054,21 @@ playable_mongolia = {
 		desc = "Mongolia is playable (Not Recommmended)"
 	}
 }
+playable_iraq = {
+	name = "Playable Iraq?"
+	group = "BHVM game rules"
+	icon = "GFX_decision_category_usa_intervention_mandate"
+	option = {
+		name = no
+		text = "No"
+		desc = "Iraq gets day 1 annexed into The UK"
+	}
+	default = {
+		name = yes
+		text = "Yes"
+		desc = "Iraq is playable"
+	}
+}
 china_war_difficulty = {
 	name = "Difficulty for China" 
 	group = "BHVM game rules"

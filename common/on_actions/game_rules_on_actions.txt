@@ -1564,6 +1564,27 @@ on_actions = {
 			}
         } 
     }
+	on_startup = {
+		effect = {
+			if = {
+				limit ={
+					has_game_rule = {
+						rule = playable_iraq
+						option = no
+					}
+				}
+				ENG = { 
+					annex_country = { target = IRQ transfer_troops = yes }
+					every_state = {
+						limit = {
+							is_core_of = IRQ
+						}
+						set_compliance = 80
+					}
+				}
+			}
+		}
+	}
 	on_game_rule_change = { ##adaptable removed 
 		effect = {
 			if = {
