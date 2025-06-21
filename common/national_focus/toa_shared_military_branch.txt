@@ -2157,14 +2157,6 @@ shared_focus = {
 		}
 		value = GFX_goal_generic_build_airforce
 	}
-	available = {
-		NOT = {
-			has_game_rule = {
-				rule = ac_brazil
-				option = DISALLOWED
-			}
-		}
-	}
 	cost = 5
 
 	ai_will_do = {
@@ -2634,8 +2626,15 @@ shared_focus = {
 
 	ai_will_do = {
 			factor = 10
+	}
+	allow_branch = {
+        NOT = {
+			has_game_rule = {
+				rule = ac_brazil
+				option = DISALLOWED
+			}
 		}
-
+    }
 	completion_reward = {
 		add_tech_bonus = {
 			name = JUNO_heavy_airframe_initiative
@@ -2667,8 +2666,15 @@ shared_focus = {
 
 	ai_will_do = {
 			factor = 10
+	}
+	allow_branch = {
+        NOT = {
+			has_game_rule = {
+				rule = ac_brazil
+				option = DISALLOWED
+			}
 		}
-
+    }
 	completion_reward = {
 		add_tech_bonus = {
 			name = JUNO_medium_airframe_initiative 
@@ -2701,7 +2707,14 @@ shared_focus = {
 	bypass = {
 		
 	}
-
+	allow_branch = {
+        NOT = {
+			has_game_rule = {
+				rule = ac_brazil
+				option = DISALLOWED
+			}
+		}
+    }
 	completion_reward = {
 		add_tech_bonus = {
 			name = JUNO_light_airframe_initiative
