@@ -507,3 +507,29 @@ Added a show button for the naval invasion/paradrop UI which zooms your camera t
 Updated the MIO xp cost , now its vanilla aka costs 0 XP again
 Updated the tank modules from vanilla
 CS:d048
+
+SICK AND WOUNDED HAS OFFICIALLY BEEN FIXED AFTER 1 THOUSAND YEARS OF SICKNESS AND WOUNDED PEOPLE!! HURAAAY
+USA events should be lowkey kinda the same always from now on , this is because of the sick and wounded stuff-For future me updating the 00_on_actions - ALWAYS REMOVE THE SICK VARIABLES!
+Some minor state changes and bug fixes
+Brazil AC focus tree for game rule has been changed , now you can never see the focuses for air branch below a certain point if brazil cannot partake into AC action.
+Intel upgrade visability - shows you on the middle top left , an icon is displayed which shows that you can either make an agency or upgrade intel.
+Naval invasion hotkey has been baked into the mod (again?)
+Game rule for playable IRAQ - default is playable aka on the map
+Pregrind changes: Rokosovski(SOV) 1+ attack ;Rensburg and Brink (SAF) 1+ planning skill both;Zingales(ITA) 2+ defense
+Some minor localization updates
+Host tool version 5:
+A lot of new functions like target and reciver
+Mark a country by clicking on it and click on the dot
+Made the tagswitch button work with the target system
+Made the declare war button work with the target system
+Added more buttons such as dockyard , removing civs mills and dockyard , manpower button which adds 25k manpower to a nation
+Expanded the stability and war support stuff
+Added some events to the host tool
+Added a fail safe to the host tool change button
+Fixed a bug with the removing of core button
+Added a "?" button to help with the host tool
+Significantly changed the layout of the host tool
+Removed cheats that have not worked for ages
+The stupid snek is gone
+TODO: For the next update:Need to add a thing for individual pause rights;More Templates;Actually Finish the new VP system that i have in mind , it will be peak trust me bro;Add a UI which shows how much youre trading and how much youre being traded WITH;In game menu that shows checksum smh
+CS:TBA-Will edit later.
