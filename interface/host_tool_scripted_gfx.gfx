@@ -4,13 +4,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/button_transparent.dds"
 	}
     SpriteType = {
-		 name = "GFX_Juggle_1"
-		 texturefile = "gfx/interface/industry/Juggle_1.dds"
+		name = "GFX_Juggle_1"
+		texturefile = "gfx/interface/industry/Juggle_1.dds"
 	}
     SpriteType = {
         name = "GFX_idea_troll"
         texturefile = "gfx/interface/ideas/idea_troll.dds"
-   }
+    }
+     spriteType = {
+		name = "GFX_toggle_off_click"
+		texturefile = "gfx/horst_gui/horsttool/toggle_off_click.dds"
+	}
+
+	spriteType = {
+		name = "GFX_toggle_on_click"
+		texturefile = "gfx/horst_gui/horsttool/toggle_on_click.dds"
+	}
+
+    spriteType = {
+		name = "GFX_st_background"
+		texturefile = "gfx/horst_gui/horsttool/st_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
     spriteType = {
         name = "GFX_horst_help2"
         texturefile = "gfx/horst_gui/horsttool/horst_help.dds"
@@ -108,6 +123,6 @@ spriteTypes = {
    	spriteType = {
    		name = "GFX_topbar_production_horst_tool"
    		texturefile = "gfx/interface/topbar/toolbar/production_button.dds"
-   		noOfFrames = 2		
+   	    noOfFrames = 2		
    	}
-}
+} 

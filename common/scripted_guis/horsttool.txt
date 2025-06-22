@@ -38,6 +38,8 @@ st_country_powers = {
                 }
                 clear_variable = target_switch_var
             }
+			clear_variable = target_country
+    		clear_variable = receiver_country
 		}
 		
 		observer_click = { 
@@ -61,15 +63,83 @@ st_country_powers = {
 				}
 			}
 		}
-
-		declare_war_button_click = {
-			var:target_country = {
-				declare_war_on = {
-					target = var:receiver_country
-					type = annex_everything
-				}
+		horsttool_target_toggle_on_button_click = {
+			owner = {
+				ROOT = { set_variable = { target_country = PREV } }
 			}
 		}
+
+		horsttool_target_toggle_off_button_click = {
+			clear_variable = target_country
+		}
+
+		horsttool_receiver_toggle_on_button_click = {
+			owner = {
+				ROOT = { set_variable = { receiver_country = PREV } }
+			}
+		}
+
+		horsttool_receiver_toggle_off_button_click = {
+			clear_variable = receiver_country
+		}
+		# Target country selection
+		target_country_toggle_click = {
+			if = {
+				limit = { check_variable = { ROOT.target_country = 0 } }
+				owner = {
+					ROOT = { set_variable = { target_country = PREV } }
+				}
+			}
+			else = {
+				clear_variable = target_country
+			}
+		}
+
+		# Receiver country selection
+		receiver_country_toggle_click = {
+			if = {
+				limit = { check_variable = { ROOT.receiver_country = 0 } }
+				owner = {
+					ROOT = { set_variable = { receiver_country = PREV } }
+				}
+			}
+			else = {
+				clear_variable = receiver_country
+			}
+		}
+		# Tag switch between target and receiver
+		tag_switch_button_click = {
+                if = {
+                    limit = { 
+                        NOT = { check_variable = { ROOT.target_country = 0 } }
+                        NOT = { check_variable = { ROOT.receiver_country = 0 } }
+                        var:ROOT.target_country = { is_ai = no }
+                        NOT = { check_variable = { ROOT.target_country = ROOT.receiver_country } }
+                    }
+                    var:ROOT.receiver_country = { change_tag_from = var:ROOT.target_country }
+                    clear_variable = ROOT.target_country
+                    clear_variable = ROOT.receiver_country
+                }
+        }
+
+		declare_war_button_click = {
+                if = {
+                    limit = {
+                        NOT = { check_variable = { ROOT.target_country = 0 } }
+                        NOT = { check_variable = { ROOT.receiver_country = 0 } }
+                        NOT = { var:ROOT.target_country = { has_war_with = var:ROOT.receiver_country } }
+                        NOT = { check_variable = { ROOT.target_country = ROOT.receiver_country } }
+                    }
+                    var:ROOT.target_country = {
+                        declare_war_on = {
+                            target = var:ROOT.receiver_country
+                            type = annex_everything
+                        }
+                    }
+                    clear_variable = ROOT.target_country
+                    clear_variable = ROOT.receiver_country
+                }
+        }
 
 		addpp_click = {
 			owner={
@@ -213,7 +283,7 @@ st_country_powers = {
 				var:ROOT.target = {
 					var:ROOT.taker = {
 						#every_state = { limit = { is_core_of = var:ROOT.target} add_core_of = var:ROOT.taker}
-						every_state = { limit = { is_core_of = var:ROOT.target } add_core_of = var:ROOT.taker }
+							every_state = { limit = { is_core_of = var:ROOT.target } add_core_of = var:ROOT.taker }
 						}
 					}
 				}
@@ -379,8 +449,6 @@ st_country_powers = {
 				clear_variable = first_marked_state
 			}
 		}
-			
-		
 		puppet_country_click = {
 			owner = {
 				set_variable = { ROOT.taker = this }
@@ -450,7 +518,7 @@ st_country_powers = {
 
 		wt_add_click = { BLM = { add_threat = 1 } }
 		wt_remove_click = { BLM = { add_threat = -1 } }
-		snek_tped_click = { owner = { news_event = horsttool.2 } }
+		#snek_tped_click = { owner = { news_event = horsttool.2 } }
 
 		cheat1_click = { if = { limit = { Root = { has_country_flag = cheating } } set_variable = { Root.selected_cheat = 1 } ROOT = { clr_country_flag = cheating } } else = { ROOT = { set_country_flag = cheating } } }
 		cheat2_click = { set_variable = { Root.selected_cheat = 2 } ROOT = { clr_country_flag = cheating } }
@@ -473,8 +541,15 @@ st_country_powers = {
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
+			target_flag = {
+				image = "[?ROOT.target_country.GetFlag]"
+				frame = "[?ROOT.target_country.GetFlagFrame]"
+			}
+			receiver_flag = {
+				image = "[?ROOT.receiver_country.GetFlag]"
+				frame = "[?ROOT.receiver_country.GetFlagFrame]"
+			}
 		}
-	
 	triggers = {
 		observer_click_enabled = { owner = { is_ai = no } }
 		observer_visible = {}
@@ -484,6 +559,24 @@ st_country_powers = {
 		compliance_positive_click_enabled = { check_variable = { ROOT.compl < 100 } }
 		add_cheat_click_enabled = { check_variable = { Root.selected_cheat>0 } }
 		free_country_click_enabled = { owner = { is_subject = yes } }
+		
+		# Target and receiver triggers
+		target_country_toggle_click_enabled = { owner = { exists = yes } }
+		receiver_country_toggle_click_enabled = { owner = { exists = yes } }
+		
+		tag_switch_button_click_enabled = {
+			NOT = { check_variable = { ROOT.target_country = 0 } }
+			NOT = { check_variable = { ROOT.receiver_country = 0 } }
+			var:ROOT.target_country = { is_ai = no }
+		}
+		
+		declare_war_button_click_enabled = {
+			NOT = { check_variable = { ROOT.target_country = 0 } }
+			NOT = { check_variable = { ROOT.receiver_country = 0 } }
+			NOT = { var:ROOT.target_country = { has_war_with = ROOT.receiver_country } }
+			NOT = { var:ROOT.target_country = { is_ally_with = ROOT.receiver_country } }
+		}
+		
 		cheat1_visible = {}
 		cheat1_text_visible = {}
 		cheat2_visible = { ROOT = { has_country_flag = cheating } }
@@ -545,9 +638,33 @@ st_country_powers = {
 		change_host_nation_click_enabled = {}
 
 		fix_production_click_enabled = {}
+		declare_war_button_click_enabled = {
+                NOT = { check_variable = { ROOT.target_country = 0 } }
+                NOT = { check_variable = { ROOT.receiver_country = 0 } }
+                NOT = { var:ROOT.target_country = { has_war_with = var:ROOT.receiver_country } }
+                NOT = { check_variable = { ROOT.target_country = ROOT.receiver_country } }
+        }
+		tag_switch_button_click_enabled = {
+                NOT = { check_variable = { ROOT.target_country = 0 } }
+                NOT = { check_variable = { ROOT.receiver_country = 0 } }
+                var:ROOT.target_country = { is_ai = no }
+                NOT = { check_variable = { ROOT.target_country = ROOT.receiver_country } }
+        }
+		horsttool_target_toggle_on_button_visible = {
+			check_variable = { ROOT.target_country = 0 }
+		}
 
-		declare_war_button_click_enabled = { }
+		horsttool_target_toggle_off_button_visible = {
+			NOT = { check_variable = { ROOT.target_country = 0 } }
+		}
+
+		horsttool_receiver_toggle_on_button_visible = {
+			check_variable = { ROOT.receiver_country = 0 }
+		}
+
+		horsttool_receiver_toggle_off_button_visible = {
+			NOT = { check_variable = { ROOT.receiver_country = 0 } }
+		}
 	}   
     }
 }
-
