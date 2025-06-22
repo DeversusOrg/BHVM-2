@@ -36,16 +36,31 @@ spriteTypes = {
         texturefile = "gfx/horst_gui/horsttool/horst_civ_plus.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }	
-		spriteType = {
-        name = "GFX_horst_civ_pluss"
-        texturefile = "gfx/horst_gui/horsttool/horst_civ_pluss.dds"
+	spriteType = {
+        name = "GFX_horst_mill_plus"
+        texturefile = "gfx/horst_gui/horsttool/horst_mill_plus.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }	
     spriteType = {
-        name = "GFX_horst_snek"
-        texturefile = "gfx/horst_gui/horsttool/horst_snek.dds"
+        name = "GFX_horst_dock_plus"
+        texturefile = "gfx/horst_gui/horsttool/horst_dock_plus.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+    spriteType = {
+        name = "GFX_horst_civ_remove"
+        texturefile = "gfx/horst_gui/horsttool/horst_civ_remove.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }	
+	spriteType = {
+        name = "GFX_horst_mill_remove"
+        texturefile = "gfx/horst_gui/horsttool/horst_mill_remove.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	
+    spriteType = {
+        name = "GFX_horst_dock_remove"
+        texturefile = "gfx/horst_gui/horsttool/horst_dock_remove.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
     spriteType = {
         name = "GFX_horst_increase_wt"
         texturefile = "gfx/horst_gui/horsttool/horst_increase_wt.dds"
@@ -115,7 +130,7 @@ spriteTypes = {
    		name = "GFX_change_host_nation"
    		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
    	}
-       spriteType = {
+    spriteType = {
         name = "GFX_tag_switch_button"
         texturefile = "gfx/horst_gui/horsttool/tag_switch_button.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -124,5 +139,13 @@ spriteTypes = {
    		name = "GFX_topbar_production_horst_tool"
    		texturefile = "gfx/interface/topbar/toolbar/production_button.dds"
    	    noOfFrames = 2		
+   	}
+    spriteType = {
+        name = "GFX_add_5_button"
+   		texturefile = "gfx/horst_gui/horsttool/add_5_button.dds"
+    }
+   	spriteType = {
+   		name = "GFX_sub_5_button"
+   		texturefile = "gfx/horst_gui/horsttool/sub_5_button.dds"
    	}
 } 

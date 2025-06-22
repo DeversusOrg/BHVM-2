@@ -218,3 +218,15 @@ defined_text = { # global
 		localization_key = CHEAT18
 	}
 }
+defined_text = { # Country
+    name = GetAIStatus
+    text = {
+        trigger = { is_ai = no }
+        localization_key = ai_status_human
+    }
+    text = {
+        trigger = { is_ai = yes }
+        localization_key = ai_status_ai
+    }
+}
+

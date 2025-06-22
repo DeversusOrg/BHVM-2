@@ -1,6 +1,19 @@
 add_namespace = horsttool
 add_namespace = hosttool
 
+news_event = { #HELP I NEEED HELP MEDIIIC
+    id = hosttool.999
+    title = "Host Tool Help"
+    desc = hosttool.999.desc
+    picture = GFX_news_event_001
+    major = no
+    is_triggered_only = yes
+    
+    option = {
+        name = "Got it!But still can you repeat that?"
+    }
+}
+
 news_event = {
 	id = horsttool.1
 	title = "Horsttool"
@@ -222,4 +235,188 @@ news_event = {
 	option = {
 		name = "ok cool"
 	}	
+}
+country_event = {
+    id = hosttool.1000
+    title = "Move Host Tool Confirmation"
+    desc = hosttool.1000.desc
+    picture = GFX_report_event_001
+    is_triggered_only = yes
+    
+    option = {
+        name = "Yes, move the host tool"
+        # Store new host globally BEFORE clearing flags
+        set_global_variable = { new_host_country = temp_new_host }
+        # Clear host flag from everyone
+        every_country = {
+            clr_country_flag = host
+            clr_country_flag = pause_blocked
+            clr_country_flag = transfer_enabled
+        }
+        # Set new host
+        var:temp_new_host = { 
+            set_country_flag = host 
+            set_country_flag = transfer_enabled
+        }
+        # Send ONE global notification
+        news_event = { id = hosttool.1001 }
+        clear_variable = temp_new_host
+    }
+    
+    option = {
+        name = "No, cancel"
+        clear_variable = temp_new_host
+    }
+}
+
+# Global notification event
+news_event = {
+    id = hosttool.1001
+    title = "Host Tool Transferred"
+    desc = hosttool.1001.desc
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = "Understood"
+        # Clear the global variable after showing the notification
+        clear_global_variable = new_host_country
+    }
+}
+# Pause blocker events
+news_event = {
+    id = hosttool.20
+    title = "Pause Settings Changed"
+    desc = "The host has changed pause permissions. [From.GetName] decided to shake things up!"
+    picture = GFX_news_event_001
+    major = no
+    is_triggered_only = yes
+    option = {
+        name = "Roger that, boss!"
+    }
+}
+
+# Declare war event
+news_event = {
+    id = hosttool.21
+    title = "War Declared by Host Tool"
+    desc = "[From.GetName] used the host tool to make [?global.war_declarer.GetName] declare war on [?global.war_target.GetName]. Diplomatic solutions were clearly overrated."
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Let the chaos begin!"
+        clear_global_variable = war_declarer
+        clear_global_variable = war_target
+    }
+}
+
+# Tag switch event
+news_event = {
+    id = hosttool.22
+    title = "Player Tag Switched"
+    desc = "[From.GetName] used the host tool to move a player from [?global.switch_from.GetName] to [?global.switch_to.GetName]. Musical chairs, but with entire nations!"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Hope they like their new home!"
+        clear_global_variable = switch_from
+        clear_global_variable = switch_to
+    }
+}
+
+# Dockyard events
+news_event = {
+    id = hosttool.23
+    title = "Dockyard Added"
+    desc = "[From.GetName] gave one dockyard to [From.From.Owner.GetName]. More ships incoming!"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Anchors aweigh!"
+    }
+}
+
+news_event = {
+    id = hosttool.24
+    title = "Dockyard Removed"
+    desc = "[From.GetName] removed one dockyard from [From.From.Owner.GetName]. Someone's naval dreams just sank."
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "That's rough, buddy"
+    }
+}
+
+# Factory removal events
+news_event = {
+    id = hosttool.25
+    title = "Military Factory Removed"
+    desc = "[From.GetName] removed one military factory from [From.From.Owner.GetName]. Oops, there goes the war machine!"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Industrial sabotage!"
+    }
+}
+
+news_event = {
+    id = hosttool.26
+    title = "Civilian Factory Removed"
+    desc = "[From.GetName] removed one civilian factory from [From.From.Owner.GetName]. The economy just took a hit!"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Economic warfare!"
+    }
+}
+news_event = {
+    id = hosttool.27
+    title = "25K Manpower Addeed"
+    desc = "[From.GetName] Added 25k manpower to [From.From.Owner.GetName]. Mass MOBB!"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Guerilla tacticz"
+    }
+}
+news_event = {
+    id = hosttool.28
+    title = "-1 World tension"
+    desc = "[From.GetName] Removed 1 World tension. With host tool ofc"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh nein!Meine var zuppord"
+    }
+}
+news_event = {
+    id = hosttool.29
+    title = "+1 World tension"
+    desc = "[From.GetName] Added 1 World tension. With host tool ofc"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh JAAAH!Meine var zuppord!!"
+    }
+}
+news_event = {
+    id = hosttool.30
+    title = "Player moved into observer"
+    desc = "[From.GetName] moved player from [From.From.Owner.GetName] to Observer mode."
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Jewsaw sim"
+    }
 }

@@ -22,7 +22,7 @@
  TAGSWTICH_HOST:0"Tagswitch player §R DOES NOT WORK CURRENTLY!§!\n\n"
  TAGSWTICH_HOST_DELAYED:0""
 
- CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
+ CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed, INCLUDING TARGET/RECEIVER MARKS\n\n"
  CLEAR_ALL_MARKINGS_DELAYED:0 ""
 
  TRANSFER_STATES:0 "§HTransfer States§!\nTransfer marked states to [This.Owner.GetName]\n\n"
@@ -49,6 +49,9 @@
  ADD_CHEAT:0 "§HCheat§!\nSelection is given to the selected country\n\n"
  ADD_CHEAT_DELAYED:0 ""
 
+ ADDMANPOWER:0 "§HAdd 25k Manpower§!\nClicking this button will add 25,000 manpower to [This.Owner.GetName].\n\n"
+ ADDMANPOWER_DELAYED:0 ""
+
  WTADD:0 "§HAdd 1% world tension§!\nClicking this button will add 1% world tension\n\n"
  WTADD_DELAYED:0 ""
 
@@ -67,7 +70,7 @@
  DECLARE_WAR:0 "Declare war X on Y§R DOES NOT WORK CURRENTLY!§!"
  DECLARE_WAR_DELAYED:0 ""
 
- ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add political power to [This.Owner.GetName].\n\n"
+ ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add 50 political power to [This.Owner.GetName].\n\n"
  ADDWS:0 "§HAdd 10 War Support§!\nClicking this button will add war support to [This.Owner.GetName].\n\n"
  ADDST:0 "§HAdd 10 Stability§!\nClicking this button will add stability to [This.Owner.GetName].\n\n"
  ADDTUNGSTEN:0 "§HAdd 5 Tungsten§!\nClicking this button will add tungsten to [This.Owner.GetName].\n\n"
@@ -77,20 +80,29 @@
  ADDOIL:0 "§HAdd 5 Oil§!\nClicking this button will add Oil to [This.Owner.GetName].\n\n"
  ADDCHROMUIM:0 "§HAdd 5 Chromuim§!\nClicking this button will add Chromuim to [This.Owner.GetName].\n\n"
 
+ WS_DECREASE:0 "Remove 5% War Support"
+ WS_INCREASE:0 "Add 5% War Support"
+ WS_AMOUNT:0 "War Support Amount"
+ WS_SET:0 "War Support Controls"
+ ST_DECREASE:0 "Remove 5% Stability"
+ ST_INCREASE:0 "Add 5% Stability"
+ ST_AMOUNT:0 "Stability Amount"
+ ST_SET:0 "Stability Controls"
+
  ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"
  ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
  transfer_states_on:0 "Host Tool:£trigger_no"
  transfer_states_off:0 "Host Tool:£trigger_yes"
 
- COMP_AMOUNT_COMP:0 "The said amount of compliance that will be 2SETW in the state"
+ COMP_AMOUNT_COMP:0 "The said amount of compliance that will be §2SET§W  in the state"
  COMP_INCREASEP:0 "Increase the selected state's compliance"
  COMP_DECREASE:0"Lower the selected state's compliance"
- COMP_SET:0 "2Set compliance"
+ COMP_SET:0 "2Set compliance"
 
- REST_AMOUNT_REST:0 "The said amount of resistance that will be RSETW in the state"
+ REST_AMOUNT_REST:0 "The said amount of resistance that will be §RSET§W in the state"
  REST_INCREASEP:0 "Increase the selected state's resistance"
  REST_DECREASE:0"Lower the selected state's resistance"
- REST_SET:0 "RSet resistance"
+ REST_SET:0 "RSet resistance"
 
  CHEAT_SELECT:0   "Select cheat"
  CHEAT1:0   "Generic - 50%"
@@ -101,16 +113,12 @@
  CHEAT6:0   "Armour - 2y"
  CHEAT7:0   "Air - 100%"
  CHEAT8:0   "Industry - 100%"
- CHEAT9:0  "Remove 1 Off-Mil"
- CHEAT10:0  "Remove 1 Off-Civ"
- CHEAT11:0  "Earrape"
- CHEAT12:0  "50 Army XP"
- CHEAT13:0  "50 Air XP"
- CHEAT14:0  "50 Naval XP"
- CHEAT15:0  "Schizophrenic Meltdown"
- CHEAT16:0  "Fix Intel Sharing(NOT A THING)"
- CHEAT17:0  "25 Command Power"
- CHEAT18:0  "Remove Forts(DOES NOT WORK CURRENTLY!)"
+ CHEAT9:0   "Earrape"
+ CHEAT10:0  "50 Army XP"
+ CHEAT11:0  "50 Air XP"
+ CHEAT12:0  "50 Naval XP"
+ CHEAT13:0  "Schizophrenic Meltdown"
+ CHEAT14:0  "25 Command Power"
 
  PAUSE_SELECT:0 "Pause Settings"
  PAUSE1:0 "Everyone"
@@ -120,7 +128,55 @@
  pause_blocker_shield_delayed_tt:0 "By default anyone can pause the game, but if you want to restrict pausing to just the host (you) or majors then you can select the 'Majors Only' setting (first on the list) or 'Host Only' setting to prevent pausing by most or all other nations."
 
  fix_production_idea:0 "Production Fixer"
-  
+
  mark_status_marked:0   "     Unmark State "
  mark_status_unmarked:0 "      Mark State  "
+
+ hosttool.999.desc:0 "New with this host tool?Well don't worry heres a simple quick word guide for you:\n\n So basiaclly almost everything is self explanatory in every button since there are tooltips that you can read and get an idea what they can do. But the host tool is pretty straigh forward and very easy to use.Just read every tooltip under each button (If there is one) and you will get the hang of it!".
+
+ hosttool.1000.desc:0 "§MAre you sure you want to move the Host Tool to [?temp_new_host.GetName] ([?temp_new_host.GetTag])?\n\n§MThis will transfer all host privileges to that nation.§!\n\n[?temp_new_host.GetAIStatus]"
+
+ hosttool.1001.desc:0 "§MThe Host Tool has been transferred to [?global.new_host_country.GetName] ([?global.new_host_country.GetTag]).\n\n§MAll host privileges and controls are now with this nation.§!"
+
+ ai_status_human:0 "§MThis nation is controlled by a human player.§!"
+ ai_status_ai:0 "§RWARNING: This nation is controlled by AI! Moving the host tool to an AI nation may make it irreversible unless you use console commands!§!"
+
+
+ PAUSE_BLOCKER_EVERYONE:0 "§HEveryone Can Pause§!\nAllows all players to pause the game\n\n"
+ PAUSE_BLOCKER_EVERYONE_DELAYED:0 "Democracy mode: Everyone gets to pause when they want. Chaos ensues."
+
+ PAUSE_BLOCKER_HOST:0 "§HHost Only Pause§!\nOnly the host can pause the game\n\n"
+ PAUSE_BLOCKER_HOST_DELAYED:0 "Dictator mode: Only you control the pause button. Power trip activated."
+
+ PAUSE_BLOCKER_MAJORS:0 "§HMajors Only Pause§!\nOnly major nations can pause the game\n\n"
+ PAUSE_BLOCKER_MAJORS_DELAYED:0 "Oligarchy mode: Only the big boys get to pause. Minors cry in corner."
+
+
+ DECLARE_WAR:0 "§HDeclare War§!\n[?ROOT.target_country.GetName] will declare war on [?ROOT.receiver_country.GetName]\n\n"
+ DECLARE_WAR_DELAYED:0 "Time for some good old fashioned violence! Make sure you selected the right countries or this will be awkward..."
+
  
+ TAGSWTICH_HOST:0 "§HTag Switch Players§!\nMove player from [?ROOT.target_country.GetName] to [?ROOT.receiver_country.GetName]\n\n"
+ TAGSWTICH_HOST_DELAYED:0 "Musical chairs, but with countries! Player gets yeeted from one nation to another."
+
+ DOCKADD:0 "§HAdd 1 Dockyard§!\nClicking this button will add one offmap dockyard to [This.Owner.GetName].\n\n"
+ DOCKADD_DELAYED:0 "More boats = more problems. But also more naval supremacy!"
+ 
+ DOCKREMOVE:0 "§HRemove 1 Dockyard§!\nClicking this button will remove one offmap dockyard from [This.Owner.GetName].\n\n"
+ DOCKREMOVE_DELAYED:0 "Oops, someone 'accidentally' demolished a shipyard. Totally not sabotage."
+
+ MILLREMOVE:0 "§HRemove 1 Military Factory§!\nClicking this button will remove one offmap military factory from [This.Owner.GetName].\n\n"
+ MILLREMOVE_DELAYED:0 "Factory goes boom! Someone's having a bad industrial day."
+
+ CIVREMOVE:0 "§HRemove 1 Civilian Factory§!\nClicking this button will remove one offmap civilian factory from [This.Owner.GetName].\n\n"
+ CIVREMOVE_DELAYED:0 "Civilian factory mysteriously vanishes. Probably aliens. Or incompetent management."
+
+ TARGET_SELECT:0 "§HSelect Target Country§!\nMark [This.Owner.GetName] as the target country for operations\n\n"
+ TARGET_SELECT_DELAYED:0 "Point and click adventure! This country is now in your crosshairs."
+
+ RECEIVER_SELECT:0 "§HSelect Receiver Country§!\nMark [This.Owner.GetName] as the receiver country for operations\n\n"
+ RECEIVER_SELECT_DELAYED:0 "Lucky winner selected! This country will receive whatever you're dishing out."
+
+ CHANGE_HOST_NATION_TT:0 "§HMove Host Tool§!\nTransfer host privileges to [This.Owner.GetName]\n\n"
+ CHANGE_HOST_NATION_TT_DELAYED:0 "Passing the crown! [This.Owner.GetName] will become the new overlord of this lobby."
+
