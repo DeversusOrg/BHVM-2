@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "pause_block_window"
-		size = { width = 200 height = 40 } 
+		size = { width = 200 height = 30 } 
 		position = { x=58 y =0 }  	 	
 		background = {
 			name = "Background"
@@ -123,14 +123,6 @@ guiTypes = {
 			pdx_tooltip_delayed = "WHITEPEACE_DELAYED"
 		}
 		# pause blocker from horsttool
-		iconType = {
-			name = "pause_blocker_status_icon"  # Changed from pause_blocker_shield
-			position = {x=280 y=252}
-			spriteType = "GFX_show_dismissed_alerts_icon"
-			pdx_tooltip = "pause_blocker_status_tt"
-			pdx_tooltip_delayed = "pause_blocker_status_delayed_tt"
-			scale = 0.75
-		}
 		buttonType = {
 			name = "pause_blocker_option"
 			position = {x=280 y=270}
@@ -153,58 +145,57 @@ guiTypes = {
 			name = "pause_blocker_major"
 			position = {x=280 y=300}
 			spriteType = "GFX_generic_box_125"
-			visible = "[?has_variable('pause_dropdown_open')]"
 		}
-
 		instantTextboxType = {
 			name = "pause_blocker_major_text"
-			position = {x=280 y=304}
+			position = {x=280 y=300}
 			font = "hoi_18mbs"
 			text = "PAUSE3"
 			maxWidth = 380
 			maxHeight = 23
 			format = left
 			alwaystransparent = yes
-			visible = "[?has_variable('pause_dropdown_open')]"
 		}
-
 		buttonType = {
 			name = "pause_blocker_all"
 			position = {x=280 y=323}
 			spriteType = "GFX_generic_box_125"
-			visible = "[?has_variable('pause_dropdown_open')]"
 		}
-
 		instantTextboxType = {
 			name = "pause_blocker_all_text"
-			position = {x=280 y=327}
+			position = {x=280 y=328}
 			font = "hoi_18mbs"
 			text = "PAUSE1"
 			maxWidth = 380
 			maxHeight = 23
 			format = left
 			alwaystransparent = yes
-			visible = "[?has_variable('pause_dropdown_open')]"
 		}
-
+		iconType = {
+			name = "pause_blocker_shield"
+			position = {x=280 y=252}
+			spriteType = "GFX_show_dismissed_alerts_icon"
+			pdx_tooltip = "pause_blocker_shield_tt"
+			pdx_tooltip_delayed = "pause_blocker_shield_delayed_tt"
+			scale = 0.75
+		}
 		buttonType = {
 			name = "pause_blocker_host"
 			position = {x=280 y=345}
 			spriteType = "GFX_generic_box_125"
-			visible = "[?has_variable('pause_dropdown_open')]"
 		}
 
 		instantTextboxType = {
 			name = "pause_blocker_host_text"
-			position = {x=280 y=349}
+			position = {x=280 y=350}
 			font = "hoi_18mbs"
 			text = "PAUSE2"
 			maxWidth = 380
 			maxHeight = 23
 			format = left
 			alwaystransparent = yes
-			visible = "[?has_variable('pause_dropdown_open')]"
 		}
+
 		buttonType = {
 			name = "pause_blocker_unblock_country"
 			position = {x=246 y=263}
@@ -241,7 +232,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				format = left
 				text = "Target"
-				maxWidth = 100
+				maxWidth = 300
 				maxHeight = 20
 				fixedsize = yes
 			}
@@ -252,7 +243,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				format = left
 				text = "[?ROOT.target_country.GetName|None]"
-				maxWidth = 100
+				maxWidth = 300
 				maxHeight = 20
 				fixedsize = yes
 			}
@@ -299,7 +290,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				format = left
 				text = "Receiver"
-				maxWidth = 100
+				maxWidth = 300
 				maxHeight = 20
 				fixedsize = yes
 			}
@@ -310,7 +301,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				format = left
 				text = "[?ROOT.receiver_country.GetName|None]"
-				maxWidth = 100
+				maxWidth = 300
 				maxHeight = 20
 				fixedsize = yes
 			}
@@ -588,20 +579,20 @@ guiTypes = {
 			position = {x=375 y=143}
 			spriteType = "GFX_sub_5_button"
 			scale = 1
-			pdx_tooltip = "WS_SUB_5_TT"
+			pdx_tooltip = "Remove 5% War Support"
 		}
 		buttonType = {
 			name = "ws_add_5"
 			position = {x=430 y=143}
 			spriteType = "GFX_add_5_button"
 			scale = 1
-			pdx_tooltip = "WS_ADD_5_TT"
+			pdx_tooltip = "Add 5% War Support"
 		}
 		buttonType = {
 			name = "ws_set_icon" 
 			position = { x=398 y=143 }
 			spriteType = "GFX_horst_addws"
-			pdx_tooltip = "WS_ICON_TT"
+			pdx_tooltip = "War Support Controls"
 			scale = 0.5
 		}
 
@@ -611,20 +602,20 @@ guiTypes = {
 			position = {x=375 y=173}
 			spriteType = "GFX_sub_5_button"
 			scale = 1
-			pdx_tooltip = "ST_SUB_5_TT"
+			pdx_tooltip = "Remove 5% Stability"
 		}
 		buttonType = {
 			name = "st_add_5"
 			position = {x=430 y=173}
 			spriteType = "GFX_add_5_button"
 			scale = 1
-			pdx_tooltip = "ST_ADD_5_TT"
+			pdx_tooltip = "Add 5% Stability"
 		}
 		buttonType = {
 			name = "st_set_icon" 
 			position = { x=398 y=173 }
 			spriteType = "GFX_horst_addst"
-			pdx_tooltip = "ST_ICON_TT"
+			pdx_tooltip = "Stability Controls"
 			scale = 0.5
 		}
 		buttonType = {
@@ -691,14 +682,7 @@ guiTypes = {
 			pdx_tooltip = "REST_SET"
 			scale = 0.9
 		}
-		buttonType = {
-			name = "building_drop_menu" 
-			position = { x=180 y=150 }
-			spriteType = "GFX_state_constructions"
-			pdx_tooltip = "BUILDING_MENU"
-			pdx_tooltip_delayed = "BUILDING_MENU_DELAYED"
-			scale = 1.5
-		}
+
 		buttonType = {
 			name = "cheat1"
 			position = {x=20 y=90}
@@ -767,96 +751,6 @@ guiTypes = {
 		buttonType = {
 			name = "cheat14"
 			position = {x=20 y=428}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat15"
-			position = {x=160 y=90}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat16"
-			position = {x=160 y=116}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat17"
-			position = {x=160 y=142}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat18"
-			position = {x=160 y=168}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat19"
-			position = {x=160 y=194}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat20"
-			position = {x=160 y=220}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat21"
-			position = {x=160 y=246}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat22"
-			position = {x=160 y=272}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat23"
-			position = {x=160 y=298}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat24"
-			position = {x=160 y=324}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat25"
-			position = {x=160 y=350}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat26"
-			position = {x=160 y=376}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat27"
-			position = {x=160 y=402}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat28"
-			position = {x=160 y=428}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat29"
-			position = {x=300 y=90}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat30"
-			position = {x=300 y=116}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat31"
-			position = {x=300 y=142}
-			spriteType = "GFX_generic_box_125"
-		}
-		buttonType = {
-			name = "cheat32"
-			position = {x=300 y=168}
 			spriteType = "GFX_generic_box_125"
 		}
 		instantTextboxType = {
@@ -1007,203 +901,6 @@ guiTypes = {
 			position = {x=25 y=433}
 			font = "hoi_18mbs"
 			text = "CHEAT14"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-		instantTextboxType = {
-			name = "cheat15_text"
-			position = {x=165 y=95}
-			font = "hoi_18mbs"
-			text = "CHEAT15"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat16_text"
-			position = {x=165 y=121}
-			font = "hoi_18mbs"
-			text = "CHEAT16"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat17_text"
-			position = {x=165 y=147}
-			font = "hoi_18mbs"
-			text = "CHEAT17"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat18_text"
-			position = {x=165 y=173}
-			font = "hoi_18mbs"
-			text = "CHEAT18"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat19_text"
-			position = {x=165 y=199}
-			font = "hoi_18mbs"
-			text = "CHEAT19"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat20_text"
-			position = {x=165 y=225}
-			font = "hoi_18mbs"
-			text = "CHEAT20"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat21_text"
-			position = {x=165 y=251}
-			font = "hoi_18mbs"
-			text = "CHEAT21"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat22_text"
-			position = {x=165 y=277}
-			font = "hoi_18mbs"
-			text = "CHEAT22"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat23_text"
-			position = {x=165 y=303}
-			font = "hoi_18mbs"
-			text = "CHEAT23"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat24_text"
-			position = {x=165 y=329}
-			font = "hoi_18mbs"
-			text = "CHEAT24"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat25_text"
-			position = {x=165 y=355}
-			font = "hoi_18mbs"
-			text = "CHEAT25"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat26_text"
-			position = {x=165 y=381}
-			font = "hoi_18mbs"
-			text = "CHEAT26"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat27_text"
-			position = {x=165 y=407}
-			font = "hoi_18mbs"
-			text = "CHEAT27"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat28_text"
-			position = {x=165 y=433}
-			font = "hoi_18mbs"
-			text = "CHEAT28"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat29_text"
-			position = {x=305 y=95}
-			font = "hoi_18mbs"
-			text = "CHEAT29"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat30_text"
-			position = {x=305 y=121}
-			font = "hoi_18mbs"
-			text = "CHEAT30"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat31_text"
-			position = {x=305 y=147}
-			font = "hoi_18mbs"
-			text = "CHEAT31"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "cheat32_text"
-			position = {x=305 y=173}
-			font = "hoi_18mbs"
-			text = "CHEAT32"
 			maxWidth = 340
 			maxHeight = 23
 			format = left

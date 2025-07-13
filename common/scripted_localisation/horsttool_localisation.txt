@@ -217,6 +217,91 @@ defined_text = { # global
 		}
 		localization_key = CHEAT18
 	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 19 }
+		}
+		localization_key = CHEAT19
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 20 }
+		}
+		localization_key = CHEAT20
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 21 }
+		}
+		localization_key = CHEAT21
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 22 }
+		}
+		localization_key = CHEAT22
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 23 }
+		}
+		localization_key = CHEAT23
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 24 }
+		}
+		localization_key = CHEAT24
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 25 }
+		}
+		localization_key = CHEAT25
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 26 }
+		}
+		localization_key = CHEAT26
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 27 }
+		}
+		localization_key = CHEAT27
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 28 }
+		}
+		localization_key = CHEAT28
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 29 }
+		}
+		localization_key = CHEAT29
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 30 }
+		}
+		localization_key = CHEAT30
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 31 }
+		}
+		localization_key = CHEAT31
+	}
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 32 }
+		}
+		localization_key = CHEAT32
+	}
+
 }
 defined_text = { # Country
     name = GetAIStatus
@@ -229,4 +314,15 @@ defined_text = { # Country
         localization_key = ai_status_ai
     }
 }
-
+defined_text = {
+    name = GetPauseDropdownVisible
+    text = {
+        trigger = {
+            ROOT = { check_variable = { pause_dropdown_open = 1 } }
+        }
+        localization_key = "yes"
+    }
+    text = {
+        localization_key = "no"
+    }
+}

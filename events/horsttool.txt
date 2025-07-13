@@ -27,28 +27,15 @@ news_event = {
 		clear_variable=this.target_country
 	}
 }
-
-news_event = {
-	id = horsttool.2
-	title = "Snek teleported again"
-	desc = " You little shit"
-	picture = GFX_news_event_001
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = "Im gonna break your kneecaps snek"
-		add_political_power = -1
-	}
-}
 news_event = {
 	id = horsttool.3
 	title = "Prod stuff"
-	desc = " Someone fucked up"
+	desc = "The coop touched they build"
 	picture = GFX_news_event_001
 	major = yes
 	is_triggered_only = yes
 	option = {
-		name = "LAG MOMENT LOL"
+		name = "ok Lol"
 	}
 }
 
@@ -288,12 +275,12 @@ news_event = {
 news_event = {
     id = hosttool.20
     title = "Pause Settings Changed"
-    desc = "The host has changed pause permissions. [From.GetName] decided to shake things up!"
+    desc = "The host has changed pause permissions. [From.GetName] decided to be a pause dictator!"
     picture = GFX_news_event_001
     major = no
     is_triggered_only = yes
     option = {
-        name = "Roger that, boss!"
+        name = "Nooo la pause rights"
     }
 }
 
@@ -301,12 +288,12 @@ news_event = {
 news_event = {
     id = hosttool.21
     title = "War Declared by Host Tool"
-    desc = "[From.GetName] used the host tool to make [?global.war_declarer.GetName] declare war on [?global.war_target.GetName]. Diplomatic solutions were clearly overrated."
+    desc = "[From.GetName] used the host tool to make [?global.war_declarer.GetName] declare war on [?global.war_target.GetName]."
     picture = GFX_news_event_001
     major = yes
     is_triggered_only = yes
     option = {
-        name = "Let the chaos begin!"
+        name = "War in my war game?Bruh"
         clear_global_variable = war_declarer
         clear_global_variable = war_target
     }
@@ -418,5 +405,312 @@ news_event = {
     is_triggered_only = yes
     option = {
         name = "Jewsaw sim"
+    }
+}
+
+news_event = {
+    id = horsttool.31
+    title = "Hosttool"
+    desc = " [From.Getname] gave Armor - 50% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.32
+    title = "Hosttool"
+    desc = " [From.Getname] gave Armor - 999% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.33
+    title = "Hosttool"
+    desc = " [From.Getname] gave Armor - 1y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.34
+    title = "Hosttool"
+    desc = " [From.Getname] gave Air - 50% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.35
+    title = "Hosttool"
+    desc = " [From.Getname] gave Air - 1y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.36
+    title = "Hosttool"
+    desc = " [From.Getname] gave Air - 2y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.37
+    title = "Hosttool"
+    desc = " [From.Getname] gave Air - 999% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.38
+    title = "Hosttool"
+    desc = " [From.Getname] gave Industry - 50% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.39
+    title = "Hosttool"
+    desc = " [From.Getname] gave Industry - 1y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.40
+    title = "Hosttool"
+    desc = " [From.Getname] gave Industry - 2y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.41
+    title = "Hosttool"
+    desc = " [From.Getname] gave Industry - 999% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.42
+    title = "Hosttool"
+    desc = " [From.Getname] gave Naval - 50% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.43
+    title = "Hosttool"
+    desc = " [From.Getname] gave Naval - 100% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.44
+    title = "Hosttool"
+    desc = " [From.Getname] gave Naval - 999% bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.45
+    title = "Hosttool"
+    desc = " [From.Getname] gave Naval - 1y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.46
+    title = "Hosttool"
+    desc = " [From.Getname] gave Naval - 2y ahead bonus to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.47
+    title = "Hosttool"
+    desc = " [From.Getname] gave 100 convoys to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+
+news_event = {
+    id = horsttool.48
+    title = "Hosttool"
+    desc = " [From.Getname] gave 50k fuel to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "ok cool"
+    }
+}
+news_event = {
+    id = horsttool.clear
+    title = "Hosttool"
+    desc = "The chost used the clear ALL markings for his host tool"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Refresh for the host tool ok ig?"
+    }
+}
+# War Support events
+news_event = {
+    id = hosttool.50
+    title = "Hosttool - War Support Increased"
+    desc = "[From.GetName] increased war support for [From.From.Owner.Getname] by 5%"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Acknowledged"
+    }
+}
+
+news_event = {
+    id = hosttool.51
+    title = "Hosttool - War Support Decreased"
+    desc = "[From.GetName] decreased war support for [From.From.Owner.Getname] by 5%"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Acknowledged"
+    }
+}
+
+# Stability events
+news_event = {
+    id = hosttool.52
+    title = "Hosttool - Stability Increased"
+    desc = "[From.Getname] gave increased stability by 5% to [From.From.Owner.Getname]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Acknowledged"
+		clear_variable=this.target_country
+    }
+}
+
+news_event = {
+    id = hosttool.53
+    title = "Hosttool - Stability Decreased"
+    desc = "[From.GetName] decreased stability for [From.From.Owner.Getname] by 5%"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Acknowledged"
+    }
+}
+
+# Compliance events
+news_event = {
+    id = hosttool.54
+    title = "Hosttool - Compliance Changed"
+    desc = "[From.GetName] set compliance to [?global.compliance_value]% in [From.From.GetName] owned by [From.From.Owner.GetName]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Acknowledged"
+        clear_global_variable = compliance_value
+        clear_global_variable = compliance_state
+    }
+}
+
+# Resistance events
+news_event = {
+    id = hosttool.55
+    title = "Hosttool - Resistance Changed"
+    desc = "[From.GetName] set resistance to [?global.resistance_value]% in [From.From.GetName] owned by [From.From.Owner.GetName]"
+    picture = GFX_news_event_001
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = "Acknowledged"
+        clear_global_variable = resistance_value
+        clear_global_variable = resistance_state
     }
 }

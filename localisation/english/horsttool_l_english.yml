@@ -22,8 +22,8 @@
  TAGSWTICH_HOST:0"Tagswitch player §R DOES NOT WORK CURRENTLY!§!\n\n"
  TAGSWTICH_HOST_DELAYED:0""
 
- CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed, INCLUDING TARGET/RECEIVER MARKS\n\n"
- CLEAR_ALL_MARKINGS_DELAYED:0 ""
+ CLEAR_ALL_MARKINGS:0 "§HClear Every single mark§!\nResets all host tool settings including marked states, target/receiver countries, pause blocking, and cheat selection\n\n"
+ CLEAR_ALL_MARKINGS_DELAYED:0 "This is the big red button that resets everything. Use it when you want to refresh the host tool or remove something you did not want to select."
 
  TRANSFER_STATES:0 "§HTransfer States§!\nTransfer marked states to [This.Owner.GetName]\n\n"
  TRANSFER_STATES_DELAYED:0 ""
@@ -95,14 +95,25 @@
  transfer_states_off:0 "Host Tool:£trigger_yes"
 
  COMP_AMOUNT_COMP:0 "The said amount of compliance that will be §2SET§W  in the state"
- COMP_INCREASEP:0 "Increase the selected state's compliance"
+ COMP_INCREASE:0 "Increase the selected state's compliance"
  COMP_DECREASE:0"Lower the selected state's compliance"
- COMP_SET:0 "2Set compliance"
+ COMP_SET:0 "§2Set compliance"
 
  REST_AMOUNT_REST:0 "The said amount of resistance that will be §RSET§W in the state"
- REST_INCREASEP:0 "Increase the selected state's resistance"
+ REST_INCREASE:0 "Increase the selected state's resistance"
  REST_DECREASE:0"Lower the selected state's resistance"
- REST_SET:0 "RSet resistance"
+ REST_SET:0 "§RSet resistance"
+
+
+ BUILDING_MENU_DELAYED:0 "§RTO BE MADE!"
+ BUILDING_MENU:0 "State Builder Menu - Dropdown"
+
+ WS_SUB_5_TT:0"§H§RRemove 5% War Support§W"
+ WS_ADD_5_TT:0"§H§GAdd 5% War Support§W"
+ WS_ICON_TT:0"§H§YBy clicking either 5%+/- on a country selected state you will remove/add 5WS§W"
+ ST_SUB_5_TT:0"§H§RRemove 5% Stability§W"
+ ST_ADD_5_TT:0"§H§GAdd 5% Stability§W"
+ ST_ICON_TT:0"§H§YBy clicking either 5%+/- on a country selected state you will remove/add 5ST§W"
 
  CHEAT_SELECT:0   "Select cheat"
  CHEAT1:0   "Generic - 50%"
@@ -119,13 +130,31 @@
  CHEAT12:0  "50 Naval XP"
  CHEAT13:0  "Schizophrenic Meltdown"
  CHEAT14:0  "25 Command Power"
+ CHEAT15:0 "Armor - 50%"
+ CHEAT16:0 "Armor - 999%"
+ CHEAT17:0 "Armor - 1y ahead"
+ CHEAT18:0 "Air - 50%"
+ CHEAT19:0 "Air - 1y ahead"
+ CHEAT20:0 "Air - 2y ahead"
+ CHEAT21:0 "Air - 999%"
+ CHEAT22:0 "Industry - 50%"
+ CHEAT23:0 "Industry - 1y ahead"
+ CHEAT24:0 "Industry - 2y ahead"
+ CHEAT25:0 "Industry - 999%"
+ CHEAT26:0 "Naval - 50%"
+ CHEAT27:0 "Naval - 100%"
+ CHEAT28:0 "Naval - 999%"
+ CHEAT29:0 "Naval - 1y ahead"
+ CHEAT30:0 "Naval - 2y ahead"
+ CHEAT31:0 "Add 100 Convoys"
+ CHEAT32:0 "Add 50k Fuel"
 
  PAUSE_SELECT:0 "Pause Settings"
  PAUSE1:0 "Everyone"
  PAUSE2:0 "Host Only"
  PAUSE3:0 "Majors Only"
- pause_blocker_shield_tt:0 "§HPause Blocker Function§!"
- pause_blocker_shield_delayed_tt:0 "By default anyone can pause the game, but if you want to restrict pausing to just the host (you) or majors then you can select the 'Majors Only' setting (first on the list) or 'Host Only' setting to prevent pausing by most or all other nations."
+ pause_blocker_status_tt:0 "§HPause Blocker Function§!"
+ pause_blocker_status_delayed_tt:0 "By default anyone can pause the game, but if you want to restrict pausing to just the host (you) or majors then you can select the 'Majors Only' setting (first on the list) or 'Host Only' setting to prevent pausing by most or all other nations.Or you can use the individual pause settings for each nation."
 
  fix_production_idea:0 "Production Fixer"
 
@@ -180,3 +209,12 @@
  CHANGE_HOST_NATION_TT:0 "§HMove Host Tool§!\nTransfer host privileges to [This.Owner.GetName]\n\n"
  CHANGE_HOST_NATION_TT_DELAYED:0 "Passing the crown! [This.Owner.GetName] will become the new overlord of this lobby."
 
+ pause_blocker_block_country_tt:0 "Block this country from pausing"
+ pause_blocker_block_country_delayed_tt:0 "Prevents this player from using the pause button"
+ pause_blocker_unblock_country_tt:0 "Unblock this country from pausing"
+ pause_blocker_unblock_country_delayed_tt:0 "Allows this player to use the pause button again"
+ ause_blocked_country:0 "§RPause Blocked§!"
+ pause_unblocked_country:0 "§GPause Unblocked§!"
+
+ HORST_HELP:0 "§HHelp§!\nClicking this button will trigger a small help event explaning how to use the host tool.\n\n"
+ HOST_HELP_DELAYED:0 "Need help with the host tool?Waza hana ktzet ezra."
