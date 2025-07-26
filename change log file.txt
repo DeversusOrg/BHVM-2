@@ -533,3 +533,7 @@ Removed cheats that have not worked for ages
 The stupid snek is gone
 TODO: For the next update:Need to add a thing for individual pause rights;More Templates;Actually Finish the new VP system that i have in mind , it will be peak trust me bro;Add a UI which shows how much youre trading and how much youre being traded WITH;In game menu that shows checksum smh
 CS:be66
+
+Host tool autism prevention fix.
+Check in next month for a big massive update.
+CS:6db3
