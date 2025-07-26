@@ -308,7 +308,7 @@ st_country_powers = {
 					clear_variable = pause_dropdown_open
 				}
 				# Notification
-				news_event = { id = horsttool.clear }
+				#news_event = { id = horsttool.clear }
 			}
 		}
 	
@@ -847,11 +847,12 @@ st_country_powers = {
 		clear_all_markings_click_enabled = { 
 			OR = {
 				check_variable = { ROOT.marked_states^num > 0 } 
-				check_variable = { ROOT.target_country^num = 0 } 
-				check_variable = { ROOT.receiver_country^num = 0 } 
+				check_variable = { ROOT.target_country > 0 } 
+				check_variable = { ROOT.receiver_country > 0 }
+				check_variable = { ROOT.selected_cheat > 0 }
+				ROOT = { has_country_flag = cheating }
 			}
-			
-		}
+		}	
 		award_states_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		annex_country_click_enabled = {	check_variable = { ROOT.marked_states^num > 0 }	}
 		puppet_country_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
