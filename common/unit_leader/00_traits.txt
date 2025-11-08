@@ -3098,56 +3098,6 @@ leader_traits = {
 # status traits
 ##################################
 
-	sick = { 
-		type = all
-		trait_type = status_trait
-		custom_tooltip = "sick_tooltip"
-		custom_prerequisite_tooltip = "sick_tooltip"
-			allowed = {
-				OR = {
-					has_game_rule = {
-						rule = BHVM_sick_wounded
-						option = on
-					}
-					NOT = {
-						has_game_rule = {
-							rule = BHVM_sick_wounded
-							option = off
-						}
-					}
-				}
-			}
-		non_shared_modifier = {
-			skill_bonus_factor = -0.5
-			cannot_use_abilities = 1
-		}
-	}
-
-	wounded = { 
-		type = all
-		trait_type = status_trait
-		custom_tooltip = "wounded_tooltip"
-		custom_prerequisite_tooltip = "wounded_tooltip"
-			allowed = {
-				OR = {
-					has_game_rule = {
-						rule = BHVM_sick_wounded
-						option = on
-					}
-					NOT = {
-						has_game_rule = {
-							rule = BHVM_sick_wounded
-							option = off
-						}
-					}
-				}
-			}
-		non_shared_modifier = {
-			skill_bonus_factor = -0.5
-			cannot_use_abilities = 1
-		}
-	}
-
 	reassigned = { 
 		type = all
 		trait_type = status_trait
