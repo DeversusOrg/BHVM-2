@@ -1612,7 +1612,7 @@ on_actions = {
 			}
 		}
 	}
-	on_startup = {
+	on_game_rule_change = { ##sick and wounded removed 
 		effect = {
 			if = {
 				limit = {
@@ -1621,39 +1621,30 @@ on_actions = {
 						option = on
 					}
 				}
-				set_global_flag = sick_wounded_disabled
+				# y no work
+				every_army_leader = {
+					if = {
+						limit = {
+							OR = {
+								has_trait = sick
+								has_trait = wounded
+							}
+						}
+						remove_trait = sick
+						remove_trait = wounded
+					}
+				}
 			}
 		}
 	}
-
-	on_game_rule_change = {
-		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = BHVM_sick_wounded
-						option = on
-					}
-				}
-				set_global_flag = sick_wounded_disabled
-			}
-			else_if = {
-				limit = {
-					has_game_rule = {
-						rule = BHVM_sick_wounded
-						option = off
-					}
-				}
-				clr_global_flag = sick_wounded_disabled
-			}
-		}
-	}
-
 	on_army_leader_daily = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_global_flag = sick_wounded_disabled }
+					has_game_rule = {
+						rule = BHVM_sick_wounded 
+						option = off
+					}
 					check_variable = { random < 0.02 }
 					NOT = { has_trait = sick }
 					set_temp_variable = { temp = sum_unit_terrain_modifier@sickness_chance }
@@ -1674,7 +1665,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_global_flag = sick_wounded_disabled }
+					has_game_rule = {
+						rule = BHVM_sick_wounded
+						option = off
+					}
 					set_temp_variable = { chance = 0.001 }
 					set_temp_variable = { factor = 1.0 }
 					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor }
@@ -1695,7 +1689,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_global_flag = sick_wounded_disabled }
+					has_game_rule = {
+						rule = BHVM_sick_wounded
+						option = off
+					}
 					set_temp_variable = { chance = 0.005 }
 					set_temp_variable = { factor = 1.0 }
 					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor }
@@ -1712,39 +1709,30 @@ on_actions = {
 		}
 	}
 
-	on_game_rule_change = {
-		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = BHVM_sick_wounded
-						option = on
+		on_daily = {
+			effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = BHVM_sick_wounded
+							option = on
+						}
 					}
-				}
-				set_global_flag = sick_wounded_disabled
-				# Remove traits from all leaders if there are any present man idk im sad
-				every_army_leader = {
-					if = {
-						limit = {
-							OR = {
-								has_trait = sick
-								has_trait = wounded
+					every_country = {
+						every_unit_leader = {
+							if = {
+								limit = {
+									OR = {
+										has_trait = sick
+										has_trait = wounded
+									}
+								}
+								remove_trait = sick
+								remove_trait = wounded
 							}
 						}
-						remove_trait = sick
-						remove_trait = wounded
 					}
 				}
-			}
-			else_if = {
-				limit = {
-					has_game_rule = {
-						rule = BHVM_sick_wounded
-						option = off
-					}
-				}
-				clr_global_flag = sick_wounded_disabled
 			}
 		}
-	}
 }
