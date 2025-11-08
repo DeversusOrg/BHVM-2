@@ -8,7 +8,7 @@ tags={
 	"National Focuses"
 	"Military"
 }
-name="BHVM-2"
+name="BHVM TEST VERSION"
 picture="thumbnail.png"
 supported_version="1.16.*"
-remote_file_id="3340061093"
+remote_file_id="3396746002"
