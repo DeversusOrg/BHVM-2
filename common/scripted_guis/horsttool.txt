@@ -6,8 +6,8 @@ scripted_gui = {
 		parent_window_name = time_control_window
 		visible = {
 			OR ={ 
-				AND = { BLM = { check_variable = { pause_blocker_variable = 2 } } NOT = { has_country_flag = host } }
-				AND = { BLM = { check_variable = { pause_blocker_variable = 3 } } }
+				AND = { WST = { check_variable = { pause_blocker_variable = 2 } } NOT = { has_country_flag = host } }
+				AND = { WST = { check_variable = { pause_blocker_variable = 3 } } } #COME BACK TO THIS WHEN YOU FIX THE MAP
 				AND = { check_variable = { pause_blocker_variable = 4 } NOT = { has_country_flag = host } }
 			}
 		}
@@ -299,7 +299,7 @@ st_country_powers = {
 					clear_variable = pause_blocker_variable
 				}
 				
-				BLM = { 
+				WST = { 
 					clear_variable = pause_blocker_variable 
 					set_variable = { var = pause_blocker_variable value = 1 } 
 				}
@@ -620,7 +620,7 @@ st_country_powers = {
 		}
 
 		pause_blocker_all_click = { 
-			BLM = { 
+			WST = { 
 				clear_variable = pause_blocker_variable 
 				set_variable = { var = pause_blocker_variable value = 1 } 
 			} 
@@ -630,7 +630,7 @@ st_country_powers = {
 		}
 
 		pause_blocker_host_click = { 
-			BLM = { 
+			WST = { 
 				clear_variable = pause_blocker_variable 
 				set_variable = { var = pause_blocker_variable value = 2 } 
 			} 
@@ -640,7 +640,7 @@ st_country_powers = {
 		}
 
 		pause_blocker_major_click = {
-			BLM = { 
+			WST = { 
 				clear_variable = pause_blocker_variable 
 				set_variable = { var = pause_blocker_variable value = 3 } 
 			}
@@ -665,13 +665,13 @@ st_country_powers = {
 			}
 		}
 		wt_add_click = { 
-			BLM = { add_threat = 1 } 
+			WST = { add_threat = 1 } 
 			owner={
 				news_event = { id =  hosttool.29 } 
 			}
 		}
 		wt_remove_click = { 
-			BLM = { add_threat = -1 } 
+			WST = { add_threat = -1 } 
 			owner={
 				news_event = { id =  hosttool.28 } 
 			} 
