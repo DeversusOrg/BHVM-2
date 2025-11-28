@@ -26,8 +26,8 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large =  "Albert_Einstein.dds"
-				#small = GFX_portrait_ISR_albert_einstein
+				large = GFX_portrait_ISR_albert_einstein
+				small = GFX_portrait_ISR_albert_einstein_small
 			}
 		}
 

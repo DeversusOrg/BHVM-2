@@ -39,7 +39,6 @@ technology_categories = {
 	cas_bomber
 	ship_modules_tech
 	dd_tech
-	cl_tech
 	ca_tech
 	cv_tech
 	bc_tech
@@ -63,6 +62,8 @@ technology_categories = {
 	cat_superior_firepower
 	cat_grand_battle_plan
 	cat_mass_assault
+	cat_deep_battle
+	cat_mass_mobilization
 	cat_base_strike
 	cat_trade_interdiction
 	cat_fleet_in_being
@@ -77,6 +78,7 @@ technology_categories = {
 	engineers_tech
 	recon_tech
 	mountaineers_tech
+	rangers_tech_cat
 	military_police_tech
 	hospital_tech
 	logistics_tech
@@ -109,6 +111,7 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	cat_rangers_doctrine
 	naval_armor
 	naval_artillery
 	helicopter_tech
@@ -162,39 +165,11 @@ technology_folders = {
 	}
 	air_techs_folder = {
 		available = { NOT = { has_dlc = "By Blood Alone" } }
-		available = {
-			OR = {
-				NOT = { original_tag = SOV }
-				AND = {
-					original_tag = SOV
-					NOT = {
-						has_game_rule = {
-							rule = soviet_airforce
-							option = off
-						}
-					}
-				}
-			}
-		}				
 		ledger = air
 	}
 	bba_air_techs_folder = {
 		available = {
 			has_dlc = "By Blood Alone"
-		}
-		available = {
-			OR = {
-				NOT = { original_tag = SOV }
-				AND = {
-					original_tag = SOV
-					NOT = {
-						has_game_rule = {
-							rule = soviet_airforce
-							option = off
-						}
-					}
-				}
-			}
 		}
 		ledger = air
 	}
@@ -233,7 +208,10 @@ technology_folders = {
 	}
 	special_forces_doctrine_folder = {
 		available = {
-			has_dlc = "Arms Against Tyranny"
+                        OR = {
+                                has_dlc = "Arms Against Tyranny"
+                                has_dlc = "No Compromise, No Surrender"
+                        }
 		}
 		ledger = hidden #For now
 		doctrine = yes
@@ -242,3 +220,5 @@ technology_folders = {
 		ledger = civilian
 	}
 }
+
+ 

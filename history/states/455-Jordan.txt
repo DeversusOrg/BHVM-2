@@ -8,8 +8,8 @@ state = {
 	history = {
 
 		owner = ENG
-		add_core_of = BLM
-		add_claim_by = ISR
+		add_core_of = WST
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

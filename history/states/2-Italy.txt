@@ -3,7 +3,7 @@ state = {
 	name = "STATE_2" # Latium
 	manpower = 2781971
 	
-	state_category = megalopolis
+	state_category = city
 
 	history = {
 		owner = ITA
@@ -20,8 +20,17 @@ state = {
 			11846 = {
 				naval_base = 2
 			}
+            9904 = {
+                landmark_colosseum = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
 		}
 		add_core_of = ITA
+		add_core_of = WST
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

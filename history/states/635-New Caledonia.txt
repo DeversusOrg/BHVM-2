@@ -10,7 +10,7 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of = FRA
+		add_core_of = WST
 		victory_points = {
 			4268 1
 		}
@@ -18,7 +18,7 @@ state={
 			12120 1
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			4268 = {
 				naval_base = 1
 

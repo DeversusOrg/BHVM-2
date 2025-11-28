@@ -9,7 +9,8 @@ state = {
 	history = {
 
 		owner = RAJ
-		add_core_of = BLM
+		add_core_of = WST
+		add_core_of = FSA
 
 		victory_points = {
 			5074 2 # Aden 
@@ -21,6 +22,10 @@ state = {
 			5074 = {
 				naval_base = 1
 			}
+		}
+
+		1939.1.1 = {
+			owner = ENG
 		}
 
 	}

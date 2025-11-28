@@ -16,8 +16,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
-			#Angram dam
-			9285 = { dam = 1 }
 		}
 	}
 

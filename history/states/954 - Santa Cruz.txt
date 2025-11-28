@@ -1,17 +1,20 @@
 state = {
 	id = 954
 	name = "STATE_954"
-	manpower = 1
+	manpower = 132000
 	
 	state_category = rural
 	
 	resources = {
 		oil = 3
+		coal = 2 # initial distribution = with infra 2.4 / 2 total
 	}
 
 	history = {
 
-		owner = NONE
+		owner = WST
+		add_core_of = WST
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 1

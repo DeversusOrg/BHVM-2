@@ -1,13 +1,20 @@
 state={
 	id=1005
 	name="STATE_1005"
-	manpower = 1
+	manpower = 925226
 	state_category = rural
+
+	resources = {
+		chromium = 3
+	}
+
 	provinces={
 		7519 10781 10826 12314 12653 
 	}
 	history={
-		owner = NONE
+		owner = WST
+		add_core_of = WST
+		
 		victory_points = {
 			10781 1
 		}

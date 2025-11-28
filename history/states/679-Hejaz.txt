@@ -1,12 +1,12 @@
 state = {
 	id = 679
 	name = "STATE_679"
-	manpower = 1
+	manpower = 511000
 
 	history = {
 
-		owner = BLM
-		add_core_of = BLM
+		owner = WST
+		add_core_of = WST
 
 		victory_points = {
 			12758 2 

@@ -8,10 +8,10 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
-	
+
 	history = {
 		owner = RAJ
-		add_core_of = BLM
+		add_core_of = WST
 		buildings = {
 			infrastructure = 1
 			air_base = 1

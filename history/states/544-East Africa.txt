@@ -4,16 +4,19 @@ state={
 	name="STATE_544"
 	manpower = 1226000
 	history={
-		owner = BLM
+		owner = WST
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			8245 = {
+				naval_base = 1
+			}
 
 		}
 		victory_points = {
 			8245 1 
 		}
-		add_core_of = BLM
+		add_core_of = WST
 
 	}
 

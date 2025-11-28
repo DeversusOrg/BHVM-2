@@ -9,7 +9,7 @@ state = {
 
 		owner = MEX
 		add_core_of = MEX
-		add_core_of = YUC
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 2

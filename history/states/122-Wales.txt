@@ -3,11 +3,12 @@ state= {
 	name="STATE_122"
 	manpower = 2309230
 	
-	state_category = large_city
+	state_category = city
 	
 	resources={
 		steel=11 # was: 16
 		aluminium=3 # was: 4
+		coal = 55 #initial distribution
 	}
 
 	history=
@@ -26,11 +27,9 @@ state= {
 			377 = {
 				naval_base = 3
 			}
-			#Craig coch dam
-			311 = { dam = 1 }
 		}
 		add_core_of = ENG
-		add_core_of = WLS
+		
 	}
 
 	provinces=

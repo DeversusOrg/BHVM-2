@@ -4,15 +4,14 @@ state={
 	name="STATE_460" # Constantine
 	manpower = 2343837
 	
-	resources = {
-		oil = 3
-	}
-	
 	state_category = town
-
+	resources = {
+		oil = 12 #initial distribution
+		steel = 6
+	}
 	history={
 		owner = FRA
-		add_core_of = BLM
+		add_core_of = WST
 		victory_points = {
 			7081 1 
 		}

@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = BLM
+		add_core_of = WST
 	}
 	
 	provinces={ 7617 }

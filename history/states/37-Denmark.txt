@@ -16,13 +16,26 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
+			arms_factory = 2
 			industrial_complex = 3
-			dockyard = 1
+			dockyard = 2
 			air_base = 6
 			6287 = {
 				naval_base = 8
 
+			}
+		}
+		1939.1.1 = {
+			buildings = {
+				infrastructure = 3
+				arms_factory = 2
+				industrial_complex = 3
+				dockyard = 2
+				air_base = 6
+				fuel_silo = 1
+				6287 = {
+					naval_base = 8
+				}
 			}
 		}
 	}

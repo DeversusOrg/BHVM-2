@@ -1014,43 +1014,43 @@ on_actions = {
                         option = on
                     }
                 }
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.1 days = 57 } #at1
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.2 days = 57 } #ar1
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.3 days = 57 } #aa1
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.4 days = 330 } #mech
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.5 days = 710 } #gun2
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.6 days = 810 } #aa2
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.7 days = 810 } #ar2
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.8 days = 810 } #at2
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.9 days = 1125  } #ampb way too early change it , it gave jun 1939 jan
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.10 days = 1275  } #at3 jan 1940 
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.11 days = 1275  } #aa3 jan 1940 
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.12 days = 1275  } #ar3 jan 1940 
 					}
-					BLM = {
+					WST = {
 						country_event = { id = tech_rush.13 days = 1300 } #gun3
 					}
 					#BLM = {

@@ -17,6 +17,8 @@ state = {
 			}
 		}
 		add_core_of = YUG
+		add_core_of = WST
+		add_core_of = WST
 		start_resistance = CRO #Yugoslavia shouldn't resist occupation
 		set_compliance = 70
 

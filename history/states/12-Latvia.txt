@@ -10,16 +10,14 @@ state={
 	state_category = rural
 	
 	history={
-		add_extra_state_shared_building_slots = 3
 		owner = LAT
 		victory_points = {
 			10493 1 #Valmiera
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 5
+			industrial_complex = 1
+			air_base = 3
 		}
 		add_core_of = LAT
 	}

@@ -4,7 +4,10 @@ state={
 	name="STATE_353"
 
 	history={
-		owner = NONE
+		owner = WST
+		victory_points = {
+			11853 3
+		}
 		victory_points = {
 			9860 1
 		}
@@ -16,13 +19,27 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+
+		}
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			
 		}
 	}
 
 	provinces={
 		876 9858 9860 9868 9954 10399 11797  
 	}
-	manpower=1
+	manpower=523537
 	buildings_max_level_factor=1.000
 	state_category=rural
 

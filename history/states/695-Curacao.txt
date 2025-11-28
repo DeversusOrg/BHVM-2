@@ -1,20 +1,22 @@
-state={
-	id=695
-	name="STATE_695"
+state = {
+	id = 695
+	name = "STATE_695"
 	manpower = 76299
 	
 	state_category = rural
 
-	resources={
-		oil=35 # was: 126
+	resources = {
+		oil = 35 # was: 126
 	}
 
-	history={
-		add_core_of = BLM
-		owner = HOL
+	history = {
+		
+		owner = FRA
+		add_core_of = FRA
 		victory_points = {
-			153 1
+			153 1 # Willemstad
 		}
+
 		buildings = {
 			fuel_silo = 1
 			infrastructure = 2
@@ -22,12 +24,14 @@ state={
 				naval_base = 1
 				coastal_bunker = 2
 			}
+			industrial_complex = 1
+			synthetic_refinery = 1
 		}
 	}
 
-	provinces={
+	provinces = {
 		153 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

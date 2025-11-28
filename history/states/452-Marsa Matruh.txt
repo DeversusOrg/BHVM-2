@@ -20,7 +20,7 @@ state={
 			9989 1 #Sidi Barrani
 		}
 
-		add_core_of = BLM
+		add_core_of = WST
 	}
 
 	provinces={

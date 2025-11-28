@@ -4,14 +4,15 @@ state={
 	name="STATE_329"
 	manpower = 85000
 	resources={
-		chromium=6 # was: 2
+		chromium=7 # was: 2
+		coal = 1
 	}
 	
 	state_category = rural
 
 	history={
-		add_extra_state_shared_building_slots = 2
 		owner = MON
+		add_extra_state_shared_building_slots = 2
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

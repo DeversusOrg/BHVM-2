@@ -6,11 +6,17 @@ state = {
 	manpower = 1662669
 	
 	history = {
+		owner = ENG
+		add_core_of = BRM
+
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
 		}
-		owner = RAJ
-		add_core_of = RAJ
+
+		victory_points = {
+			7254 1 # Bassein
+		}
 	}
 
 	provinces = {

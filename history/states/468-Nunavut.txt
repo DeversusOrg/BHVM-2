@@ -13,7 +13,7 @@ state = {
 
 		owner = CAN
 		add_core_of = CAN
-		add_core_of = QUE
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 3 #was: 6

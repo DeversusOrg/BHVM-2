@@ -1,21 +1,25 @@
-state=
-{
-	id=767
-	name="STATE_767" # North Darfur
-	manpower = 1
+state = {
+	id = 767
+	name = "STATE_767" # North Darfur
+	manpower = 8143
 	
 	state_category = wasteland
 	impassable = yes
+	force_link_ownership_to = 551 # Kharthoum
 	
-	history= {
+	history = {
+
 		owner = NONE
+		add_core_of = WST
+		
 		buildings = {
 			infrastructure = 0
 		}
 	}
-	provinces={
+
+	provinces = {
 		7987 8103 10900
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

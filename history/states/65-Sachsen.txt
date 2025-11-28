@@ -4,6 +4,7 @@ state = {
 	manpower = 5592576
 	resources = {
 		steel = 41 #was 12 was 32 #was 53 # was: 90
+		coal = 13 # initial distribution
 	}
 
 	state_category = metropolis
@@ -13,6 +14,7 @@ state = {
 
 		owner = GER
 		add_core_of = GER
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 4

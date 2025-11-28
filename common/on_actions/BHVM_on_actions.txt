@@ -25,6 +25,42 @@ on_actions = {
             }
         }
     }
+	on_weekly = { ### MASTERIES FOR PEACE TRAINING
+		effect = {
+			limit = {
+					is_playable_country = yes
+					has_game_rule = { rule = peace_training_xp option = on }
+                    has_idea = peace_training_xp 
+					NOT = {
+						OR = {
+							has_war = yes
+							is_ai = yes
+							AND = {
+								tag = SPR
+								any_country = {
+									has_volunteers_amount_from = {
+										tag = SPR
+										count > 0
+									} 
+								}	
+							}
+						}
+					}
+				}
+			add_mastery = {
+				folder = land
+				amount = 2
+			}
+			add_mastery = {
+				folder = navy
+				amount = 2
+			}
+			add_mastery = {
+				folder = air
+				amount = 2
+			}
+		}
+	}
 	on_startup = { ### NO COLLABS COUNTRIES
         effect = {
             if = { 

@@ -6,8 +6,8 @@ state = {
 
 	history = {
 
-		owner = BLM
-		add_core_of = BLM
+		owner = WST
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 1

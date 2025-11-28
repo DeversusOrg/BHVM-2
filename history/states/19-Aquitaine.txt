@@ -24,6 +24,7 @@ state={
 			}
 
 		}
+		add_core_of = WST
 		add_core_of = FRA
 
 	}

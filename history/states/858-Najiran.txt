@@ -5,10 +5,10 @@ state={
 		5006 8030 10870 12768 
 	}
 	history = {
-		owner = BLM
-		add_core_of = BLM
+		owner = WST
+		add_core_of = WST
 	}
-	manpower=1
+	manpower=69
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

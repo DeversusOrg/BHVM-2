@@ -432,7 +432,7 @@ force_attack_last_stand = {
 
 
 acoustic_guerilla_tatctics = {
-	name = "Guerilla Tactics"
+	name = "Guerilla TacticsRDOES NOT WORK RN"
 	group = "BHVM game rules"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
@@ -558,7 +558,7 @@ soviet_focus_buffs = {
 	}
 }
 barb_gorila = {
-	name = "Guerilla On Barb settings"
+	name = "Guerilla On Barb settingsRDOES NOT WORK RN"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_tank"
 	default = {
@@ -862,7 +862,7 @@ pregrinds_4_factions = {
 	}
 }
 mios_for_minors = {
-    name = "MIOs for X minors"
+    name = "MIOs for X minorsRDOES NOT WORK RN"
     group = "BHVM game rules"
     icon = "GFX_decision_generic_merge_plant_materiel"
     default = {
@@ -985,7 +985,7 @@ ger_supreme_leader = {
 	}
 }
 ger_pupets = {
-	name = "German Pupet"
+	name = "German PupetRDOES NOT WORK RN"
 	group = "BHVM game rules"
 	icon = "GFX_decision_generic_nationalism"
 	option = {

@@ -5,7 +5,7 @@ state = {
 	history = {
 
 		owner = CHI
-		add_core_of = XSM
+		
 		add_core_of = CHI
 		add_core_of = PRC
 
@@ -13,26 +13,26 @@ state = {
 		#	7940 10 # Goldmud was not ofunded until in the late fifties
 		#}
 
+		victory_points = {
+			8018 1 # Yushu
+		}
+
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2
 		}
 
 		1938.10.25 = {
-			if = {
+			IF = {
 				limit = {
 					NOT = {
 						has_dlc = "Waking the Tiger" 
 					}
-
 				}
 				CHI = {
 					transfer_state = PREV
-
 				}
-
 			}
-
 		}
 
 	}

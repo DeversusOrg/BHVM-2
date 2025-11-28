@@ -4,9 +4,9 @@ OOB = "ALB_1936"
 
 set_technology = {
 	infantry_weapons = 1
+	tech_trucks = 1
 	tech_support = 1
 	tech_recon = 1
-	basic_train = 1
 }
 
 recruit_character = ALB_king_zog
@@ -32,6 +32,7 @@ recruit_character = ALB_hasan_begolli
 recruit_character = ALB_fiqri_dine
 recruit_character = ALB_midhat_frasheri
 recruit_character = ALB_jocelyn_percy
+recruit_character = ALB_wilhelm_of_wied
 
 
 set_politics = {

@@ -58,14 +58,62 @@ if = {
 	set_war_support = 0.1
 }
 
-
+send_embargo = USA
+send_embargo = ENG
+send_embargo = FRA
+send_embargo = MEX
+send_embargo = CAN
+send_embargo = SAF
+send_embargo = RAJ
+send_embargo = AST
+send_embargo = SOV
+send_embargo = NZL
 
 set_technology = {
+	tech_trucks = 1
+	interwar_antitank = 1 # 
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
 	interwar_antiair = 1
 	tech_recon = 1
 	tech_support = 1		
+	tech_engineers = 1
+	basic_train = 1
+	advanced_infantry_weapons = 1
+	antiair2 = 1
+	antiair5 = 1
+	antitank5 = 1
+	antitank2 = 1
+	mechanised_infantry = 1
+	amphibious_mechanized_infantry = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	advanced_heavy_tank_chassis = 1
+	artillery1 = 1
+	artillery4 = 1
+	rocket_artillery = 1
+	rocket_artillery4 = 1
+
 }
+
+create_equipment_variant = {
+	name = "Cheap Mechanised"
+	type = mechanized_equipment_1
+	parent_version = 0
+	upgrades = {
+		mech_cost_upgrade = 5
+	}
+} 
+
+create_equipment_variant = {
+	name = "Cheap Amtrac"
+	type = amphibious_mechanized_equipment_1
+	parent_version = 0
+	upgrades = {
+		mech_cost_upgrade = 5
+	}
+} 
 
 if = {
 	limit = {
@@ -213,7 +261,6 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -229,6 +276,9 @@ if = {
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = {
@@ -325,14 +375,6 @@ recruit_character = SWE_osten_unden
 
 ### VARIANTS ###
 # 1936 Start #
-create_equipment_variant = {
-	name = "Cheap Mechanized"
-	type = mechanized_equipment_1
-	parent_version = 0
-	upgrades = {
-		mech_cost_upgrade = 5
-	}
-}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
@@ -788,6 +830,7 @@ if = {
 	recruit_character = SWE_raoul_wallenberg
 	recruit_character = SWE_natanael_beskow
 	recruit_character = SWE_olof_thornell
+	recruit_character = SWE_lise_meitner
 }
 
 if = {

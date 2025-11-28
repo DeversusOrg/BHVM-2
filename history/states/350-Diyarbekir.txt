@@ -4,7 +4,7 @@ state={
 	name="STATE_350"
 
 	history={
-		owner = NONE
+		owner = WST
 		victory_points = {
 			4512 5 
 		}
@@ -19,13 +19,25 @@ state={
 			air_base = 2
 
 		}
-
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			
+		}
 	}
 
 	provinces={
 		4512 9823 11759 11871 12387 12416 
 	}
-	manpower=1
+	manpower=571935
 	state_category=town
 
 	local_supplies=0.0 

@@ -125,7 +125,7 @@ MOD_countdown_to_victory_cat = {
 	}
 }
 auto_tech_rush = {
-	####IMPORTANT!!! EVERY DECISIONS FOR AUTO TECH RUSH THAT IS GIVEN TO THE BLM NATION IN ORDER TO WORK ARE GIVEN VIA AN EVENT ON A CERTAIN DATE!! EDIT THOSE IF YOU WANT TO EDIT THE AUTO TECH RUSH AS WELLL!!!####
+	####IMPORTANT!!! EVERY DECISIONS FOR AUTO TECH RUSH THAT IS GIVEN TO THE WST NATION IN ORDER TO WORK ARE GIVEN VIA AN EVENT ON A CERTAIN DATE!! EDIT THOSE IF YOU WANT TO EDIT THE AUTO TECH RUSH AS WELLL!!!####
 	auto_aa1 = {
         # icon = generic_operation
         allowed = {}
@@ -139,7 +139,7 @@ auto_tech_rush = {
             date > 1936.03.01
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -165,7 +165,7 @@ auto_tech_rush = {
             date > 1936.03.01
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -191,7 +191,7 @@ auto_tech_rush = {
             date > 1936.03.01
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -217,7 +217,7 @@ auto_tech_rush = {
             date > 1936.11.30
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -243,7 +243,7 @@ auto_tech_rush = {
             date > 1938.01.1
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -269,7 +269,7 @@ auto_tech_rush = {
            date > 1938.03.30
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -295,7 +295,7 @@ auto_tech_rush = {
            date > 1938.03.30
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -321,7 +321,7 @@ auto_tech_rush = {
            date > 1938.03.30
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -347,7 +347,7 @@ auto_tech_rush = {
            date > 1939.12.31
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -373,7 +373,7 @@ auto_tech_rush = {
            date > 1940.06.1
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -399,7 +399,7 @@ auto_tech_rush = {
            date > 1940.06.1
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -425,7 +425,7 @@ auto_tech_rush = {
            date > 1940.06.1
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {
@@ -451,7 +451,7 @@ auto_tech_rush = {
            date > 1939.11.1
         }
         complete_effect = {
-            BLM = {
+            WST = {
                 create_production_license = {
                     target = ROOT
                         equipment = {

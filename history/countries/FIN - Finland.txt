@@ -173,7 +173,7 @@ set_research_slots = 3
 
 ### COUNTRY LEADERS ###
 store_core_states_on_game_start = yes
-#Set Kokoomus as Non-Aligned party #TODO_Manu: I can now kill the old string and be done with this
+#Set Kokoomus as Non-Aligned party
 set_party_name = {
 	ideology = neutrality
 	name = FIN_neutrality_party_kokoomus
@@ -333,9 +333,6 @@ if = {
 	FIN_erik_heinrichs = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-	FIN_juho_heiskanen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
 	FIN_lauri_malmberg = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
@@ -350,36 +347,21 @@ if = {
 	FIN_risto_ryti = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-
 	FIN_kyosti_kallio = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
-
 	FIN_carl_mannerheim = {
-		set_character_flag = FIN_anti_communist_character_flag
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	
-	FIN_aksel_airo = {
 		set_character_flag = FIN_anti_communist_character_flag
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
 
 
 	##Unit Leaders
-	#FIN_vilho_petter_nenonen
-	#FIN_hannu_hannuksela
-	#FIN_hjalmar_siilasvuo
-	#FIN_taavetti_laatikainen
-	#FIN_matti_aarnio
-	#FIN_ruben_lagus
-	#FIN_erkki_raappana
-	#
-	#FIN_ragnar_hakola
-	#FIN_svante_sundman
-
+	FIN_aksel_airo = {
+		set_character_flag = FIN_anti_communist_character_flag
+		set_character_flag = FIN_anti_fascist_character_flag
+	}
 	
-
 	FIN_woldemar_hagglund = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
@@ -399,6 +381,9 @@ if = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 	FIN_lauri_torni = {
+		set_character_flag = FIN_anti_communist_character_flag
+	}
+	FIN_juho_heiskanen = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 	FIN_karl_oesch = {
@@ -425,13 +410,6 @@ if = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
 
-
-	
-	
-	
-	
-	
-
 }
 
 
@@ -450,6 +428,7 @@ set_technology = {
 	tech_engineers = 1
 	basic_train = 1
 }
+
 if = {
 	limit = { NOT = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -493,7 +472,6 @@ set_convoys = 5
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -513,14 +491,17 @@ set_convoys = 5
 		dispersed_industry3 = 1
 		
 		#doctrines
-		force_rotation = 1
-		fighter_baiting = 1
+		#force_rotation = 1
+		#fighter_baiting = 1
 
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
+	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_operational_integrity
+
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 
 	# TECH ADJUSTMENTS
@@ -613,12 +594,16 @@ set_convoys = 5
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "FIN_1939_air_bba"
+			set_technology = { 
+				bba_early_transport_plane = 1 
+			}
 		else = {
 			set_air_oob = "FIN_1939_air_legacy"
 			set_technology = {
 				early_fighter = 1
 				early_bomber = 1
 				CAS1 = 1		
+				early_transport_plane = 1
 			}
 		}
 	}

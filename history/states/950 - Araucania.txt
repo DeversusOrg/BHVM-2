@@ -1,7 +1,7 @@
 state = {
 	id = 950
 	name = "STATE_950"
-	manpower = 1
+	manpower = 1300000
 	
 	state_category = town
 	
@@ -11,9 +11,18 @@ state = {
 
 	history = {
 
-		owner = NONE
+		owner = WST
+		add_core_of = WST
 
 		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			5121 = {
+				naval_base = 1
+			}
+			5169 = {
+				naval_base = 1
+			}
 		}
 		
 		victory_points = {

@@ -2,13 +2,14 @@
 state = {
 	id = 487
 	name = "STATE_487"
-	manpower = 1
+	manpower = 334500
 	
 	state_category = pastoral
 
 	history = {
 
-		owner = NONE
+		owner = WST
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 1

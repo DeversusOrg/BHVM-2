@@ -4,7 +4,7 @@ state={
 	name="STATE_345"
 
 	history={
-		owner = NONE
+		owner = WST
 		victory_points = {
 			10056 1 
 		}
@@ -15,13 +15,14 @@ state={
 			infrastructure = 2
 
 		}
+		add_core_of = TUR
 
 	}
 
 	provinces={
 		1122 4008 4124 4127 7026 7143 10056 11810 
 	}
-	manpower=1
+	manpower=411798
 	buildings_max_level_factor=1.000
 	state_category=rural
 

@@ -7,12 +7,13 @@ state = {
 	
 	resources = {
 		tungsten = 95 #was 150 # was: 300
+		coal = 1 #initial distribution
 	}
 
 	history = {
 
-		owner = BLM
-		add_core_of = BLM
+		owner = WST
+		add_core_of = POR
 
 		victory_points = {
 			9787 1 # Viseu

@@ -19,6 +19,7 @@ state={
 		victory_points = {
 			3768 1 
 		}
+		add_core_of = WST
 		add_core_of = FRA
 	}
 

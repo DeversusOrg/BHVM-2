@@ -1,7 +1,7 @@
 state = {
 	id = 510
 	name = "STATE_510"
-	manpower = 1
+	manpower = 1497169
 
 	resources = {
 		oil = 2
@@ -12,7 +12,8 @@ state = {
 
 	history = {
 
-		owner = NONE
+		owner = WST
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 1

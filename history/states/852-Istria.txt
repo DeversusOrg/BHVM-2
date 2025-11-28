@@ -6,6 +6,9 @@ state = {
 
 	state_category = town 
 
+	resources = {
+		coal = 2 #initial distribution
+	}
 
 	history = {
 		owner = ITA
@@ -13,7 +16,7 @@ state = {
 			11564 1 
 		}
 		buildings = {
-			infrastructure = 2 # Supposed to be 1 but eh im just not gonna nerf italy so much
+			infrastructure = 3
 			dockyard = 1
 			11564 = {
 				naval_base = 2
@@ -21,6 +24,8 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = YUG
+		add_core_of = WST
+		add_core_of = WST
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

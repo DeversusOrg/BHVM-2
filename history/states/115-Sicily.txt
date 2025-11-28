@@ -2,7 +2,9 @@
 state = {
 	id = 115
 	name = "STATE_115"
-
+	resources = {
+		coal = 4 # initial distribution
+	}
 	history = {
 		owner = ITA
 		victory_points = {
@@ -41,6 +43,7 @@ state = {
 
 		}
 		add_core_of = ITA
+		add_core_of = WST
 
 	}
 

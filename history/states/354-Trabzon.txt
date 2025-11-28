@@ -2,12 +2,12 @@
 state={
 	id=354
 	name="STATE_354"
-	manpower = 1
+	manpower = 1031129
 	
 	state_category = town
 
 	history={
-		owner = NONE
+		owner = WST
 		
 		victory_points = {
 			9932 15
@@ -20,7 +20,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+			9932 = {
+				naval_base = 2
+			}
 		}
+		add_core_of = TUR
 	}
 
 	provinces={

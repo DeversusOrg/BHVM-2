@@ -5,10 +5,12 @@ state={
 	manpower = 47341
 
 	state_category = pastoral
-
+	resources={
+		aluminium=30 # was: 104
+	}
 	history={
 		owner = FRA
-		add_core_of = BLM
+		add_core_of = WST
 		buildings = {
 			infrastructure = 1
 			12885 = {

@@ -2,7 +2,7 @@
 state = {
 	id = 516
 	name = "STATE_516" # Taymyria / Dudinka
-	manpower = 1
+	manpower = 6004
 	
 	state_category = pastoral
 
@@ -15,6 +15,7 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = SOV
+		
 	}
 
 	provinces = {

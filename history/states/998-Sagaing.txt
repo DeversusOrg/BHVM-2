@@ -6,12 +6,13 @@ state = {
 	manpower = 966906
 	
 	history = {
+		owner = ENG
+		add_core_of = BRM
+
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
 		}
-		owner = RAJ
-		add_core_of = RAJ
+
 		victory_points = {
 			4425 1 
 		}

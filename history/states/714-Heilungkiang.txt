@@ -2,15 +2,31 @@ state={
 	id=714
 	name="STATE_714"
 
-	history={
+	history = {
+
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
 		add_core_of = PRC
+
+		victory_points = {
+			12485 1 # Ulanhot
+		}
+
+		victory_points = {
+			7848 1 # Mohe
+		}
+
+		victory_points = {
+			1693 2 # Aihui/Heihe 
+		}
+
 		buildings = {
 			infrastructure = 2
-
 		}
+		resources={
+		oil = 4 #Japan extracted 1m barrels annually from Manhuria
+	}
 
 	}
 

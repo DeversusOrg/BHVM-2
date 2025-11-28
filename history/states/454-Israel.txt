@@ -1,13 +1,14 @@
 state = {
 	id = 454
-	name = "STATE_454" #ISRAEL IT IS CALLED PALLESTINE IN THE GAME BUT IT WILL BE CALLED ISRAEL IN THE GAME
-	manpower = 1333142
+	name = "STATE_454" #ISRAEL
+	manpower = 933142
 	
 	state_category = rural
 
 	history = {
 
 		owner = ISR
+		
 		add_core_of = ISR
 
 		buildings = {
@@ -15,17 +16,23 @@ state = {
 			industrial_complex = 1
 			air_base = 2
 			4206 = {
-				naval_base = 5
+				naval_base = 3
 			}
 		}
 		victory_points = {
-			1086 10 # Jerusalem
+			1086 3 # Jerusalem
 		}
 		victory_points = {
 			4206 3 # Tel Aviv
 		}
 		victory_points = {
 			1065 1 # Nazareth
+		}
+		victory_points = {
+			1015 1 # Eliat
+		}v
+		ictory_points = {
+			4088 2 # Gaza strip/ A'zza
 		}
 		
 	}

@@ -1,9 +1,10 @@
 state={
 	id=723
 	name="STATE_723"
-	manpower = 697198
+	manpower = 547198
 	resources={
 		tungsten=4 # was: 6
+		coal = 2 #initial distribution
 	}
 
 	state_category = rural

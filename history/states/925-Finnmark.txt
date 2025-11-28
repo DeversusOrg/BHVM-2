@@ -3,7 +3,7 @@ state = {
 	name = "STATE_925"
 
 	manpower = 142100 # 355251
-	impassable = yes
+	
 	state_category = pastoral
 	
 	resources = {
@@ -18,12 +18,8 @@ state = {
 		
 		owner = NOR
 		add_core_of = NOR
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			add_core_of = SMI
-		}
+		
+		
 		buildings = {
 			infrastructure = 1
 			

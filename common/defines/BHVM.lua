@@ -6,6 +6,7 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 14
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 25 -- Performance enhancer. --TW/WTT
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3 -- Default days before a mission is removed from the interface after having failed or completed
+NDefines.NGame.TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 1  -- Max recalculation time for all trade routes (0 means we do not recalucate prediodically trade routes)
 
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.5
@@ -13,8 +14,10 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1
 NDefines.NDiplomacy.TENSION_FACTION_JOIN = 0.1
 NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE = 10000			-- vanilla 150, changed in attempt to make capitulations look more reasonable. extra bonus when deciding who to capitulate to (applied to capital holder)
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 6           -- more spam more spam more spam
-NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
-
+NDefines.NDiplomacy.NAVAL_BLOCKADE_BASE_COST = 5						-- Base PP cost for issuing a naval blockade
+NDefines.NDiplomacy.NAVAL_BLOCKADE_DAILY_COST = 0.05					-- Daily PP cost for one naval blockade
+NDefines.NDiplomacy.NAVAL_BLOCKADE_THREAT_THRESHOLD = 10				-- Target-generated threat threshold to allow naval blockade
+NDefines.NDiplomacy.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.2
 
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
@@ -23,7 +26,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
-NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0158                     -- reduced so there won't be copuis amount of mass mob and the save games to be smaller
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0128                     -- reduced so there won't be copuis amount of mass mob and the save games date to be smaller
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200						    -- Lets go back to vanilla!! Game rule for "unlimited" special forces
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.03                        -- Lets go back to vanilla!! Game rule for "unlimited" special forces
 
@@ -64,6 +67,7 @@ NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.05
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a support slot
+NDefines.NMilitary.MAX_NUM_AUTOMEDALS = 1 -- Vanilla 5 , changed to prevent exploit of farming medals and stat bloat
 
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.5 --makes redeployement of fighters faster vanilla is 0.02
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player have brain 
@@ -82,8 +86,6 @@ NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR_THRESHOLD = 0	-- What percentage of r
 NDefines.NTrade.MAX_MONTH_TRADE_FACTOR = 0				-- This is the maximum bonus that can be gained from time
 NDefines.NTrade.DISTANCE_TRADE_FACTOR = 0				-- Trade factor is modified by distance times this
 NDefines.NTrade.RELATION_TRADE_FACTOR = 0				-- Trade factor is modified by Opinion value times this
-
-
 
 NDefines.NAI.RESEARCH_AHEAD_OF_TIME_FACTOR = 0
 NDefines.NAI.GENERATE_WARGOAL_ANTAGONIZE_SCALE = 0
@@ -150,11 +152,7 @@ NDefines.NOperatives.OPERATIVE_MIN_DAYS_HARMED = 1
 NDefines.NOperatives.OPERATIVE_MAX_DAYS_HARMED = 1
 NDefines.NOperatives.OPERATIVE_MISSION_DETECTION_CHANCE_FACTOR = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 } -- was { 0.0, 1.0, 1.0, 1.0, 0.0, 3.0, 0.1, 0.1, 3.0 }
 
-NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate Germany/Japan building slot changes in order to support more of their eco being in their cores.
-
-
-
-
+NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate Germany/Japan/Soviet building slot changes in order to support more of their eco being in their cores.
 
 NDefines.NInterface.MINIMAP_PING_DELAY_BETWEEN_PINGS = 0.5 --vanilla 0.30 -- delay between consecative pings
 
@@ -166,6 +164,10 @@ NDefines_Graphics.NMapMode.RADAR_ROTATION_SPEED = 0
 NDefines_Graphics.NGraphics.MAX_MESHES_LOADED_PER_FRAME = 5
 NDefines_Graphics.NMapMode.AIR_RANGE_INDICATOR_ROTATION_SPEED = 0.0000
 
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 10            -- base days needed to prepare a naval invasion
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 999                    -- base cap of naval invasions can be planned at the same time
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- base cap of divisions that can be assigned in a naval invasion
+
 NDefines.NProject.RECRUIT_SCIENTIST_COST = { -- Amount of pp to hire a scientist based on available scientist
 		10,			-- pp cost if no available scientist
 		10,			-- pp cost if 1 available scientist
@@ -175,53 +177,3 @@ NDefines.NProject.RECRUIT_SCIENTIST_COST = { -- Amount of pp to hire a scientist
 
 NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "BHVM"
 NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "BHVM"
-
---NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
---NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {250, 500, 1000}
---NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 90.0
---NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 350.0
---NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 350
---NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 200
---NDefines_Graphics.NGraphics.SUPPLY_ICON_UNUSED_CUTOFF = 900.0
---NDefines_Graphics.NGraphics.SUPPLY_ICON_NUMBERS_CUTOFF = 900.0
---NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
---NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
---NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
---NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
---NDefines_Graphics.NGraphics.TREE_FADE_NEAR = 150.0
---NDefines_Graphics.NGraphics.TREE_FADE_FAR = 250.0
---NDefines_Graphics.NGraphics.BLOOM_WIDTH = 0
---NDefines_Graphics.NGraphics.BLOOM_SCALE = 0
---NDefines_Graphics.NGraphics.BRIGHT_THRESHOLD = 0
---NDefines_Graphics.NGraphics.EMISSIVE_BLOOM_STRENGTH = 0
---NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 900
---NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {250, 500, 1000}
---NDefines_Graphics.NGraphics.SUPPLY_ICON_CUTOFF = 900.0
---NDefines_Graphics.NGraphics.SUPPLY_ICON_UNUSED_CUTOFF = 900.0
---NDefines_Graphics.NGraphics.SUPPLY_ICON_NUMBERS_CUTOFF = 900.0
---NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 1000
---NDefines_Graphics.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
---NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
---NDefines_Graphics.NGraphics.MAP_ICONS_STATE_HUGE = 100
---NDefines_Graphics.NGraphics.PROVINCE_ANIM_TEXT_DISTANCE_CUTOFF = 200
---NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 600
---NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
---NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 150
---NDefines_Graphics.NInterface.GRIDBOX_ELEMENTS_INTERPOLATION_SPEED = 0.2
---NDefines_Graphics.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 500
---NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1000
---NDefines_Graphics.NGraphics.ADJACENCY_RULE_DISTANCE_CUTOFF = 1300
---NDefines_Graphics.NGraphics.LAND_COMBAT_DISTANCE_CUTOFF = 800
---NDefines_Graphics.NGraphics.SUPPLY_ICON_DISTANCE_CUTOFF = 1500
---NDefines_Graphics.NGraphics.PROV_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 300
---NDefines_Graphics.NGraphics.STATE_CONSTRUCTION_ICON_DISTANCE_CUTOFF = 600
---NDefines_Graphics.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.2
---NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 5
---NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40
---NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 50
---NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_AREA_HUGE = 250
---NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 300
---NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
---NDefines_Graphics.NMapMode.DEPLOYMENT_NAVY_PRIORITY_VICTORY_POINTS = 5
---NDefines_Graphics.NGraphics.DAY_NIGHT_FEATHER = 0.024
--- I suspect the random hj and overall random crashes could be sported from graphical defines due to the great reasoning of paradox logic nad a little birdie from pdx said so

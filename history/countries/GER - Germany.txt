@@ -1,4 +1,5 @@
-﻿capital = 64 # Berlin/Brandeburg
+﻿
+capital = 64 # Berlin/Brandeburg
 
 if = {
 	limit = {
@@ -29,6 +30,10 @@ add_breakthrough_progress = {
 	specialization = specialization_air
 	value = 0.3
 }
+
+set_grand_doctrine = new_mobile_warfare
+set_grand_doctrine = new_convoy_raiding
+set_grand_doctrine = new_battlefield_support
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -82,9 +87,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
+	#formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -154,7 +157,7 @@ if = {
 		improved_ship_torpedo_launcher = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		#basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_depth_charges = 1
 		sonar = 1
@@ -176,9 +179,10 @@ set_variable = { GER_monthly_consumer_goods_start = 0.03 } #Starting amount of m
 set_variable = { GER_change_monthly_CG_vichy_france = 0.005 } #Changing monthly CG when capitulating FRance
 set_variable = { GER_change_monthly_CG_price_controls = 0.005 } #Changing monthly CG when taking Price Controls focus
 set_variable = { GER_change_monthly_CG_occupied_states = 0.005 } #Changing monthly CG based on none-core states
-set_variable = { GER_expected_consumer_goods_penalty = 0 } #0.1 #Consumer Goods penalty when hitting 100% CGFF
-set_variable = { GER_factory_output_penalty = 0.10 } #Factory output penalty when hitting 100% CGFF
-set_variable = { GER_dockyard_output_penalty = 0.10 } #Dockyard output penalty when hitting 100% CGFF
+set_variable = { GER_expected_consumer_goods_penalty = 0.1} #Consumer Goods penalty when hitting 100% CGFF
+set_variable = { GER_factory_output_penalty = 0.2 } #Factory output penalty when hitting 100% CGFF
+set_variable = { GER_dockyard_output_penalty = 0.2 } #Dockyard output penalty when hitting 100% CGFF
+set_variable = { GER_reduce_russian_CG_bonus = 0 } #Used to reduce Soviet Gold Reserves if Germany has taken gold from various Soviet cities before capping them
 
 #INDUSTRAY: MEFO Bills/Economy of Conquest/Recovering Economy/Wirtschaftswunder
 #REMINDER to always update the fake NS if these numbers are altered!
@@ -207,6 +211,7 @@ set_variable = { GER_industrial_production_factory_start_efficiency_factor = 0 }
 set_variable = { GER_industrial_line_change_production_efficiency_factor = 0 }
 set_variable = { GER_industrial_equipment_conversion_speed = 0 }
 set_variable = { GER_industrial_consumer_goods_expected_value = 0 }
+set_variable = { GER_economic_crash_consumer_goods = 0.75 } #Amount of CGFF if the MEFO Bills gets canceled one way or another
 add_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
 
 #WUNDERWAFFEN
@@ -248,7 +253,7 @@ set_variable = { GER_military_army_infantry_attack_factor = 0 }
 set_variable = { GER_military_army_artillery_attack_factor = 0 }
 set_variable = { GER_military_army_org_factor = 0.05 }
 set_variable = { GER_military_planning_speed = 0.25 }
-set_variable = { GER_military_supply_factor = -0.15 }
+set_variable = { GER_military_supply_consumption_factor = 0.15 }
 set_variable = { GER_military_equipment_capture = 0 }
 set_variable = { GER_military_initiative_factor = 0 }
 set_variable = { GER_military_army_fuel_consumption_factor = 0 }
@@ -295,6 +300,10 @@ set_variable = { GER_military_air_strategic_bomber_bombing_factor = 0 }
 set_variable = { GER_military_air_range_factor = 0 }
 set_variable = { GER_military_air_fuel_consumption_factor = 0 }
 add_dynamic_modifier = { modifier = GER_airforce_modifier }
+
+#CROSSING THE ATLANTIC
+set_variable = { number_of_states_getting_dockyards = 0 }
+set_variable = { crossing_the_atlantic_max_states_for_dockyards = 10 }
 
 #FORT CONSTRUCTION COST
 set_variable = { GER_fort_construction_cp_cost = 25 }
@@ -639,7 +648,7 @@ set_war_support = 0.3
 
 	complete_special_project = {
 		project = sp:sp_naval_midget_submarine
-		scientist = GER_helmuth_walter
+		scientist = GER_hellmuth_walter
 		state = 56
 	}
 
@@ -669,19 +678,10 @@ set_war_support = 0.3
 		paratroopers = 1
 
 		# Doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-
 		# Air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
+		#formation_flying = 1		
+		#dive_bombing = 1
+		#direct_ground_support = 1
 
 		# Electronics
 		electronic_mechanical_engineering = 1
@@ -707,9 +707,38 @@ set_war_support = 0.3
 		dispersed_industry3 = 1
 		dispersed_industry4 = 1
 		basic_fortification_tech = 1
-
 	}
 
+	set_grand_doctrine = new_mobile_warfare
+	set_grand_doctrine = new_convoy_raiding
+	set_grand_doctrine = new_battlefield_support
+	set_sub_doctrine = mobile_infantry
+	add_mastery = {
+		amount = 200
+		sub_doctrine = mobile_infantry
+	}
+	set_sub_doctrine = mission_type_tactics
+	add_mastery = {
+		amount = 100
+		sub_doctrine = mission_type_tactics
+	}
+	set_sub_doctrine = mobile_recon_and_assault
+	add_mastery = {
+		amount = 150
+		sub_doctrine = mobile_recon_and_assault
+	}
+	set_sub_doctrine = air_subdoctrine_tactical_flexibility
+	add_mastery = {
+		amount = 100
+		sub_doctrine = air_subdoctrine_tactical_flexibility
+	}
+	set_sub_doctrine = air_subdoctrine_dive_bombers
+	add_mastery = {
+		amount = 50
+		sub_doctrine = air_subdoctrine_dive_bombers
+	}
+
+	
 	complete_special_project = {
 		project = sp:sp_air_radar
 		scientist = GER_konrad_zuse
@@ -796,8 +825,9 @@ set_popularities = {
 	neutrality = 15
 }
 
+
 # Wowow nice faction
-create_faction = Axis
+create_faction_from_template = faction_template_axis
 add_to_faction = GER
 
 # Setup of National Spirits
@@ -926,7 +956,7 @@ recruit_character = GER_ulrich_gabler
 recruit_character = GER_hans_von_ohain
 recruit_character = GER_max_kramer
 recruit_character = GER_kurt_tank
-recruit_character = GER_helmuth_walter
+recruit_character = GER_hellmuth_walter
 recruit_character = GER_manfred_von_ardenne
 recruit_character = GER_konrad_zuse
 
@@ -945,7 +975,12 @@ if = {
 	recruit_character = GER_oberste_heeresleitung_character
 	recruit_character = GER_franz_ritter_von_epp
 	recruit_character = GER_walter_ulbricht
-	recruit_character = GER_wilhelm_zaisser
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		recruit_character = GER_wilhelm_zaisser
+	}
 	recruit_character = GER_otto_ruhle
 	recruit_character = GER_hermann_duncker
 	recruit_character = GER_august_thalheimer
@@ -1002,7 +1037,6 @@ if = {
 		}
 		obsolete = yes
 	}
-	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "Deutschland"
 		type = heavy_cruiser_1
@@ -1123,7 +1157,7 @@ if = {
 	create_equipment_variant = {
 		name = "Deutschland"
 		type = ship_hull_cruiser_panzerschiff
-		name_group = GER_CA_HISTORICAL
+		name_group = GER_PZ_HISTORICAL
 		parent_version = 0
 		modules = {
         	fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1210,7 +1244,7 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Königsberg"
-		type = ship_hull_cruiser_2
+		type = ship_hull_cruiser_1
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -1319,7 +1353,7 @@ if = {
 	create_equipment_variant = {
 		name = "Deutschland"
 		type = ship_hull_pre_dreadnought
-		name_group = GER_BB_HISTORICAL
+		name_group = GER_PZ_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
@@ -1353,6 +1387,7 @@ if = {
 			plane_reliability_upgrade = 5
 		}
 		obsolete = yes
+		icon = GFX_GER_early_bomber_medium
 	}
 	
 	create_equipment_variant = {
@@ -1389,6 +1424,7 @@ if = {
 			special_type_slot_4 = empty
 		}
 		obsolete = yes
+		icon = GFX_GER_early_bomber_medium
 	}
 	create_equipment_variant = {
 		name = "Ju 86"
@@ -1406,6 +1442,7 @@ if = {
 			special_type_slot_4 = empty
 		}
 		obsolete = yes
+		icon = GFX_GER_early_bomber_medium
 	}
 
 	create_equipment_variant = {
@@ -1457,6 +1494,7 @@ if = {
 			special_type_slot_1 = empty
 		}
 		obsolete = yes
+		icon = GFX_GER_cv_fighter1_medium
 	}
 	create_equipment_variant = {
 		name = "Bf 109 D"
@@ -1646,7 +1684,7 @@ if = {
 				tank_nsb_armor_upgrade = 2
 			}
 			obsolete = yes
-			icon = "GFX_CZE_imp_light_tank"
+			icon = "GFX_CZE_basic_light_tank_medium"
 		}
 		create_equipment_variant = {
 			name = "Panzer 38(t)"
@@ -1668,7 +1706,7 @@ if = {
 				tank_nsb_armor_upgrade = 3
 			}
 			
-			icon = "GFX_CZE_basic_main_tank"
+			icon = "GFX_CZE_improved_light_tank_medium"
 		}
 	}
 

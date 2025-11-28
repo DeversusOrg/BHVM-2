@@ -3,10 +3,10 @@ state = {
 	name = "STATE_46" # Muntenia
 	manpower = 3971400 # was 4461400
 	resources = {
-		oil = 32 # was: 70
+		oil = 54 # was: 70
 	}
 
-	state_category = large_city
+	state_category = city
 
 	history = {
 

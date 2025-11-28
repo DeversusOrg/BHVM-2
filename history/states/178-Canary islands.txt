@@ -17,7 +17,11 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BLM
+		strategic_province_location = {
+			natural_harbor = 13071
+		}
+
+		add_core_of = SPR
 	}
 
 	provinces={

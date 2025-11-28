@@ -6,7 +6,7 @@ state = {
 
 	history = {
 		owner = ENG
-		add_core_of = BLM
+		add_core_of = WST
 		victory_points = {
 			12725 1 
 		}

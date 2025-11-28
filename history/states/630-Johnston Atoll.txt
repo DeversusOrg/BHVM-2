@@ -7,7 +7,7 @@ state=
 
 	history={
 		owner = USA
-		add_core_of = BLM
+		add_core_of = WST
 		buildings = {
 			infrastructure = 1
 			13051 = {

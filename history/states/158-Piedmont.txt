@@ -10,6 +10,7 @@ state = {
 		aluminium = 16 # was: 28
 		chromium = 2 # was: 4
 		tungsten = 1 # was: 2
+		coal = 4 # initial distribution
 	}
 
 	history = {
@@ -31,11 +32,15 @@ state = {
 			}
 		}
 		add_core_of = ITA
+		add_core_of = WST
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 10
 				industrial_complex = 2
 				dockyard = 3
+				6788 = {
+					naval_facility = 1 # Genoa Facilities
+				}
 			}
 		}
 	}
