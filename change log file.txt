@@ -565,3 +565,5 @@ Added some content to israel
 Fixed a VP system issue with china and its states
 Added 14 more factories to china
 Added 14 more factories to baltics 
+Some extra 20ish coal has been added to soviets in the urals for realistic purposes
+CS:8830
