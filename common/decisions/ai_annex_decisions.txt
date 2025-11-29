@@ -1774,7 +1774,7 @@ political_actions = {
             original_tag = FRA
         }
         visible = {
-            BLM = {
+            WST = {
 				controls_state = 282
 			}
             original_tag = FRA

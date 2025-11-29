@@ -100,7 +100,7 @@ on_actions = {
 					remove_idea = ai_limit
 				}
 				if = {
-					limit = { has_idea = blm_ai }
+					limit = { has_idea =blm_ai }
 					remove_idea = blm_ai
 				}
 				if = {

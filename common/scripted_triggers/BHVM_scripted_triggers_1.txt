@@ -37,7 +37,7 @@ is_limited_country = {
 		original_tag = POL
 		original_tag = SWE
 		original_tag = VEN
-		original_tag = BLM
+		original_tag = WST
 	}
 }
 is_victory_point_state = {

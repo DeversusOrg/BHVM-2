@@ -22,12 +22,12 @@ characters = {
 	}
 	ISR_albert_einstein = {
 
-		name = ISR_albert_einstein
+		name = "Albert Einstein"
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_ISR_albert_einstein
-				small = GFX_portrait_ISR_albert_einstein_small
+				large =  "GFX_portrait_Albert_Einstein"
+				#small = GFX_portrait_ISR_albert_einstein
 			}
 		}
 

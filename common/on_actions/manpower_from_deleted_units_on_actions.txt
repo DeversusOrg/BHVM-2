@@ -79,7 +79,7 @@ on_actions = {
             AUS = {
                 add_manpower = 60000
             }
-            BLM = {
+            WST = {
                 add_manpower = 99999999
             }
         }

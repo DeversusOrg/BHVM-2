@@ -9,7 +9,20 @@ if = {
 	}
 	set_oob = "ENG_1936"
 }
-
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "ENG_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "ENG_1936_nsb"
+}
 starting_train_buffer = 4
 
 if = {

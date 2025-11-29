@@ -11,7 +11,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.1.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				gw_artillery = 1
 			}
@@ -29,7 +29,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.2.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				interwar_antiair = 1
 			}
@@ -47,7 +47,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.3.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				interwar_antitank = 1
 			}
@@ -66,7 +66,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.4.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				mechanised_infantry = 1
 			}
@@ -92,7 +92,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.5.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				improved_infantry_weapons = 1
 			}
@@ -110,7 +110,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.6.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				artillery1 = 1
 			}
@@ -128,7 +128,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.7.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				antiair2 = 1
 			}
@@ -146,7 +146,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.8.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				antitank2 = 1
 			}
@@ -164,7 +164,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.9.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				amphibious_mechanized_infantry = 1
 			}
@@ -182,7 +182,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.10.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				antitank5 = 1
 			}
@@ -200,7 +200,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.11.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				artillery4 = 1
 			}
@@ -218,7 +218,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.12.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				antiair5 = 1
 			}
@@ -236,7 +236,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.13.a
-		BLM = { 
+		WST = { 
 			set_technology = {
 				advanced_infantry_weapons = 1
 			}
@@ -255,7 +255,7 @@ country_event = {
 
 	option = {
 		name = tech_rush.14.a
-		BLM = { 
+		WST = { 
 			create_equipment_variant = {
 				name = "Cheap Mechanised-2"
 				type = mechanized_equipment_2

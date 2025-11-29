@@ -40,7 +40,7 @@ political_actions = {
 		is_good = no
 
 		timeout_effect = {
-			BLM = { 
+			WST = { 
 				transfer_state = 286
 				transfer_state = 326
 				transfer_state = 333
