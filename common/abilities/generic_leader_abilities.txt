@@ -8,6 +8,10 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			has_game_rule = {
+				rule = force_attack_last_stand
+				option = on
+			}
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {
@@ -80,6 +84,10 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			has_game_rule = {
+				rule = force_attack_last_stand
+				option = on
+			}
 			OWNER = {
 				NOT = {
 					has_completed_focus = JAP_warrior_spirit

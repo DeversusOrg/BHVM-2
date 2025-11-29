@@ -42,7 +42,7 @@ is_limited_country = {
 }
 is_victory_point_state = {
     OR = {
-        state = 613 #Nanjing
+        state = 1035 #Nanjing
         state = 439 #Dehli
         state = 447 #Alexandria
         state = 450 #Benghasi

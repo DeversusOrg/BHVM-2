@@ -2,18 +2,16 @@ state = {
 	id = 454
 	name = "STATE_454" #ISRAEL
 	manpower = 1392067
-	
+	resources = {
+		oil = 1
+		coal = 2 
+	}
 	state_category = city
-
 	history = {
-
 		owner = ISR
 		
 		add_core_of = ISR
-		resources={
-			oil = 1
-			coal = 2 
-		}
+		
 		buildings = {
 			infrastructure = 3 
 			industrial_complex = 1

@@ -537,3 +537,31 @@ CS:be66
 Host tool autism prevention fix.
 Check in next month for a big massive update.
 CS:6db3
+
+Updated the mod to 1.17 DLC NCNS (No Compromise No Surrender)
+TEMPORARLY!! Added in the WST tag , and everything associated with the BLM tag has been moved to WST , this is because of the new dlc for resources and other map stuff like the china wall etc.
+Fixed some repeating errors with the special projects
+Nerfed CAS org and hp damage by ~40% , since the new dlc made CAS broken af by that i mean paradox TRIPLED THE DAMAGE CAS DOES 
+Added in mastery gain weekly 4 for every folder , ONLY WHEN YOURE NOT AT WAR AND HAVE THE PEACE TIME TRAINING WITH XP 
+Changed pregrinds: 
+BUL - Georgi markvo -1 attack and -1 logi & Damian Velchev -1 attack -1 logi
+FRA - Alphonse Juin -1 attack -1 logi & Jean Tassigny +1 defense -2 logies
+HUN: Pregrind Ferec Feketehalmyzceydner removed 
+SAF: Pregrinds were bugged , now they are back (Nothing crazy imo)
+CAN - Charles Foulkes -1 skill and removed ranger & Bert Hoffmeister -1 attack , -1 defense , -2 plannings , +2 logies
+RAJ - Frank Messervy -1 attack , +2 defense , -1 planning -1 level
+AST - Horace Roberston +1 defense , -1 planning , -2 logies
+ENG - Bernard montgomery -1 attack
+ITA - Sebastiano Prasca -1 defnese , -1 logi , Giovanni MEsse +1 attack , -3 defense , -3 logies
+GER -  Erwin Rommel -1 attack , -1 defense, +1 planning +desert fox Sepp Dietrich -3 logies , Heinz guderian +1 attack , -4 defense  , -2 logies Fedor von bock -1 attack , -3 logies
+JAP: Toshizo  +1 attack -3 defense Hitoshi Imamura -5 attack , +1 defense , +1 logies Keisuke Fujie -1 defense  , -3 logies Seishiro Itagaki -3 attack
+MAN - ZHan Haipeng , -1 skill , -2 attack
+Konstantin Rokosovky -1 attack , +2 planning , +1 logies Leonid govorov , -1 attack , +2 logies Vasily Kuznetsov -1 attack , -2 defnse , +3 logies Nikolai Berzarin +1 planning , +1 logies
+SPR - Juan yague -1 attack , -1 logies Gonzalo De Ilano +1 logies
+Italy has 12 more starting coal 
+Supply consumption for land might be bugged since paradox changed the backend of how supply consumption modefiers works , will look into it later
+Ranger units are now a thing 
+Added some content to israel
+Fixed a VP system issue with china and its states
+Added 14 more factories to china
+Added 14 more factories to baltics 

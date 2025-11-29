@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/trollol.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_mossad"
+		texturefile = "gfx/interface/ideas/mossad.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_Albert_Einstein"
 		texturefile = "gfx/leaders/ISR/Albert_Einstein.dds"
 	}

@@ -11,6 +11,10 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			has_game_rule = {
+				rule = force_attack_last_stand
+				option = on
+			}
 			OWNER = {				
 				OR = {
 					has_completed_focus = CHI_dare_to_die_corps
@@ -68,6 +72,10 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			has_game_rule = {
+				rule = force_attack_last_stand
+				option = on
+			}
 			OWNER = {
 				if = {
 					limit = {

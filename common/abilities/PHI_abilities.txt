@@ -8,6 +8,10 @@ ability = { #slightly buffed Last Stand
 		type = army_leader
 		
 		allowed = {
+			has_game_rule = {
+				rule = force_attack_last_stand
+				option = on
+			}
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {

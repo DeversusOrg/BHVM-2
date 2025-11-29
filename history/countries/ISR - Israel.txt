@@ -15,7 +15,12 @@ if = {
 		gwtank = 1
 	}
 }
-
+add_ideas = {
+	ISR_jewish_state
+	limited_exports
+	service_by_requirement
+	partial_economic_mobilisation
+}
 set_convoys = 5
 
 1939.1.1 = {
