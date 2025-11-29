@@ -25,19 +25,19 @@ on_actions = {
 						character = BUL_georgi_markov
 						traits = { trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader trickster ranger }
 						skill = 6
-						attack_skill = 6
+						attack_skill = 5
 						defense_skill = 5
 						planning_skill = 2
-						logistics_skill = 6
+						logistics_skill = 5
 					}
 					add_corps_commander_role = {
 						character = BUL_damian_velchev
 						traits = { commando trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader trickster ranger }
 						skill = 6
-						attack_skill = 6
+						attack_skill = 5
 						defense_skill = 6
 						planning_skill = 3
-						logistics_skill = 6
+						logistics_skill = 5
 					}
 				}
 				FRA = {
@@ -45,19 +45,19 @@ on_actions = {
 						character = FRA_alphonse_juin
 						traits = {  armor_officer panzer_leader trickster hill_fighter engineer_officer }
 						skill=5
-						attack_skill=5
+						attack_skill=4
 						defense_skill=4
 						planning_skill=6
-						logistics_skill=5
+						logistics_skill=4
 					}
 					add_corps_commander_role = {
 						character = FRA_jean_de_lattre_de_tassigny
 						traits = { cavalry_leader armor_officer trickster organizer urban_assault_specialist }
 						skill=5
 						attack_skill=5
-						defense_skill=4
+						defense_skill=5
 						planning_skill=6
-						logistics_skill=5
+						logistics_skill=3
 					}
 				}
 				HUN = {
@@ -67,16 +67,7 @@ on_actions = {
 						traits = { infantry_leader trickster }
 						attack_skill=2
 						defense_skill=4
-						planning_skill=3
-						logistics_skill=4
-					}
-					add_corps_commander_role = {
-						character = HUN_ferenc_feketehalmyczeydner
-						traits={ organizer  hill_fighter trickster panzer_leader }
-						skill=5
-						attack_skill=4
-						defense_skill=3
-						planning_skill=5
+						planning_skill=2
 						logistics_skill=2
 					}
 				}
@@ -95,8 +86,8 @@ on_actions = {
 					add_corps_commander_role = {
 						character = CAN_charles_foulkes
 						skill=4
-						traits = { organizer armor_officer ranger }
-						attack_skill=4
+						traits = { organizer armor_officer }
+						attack_skill=3
 						defense_skill=2
 						planning_skill=4
 						logistics_skill=2
@@ -105,21 +96,21 @@ on_actions = {
 						character = CAN_bert_hoffmeister
 						traits={ infantry_leader trickster }
 						skill=4
-						attack_skill=3
-						defense_skill=4
-						planning_skill=4
-						logistics_skill=3
+						attack_skill=2
+						defense_skill=3
+						planning_skill=2
+						logistics_skill=5
 					}
 				}
 				RAJ = {
 					add_corps_commander_role = {
 						character = RAJ_frank_messervy 
-						skill=4
+						skill=3
 						traits = { harsh_leader }
-						attack_skill=3
-						defense_skill=3
-						planning_skill=2
-						logistics_skill=3
+						attack_skill=2
+						defense_skill=5
+						planning_skill=1
+						logistics_skill=1
 					}
 				}
 				AST = {
@@ -128,9 +119,9 @@ on_actions = {
 						skill=4
 						traits = { infantry_officer career_officer }
 						attack_skill=3
-						defense_skill=5
-						planning_skill=3
-						logistics_skill=4
+						defense_skill=6
+						planning_skill=2
+						logistics_skill=2
 					}
 				}
 				ENG = {
@@ -138,10 +129,30 @@ on_actions = {
 						character = ENG_bernard_montgomery
 						skill=6
 						traits = {  war_hero organizer trickster career_officer infantry_officer desert_fox }
-						attack_skill=4
+						attack_skill=3
 						defense_skill=5
+						planning_skill=5
+						logistics_skill=1
+					}
+				}
+				SAF = {
+					add_corps_commander_role = {
+						character = SAF_j_f_van_rensburg
+						traits={ career_officer infantry_leader trickster }
+						skill=4
+						attack_skill=3
+						defense_skill=4
 						planning_skill=4
-						logistics_skill=3
+						logistics_skill=5
+					}
+					add_corps_commander_role = {
+						character = SAF_george_edwin_brink
+						traits={ inflexible_strategist trait_reckless organizer  }
+						skill=4
+						attack_skill=4
+						defense_skill=4
+						planning_skill=4
+						logistics_skill=5
 					}
 				}
 				ITA = {
@@ -150,18 +161,18 @@ on_actions = {
 						traits = {  armor_officer war_hero trait_engineer infantry_leader trickster organizer desert_fox }
 						skill=6
 						attack_skill=4
-						defense_skill=7
+						defense_skill=6
 						planning_skill=5
-						logistics_skill=4
+						logistics_skill=3
 					}
 					add_corps_commander_role = {
 						character = ITA_giovanni_messe
 						traits = {  cavalry_leader armor_officer war_hero panzer_leader trait_engineer infantry_leader trickster organizer trait_mountaineer commando }
 						skill=6
-						attack_skill=5
-						defense_skill=4
+						attack_skill=6
+						defense_skill=2
 						planning_skill=5
-						logistics_skill=5
+						logistics_skill=2
 					}
 					add_corps_commander_role = {
 						character = ITA_francesco_zingales
@@ -176,21 +187,21 @@ on_actions = {
 				GER = {
 					add_corps_commander_role={
 						character = GER_erwin_rommel
-						traits={ trait_reckless media_personality armor_officer war_hero trickster }
+						traits={ trait_reckless media_personality armor_officer war_hero trickster desert_fox }
 						skill=4
-						attack_skill=5
-						defense_skill=3
-						planning_skill=2
+						attack_skill=4
+						defense_skill=2
+						planning_skill=3
 						logistics_skill=2
 					}
 					add_corps_commander_role={
 						character = GER_fedor_von_bock
 						traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer organizer ranger }
 						skill=6
-						attack_skill=6
+						attack_skill=5
 						defense_skill=5
 						planning_skill=5
-						logistics_skill=7
+						logistics_skill=4
 					}
 					add_corps_commander_role={
 						character = GER_sepp_dietrich
@@ -199,7 +210,7 @@ on_actions = {
 						attack_skill=6
 						defense_skill=4
 						planning_skill=6
-						logistics_skill=4
+						logistics_skill=3
 					}
 					add_corps_commander_role={
 						character = GER_kurt_student
@@ -215,10 +226,10 @@ on_actions = {
 						character = GER_heinz_guderian
 						traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader cavalry_leader }
 						skill=4
-						attack_skill=4
-						defense_skill=4
+						attack_skill=5
+						defense_skill=2
 						planning_skill=5
-						logistics_skill=3
+						logistics_skill=1
 					}
 				}
 				JAP = {
@@ -244,8 +255,8 @@ on_actions = {
 						character = JAP_toshizo_nishio
 						traits = {  commando organizer infantry_leader trait_engineer infantry_expert naval_invader commando trickster jungle_rat }
 						skill=8
-						attack_skill=6
-						defense_skill=5
+						attack_skill=7
+						defense_skill=4
 						planning_skill=4
 						logistics_skill=6
 					}
@@ -253,7 +264,7 @@ on_actions = {
 						character = JAP_seishiro_itagaki
 						traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader trickster  }
 						skill=4
-						attack_skill=4
+						attack_skill=2
 						defense_skill=2
 						planning_skill=4
 						logistics_skill=4
@@ -263,26 +274,26 @@ on_actions = {
 						traits={ career_officer politically_connected trait_engineer organizer infantry_leader trickster trait_mountaineer }
 						skill=6
 						attack_skill=6
-						defense_skill=5
+						defense_skill=4
 						planning_skill=4
-						logistics_skill=5
+						logistics_skill=2
 					}
 					add_corps_commander_role = {
 						character = JAP_hitoshi_imamura
 						traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
 						skill=7
-						attack_skill=4
-						defense_skill=6
+						attack_skill=2
+						defense_skill=7
 						planning_skill=2
-						logistics_skill=4
+						logistics_skill=5
 					}
 				}
 				MAN = {
 					add_corps_commander_role = {
 						character = MAN_zhang_haipeng
 						traits={ politically_connected trickster trait_engineer organizer infantry_leader panzer_leader trickster hill_fighter trait_mountaineer }
-						skill=7
-						attack_skill=6
+						skill=6
+						attack_skill=4
 						defense_skill=7
 						planning_skill=5
 						logistics_skill=3
@@ -293,30 +304,30 @@ on_actions = {
 						character = SOV_konstantin_rokossovsky
 						traits = { commando cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer ranger organizer hill_fighter}
 						skill = 8
-						attack_skill = 7
+						attack_skill = 6
 						defense_skill = 5
-						planning_skill = 6
-						logistics_skill = 6
+						planning_skill = 5
+						logistics_skill = 7
 					}
 
 					add_corps_commander_role = {
 						character = SOV_leonid_govorov
 						traits = { skilled_staffer commando cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer}
 						skill = 6
-						attack_skill = 6
+						attack_skill = 5
 						defense_skill = 6
 						planning_skill = 7
-						logistics_skill = 6
+						logistics_skill = 7
 					}
 					
 					add_corps_commander_role = {
 						character = SOV_vasily_kuznetsov
 						traits = { infantry_officer commando cavalry_leader trickster organizer }
 						skill = 6
-						attack_skill = 4
-						defense_skill = 7
+						attack_skill = 3
+						defense_skill = 5
 						planning_skill = 3
-						logistics_skill = 6
+						logistics_skill = 7
 					}
 					
 					add_corps_commander_role = {
@@ -325,8 +336,8 @@ on_actions = {
 						skill = 6
 						attack_skill = 3
 						defense_skill = 5
-						planning_skill = 2
-						logistics_skill = 6
+						planning_skill = 3
+						logistics_skill = 5
 					}
 				}
 				SPR = {
@@ -334,10 +345,10 @@ on_actions = {
 						character = SPA_juan_yague
 						traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies organizer cavalry_leader panzer_leader trait_engineer urban_assault_specialist trickster }
 						skill=6
-						attack_skill=6
+						attack_skill=5
 						defense_skill=4
 						planning_skill=6
-						logistics_skill=5
+						logistics_skill=4
 					}
 					add_corps_commander_role = {
 						character = SPR_gonzalo_queipo_de_llano
@@ -346,7 +357,7 @@ on_actions = {
 						attack_skill=5
 						defense_skill=6
 						planning_skill=3
-						logistics_skill=2
+						logistics_skill=3
 					}
 				}
 				if = {
@@ -458,21 +469,21 @@ on_actions = {
 				BUL = {
 					add_corps_commander_role = {
 						character = BUL_georgi_markov
-						traits = { trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader trickster }
+						traits = { trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader trickster ranger }
 						skill = 6
-						attack_skill = 6
+						attack_skill = 5
 						defense_skill = 5
 						planning_skill = 2
-						logistics_skill = 6
+						logistics_skill = 5
 					}
 					add_corps_commander_role = {
 						character = BUL_damian_velchev
-						traits = { commando trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader trickster }
+						traits = { commando trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader trickster ranger }
 						skill = 6
-						attack_skill = 6
-						defense_skill = 5
+						attack_skill = 5
+						defense_skill = 6
 						planning_skill = 3
-						logistics_skill = 6
+						logistics_skill = 5
 					}
 				}
 				HUN = {
@@ -482,16 +493,7 @@ on_actions = {
 						traits = { infantry_leader trickster }
 						attack_skill=2
 						defense_skill=4
-						planning_skill=3
-						logistics_skill=4
-					}
-					add_corps_commander_role = {
-						character = HUN_ferenc_feketehalmyczeydner
-						traits={ organizer  hill_fighter trickster panzer_leader }
-						skill=5
-						attack_skill=4
-						defense_skill=3
-						planning_skill=5
+						planning_skill=2
 						logistics_skill=2
 					}
 				}
@@ -512,18 +514,18 @@ on_actions = {
 						traits = {  armor_officer war_hero trait_engineer infantry_leader trickster organizer desert_fox }
 						skill=6
 						attack_skill=4
-						defense_skill=7
+						defense_skill=6
 						planning_skill=5
-						logistics_skill=4
+						logistics_skill=3
 					}
 					add_corps_commander_role = {
 						character = ITA_giovanni_messe
 						traits = {  cavalry_leader armor_officer war_hero panzer_leader trait_engineer infantry_leader trickster organizer trait_mountaineer commando }
 						skill=6
-						attack_skill=5
-						defense_skill=4
+						attack_skill=6
+						defense_skill=2
 						planning_skill=5
-						logistics_skill=5
+						logistics_skill=2
 					}
 					add_corps_commander_role = {
 						character = ITA_francesco_zingales
@@ -538,21 +540,21 @@ on_actions = {
 				GER = {
 					add_corps_commander_role={
 						character = GER_erwin_rommel
-						traits={ trait_reckless media_personality armor_officer war_hero trickster }
+						traits={ trait_reckless media_personality armor_officer war_hero trickster desert_fox }
 						skill=4
-						attack_skill=5
-						defense_skill=3
-						planning_skill=2
+						attack_skill=4
+						defense_skill=2
+						planning_skill=3
 						logistics_skill=2
 					}
 					add_corps_commander_role={
 						character = GER_fedor_von_bock
 						traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer organizer ranger }
 						skill=6
-						attack_skill=6
+						attack_skill=5
 						defense_skill=5
 						planning_skill=5
-						logistics_skill=7
+						logistics_skill=4
 					}
 					add_corps_commander_role={
 						character = GER_sepp_dietrich
@@ -561,7 +563,7 @@ on_actions = {
 						attack_skill=6
 						defense_skill=4
 						planning_skill=6
-						logistics_skill=4
+						logistics_skill=3
 					}
 					add_corps_commander_role={
 						character = GER_kurt_student
@@ -577,10 +579,10 @@ on_actions = {
 						character = GER_heinz_guderian
 						traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader cavalry_leader }
 						skill=4
-						attack_skill=4
-						defense_skill=4
+						attack_skill=5
+						defense_skill=2
 						planning_skill=5
-						logistics_skill=3
+						logistics_skill=1
 					}
 				}
 				JAP = {
@@ -606,8 +608,8 @@ on_actions = {
 						character = JAP_toshizo_nishio
 						traits = {  commando organizer infantry_leader trait_engineer infantry_expert naval_invader commando trickster jungle_rat }
 						skill=8
-						attack_skill=6
-						defense_skill=5
+						attack_skill=7
+						defense_skill=4
 						planning_skill=4
 						logistics_skill=6
 					}
@@ -615,7 +617,7 @@ on_actions = {
 						character = JAP_seishiro_itagaki
 						traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader trickster  }
 						skill=4
-						attack_skill=4
+						attack_skill=2
 						defense_skill=2
 						planning_skill=4
 						logistics_skill=4
@@ -625,26 +627,26 @@ on_actions = {
 						traits={ career_officer politically_connected trait_engineer organizer infantry_leader trickster trait_mountaineer }
 						skill=6
 						attack_skill=6
-						defense_skill=5
+						defense_skill=4
 						planning_skill=4
-						logistics_skill=5
+						logistics_skill=2
 					}
 					add_corps_commander_role = {
 						character = JAP_hitoshi_imamura
 						traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
 						skill=7
-						attack_skill=4
-						defense_skill=6
+						attack_skill=2
+						defense_skill=7
 						planning_skill=2
-						logistics_skill=4
+						logistics_skill=5
 					}
 				}
 				MAN = {
 					add_corps_commander_role = {
 						character = MAN_zhang_haipeng
 						traits={ politically_connected trickster trait_engineer organizer infantry_leader panzer_leader trickster hill_fighter trait_mountaineer }
-						skill=7
-						attack_skill=6
+						skill=6
+						attack_skill=4
 						defense_skill=7
 						planning_skill=5
 						logistics_skill=3
@@ -655,30 +657,30 @@ on_actions = {
 						character = SOV_konstantin_rokossovsky
 						traits = { commando cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer ranger organizer hill_fighter}
 						skill = 8
-						attack_skill = 7
+						attack_skill = 6
 						defense_skill = 5
-						planning_skill = 6
-						logistics_skill = 6
+						planning_skill = 5
+						logistics_skill = 7
 					}
 
 					add_corps_commander_role = {
 						character = SOV_leonid_govorov
 						traits = { skilled_staffer commando cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer}
 						skill = 6
-						attack_skill = 6
+						attack_skill = 5
 						defense_skill = 6
 						planning_skill = 7
-						logistics_skill = 6
+						logistics_skill = 7
 					}
 					
 					add_corps_commander_role = {
 						character = SOV_vasily_kuznetsov
 						traits = { infantry_officer commando cavalry_leader trickster organizer }
 						skill = 6
-						attack_skill = 4
-						defense_skill = 7
+						attack_skill = 3
+						defense_skill = 5
 						planning_skill = 3
-						logistics_skill = 6
+						logistics_skill = 7
 					}
 					
 					add_corps_commander_role = {
@@ -687,10 +689,9 @@ on_actions = {
 						skill = 6
 						attack_skill = 3
 						defense_skill = 5
-						planning_skill = 2
-						logistics_skill = 6
+						planning_skill = 3
+						logistics_skill = 5
 					}
-					
 				}
 				SPR = {
 					add_corps_commander_role = {
@@ -812,27 +813,27 @@ on_actions = {
 						character = FRA_alphonse_juin
 						traits = {  armor_officer panzer_leader trickster hill_fighter engineer_officer }
 						skill=5
-						attack_skill=5
+						attack_skill=4
 						defense_skill=4
 						planning_skill=6
-						logistics_skill=5
+						logistics_skill=4
 					}
 					add_corps_commander_role = {
 						character = FRA_jean_de_lattre_de_tassigny
 						traits = { cavalry_leader armor_officer trickster organizer urban_assault_specialist }
 						skill=5
 						attack_skill=5
-						defense_skill=4
+						defense_skill=5
 						planning_skill=6
-						logistics_skill=5
+						logistics_skill=3
 					}
 				}
 				CAN = {
 					add_corps_commander_role = {
 						character = CAN_charles_foulkes
 						skill=4
-						traits = { organizer armor_officer ranger }
-						attack_skill=4
+						traits = { organizer armor_officer }
+						attack_skill=3
 						defense_skill=2
 						planning_skill=4
 						logistics_skill=2
@@ -841,10 +842,10 @@ on_actions = {
 						character = CAN_bert_hoffmeister
 						traits={ infantry_leader trickster }
 						skill=4
-						attack_skill=3
-						defense_skill=4
-						planning_skill=4
-						logistics_skill=3
+						attack_skill=2
+						defense_skill=3
+						planning_skill=2
+						logistics_skill=5
 					}
 				}
 				RAJ = {
@@ -852,10 +853,10 @@ on_actions = {
 						character = RAJ_frank_messervy 
 						skill=4
 						traits = { harsh_leader }
-						attack_skill=3
-						defense_skill=3
-						planning_skill=2
-						logistics_skill=3
+						attack_skill=2
+						defense_skill=5
+						planning_skill=1
+						logistics_skill=1
 					}
 				}
 				AST = {
@@ -864,9 +865,9 @@ on_actions = {
 						skill=4
 						traits = { infantry_officer career_officer }
 						attack_skill=3
-						defense_skill=5
-						planning_skill=3
-						logistics_skill=4
+						defense_skill=6
+						planning_skill=2
+						logistics_skill=2
 					}
 				}
 				ENG = {
@@ -874,10 +875,10 @@ on_actions = {
 						character = ENG_bernard_montgomery
 						skill=6
 						traits = {  war_hero organizer trickster career_officer infantry_officer desert_fox }
-						attack_skill=4
+						attack_skill=3
 						defense_skill=5
-						planning_skill=4
-						logistics_skill=3
+						planning_skill=5
+						logistics_skill=1
 					}
 				}
 				SAF = {
@@ -905,30 +906,30 @@ on_actions = {
 						character = SOV_konstantin_rokossovsky
 						traits = { commando cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer ranger organizer hill_fighter}
 						skill = 8
-						attack_skill = 7
+						attack_skill = 6
 						defense_skill = 5
-						planning_skill = 6
-						logistics_skill = 6
+						planning_skill = 5
+						logistics_skill = 7
 					}
 
 					add_corps_commander_role = {
 						character = SOV_leonid_govorov
 						traits = { skilled_staffer commando cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer}
 						skill = 6
-						attack_skill = 6
+						attack_skill = 5
 						defense_skill = 6
 						planning_skill = 7
-						logistics_skill = 6
+						logistics_skill = 7
 					}
 					
 					add_corps_commander_role = {
 						character = SOV_vasily_kuznetsov
 						traits = { infantry_officer commando cavalry_leader trickster organizer }
 						skill = 6
-						attack_skill = 4
-						defense_skill = 7
+						attack_skill = 3
+						defense_skill = 5
 						planning_skill = 3
-						logistics_skill = 6
+						logistics_skill = 7
 					}
 					
 					add_corps_commander_role = {
@@ -937,10 +938,9 @@ on_actions = {
 						skill = 6
 						attack_skill = 3
 						defense_skill = 5
-						planning_skill = 2
-						logistics_skill = 6
+						planning_skill = 3
+						logistics_skill = 5
 					}
-					
 				}
 				if = {
 					limit = {
