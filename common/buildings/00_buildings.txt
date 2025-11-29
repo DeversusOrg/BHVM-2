@@ -56,7 +56,7 @@ buildings = {
 		base_cost = 7200
 		base_cost_conversion = 4000
 		military_production = 1
-		disabled_in_dmz = yes
+		 
 		icon_frame = 2
 		value = 8
 		infrastructure_construction_effect = yes
@@ -97,7 +97,7 @@ buildings = {
 	supply_node = {
 		show_on_map = 1
 		base_cost = 20000
-		disabled_in_dmz = yes
+		 
 		icon_frame = 15
 		centered = yes
 		supply_node = yes
@@ -114,7 +114,7 @@ buildings = {
 	rail_way = {
 		base_cost = 170
 		per_level_extra_cost = 130
-		disabled_in_dmz = yes
+		 
 		icon_frame = 16
 		infrastructure_construction_effect = yes
 		level_cap = {
@@ -132,7 +132,7 @@ buildings = {
 		spawn_point = naval_base_spawn 
 		specialization = { specialization_naval }
 		tags = { facility }
-		disabled_in_dmz = yes
+		 
 		need_supply = yes
 		need_detection = yes
 		detecting_intel_type = navy
@@ -170,7 +170,7 @@ buildings = {
 		has_destroyed_mesh = yes
 		base_cost = 500
 		per_level_extra_cost = 500
-		disabled_in_dmz = yes
+		 
 		icon_frame = 7
 		land_fort = 1
 		value = 1
@@ -185,7 +185,7 @@ buildings = {
 		has_destroyed_mesh = yes
 		base_cost = 500
 		per_level_extra_cost = 500
-		disabled_in_dmz = yes
+		 
 		only_costal = yes
 		icon_frame = 8
 		naval_fort = 1
@@ -201,7 +201,7 @@ buildings = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 20000
-		disabled_in_dmz = yes
+		 
 		icon_frame = 23
 		value = 1
 		infrastructure_construction_effect = yes
@@ -244,7 +244,7 @@ buildings = {
 		base_cost = 2500
 		icon_frame = 9
 		anti_air = yes
-		disabled_in_dmz = yes
+		 
 		air_defence = 1
 		damage_factor = 0.1
 		value = 1
@@ -321,7 +321,7 @@ buildings = {
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
 		icon_frame = 24
 		value = 1
-		disabled_in_dmz = yes
+		 
 		infrastructure_construction_effect = yes
 		gun_emplacement = yes
 		spawn_point = rocket_site_spawn
@@ -343,7 +343,7 @@ buildings = {
 		value = 1
 		tags = {}
 		infrastructure_construction_effect = yes
-		disabled_in_dmz = yes
+		 
 		spawn_point = rocket_site_spawn
 		level_cap = {
 			state_max = 3
@@ -356,7 +356,7 @@ buildings = {
 		show_on_map = 1
 		base_cost = 12500
 		icon_frame = 28
-		disabled_in_dmz = yes
+		 
 		naval_supply_hub = yes
 		infrastructure_construction_effect = yes
 		only_costal = yes
@@ -380,7 +380,7 @@ buildings = {
 		icon_frame = 29
 		value = 1
 		naval_headquarter = yes
-		disabled_in_dmz = yes
+		 
 		infrastructure_construction_effect = yes
 		only_costal = yes
 		tags = { naval_buildings_tag }
@@ -508,7 +508,7 @@ buildings = {
 		need_supply = yes
 		need_detection = yes
 		tags = { facility }
-		disabled_in_dmz = yes
+		 
 		only_display_if_exists = yes
 		special_icon = GFX_specialization_nuclear
 		#state_damage_modifier = { conscription_exemptions_granted }
@@ -542,7 +542,7 @@ buildings = {
 		need_supply = yes
 		need_detection = yes
 		detecting_intel_type = airforce
-		disabled_in_dmz = yes
+		 
 		only_display_if_exists = yes
 		special_icon = GFX_specialization_air
 		level_cap = {
@@ -562,7 +562,7 @@ buildings = {
 		spawn_point = special_project_facility_spawn 
 		specialization = { specialization_land }
 		tags = { facility }
-		disabled_in_dmz = yes
+		 
 		need_supply = yes
 		need_detection = yes
 		detecting_intel_type = army
