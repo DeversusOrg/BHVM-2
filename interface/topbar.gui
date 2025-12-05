@@ -382,7 +382,7 @@ guiTypes = {
 		iconType ={
 			name ="industrial_capacity_icon"
 			spriteType = "GFX_industrial_capacity_icon"
-			position = { x= 414 y = 3 } 
+			position = { x= 412 y = 3 } 
 			Orientation = "UPPER_LEFT"
 		}
         
@@ -400,7 +400,7 @@ guiTypes = {
 		iconType = {
 			name ="industrial_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar" 
-			position = { x= 438 y = 20 }
+			position = { x= 441 y = 20 }
 			frame = 50
 			alwaystransparent = yes
 		}

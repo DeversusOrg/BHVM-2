@@ -520,6 +520,14 @@ guiTypes = {
 			pdx_tooltip_delayed = "ADD_OIL_DELAYED"
 		}
 		buttonType = {
+			name = "addcoal"	
+			position = {x=148 y=150}
+			spriteType = "GFX_coal"
+            scale=1.1
+			pdx_tooltip = "ADDCOAL"
+			pdx_tooltip_delayed = "ADD_COAL_DELAYED"
+		}
+		buttonType = {
 			name = "award_states" 
 			position = {x=218 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"

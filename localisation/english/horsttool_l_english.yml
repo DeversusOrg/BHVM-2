@@ -75,6 +75,7 @@
  ADDST:0 "§HAdd 10 Stability§!\nClicking this button will add stability to [This.Owner.GetName].\n\n"
  ADDTUNGSTEN:0 "§HAdd 5 Tungsten§!\nClicking this button will add tungsten to [This.Owner.GetName].\n\n"
  ADDSTEEL:0 "§HAdd 5 Steel§!\nClicking this button will add Steel to [This.Owner.GetName].\n\n"
+ ADDCOAL:0 "§HAdd 5 Coall§!\nClicking this button will add Coal to [This.Owner.GetName].\n\n"
  ADDALUMINIUM:0 "§HAdd 5 Aluminium§!\nClicking this button will add Aluminium to [This.Owner.GetName].\n\n"
  ADDRUBBER:0 "§HAdd 5 Rubber§!\nClicking this button will add Rubber to [This.Owner.GetName].\n\n"
  ADDOIL:0 "§HAdd 5 Oil§!\nClicking this button will add Oil to [This.Owner.GetName].\n\n"

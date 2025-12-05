@@ -4294,7 +4294,7 @@ SOV_gosproyektstroy_decision_category = {
 			base = 10
 		}
 
-		targets = { USA ENG GER JAP }
+		# targets = { USA ENG GER JAP }
 
 		#target_trigger = {
 		#	FROM = { SOV_is_valid_subject = yes }
@@ -4308,10 +4308,10 @@ SOV_gosproyektstroy_decision_category = {
 			has_idea = SOV_gosproyektstroy_1
 			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
 			FROM = {
-				has_opinion = {
-					target = ROOT
-					value > 29
-				}
+			#	has_opinion = {
+			#		target = ROOT
+			#		value > 29
+			#	}
 				SOV_is_valid_subject = yes
 				NOT = { has_war_with = ROOT }
 			}
@@ -4325,9 +4325,9 @@ SOV_gosproyektstroy_decision_category = {
 			has_idea = SOV_gosproyektstroy_1
 			NOT = { has_country_flag = SOV_gosproyektstroy_level_2_flag }
 			NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
-			country_exists = FROM
-			NOT = { has_war_with = FROM }
-			FROM = { SOV_is_valid_subject = yes }
+		#	country_exists = FROM
+		#	NOT = { has_war_with = FROM }
+		#	FROM = { SOV_is_valid_subject = yes }
 		}
 
 		cost = SOV_gosproyektstroy_decision_cost
@@ -4341,9 +4341,9 @@ SOV_gosproyektstroy_decision_category = {
 		}
 
 		remove_effect = {
-			if = {
+			if = { 
 				limit = {
-					FROM = { tag = USA }
+				#	FROM = { tag = USA }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
 				swap_ideas = {
@@ -4353,7 +4353,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = ENG }
+				#	FROM = { tag = ENG }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 2 } #ENG
 				swap_ideas = {
@@ -4363,7 +4363,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = GER }
+				#	FROM = { tag = GER }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 3 } #GER
 				swap_ideas = {
@@ -4373,7 +4373,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = JAP }
+				#	FROM = { tag = JAP }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
 				swap_ideas = {
@@ -4385,7 +4385,7 @@ SOV_gosproyektstroy_decision_category = {
 			clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
 		}
 	}
-	
+
 	SOV_gosproyektstroy_focus_civ = {
 		priority = 13
 
@@ -4697,6 +4697,7 @@ SOV_gosproyektstroy_decision_category = {
 		}
 	}
 }
+
 
 
 

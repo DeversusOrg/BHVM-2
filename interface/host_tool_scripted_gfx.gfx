@@ -126,6 +126,11 @@ spriteTypes = {
         texturefile = "gfx/horst_gui/horsttool/rubber.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }
+    spriteType = {
+        name = "GFX_coal"
+        texturefile = "gfx/horst_gui/horsttool/coal.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
    	spriteType = {
    		name = "GFX_change_host_nation"
    		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
