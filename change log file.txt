@@ -567,3 +567,13 @@ Added 14 more factories to china
 Added 14 more factories to baltics 
 Some extra 20ish coal has been added to soviets in the urals for realistic purposes
 CS:8830
+
+Fixed an issue with no asia regarding coal and philipines
+Sov generals buffed:
+Konstantin Rokossovsky| +2 attack + 2 defense
+Leonid Govorov +2 attack
+Vsaily Kuznetsov +2 attack
+Nikolay Berzarin +1 defense +2 logies
+Added coal to the host tool
+FIxed an issue with no asia/alt asia where soviets couldnt get foreign experts decision
+CS:9ae0
