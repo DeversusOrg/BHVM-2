@@ -3,7 +3,7 @@ technologies = {
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
-
+		equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = improved_machine_tools 
@@ -41,6 +41,7 @@ technologies = {
 	improved_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
+		equipment_conversion_speed = 0.2
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -78,7 +79,7 @@ technologies = {
 	advanced_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		
+		equipment_conversion_speed = 0.2
 		path = {
 			leads_to_tech = assembly_line_production 
 			research_cost_coeff = 1
@@ -110,7 +111,7 @@ technologies = {
 	assembly_line_production = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		
+		equipment_conversion_speed = 0.2
 		#path = {
 		#	leads_to_tech = improved_machine_tools 
 		#	research_cost_coeff = 1
@@ -154,7 +155,7 @@ technologies = {
 
 		production_factory_max_efficiency_factor = 0.1
 		line_change_production_efficiency_factor = 0.2
-		
+		equipment_conversion_speed = 0.1
 		research_cost = 2.5
 		start_year = 1943
 		
@@ -186,7 +187,7 @@ technologies = {
 
 		production_factory_max_efficiency_factor = 0.1
 		production_factory_efficiency_gain_factor = 0.1
-			
+		equipment_conversion_speed = 0.1
 		research_cost = 2.5
 		start_year = 1943
 		
@@ -217,8 +218,8 @@ technologies = {
 
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
-	
-		equipment_conversion_speed = 0.40
+		energy_gain_factor = 0.15
+		#equipment_conversion_speed = 0.40
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -258,8 +259,8 @@ technologies = {
 	}
 	
 	advanced_equipment_conversion = {
-		
-		equipment_conversion_speed = 0.40
+		energy_gain_factor = 0.15
+		#equipment_conversion_speed = 0.40
 
 		research_cost = 2
 		start_year = 1939
