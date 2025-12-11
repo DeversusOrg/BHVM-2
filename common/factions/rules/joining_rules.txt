@@ -891,6 +891,14 @@ joining_rule_east_asia_only = {
 		OR = {
 			original_tag = JAP
 			original_tag = KOR
+			original_tag = KUM
+			original_tag = MON
+			original_tag = TAN
+			original_tag = TIB 
+			original_tag = FOR  
+			original_tag = OKN   
+			original_tag = EZO    
+			original_tag = ANU     
 			WTT_is_chinese_country = yes 
 		}
 	}
@@ -898,10 +906,21 @@ joining_rule_east_asia_only = {
 		faction_manifest_fulfillment > 0.95	
 	}
 	trigger = {
-		OR = {
-			original_tag = JAP
-			original_tag = KOR
-			WTT_is_chinese_country = yes 
+		custom_trigger_tooltip = {
+			tooltip = is_east_asian_country_tt
+			OR = {
+				original_tag = JAP
+				original_tag = KOR
+				original_tag = KUM
+				original_tag = MON
+				original_tag = TAN
+				original_tag = TIB 
+				original_tag = FOR 
+				original_tag = OKN 
+				original_tag = EZO 
+				original_tag = ANU 
+				WTT_is_chinese_country = yes 
+			}
 		}
 	}
 }
