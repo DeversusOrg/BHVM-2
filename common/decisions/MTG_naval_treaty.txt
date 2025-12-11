@@ -259,7 +259,7 @@ MTG_naval_treaties = {
 			has_naval_treaty_trigger = no
 			NOT = { has_country_flag = MTG_naval_treaty_abandoned }
 			NOT = { has_country_flag = MTG_refused_naval_treaty }
-			NOT = { tag = WST }  # Exclude WST tag
+			NOT = { tag = BLM }  # Exclude BLM tag
 			if = {
 				limit = { ENG = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
@@ -335,7 +335,7 @@ MTG_send_treaty_warning_to_FROM_previous_signatory = {
 		FROM = { 
 			has_war = no
 			has_country_flag = MTG_naval_treaty_abandoned
-			NOT = { tag = WST }  # Exclude WST tag
+			NOT = { tag = BLM }  # Exclude BLM tag
 			if = {
 				limit = { ENG = { has_naval_treaty_trigger = yes } }
 				naval_strength_comparison = {
@@ -426,7 +426,7 @@ MTG_send_treaty_warning_to_FROM = {
 					not = { has_country_flag = MTG_naval_treaty_abandoned }
 					NOT = { has_country_flag = MTG_refused_naval_treaty }
 					has_naval_treaty_trigger = no
-					NOT = { tag = WST }  # Exclude WST tag
+					NOT = { tag = BLM }  # Exclude BLM tag
 					if = {
 						limit = { ENG = { has_naval_treaty_trigger = yes } }
 						naval_strength_comparison = {
@@ -462,7 +462,7 @@ MTG_send_treaty_warning_to_FROM = {
 				}
 				AND = {
 					has_naval_treaty_trigger = yes
-					NOT = { tag = WST }  # Exclude WST tag
+					NOT = { tag = BLM }  # Exclude BLM tag
 					if = {
 						limit = { ENG = { has_naval_treaty_trigger = yes } }
 						naval_strength_comparison = {

@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = NZL
-		add_core_of = WST
+		add_core_of = BLM
 		buildings = {
 			infrastructure = 2
 			13056 = {

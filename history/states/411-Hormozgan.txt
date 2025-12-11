@@ -12,7 +12,7 @@ state={
 	
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 2
 		}
@@ -22,7 +22,7 @@ state={
 		victory_points = {
 			4928 1 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 	}
 
 	provinces={

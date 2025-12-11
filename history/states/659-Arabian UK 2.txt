@@ -11,7 +11,7 @@ state={
 
 	history = {
 		owner = RAJ
-		add_core_of = WST
+		add_core_of = BLM
 		buildings = {
 			infrastructure = 1
 			air_base = 1

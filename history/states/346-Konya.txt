@@ -2,15 +2,14 @@
 state={
 	id=346
 	name="STATE_346"
-	manpower = 849453
+	manpower = 1
 	
 	state_category = rural
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
-			infrastructure = 2
-			air_base = 5
+			
 		}
 		
 		victory_points = {
@@ -22,7 +21,7 @@ state={
 		victory_points = {
 			784 1
 		}
-		add_core_of = TUR
+		add_core_of = BLM
 	}
 
 	provinces={

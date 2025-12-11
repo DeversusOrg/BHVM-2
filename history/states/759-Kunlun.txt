@@ -9,9 +9,9 @@ state={
 	state_category = wasteland
 	history={
 
-		owner = WST
+		owner = BLM
 		
-		add_core_of = WST
+		add_core_of = BLM
 		add_core_of = PRC
 
 		victory_points = {

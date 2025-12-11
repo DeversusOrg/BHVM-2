@@ -2,25 +2,21 @@
 state={
 	id=342
 	name="STATE_342" # Antalya
-	manpower = 362689
+	manpower = 1
 	resources={
 		chromium=35 # was: 46
 	}
 	state_category = rural
 
 	history={
-		owner = WST
+		owner = BLM
 		victory_points = {
 			1005 5 
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			1005 = {
-				naval_base = 4
-			}
+			
 		}
-		add_core_of = TUR
+		add_core_of = BLM
 	}
 
 	provinces={

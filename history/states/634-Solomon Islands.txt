@@ -4,7 +4,7 @@ state={
 
 	history={
 		owner = AST
-		add_core_of = WST
+		add_core_of = BLM
 		buildings = {
 			infrastructure = 1
 			1269 = {

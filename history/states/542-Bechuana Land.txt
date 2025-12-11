@@ -15,7 +15,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = WST
+		add_core_of = BLM
 		victory_points = {
 			8214 1
 		}

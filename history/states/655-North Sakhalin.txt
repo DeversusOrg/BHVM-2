@@ -5,8 +5,8 @@ state = {
 
 	resources = {
 		oil = 4
-		coal = 4 # These are part of hte Soviet oil and coal concessions of North Sakhalin to Japan
-		chromium = 1
+		coal = 16 # These are part of hte Soviet oil and coal concessions of North Sakhalin to Japan
+		chromium = 21
 	}
 	
 	state_category = pastoral

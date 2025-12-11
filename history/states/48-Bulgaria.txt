@@ -6,6 +6,7 @@ state={
 	resources={
 		aluminium = 2
 		coal = 1 #initial distribution
+		steel = 18 #Pernik steel mine
 	}
 	
 	

@@ -7,7 +7,7 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = WST #Used to be PRU but should become theirs through the Peruvian-Ecuadorian War
+		owner = BLM #Used to be PRU but should become theirs through the Peruvian-Ecuadorian War
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -18,8 +18,8 @@ state = {
 			13289 2
 		}
 
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = BLM
+		add_core_of = BLM
 	}
 
 	provinces = {

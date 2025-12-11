@@ -13,9 +13,6 @@ state = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = WST
-		add_core_of = WST
-
 		buildings = {
 
 			infrastructure = 4

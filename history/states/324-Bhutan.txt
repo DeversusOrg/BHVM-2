@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			8010 3 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 	}
 
 	provinces={

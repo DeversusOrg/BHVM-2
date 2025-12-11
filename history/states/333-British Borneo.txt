@@ -16,8 +16,8 @@ state = {
 	history = {
 
 		owner = ENG
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = BLM
+		add_core_of = BLM
 
 		victory_points = {
 			1208 3 # Kuching

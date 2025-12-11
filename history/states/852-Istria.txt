@@ -7,7 +7,7 @@ state = {
 	state_category = town 
 
 	resources = {
-		coal = 2 #initial distribution
+		coal = 4 #initial distribution
 	}
 
 	history = {
@@ -24,8 +24,8 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = YUG
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = BLM
+		add_core_of = BLM
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

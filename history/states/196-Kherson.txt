@@ -25,8 +25,7 @@ state = {
 			air_base = 3
 
 			# Kakhovka Dam
-			#737 = { dam = 1 }
-			
+			737 = { dam = 1 }
 		}
 		
 	}

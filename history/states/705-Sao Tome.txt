@@ -5,7 +5,7 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 1
 			13015 ={

@@ -14,7 +14,7 @@ state={
 			9508 10
 		}
 		add_core_of = POL
-
+		add_core_of = ISR
 		1939.1.1 = {
 			buildings = {
 				air_base = 3

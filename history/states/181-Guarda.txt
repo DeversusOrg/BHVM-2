@@ -1,7 +1,7 @@
 state = {
 	id = 181
 	name = "STATE_181"
-	manpower = 964700
+	manpower = 1
 	
 	state_category = town
 	
@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = WST
-		add_core_of = POR
+		owner = BLM
+		add_core_of = BLM
 
 		victory_points = {
 			9787 1 # Viseu
@@ -24,9 +24,6 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-
 			# Cabril Dam
 			#11885 = { dam = 1 }
 			

@@ -19,13 +19,13 @@ state = {
 			867 1
 		}
 		add_core_of = YUG
-		add_core_of = WST
+		add_core_of = BLM
 	}
 
 	provinces = {
 		833 867 11856
 	} 
-	manpower = 343550
+	manpower = 293550
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 

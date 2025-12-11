@@ -14,7 +14,7 @@ state = {
 	history = {
 
 		owner = FRA
-		add_core_of = WST
+		add_core_of = BLM
 
 		victory_points = {
 			7069 10 # Casablanca

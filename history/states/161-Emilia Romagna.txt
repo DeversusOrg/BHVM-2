@@ -30,7 +30,7 @@ state = {
 			}
 		}
 		add_core_of = ITA
-		add_core_of = WST
+		add_core_of = BLM
 	}
 
 	provinces = {

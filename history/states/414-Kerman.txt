@@ -7,14 +7,14 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			10913 1 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 	}
 
 	provinces={

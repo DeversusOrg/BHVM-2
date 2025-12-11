@@ -7,7 +7,7 @@ state = {
 
 	history = { 
 
-		owner = WST
+		owner = BLM
 		add_core_of = CBV
 
 		victory_points = {

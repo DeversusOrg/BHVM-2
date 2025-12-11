@@ -2,7 +2,7 @@
 state={
 	id=340
 	name="STATE_340"
-	manpower = 1077853
+	manpower = 1
 	resources={
 		chromium=39 # was: 54
 	}
@@ -10,11 +10,9 @@ state={
 	state_category = town
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			dockyard = 1
+			
 		}
 		
 		victory_points = {
@@ -23,7 +21,7 @@ state={
 		victory_points = {
 			9799 5
 		}
-		add_core_of = TUR
+		add_core_of = BLM
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
 			set_demilitarized_zone = yes

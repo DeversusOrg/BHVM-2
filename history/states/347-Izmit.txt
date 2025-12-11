@@ -2,7 +2,7 @@
 state={
 	id=347
 	name="STATE_347"
-	manpower = 807660
+	manpower = 1
 	resources={
 		chromium=19 # was: 26
 		steel = 9
@@ -12,7 +12,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = WST
+		owner = BLM
 		victory_points = {
 			11811 1 
 		}
@@ -20,13 +20,9 @@ state={
 			904 1 
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			904 = {
-				naval_base = 2
-			}
+			
 		}
-		add_core_of = TUR
+		add_core_of = BLM
 	}
 
 	provinces={

@@ -2,7 +2,7 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 1
 			2115 = {
@@ -12,7 +12,7 @@ state={
 		victory_points = {
 			2115 1 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 	}
 	provinces={
 		2115 

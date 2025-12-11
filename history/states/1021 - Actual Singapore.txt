@@ -14,7 +14,7 @@ state = {
 	history = {
 
 		owner = ENG
-		add_core_of = WST
+		add_core_of = BLM
 		add_core_of = SNG
 
 		victory_points = {

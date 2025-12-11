@@ -9,8 +9,8 @@ state = {
 
 		owner = POL
 		add_core_of = POL
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = BLM
+		add_core_of = BLM
 		add_claim_by = PRE
 
 		victory_points = {

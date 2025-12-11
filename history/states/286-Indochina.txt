@@ -12,8 +12,8 @@ state={
 	history={
 		
 		owner = FRA
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = BLM
+		add_core_of = BLM
 
 		victory_points = {
 			4401 3 # Saigon

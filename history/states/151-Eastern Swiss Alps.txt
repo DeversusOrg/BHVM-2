@@ -8,13 +8,13 @@ state={
 		aluminium=15 # was: 24
 	}
 	history={
-		owner = WST
+		owner = NONE
 		victory_points = { 658 1 }
 		buildings = {
 			infrastructure = 1 
 			industrial_complex = 1
 		}
-		add_core_of = WST
+		add_core_of = NONE
 	}
 	provinces={
 		658 661 3660 3662 11601 

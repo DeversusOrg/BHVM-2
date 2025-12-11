@@ -539,7 +539,7 @@ Check in next month for a big massive update.
 CS:6db3
 
 Updated the mod to 1.17 DLC NCNS (No Compromise No Surrender)
-TEMPORARLY!! Added in the WST tag , and everything associated with the BLM tag has been moved to WST , this is because of the new dlc for resources and other map stuff like the china wall etc.
+TEMPORARLY!! Added in the WST tag , and everything associated with the BLM tag has been moved to BLM , this is because of the new dlc for resources and other map stuff like the china wall etc.
 Fixed some repeating errors with the special projects
 Nerfed CAS org and hp damage by ~40% , since the new dlc made CAS broken af by that i mean paradox TRIPLED THE DAMAGE CAS DOES 
 Added in mastery gain weekly 4 for every folder , ONLY WHEN YOURE NOT AT WAR AND HAVE THE PEACE TIME TRAINING WITH XP 

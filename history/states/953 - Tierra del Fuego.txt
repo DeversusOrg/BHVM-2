@@ -11,10 +11,10 @@ state = {
 
 	history = {
 
-		owner = WST
-		add_core_of = WST
+		owner = BLM
+		add_core_of = BLM
 		add_claim_by = CHL
-		add_core_of = WST
+		add_core_of = BLM
 
 		buildings = {
 			infrastructure = 0

@@ -10,8 +10,8 @@ state = {
 
 	history = {
 
-		owner = WST
-		add_core_of = WST
+		owner = BLM
+		add_core_of = BLM
 
 		victory_points = {
 			8117 3 

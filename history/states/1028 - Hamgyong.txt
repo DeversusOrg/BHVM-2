@@ -13,7 +13,7 @@ state = {
 	history = {
 
 		owner = JAP
-		add_core_of = KOR
+		add_core_of = BLM
 
 		buildings = {
 			infrastructure = 2

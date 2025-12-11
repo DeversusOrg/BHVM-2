@@ -5,14 +5,14 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			10966 1 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 
 	}
 

@@ -5,8 +5,8 @@ state={
 		4968 5058 10892 10923 12749 
 	}
 	history = {
-		owner = WST
-		add_core_of = WST
+		owner = BLM
+		add_core_of = BLM
 	}
 	manpower=5000
 	state_category = pastoral

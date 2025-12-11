@@ -2,7 +2,7 @@ state = {
 	id = 1022
 	name = "STATE_1022"
 
-	manpower = 8600
+	manpower = 1
 
 	impassable = yes 
 	force_link_ownership_to = 334 # Kalimantan
@@ -14,7 +14,7 @@ state = {
 
 	history = {
 
-		owner = HOL
+		owner = NONE
 		add_core_of = INS
 
 		buildings = {

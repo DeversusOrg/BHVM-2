@@ -11,7 +11,7 @@ state={
 	state_category = city
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -30,7 +30,7 @@ state={
 		victory_points = {
 			10837 10 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 	}
 
 	provinces={

@@ -11033,7 +11033,7 @@ focus_tree = {
 		available = {
 
 			846 = {
-				is_owned_and_controlled_by = SWI
+				is_owned_and_controlled_by = BLM
 			}
 			is_subject = no
 			159 = { 
@@ -11047,13 +11047,13 @@ focus_tree = {
 			}
 		}
 
-		will_lead_to_war_with = SWI
+		will_lead_to_war_with = BLM
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = { 
 
-			SWI = {
+			BLM = {
 				country_event = {
 				    id = BBA_italy_interaction_events.1
 				    days = 2

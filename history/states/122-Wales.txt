@@ -27,6 +27,8 @@ state= {
 			377 = {
 				naval_base = 3
 			}
+			#Craig coch dam
+			311 = { dam = 1 }
 		}
 		add_core_of = ENG
 		

@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = WST
-		add_core_of = WST
+		owner = BLM
+		add_core_of = BLM
 		
 		add_claim_by = PAR
 

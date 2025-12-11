@@ -4,7 +4,7 @@ oob = "EMPTY_OOB"
 set_research_slots = 0
 add_ideas = BLM_ai
 add_ideas = ai_idea
-#WST BULGARIAN LIVES MATER!
+#BLM BULGARIAN LIVES MATER!
 set_technology = {
 	infantry_weapons = 0
 }
@@ -13,43 +13,43 @@ if = {
 	limit = {
         has_game_rule = { rule = auto_tech_rush option = on }
     }
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.1 days = 57 } #at1
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.2 days = 57 } #ar1
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.3 days = 57 } #aa1
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.4 days = 330 } #mech
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.5 days = 740 } #gun2
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.6 days = 810 } #aa2
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.7 days = 810 } #ar2
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.8 days = 810 } #at2
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.9 days = 1090 } #ampb
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.10 days = 1520 } #at3
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.11 days = 1520 } #aa3
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.12 days = 1520 } #ar3
 	}
-	WST = {
+	BLM = {
 		country_event = { id = tech_rush.13 days = 1510 } #gun3
 	}
 }

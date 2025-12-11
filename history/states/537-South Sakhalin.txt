@@ -3,8 +3,9 @@ state = {
 	name = "STATE_537"
 	manpower = 331943 # was 295196
 	resources = {
-		#oil = 3 # was: 4 - The only oil on Sakhalin seem to have been in the northern part, held by Soviet
-		coal = 2 #initial distribution
+		oil = 12
+		coal = 5 
+		chromium = 3
 	}
 	
 	state_category = rural

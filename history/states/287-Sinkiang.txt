@@ -4,36 +4,19 @@ state = {
 
 	history = {
 
-		owner = WST
+		owner = NONE
 		
-		add_core_of = WST
-		add_core_of = PRC
-
 		buildings = {
 			infrastructure = 0
 		}
 
-		1936.1.1 = {
-
-		}	
-
-		1938.10.25 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender" 
-				}
-				remove_core_of = KHM
-			}	
-			owner = CHI
-			controller = SIK		
-		}	
 	}
 
 
 	provinces={
 		5016 7790 8042 8086 10885 12864 
 	}
-	manpower = 28000
+	manpower = 1
 	buildings_max_level_factor = 1.000
 	state_category = wasteland
 	impassable = yes 

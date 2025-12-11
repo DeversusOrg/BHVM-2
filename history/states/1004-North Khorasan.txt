@@ -6,11 +6,11 @@ state={
 	state_category = rural
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = WST
+		add_core_of = BLM
 	}
 	provinces={
 		7573 1521 10351

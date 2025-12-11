@@ -12,11 +12,11 @@ state={
 		7448 7584 10896 12248 12877 
 	}
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 1 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 		
 		victory_points = {
 			12248 1

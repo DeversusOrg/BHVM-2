@@ -8,7 +8,7 @@ state={
 	state_category = town
 
 	history={
-		owner = WST
+		owner = BLM
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -20,7 +20,7 @@ state={
 			}
 
 		}
-		add_core_of = WST
+		add_core_of = BLM
 		victory_points = {
 			12738 3
 		}

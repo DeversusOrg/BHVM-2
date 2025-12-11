@@ -13,7 +13,7 @@ state={
 
 		owner = RAJ
 		add_core_of = RAJ
-		add_core_of = WST
+		add_core_of = BLM
 
 		buildings = {
 			infrastructure = 1

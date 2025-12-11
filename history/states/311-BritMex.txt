@@ -7,7 +7,7 @@ state=
 	state_category = pastoral
 	history=
 	{
-		add_core_of = WST
+		add_core_of = BLM
 		owner = ENG
 		victory_points = {
 			2077 1 
