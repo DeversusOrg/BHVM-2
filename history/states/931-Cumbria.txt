@@ -14,6 +14,7 @@ state = {
 		victory_points = {
 			11332 3 #Carlisle
 		}
+		11332 = { dam = 1 }
 		buildings = {
 			infrastructure = 3 #was: 6
 		}

@@ -8,7 +8,7 @@ state={
 		owner = BLM
 		add_core_of = BLM
 	}
-	manpower=69
+	manpower=69 #Nice
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

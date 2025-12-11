@@ -5,7 +5,9 @@ state={
 	manpower = 3694611
 	
 	state_category = rural
-	
+	resources = {
+		rubber = 1
+	}
 	history={
 		add_core_of = MAD
 		owner = FRA
