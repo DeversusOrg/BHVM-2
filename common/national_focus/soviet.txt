@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -4051,12 +4051,37 @@ focus = {
 		available = {
 			if = {
 				limit = {
-					has_dlc = "No Step Back"
+					has_game_rule = {
+						rule = sov_tech_tank_focus
+						option = basic
+					}
 				}
-				has_tech = basic_medium_tank_chassis
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = basic_medium_tank_chassis
+				}
+				else = {
+					has_tech = basic_medium_tank
+				}
 			}
-			else = {
-				has_tech = basic_medium_tank
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_tech_tank_focus
+						option = imrpoved
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = improved_medium_tank_chassis
+				}
+				else = {
+					has_tech = improved_medium_tank
+				}
 			}
 		}
 		

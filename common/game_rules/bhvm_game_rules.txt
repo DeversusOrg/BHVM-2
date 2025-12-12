@@ -942,9 +942,9 @@ sov_tech_tank_focus = {
 		desc = "The Soviets need to research basic med tank for the focus(Recommmended)"
 	}
 	option = {
-		name = advanced
-		text = "PAdvanced med research needed"
-		desc = "The Soviets need to research advanced med tank for the focus(Not Recommmended)"
+		name = improved
+		text = "PImproved med research needed"
+		desc = "The Soviets need to research improved med tank for the focus(Not Recommmended)"
 	}
 }
 juggle_slot = {
