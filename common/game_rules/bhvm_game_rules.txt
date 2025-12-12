@@ -717,6 +717,21 @@ finish_support_comp = {
 		desc = "Finland DOES NOT have its companies avaible(Not Recommmended)"
 	}
 }
+finish_production = {
+	name = "Finish Production"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_industry"
+	option = {
+		name = ger_gun
+		text = "GGerman Lend Lease for Gun"
+		desc = "It progresivly gets better as more time passes"
+	}
+	option = {
+		name = off
+		text = "RGermany doesn't get a button for Gun lend lease"
+		desc = "GG no gun factory ic"
+	}
+}
 spanish_production = {
 	name = "Spanish Production"
 	group = "BHVM game rules"

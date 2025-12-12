@@ -804,6 +804,166 @@ operations = {
             activate_mission = GER_recieving_ll_mech_1a    
         }
     }
+    GER_gun_delivery_FIN = {
+	    icon = GFX_decision_generic_industry
+		#fire_only_once = yes
+
+		available = {
+			original_tag = GER
+			FIN = { is_ai = yes }
+			date > 1939.12.01
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_FIN
+                    has_country_flag = GER_started_ll_gun
+                }
+            }
+            has_game_rule = {
+                rule = finish_production
+                option = ger_gun
+            }
+		}
+		visible = {
+			original_tag = GER
+			FIN = { is_ai = yes }
+			is_ai = NO
+            NOT = {
+                OR = {
+                    has_country_flag = annexed_FIN
+                    has_country_flag = GER_started_ll_gun
+                }
+            }
+			country_exists = FIN
+            has_game_rule = {
+                rule = finish_production
+                option = ger_gun
+            }
+		}
+		complete_effect = {
+            activate_mission = GER_recieving_ll_gun_1a
+            set_country_flag = GER_started_ll_gun
+			FIN = {	
+				set_technology = {
+				    advanced_infantry_weapons = 1
+				}
+                create_equipment_variant = {
+                    name = "Gun 3"
+                    type = infantry_equipment_3
+                    parent_version = 0
+                }
+			}
+		}
+	}
+    GER_close_gun_LL = {
+		icon = GFX_decision_generic_industry
+
+        available = {
+			
+		}
+
+		visible = {	
+            original_tag = GER
+            FIN = { is_ai = yes }
+            country_exists = FIN
+            has_country_flag = GER_started_ll_gun
+		}
+
+		complete_effect = {
+			clr_country_flag = GER_started_ll_gun
+		}
+	}
+    GER_recieving_ll_gun_1a = {
+        allowed = {  
+            original_tag = GER
+        }
+        available = {
+            NOT = { has_country_flag = GER_started_ll_gun }
+        }
+        icon = generic_army_support
+        is_good = yes
+        activation = { always = no }
+        days_mission_timeout = 30
+    
+        timeout_effect = {
+            FIN = {
+                else_if = {
+                    limit = { date > 1941.12.31 }
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 25000 }
+                }
+                else_if = {
+                    limit = { date > 1940.12.31 }
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 19000 }
+                }
+                else = {
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 15000 }
+                }
+            }
+            else_if = {
+                limit = { date > 1941.12.31 }
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 25000 producer = FIN } }
+            }
+            else_if = {
+                limit = { date > 1940.12.31 }
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 19000 producer = FIN } }
+            }
+            else_if = {
+                limit = { date > 1939.12.31 }
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 15000 producer = FIN } }
+            }
+            else = {
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 10000 producer = FIN } }
+            }
+            activate_mission = GER_recieving_ll_gun_2a    
+        }
+    }
+    GER_recieving_ll_gun_2a = {
+        allowed = {  
+            original_tag = GER
+        }
+        available = {
+            NOT = { has_country_flag = GER_started_ll_gun }
+        }
+        icon = generic_army_support
+        is_good = yes
+        activation = { always = no }
+        days_mission_timeout = 30
+    
+        timeout_effect = {
+            FIN = {
+                else_if = {
+                    limit = { date > 1941.12.31 }
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 25000 }
+                }
+                else_if = {
+                    limit = { date > 1940.12.31 }
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 19000 }
+                }
+                else_if = {
+                    limit = { date > 1939.12.31 }
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 15000 }
+                }
+                else = {
+                    add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 10000 }
+                }
+            }
+            else_if = {
+                limit = { date > 1941.12.31 }
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 25000 producer = FIN } }
+            }
+            else_if = {
+                limit = { date > 1940.12.31 }
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 19000 producer = FIN } }
+            }
+            else_if = {
+                limit = { date > 1939.12.31 }
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 15000 producer = FIN } }
+            }
+            else = {
+                GER = { add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 10000 producer = FIN } }
+            }
+            activate_mission = GER_recieving_ll_gun_1a    
+        }
+    }
 	GER_annex_FIN = {
 		targets = {
             FIN
@@ -814,15 +974,22 @@ operations = {
 			original_tag = GER
 			FIN = { is_ai = yes }
 			date > 1939.01.01
+            NOT = {
+                has_country_flag = GER_started_ll_gun
+            }
 		}
 		visible = {
 			original_tag = GER
 			FIN = { is_ai = yes }
 			is_ai = NO
 			country_exists = FIN
+            NOT = {
+                has_country_flag = GER_started_ll_gun
+            }
 		}
 		complete_effect = {
 			GER = { add_to_faction = FIN }
+            set_country_flag = annexed_FIN
 			FIN = {
 				add_ideas = SPR_GER_ai
 			}
