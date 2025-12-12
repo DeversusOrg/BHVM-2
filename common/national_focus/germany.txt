@@ -11155,6 +11155,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		available = {
+			NOT = {
+				has_game_rule = {
+					rule = ger_balkanizing
+					option = disabled
+				}
+			}
 			is_subject = no
 			controls_state = 4
 			controls_state = 152
