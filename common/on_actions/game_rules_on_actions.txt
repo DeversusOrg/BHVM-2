@@ -1397,6 +1397,7 @@ on_actions = {
 				741 = { add_dynamic_modifier = { modifier = FRA_anti_noob }}
 				286 = { add_dynamic_modifier = { modifier = FRA_anti_noob }}
 				728 = { add_dynamic_modifier = { modifier = FRA_anti_noob }}
+				1017 = { add_dynamic_modifier = { modifier = FRA_anti_noob }}
 				
 				#MOLDOVA
 				80 = { add_dynamic_modifier = { modifier = FRA_anti_noob }}

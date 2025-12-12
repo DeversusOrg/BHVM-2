@@ -1785,6 +1785,7 @@ political_actions = {
             741 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
             286 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
             728 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+            1017 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
         }
     }
     FRA_get_BEL_colonies = {

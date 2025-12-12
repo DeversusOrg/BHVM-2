@@ -317,6 +317,19 @@ country_event = {
 					}
 				}
 				transfer_state = 728
+			}if = {
+				limit = {
+					1017 = {
+						CONTROLLER = {
+							OR = {
+								original_tag = FRA
+								is_subject_of = FRA
+								is_subject_of = VIC
+							}
+						}
+					}
+				}
+				transfer_state = 1017
 			}
 			add_named_threat = { threat = 3 name = france.1.t }
 		}
@@ -338,7 +351,7 @@ country_event = {
 			type = take_state
 			target = FROM
 			generator = {
-				286 741 670 671 728
+				286 741 670 671 728 1017
 			}
 		}
 		hidden_effect = {

@@ -54,6 +54,7 @@ political_actions = {
 				transfer_state = 673
 				transfer_state = 728
 				transfer_state = 741
+				transfer_state = 1017
 			}
 		}
 	}
