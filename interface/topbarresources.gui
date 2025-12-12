@@ -210,4 +210,34 @@ guiTypes = {
 			fixedsize = yes
 		}			
 	}
+	containerWindowType = {
+		name = "coal"
+		position = { x= 1365 y = 3}
+		size = { width=56 height=30 }
+		clipping = no
+		
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_mini_tooltip"
+		}    
+		iconType = {
+			name = "coal_icon"
+			position = { x=4 y=2 }
+			spriteType = "GFX_resources_strip"
+			frame = 7
+			scale=0.8
+			alwaystransparent=yes
+		}	
+		
+		instantTextboxType = {
+			name = "value"
+			position = { x= 24 y = 5 }
+			font = "hoi_18mbs"
+			text= "[?resource@coal|+0]"
+			maxWidth = 40
+			maxHeight = 24
+			format = left
+			fixedsize = yes
+		}			
+	}
 }
