@@ -17,6 +17,7 @@ country_event = {
 
 		if = {
 			limit = {
+				has_rule = can_create_collaboration_government
 				has_core_occupation_modifier = {
 					occupied_country_tag = FROM.FROM
 					modifier = compliance_80

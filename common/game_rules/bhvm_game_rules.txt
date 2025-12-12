@@ -204,18 +204,18 @@ killable_fin = {
 	}
 }
 no_collabs = {
-	name = "Banned collabs"
+	name = "Collaboration Governments Countries"
 	group = "BHVM game rules"
 	icon = "GFX_decision_revolt"
 	default = {
-		name = on
-		text = "RON"
-		desc = "You don't get to decide to make a collab gov , I do.(Recommmended)"
-	}
-	option = {
 		name = off
 		text = "ROff"
-		desc = "Heres your stupid collab"
+		desc = "You CAN NOT create collaboration governments (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You CAN create collaboration governments"
 	}
 }   
 sov_boost = {
