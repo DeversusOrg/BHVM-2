@@ -801,6 +801,36 @@ anti_troll = {
 		desc = "You won't get efficiency when you fuck up your production line(Not Recommmended)"
 	}
 }
+ger_focus_datelock = {
+	name = "German Focus Time checks"
+	group = "BHVM game rules"
+	icon = "GFX_decision_category_generic_fascism"
+	default = {
+		name = enabled
+		text = "RDate locks ON"
+		desc = "Germany CANNOT do certain focuses before a certain time in the game(Not Recommmended)"
+	}
+	option = {
+		name = disabled
+		text = "YDate locks OFF"
+		desc = "Germany CAN DO certain focuses before a certain time in the game(Recommmended)"
+	}
+}
+ger_balkanizing = {
+	name = "German Focuses for Balkans"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_confiscation"
+	default = {
+		name = enabled
+		text = "RCAN DO them"
+		desc = "Germany CAN do balkan participation focuses(Not Recommmended)"
+	}
+	option = {
+		name = disabled
+		text = "YCAN NOT"
+		desc = "Germany CAN NOT do balkan participation focuses(Recommmended)"
+	}
+}
 ger_eco = {
 	name = "Germany eco paths allownonce "
 	group = "BHVM game rules"
@@ -902,6 +932,21 @@ sov_purges = {
 		desc = "There is no chance that top SOV will get purged(Not balanced)"
 	}
 }
+sov_tech_tank_focus = {
+	name = "Soviet Superior War machines tech"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_assassination"
+	default = {
+		name = basic
+		text = "GBasic med research needed"
+		desc = "The Soviets need to research basic med tank for the focus(Recommmended)"
+	}
+	option = {
+		name = advanced
+		text = "PAdvanced med research needed"
+		desc = "The Soviets need to research advanced med tank for the focus(Not Recommmended)"
+	}
+}
 juggle_slot = {
 	name = "Juggling esport"
 	group = "BHVM game rules"
@@ -997,6 +1042,36 @@ ger_pupets = {
 		name = compliance
 		text = "RCompliance pupets"
 		desc = "You get factories and compliance in the benelux"
+	}
+}
+collab_compliance = {
+	name = "Collab Compliance"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_nationalism"
+	default = {
+		name = fixed
+		text = "G35% Fixed"
+		desc = "Collabs always give 35% compliance (Recommmended)"
+	}
+	option = {
+		name = random
+		text = "RRandom"
+		desc = "Collabs give random compliance like vanilla (Not Recommmended)"
+	}
+}
+sov_collab_limit = {
+	name = "SOV Collab Limit"
+	group = "BHVM game rules"
+	icon = "GFX_decision_unknown"
+	default = {
+		name = one_only
+		text = "ROne Only"
+		desc = "After completing a collab on SOV, no more collabs can be completed on SOV (Recommmended)"
+	}
+	option = {
+		name = unlimited
+		text = "GUnlimited"
+		desc = "Multiple collabs can be completed on SOV (Not Recommmended)"
 	}
 }
 rb_vps_system = {
@@ -1267,35 +1342,5 @@ peace_training_xp= {
 		name = on
 		text = "ROn"
 		desc = "You gain daily xp with peace time training(Recommmended)"
-	}
-}
-collab_compliance = {
-	name = "Collab Compliance"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_formable_nations"
-	default = {
-		name = fixed
-		text = "G35% Fixed"
-		desc = "Collabs always give 35% compliance (Recommmended)"
-	}
-	option = {
-		name = random
-		text = "RRandom"
-		desc = "Collabs give random compliance like vanilla (Not Recommmended)"
-	}
-}
-sov_collab_limit = {
-	name = "SOV Collab Limit"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_formable_nations"
-	default = {
-		name = one_only
-		text = "ROne Only"
-		desc = "After completing a collab on SOV, no more collabs can be completed on SOV (Recommmended)"
-	}
-	option = {
-		name = unlimited
-		text = "GUnlimited"
-		desc = "Multiple collabs can be completed on SOV (Not Recommmended)"
 	}
 }
