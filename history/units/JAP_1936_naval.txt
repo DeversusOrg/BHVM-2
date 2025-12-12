@@ -267,8 +267,8 @@ units = {
             location = 9950
 			ship = { name = "Ise" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }		
 			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
-			ship = { name = "Mogami" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class"} } }
-			ship = { name = "Mikuma" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class"} } }
+			ship = { name = "Mogami" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class"} } }
+			ship = { name = "Mikuma" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class"} } }
 			ship = { name = "Furutaka" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
 			ship = { name = "Kako" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
 			ship = { name = "Oi" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
