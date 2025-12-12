@@ -1269,3 +1269,33 @@ peace_training_xp= {
 		desc = "You gain daily xp with peace time training(Recommmended)"
 	}
 }
+collab_compliance = {
+	name = "Collab Compliance"
+	group = "BHVM game rules"
+	icon = "GFX_decision_category_generic_formable_nations"
+	default = {
+		name = fixed
+		text = "G35% Fixed"
+		desc = "Collabs always give 35% compliance (Recommmended)"
+	}
+	option = {
+		name = random
+		text = "RRandom"
+		desc = "Collabs give random compliance like vanilla (Not Recommmended)"
+	}
+}
+sov_collab_limit = {
+	name = "SOV Collab Limit"
+	group = "BHVM game rules"
+	icon = "GFX_decision_category_generic_formable_nations"
+	default = {
+		name = one_only
+		text = "ROne Only"
+		desc = "After completing a collab on SOV, no more collabs can be completed on SOV (Recommmended)"
+	}
+	option = {
+		name = unlimited
+		text = "GUnlimited"
+		desc = "Multiple collabs can be completed on SOV (Not Recommmended)"
+	}
+}
