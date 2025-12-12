@@ -822,12 +822,12 @@ ger_balkanizing = {
 	icon = "GFX_decision_generic_confiscation"
 	default = {
 		name = enabled
-		text = "RCAN DO them"
+		text = "GCAN DO them"
 		desc = "Germany CAN do balkan participation focuses(Not Recommmended)"
 	}
 	option = {
 		name = disabled
-		text = "YCAN NOT"
+		text = "RCAN NOT"
 		desc = "Germany CAN NOT do balkan participation focuses(Recommmended)"
 	}
 }
@@ -851,6 +851,26 @@ ger_eco = {
 		desc = "Germany cannot do right side of the eco tree(Not Recommmended)"
 	}
 }
+ger_totaler_krieg_law = {
+	name = "Germanan totalen krieg settings"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_fundraising"
+	option = {
+		name = disabled
+		text = "RDisabled "
+		desc = "Germany CAN NOT Totalen Krieg(Not Recommmended)"
+	}
+	option = {
+		name = coal_hungry
+		text = "BCoal Needy"
+		desc = "Germany CAN DO IT BUT it will need coal(Not that Recommmended)"
+	}
+	default = {
+		name = coal_redundant
+		text = "GCoal Redundant"
+		desc = "Germany CAN DO IT AND it does NOT need coal extra(Recommmended)"
+	}
+}
 ger_mefo = {
 	name = "Germany can cancel MEFO bills"
 	group = "BHVM game rules"
@@ -864,6 +884,26 @@ ger_mefo = {
 		name = no
 		text = "RNope"
 		desc = "Germany CANNOT cancel MEFO bills(Not Recommmended)"
+	}
+}
+ger_totaler_krieg_law = {
+	name = "Germany Totaler Krieg Law"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_industry"
+	option = {
+		name = disabled
+		text = "RDisabled"
+		desc = "Germany CANNOT do the Totaler Krieg focus(Not Recommmended)"
+	}
+	option = {
+		name = coal_hungry
+		text = "YCoal Hungry"
+		desc = "Germany CAN do it and gets extra coal consumption(Not Recommmended)"
+	}
+	default = {
+		name = redundant
+		text = "GCoal Redundant"
+		desc = "Germany CAN do it and does NOT need coal extra(Recommmended)"
 	}
 }
 pregrinds_4_factions = {

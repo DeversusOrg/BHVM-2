@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -2851,6 +2851,12 @@ focus_tree = {
 		relative_position_id = GER_armament_rationalization
 		cost = 5
 		available = {
+			NOT = {
+				has_game_rule = {
+					rule = ger_totaler_krieg_law
+					option = disabled
+				}
+			}
 			has_war_with_major = yes
 			OR = {
 				has_war_support > 0.89
@@ -2874,7 +2880,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = GER_gain_totaler_krieg_remove_total_mob_tt
-			add_ideas = totaler_krieg_economy
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ger_totaler_krieg_law
+						option = coal_hungry
+					}
+				}
+				add_ideas = totaler_krieg_economy_coal
+			}
+			else = {
+				add_ideas = totaler_krieg_economy
+			}
 
 			if = {
 				limit = {
