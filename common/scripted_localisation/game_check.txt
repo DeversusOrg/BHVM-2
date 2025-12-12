@@ -1569,12 +1569,403 @@ defined_text = {
         localization_key = "check_gamerules_off"
     }
 }
+defined_text = {
+    name = GetSovNoTradebacksStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sov_no_tradebacks
+                option = on
+            }
+        }
+        localization_key = "check_gamerules_on"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sov_no_tradebacks
+                option = off
+            }
+        }
+        localization_key = "check_gamerules_off"
+    }
+}
 
+defined_text = {
+    name = GetVichyFranceStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = vichy_france
+                option = forced
+            }
+        }
+        localization_key = "check_gamerules_forced"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = vichy_france
+                option = banned
+            }
+        }
+        localization_key = "check_gamerules_banned"
+    }
+}
 
+defined_text = {
+    name = GetFinishProductionStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = finish_production
+                option = ger_gun
+            }
+        }
+        localization_key = "check_gamerules_ger_gun"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = finish_production
+                option = off
+            }
+        }
+        localization_key = "check_gamerules_off"
+    }
+}
 
+defined_text = {
+    name = GetGerFocusDatelockStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_focus_datelock
+                option = enabled
+            }
+        }
+        localization_key = "check_gamerules_enabled"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_focus_datelock
+                option = disabled
+            }
+        }
+        localization_key = "check_gamerules_disabled"
+    }
+}
 
+defined_text = {
+    name = GetGerBalkanizingStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_balkanizing
+                option = enabled
+            }
+        }
+        localization_key = "check_gamerules_enabled"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_balkanizing
+                option = disabled
+            }
+        }
+        localization_key = "check_gamerules_disabled"
+    }
+}
 
+defined_text = {
+    name = GetGerEcoStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_eco
+                option = both
+            }
+        }
+        localization_key = "check_gamerules_both"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_eco
+                option = left_ban
+            }
+        }
+        localization_key = "check_gamerules_left_ban"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_eco
+                option = right_ban
+            }
+        }
+        localization_key = "check_gamerules_right_ban"
+    }
+}
 
+defined_text = {
+    name = GetGerMefoStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_mefo
+                option = yes
+            }
+        }
+        localization_key = "check_gamerules_yes"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_mefo
+                option = no
+            }
+        }
+        localization_key = "check_gamerules_no"
+    }
+}
 
+defined_text = {
+    name = GetGerTotalerKriegLawStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_totaler_krieg_law
+                option = disabled
+            }
+        }
+        localization_key = "check_gamerules_disabled"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_totaler_krieg_law
+                option = coal_hungry
+            }
+        }
+        localization_key = "check_gamerules_coal_hungry"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_totaler_krieg_law
+                option = redundant
+            }
+        }
+        localization_key = "check_gamerules_redundant"
+    }
+}
 
+defined_text = {
+    name = GetSovTechTankFocusStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sov_tech_tank_focus
+                option = basic
+            }
+        }
+        localization_key = "check_gamerules_basic"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sov_tech_tank_focus
+                option = improved
+            }
+        }
+        localization_key = "check_gamerules_improved"
+    }
+}
 
+defined_text = {
+    name = GetMech2TechStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = mech_2_tech
+                option = ALLOWED
+            }
+        }
+        localization_key = "check_gamerules_allowed"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = mech_2_tech
+                option = DISALLOWED
+            }
+        }
+        localization_key = "check_gamerules_disallowed"
+    }
+}
+
+defined_text = {
+    name = GetSfMultiplierStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sf_multiplier
+                option = capped
+            }
+        }
+        localization_key = "check_gamerules_capped"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sf_multiplier
+                option = unlimited
+            }
+        }
+        localization_key = "check_gamerules_unlimited"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sf_multiplier
+                option = uncapped
+            }
+        }
+        localization_key = "check_gamerules_uncapped"
+    }
+}
+
+defined_text = {
+    name = GetAcBrazilStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ac_brazil
+                option = ALLOWED
+            }
+        }
+        localization_key = "check_gamerules_allowed"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ac_brazil
+                option = DISALLOWED
+            }
+        }
+        localization_key = "check_gamerules_disallowed"
+    }
+}
+
+defined_text = {
+    name = GetGerSupremeLeaderStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_supreme_leader
+                option = ALLOWED
+            }
+        }
+        localization_key = "check_gamerules_allowed"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = ger_supreme_leader
+                option = DISALLOWED
+            }
+        }
+        localization_key = "check_gamerules_disallowed"
+    }
+}
+
+defined_text = {
+    name = GetCollabComplianceStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = collab_compliance
+                option = fixed
+            }
+        }
+        localization_key = "check_gamerules_fixed"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = collab_compliance
+                option = random
+            }
+        }
+        localization_key = "check_gamerules_random"
+    }
+}
+
+defined_text = {
+    name = GetSovCollabLimitStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sov_collab_limit
+                option = one_only
+            }
+        }
+        localization_key = "check_gamerules_one_only"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = sov_collab_limit
+                option = unlimited
+            }
+        }
+        localization_key = "check_gamerules_unlimited"
+    }
+}
+
+defined_text = {
+    name = GetPlayableMongoliaStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = playable_mongolia
+                option = yes
+            }
+        }
+        localization_key = "check_gamerules_yes"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = playable_mongolia
+                option = no
+            }
+        }
+        localization_key = "check_gamerules_no"
+    }
+}
+
+defined_text = {
+    name = GetPlayableIraqStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = playable_iraq
+                option = yes
+            }
+        }
+        localization_key = "check_gamerules_yes"
+    }
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = playable_iraq
+                option = no
+            }
+        }
+        localization_key = "check_gamerules_no"
+    }
+}
