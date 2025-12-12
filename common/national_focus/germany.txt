@@ -8227,7 +8227,15 @@ focus_tree = {
 		
 		available = {
 			is_subject = no
-			date > 1937.6.1
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = ger_focus_datelock
+						option = enabled
+					}	
+				}
+				date > 1937.6.1
+			}
 			NOT = { has_idea = rhineland_challenge_met }
 			OR = {
 				OR = {
@@ -10093,7 +10101,15 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		available = {
-			date > 1939.1.1
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = ger_focus_datelock
+						option = enabled
+					}	
+				}
+				date > 1939.1.1
+			}
 			is_subject = no	
 			has_completed_focus = GER_molotov_ribbentrop_pact
 			#Make custom trigger tooltip here
@@ -12288,7 +12304,15 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			date > 1941.3.1
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = ger_focus_datelock
+						option = enabled
+					}	
+				}
+				date > 1941.3.1
+			}
 		}
 
 		cancel = {
