@@ -61,33 +61,7 @@ on_actions = {
 			}
 		}
 	}
-	on_startup = { ### NO COLLABS COUNTRIES
-		effect = {
-			every_country = {
-				limit = {
-					is_playable_country = yes
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = no_collabs
-							option = off
-						}
-					}
-					set_rule = { can_create_collaboration_government = no }
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = no_collabs
-							option = on
-						}
-					}
-					set_rule = { can_create_collaboration_government = yes }
-				}
-			}
-		}
-	}
+	
 	on_monthly = {
 		effect = {
 			every_country = {
