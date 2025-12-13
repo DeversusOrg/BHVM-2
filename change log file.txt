@@ -577,3 +577,33 @@ Nikolay Berzarin +1 defense +2 logies
 Added coal to the host tool
 FIxed an issue with no asia/alt asia where soviets couldnt get foreign experts decision
 CS:9ae0
+
+Map otimization , removed useless junk that bloated the save game file as well re added old bhvm stuff to the map
+Added most of the old railways
+Doctrines have been updated to 1.17.3
+Faction stuff has been updated to 1.17.3
+Updated some old modifires to ger so now that they are actually working again
+A small modding skill issue regarding buildings slots has been fixed , affected states are london , texas , california , new york , tana tuva and beijing
+Some new defines have been added for mastery , max mastery gain monthly now is 50 , max mastery banking has been caped at 999 , atache shares 0.02 of mastery from x country , training should not be giving you mastery as a planned gameplay loop
+Cohesion planning has been buffed by 0.4 
+Reinfrocing division to the front has been buffed by 50%
+Japan mini faction stuff has been fixed and should work proper now
+Raj events have been updated to modern checksum
+Raj characters have been updated to modern checksum
+Removed a noob trap on japan on the 26th of febuary incident
+Several new game rules have been added such as:
+Fixed % of compliance from a collab goverment
+A collab goverment limit to soviets has been added (needs some testing from diff members of axis/asia)
+The collabaration goverment countries has been fixed , it works properly as before now
+German Focus Time checks is also a new game rule which either forces germany into doing a focus on a certain date after that or they can do it for free
+German Focuses for Balkans makes it so that the focus for the balkans is either locked behind a game rule so that they cant do it or they can
+Soviet Superior War machines tech makes it so that the focus either needs improved meduim tank chasis research or basic tank chasis
+Germanan totalen krieg settings makes it so that you can either disable totaler krieg or enable it with 2 different functions , 1 is normal like vanilla and the other is like before where it does NOT need any coal
+Finland gun factory simulation gives the option for germany to start a simulated lend lease from finland that gives them gun 3 - the numbers might need changing - only works with the game rule on and if finland is ai
+A small issue regarding the japan ships has been fixed
+Industry excav has been updated
+Japan mot has been made like vanilla
+All of indochina should go to japan and everything else associated with indochina should be fixed
+The australian focus for norther railway has been buffed signifacantly by lowering its time by 50% and adding 1 infra to 2 northern states
+Coal to the topbar has been added
+CS:cf25
