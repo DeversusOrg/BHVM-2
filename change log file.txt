@@ -607,3 +607,7 @@ All of indochina should go to japan and everything else associated with indochin
 The australian focus for norther railway has been buffed signifacantly by lowering its time by 50% and adding 1 infra to 2 northern states
 Coal to the topbar has been added
 CS:cf25
+
+QUICK HOTFIXED
+Finland simulation of production has been fixed
+CS:
