@@ -14,7 +14,7 @@ state = {
 			infrastructure = 3 #was: 5
 
 			# Tsimlyanskoye Hydroelectric Station
-			6490 = { dam = 1 }
+			6566 = { dam = 1 }
 			
 		}
 		
