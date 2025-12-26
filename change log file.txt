@@ -612,3 +612,22 @@ QUICK HOTFIXED
 Finland simulation of production has been fixed
 Fixed collabs again - used wrong functions for stuff but now they should work properly
 CS:eb31
+Future proofed the host tool - there will be somewhat of a big update next update for the host tool so i made some small changes to it so prepare it
+Economy changes:
+Poland now starts with 50 factories in total
+Czeks start with 37 in total
+Austria starts with 22 in total
+Denmark starts with 27 in total
+Norway starts with 31 in total
+Netherlands starts with 35 in total
+Belguim starts with 27 in total
+Czeks now have an empty focus tree so that they cannot cuck germany out of deterence or how ever it is spelled
+Added a new game rule that prevents the dismanteling of factions
+Fixed an issue with the simulated stuff for finland where when you annexed it after youve stoped the lend lease into either romania or hungary it gave all the guns (unconfirmed fyi)
+AI should NOT be able to click faction goals anymore
+German supply focus has been actually fixed
+Some small map fixes 
+Hungarian events that used to fire non stop might have been fixed - needs testing
+Duplicate game rules for totalen krieg have been deleted
+Decreased the size of game rules by like 3% late game
+CS:13cd
