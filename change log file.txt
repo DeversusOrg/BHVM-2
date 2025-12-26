@@ -610,4 +610,5 @@ CS:cf25
 
 QUICK HOTFIXED
 Finland simulation of production has been fixed
-CS:faf5
+Fixed collabs again - used wrong functions for stuff but now they should work properly
+CS:eb31

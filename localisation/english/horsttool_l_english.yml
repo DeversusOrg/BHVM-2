@@ -81,6 +81,8 @@
  ADDOIL:0 "§HAdd 5 Oil§!\nClicking this button will add Oil to [This.Owner.GetName].\n\n"
  ADDCHROMUIM:0 "§HAdd 5 Chromuim§!\nClicking this button will add Chromuim to [This.Owner.GetName].\n\n"
 
+ SET_CAPITAL_COUNTRY:0 "§HSet Capital§!\n\nMake §O[This.GetName]§! state the capital of §Y[From.Owner.GetNameDef]§!\n\n§HCURRENTLY UNSUPORTED§"
+
  WS_DECREASE:0 "Remove 5% War Support"
  WS_INCREASE:0 "Add 5% War Support"
  WS_AMOUNT:0 "War Support Amount"

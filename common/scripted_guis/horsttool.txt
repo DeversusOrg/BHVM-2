@@ -7,7 +7,7 @@ scripted_gui = {
 		visible = {
 			OR ={ 
 				AND = { BLM = { check_variable = { pause_blocker_variable = 2 } } NOT = { has_country_flag = host } }
-				AND = { BLM = { check_variable = { pause_blocker_variable = 3 } } } #COME BACK TO THIS WHEN YOU FIX THE MAP
+				AND = { BLM = { check_variable = { pause_blocker_variable = 3 } } }
 				AND = { check_variable = { pause_blocker_variable = 4 } NOT = { has_country_flag = host } }
 			}
 		}
@@ -687,7 +687,12 @@ st_country_powers = {
 				news_event = { id =  hosttool.28 } 
 			} 
 		}
-
+		set_capital_click = {
+			owner = {
+				limit = { owns_state = FROM.FROM }
+				set_capital = { state = FROM.FROM }
+			}
+		}
 		cheat1_click = { if = { limit = { Root = { has_country_flag = cheating } } set_variable = { Root.selected_cheat = 1 } ROOT = { clr_country_flag = cheating } } else = { ROOT = { set_country_flag = cheating } } }
 		cheat2_click = { set_variable = { Root.selected_cheat = 2 } ROOT = { clr_country_flag = cheating } }
 		cheat3_click = { set_variable = { Root.selected_cheat = 3 } ROOT = { clr_country_flag = cheating } }
@@ -816,6 +821,9 @@ st_country_powers = {
 		cheat31_text_visible = { ROOT = { has_country_flag = cheating } }
 		cheat32_visible = { ROOT = { has_country_flag = cheating } }
 		cheat32_text_visible = { ROOT = { has_country_flag = cheating } }
+		set_capital_click_enabled = {
+			always = yes
+		}
 		pause_blocker_option_visible = { }
 		pause_blocker_option_text_visible = { }
 		pause_blocker_all_visible = { 

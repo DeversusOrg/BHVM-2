@@ -63,9 +63,9 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "change_host_nation" 
-			position = {x=465 y=143}   
+			position = {x=490 y=245}   
 			spriteType = "GFX_change_host_nation"
-            scale = 1
+            scale = 0.6
 			pdx_tooltip = "CHANGE_HOST_NATION_TT"
 			#pdx_tooltip_delayed = "CHANGE_HOST_NATION_TT_DELAYED"
 		}
@@ -473,7 +473,7 @@ guiTypes = {
 # }
 		buttonType = {
 			name = "addtungsten"	
-			position = {x=150 y=80}
+			position = {x=172 y=80}
 			spriteType = "GFX_tungsten"
             scale=1.1
 			pdx_tooltip = "ADDTUNGSTEN"
@@ -481,7 +481,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addsteel"	
-			position = {x=180 y=80}
+			position = {x=200 y=82}
 			spriteType = "GFX_steel"
             scale=1.1
 			pdx_tooltip = "ADDSTEEL"
@@ -489,7 +489,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addchromuim"	
-			position = {x=148 y=110}
+			position = {x=170 y=107}
 			spriteType = "GFX_chromuim"
             scale=1.1
 			pdx_tooltip = "ADDCHROMUIM"
@@ -497,7 +497,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addaluminium"	
-			position = {x=180 y=110}
+			position = {x=200 y=110}
 			spriteType = "GFX_aluminium"
             scale=1.1
 			pdx_tooltip = "ADDALUMINIUM"
@@ -505,7 +505,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addrubber"	
-			position = {x=210 y=110}
+			position = {x=225 y=110}
 			spriteType = "GFX_rubber"
             scale=1.1
 			pdx_tooltip = "ADDRUBBER"
@@ -513,7 +513,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addoil"	
-			position = {x=210 y=80}
+			position = {x=225 y=80}
 			spriteType = "GFX_oil"
             scale=1.1
 			pdx_tooltip = "ADDOIL"
@@ -521,15 +521,15 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addcoal"	
-			position = {x=148 y=150}
+			position = {x=150 y=100}
 			spriteType = "GFX_coal"
-            scale=1.1
+            scale=1
 			pdx_tooltip = "ADDCOAL"
 			pdx_tooltip_delayed = "ADD_COAL_DELAYED"
 		}
 		buttonType = {
 			name = "award_states" 
-			position = {x=218 y=210}	
+			position = {x=150 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 13
 			pdx_tooltip = "TRANSFER_STATES"
@@ -538,7 +538,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "annex_country" 
-			position = {x=261 y=210}	
+			position = {x=193 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 2
 			pdx_tooltip = "ANNEX_COUNTRY"
@@ -547,7 +547,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "add_cores" 
-			position = {x=305 y=210}	
+			position = {x=236 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 12
 			pdx_tooltip = "ADD_CORES"
@@ -556,7 +556,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "remove_cores" 
-			position = {x=349 y=210}	
+			position = {x=279 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 7
 			pdx_tooltip = "REMOVE_CORES"
@@ -565,7 +565,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "add_cores_to_all_cores_of_selected_nation" 
-			position = {x=392 y=210}	
+			position = {x=322 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 12
 			pdx_tooltip = "ADD_CORES_TO_ALL_CORES_SELECTED_NATION"
@@ -574,7 +574,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "puppet_country" 
-			position = {x=436 y=210}	
+			position = {x=365 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 5
 			pdx_tooltip = "PUPPET_COUNTRY"
@@ -583,12 +583,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "free_country" 
-			position = {x=480 y=210}	
+			position = {x=404 y=210}	
 			spriteType = "GFX_global_diplorequest_icons"
             frame = 1
 			pdx_tooltip = "FREE_COUNTRY"
 			pdx_tooltip_delayed = "FREE_COUNTRY_DELAYED"
 			scale = 1
+		}
+		buttonType = {
+			name = "set_capital_of_country" 
+			position = {x=450 y=210}	
+			spriteType = "GFX_set_capital"
+            frame = 1
+			pdx_tooltip = "SET_CAPITAL_COUNTRY"
+			pdx_tooltip_delayed = "SET_CAPITAL_COUNTRY_DELAYED"
+			scale = 1.2
 		}
 		# War Support controls (similar layout to compliance)
 		buttonType = {
@@ -612,7 +621,6 @@ guiTypes = {
 			pdx_tooltip = "WS_ICON_TT"
 			scale = 0.5
 		}
-
 		# Stability controls (below war support)
 		buttonType = {
 			name = "st_sub_5"
@@ -701,11 +709,11 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "building_drop_menu" 
-			position = { x=180 y=150 }
+			position = { x=485 y=210 }
 			spriteType = "GFX_state_constructions"
 			pdx_tooltip = "BUILDING_MENU"
 			pdx_tooltip_delayed = "BUILDING_MENU_DELAYED"
-			scale = 1.5
+			scale = 1.1
 		}
 		buttonType = {
 			name = "cheat1"

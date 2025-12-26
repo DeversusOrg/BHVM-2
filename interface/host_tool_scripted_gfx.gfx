@@ -153,4 +153,16 @@ spriteTypes = {
    		name = "GFX_sub_5_button"
    		texturefile = "gfx/horst_gui/horsttool/sub_5_button.dds"
    	}
+    spriteType = {
+   		name = "GFX_sub_1_button"
+   		texturefile = "gfx/horst_gui/horsttool/sub_1_button.dds"
+   	} 
+    spriteType = {
+   		name = "GFX_add_1_button"
+   		texturefile = "gfx/horst_gui/horsttool/add_1_button.dds"
+   	}
+    spriteType = {
+   		name = "GFX_set_capital"
+   		texturefile = "gfx/horst_gui/horsttool/set_capital.dds"
+   	}
 } 

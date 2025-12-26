@@ -1,4 +1,4 @@
-	defined_text = { # state
+defined_text = { # state
 	name = mark_state_tooltip
 
 	text = {
