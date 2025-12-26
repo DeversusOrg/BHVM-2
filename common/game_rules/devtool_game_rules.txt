@@ -106,3 +106,18 @@ horst_host_country = {
 		desc = ""
 	}
 }
+dismantle_faction_rule = {
+	name = "RULE_DISMANTLE_FACTION"
+	group = "Divirsus class"
+	option = {
+		name = "DEFAULT"
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_DESC"
+	}
+	
+	default = {
+		name = "DISALLOWED"
+		text = "RULE_OPTION_DISALLOWED"
+		desc = "RULE_OPTION_DISALLOWED_DESC"
+	}
+}

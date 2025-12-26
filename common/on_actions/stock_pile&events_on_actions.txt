@@ -52,20 +52,6 @@ on_actions = {
 					id = DOD_yugoslavia.20
 					days = 912
 				}
-				#if = {
-				#	limit = {
-				#		has_game_rule = {
-				#			rule = allied_engine_bonus
-				#			option = on
-				#		}
-				#	}
-				#	add_tech_bonus = {
-				#		name = lastorical_allied_engine_bonus_name
-				#		bonus = 1.0
-				#		uses = 1
-				#		technology = engines_4
-				#	}
-				#}
 			}
 			GER = {
 				add_equipment_to_stockpile = {
