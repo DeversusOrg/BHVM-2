@@ -20,6 +20,7 @@ faction_template_sakoku_ron_faction = {
 	default_rules = {
 		joining_rule_puppets_only
 		change_leader_rule_industry
+		goals_only_player
 	}
 
 	icon = GFX_faction_logo_japanese_co_prosperity_sphere
@@ -50,6 +51,7 @@ faction_template_new_order_in_east_asia_faction = {
 		joining_rule_east_asia_only
 		faction_peace_china_focus
 		change_leader_rule_industry
+		goals_only_player
 	}
 
 	icon = GFX_faction_logo_japanese_co_prosperity_sphere

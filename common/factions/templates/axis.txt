@@ -24,6 +24,7 @@ faction_template_axis = {
 		change_leader_rule_manpower
 		change_leader_rule_manifest_below_35
 		dismissal_rule_offensive_war
+		goals_only_player
 	}
 	
 }

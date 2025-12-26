@@ -22,6 +22,7 @@ faction_template_comintern = {
 		change_leader_rule_manpower
 		change_leader_rule_industry
 		war_declaration_rule_major_only
+		goals_only_player
 	}
 }
 

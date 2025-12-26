@@ -25,6 +25,7 @@ faction_template_allies = {
 		change_leader_rule_manifest_below_35
 		dismissal_rule_ideology_not_democratic
 		change_leader_rule_industry
+		goals_only_player
 	}
 	
 	icon = GFX_faction_icon_allies
