@@ -261,6 +261,20 @@ operations = {
             country_exists = FIN
         }
         complete_effect = {
+            FIN = {
+                clear_equipment_stockpile = { type = infantry_equipment_3 }
+                transfer_units_fraction = {
+					target = BLM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
+            }
             ROM = {
                 set_country_flag = annexed_FIN 
                 annex_country = { target = FIN transfer_troops = yes }
@@ -293,6 +307,20 @@ operations = {
             country_exists = FIN
         }
         complete_effect = {
+            FIN = {
+                clear_equipment_stockpile = { type = infantry_equipment_3 }
+                transfer_units_fraction = {
+					target = BLM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
+            }
             HUN = {
                 set_country_flag = annexed_FIN 
                 annex_country = { target = FIN transfer_troops = yes }
