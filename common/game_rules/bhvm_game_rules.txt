@@ -901,26 +901,6 @@ ger_mefo = {
 		desc = "Germany CANNOT cancel MEFO bills(Not Recommmended)"
 	}
 }
-ger_totaler_krieg_law = {
-	name = "Germany Totaler Krieg Law"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_industry"
-	option = {
-		name = disabled
-		text = "RDisabled"
-		desc = "Germany CANNOT do the Totaler Krieg focus(Not Recommmended)"
-	}
-	option = {
-		name = coal_hungry
-		text = "YCoal Hungry"
-		desc = "Germany CAN do it and gets extra coal consumption(Not Recommmended)"
-	}
-	default = {
-		name = redundant
-		text = "GCoal Redundant"
-		desc = "Germany CAN do it and does NOT need coal extra(Recommmended)"
-	}
-}
 pregrinds_4_factions = {
 	name = "Pregrinds: Game rule"
 	group = "BHVM game rules"

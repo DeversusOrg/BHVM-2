@@ -1485,29 +1485,6 @@ containerWindowType = {
         format = center
         maxwidth = 110
     }
-
-    # German Totaler Krieg Law
-    iconType = {
-        name = "ger_totaler_krieg_law_icon"
-        spriteType = "GFX_decision_generic_industry"
-        position = { x = @GAMERULE_ICONS_X y = 3045 }
-    }
-    instantTextBoxType = {
-        name = "ger_totaler_krieg_law_name_text"
-        position = { x = @GAMERULE_NAMES_X y = 3055 }
-        font = "hoi_18mbs"
-        text = "German Totaler Krieg"
-        maxWidth = 180
-    }
-    instantTextBoxType = {
-        name = "ger_totaler_krieg_law_status"
-        position = { x = @STATUS_TEXT_X y = 3055 }
-        font = "hoi_18mbs"
-        text = "check_gamerules_redundant"
-        format = center
-        maxwidth = 110
-    }
-
     # Soviet Superior War machines tech
     iconType = {
         name = "sov_tech_tank_focus_icon"
@@ -3423,32 +3400,6 @@ containerWindowType = {
             maxwidth = 110
             visible = { NOT = { has_game_rule = { rule = ger_mefo option = yes } } }
         }
-
-        # German Totaler Krieg Law (changed)
-        iconType = {
-            name = "ger_totaler_krieg_law_icon_changed"
-            spriteType = "GFX_decision_generic_industry"
-            position = { x = @GAMERULE_ICONS_X y = 3010 }
-            visible = { NOT = { has_game_rule = { rule = ger_totaler_krieg_law option = redundant } } }
-        }
-        instantTextBoxType = {
-            name = "ger_totaler_krieg_law_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 3020 }
-            font = "hoi_18mbs"
-            text = "German Totaler Krieg"
-            maxWidth = 180
-            visible = { NOT = { has_game_rule = { rule = ger_totaler_krieg_law option = redundant } } }
-        }
-        instantTextBoxType = {
-            name = "ger_totaler_krieg_law_status_changed"
-            position = { x = @STATUS_TEXT_X y = 3020 }
-            font = "hoi_18mbs"
-            text = "[GetGerTotalerKriegLawStatus]"
-            format = center
-            maxwidth = 110
-            visible = { NOT = { has_game_rule = { rule = ger_totaler_krieg_law option = redundant } } }
-        }
-
         # Soviet Superior War machines tech (changed)
         iconType = {
             name = "sov_tech_tank_focus_icon_changed"
