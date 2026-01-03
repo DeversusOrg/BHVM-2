@@ -520,10 +520,6 @@ on_actions = {
 					type = support_equipment_1
 					amount = 100
 				}
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 6
-				}
 			}
 			YUG = {
 				add_equipment_to_stockpile = {
@@ -556,10 +552,7 @@ on_actions = {
 					type = artillery_equipment_1
 					amount = 25
 				}
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 18
-				}
+				
 			}
 			BLM = {
 				add_equipment_to_stockpile = {

@@ -32,8 +32,8 @@ state = {
 		}
 		victory_points = {
 			1015 1 # Eliat
-		}v
-		ictory_points = {
+		}
+		victory_points = {
 			4088 2 # Gaza strip/ A'zza
 		}
 		

@@ -1,6 +1,7 @@
 GER	= "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
+SWE	= "countries/Sweden.txt"
 FRA	= "countries/France.txt"
 LUX	= "countries/Luxemburg.txt"
 BEL	= "countries/Belgium.txt"
@@ -36,6 +37,7 @@ MEX = "countries/Mexico.txt"
 MEN = "countries/Mengkukuo.txt"
 NZL = "countries/New Zealand.txt"
 PHI = "countries/Philippines.txt"
+VEN = "countries/Venezula.txt"
 SAF = "countries/South Africa.txt"
 SIA = "countries/Siam.txt"
 USA = "countries/USA.txt"
@@ -61,7 +63,6 @@ ICE = "countries/Iceland.txt" # Empty file
 POR = "countries/Portugal.txt" # Empty file
 TUR = "countries/Turkey.txt" # Empty file
 SWI = "countries/Switzerland.txt" # Empty file
-SWE	= "countries/Sweden.txt" # Empty file
 
 # REICHSKOMMISSARIATS (no cores) (European)
 RKB = "countries/Reichskommisariat Belgien.txt"
@@ -82,6 +83,12 @@ RGB = "countries/Reichskommisariat Grossbritannien.txt"
 # REICHSKOMMISSARIATS (no cores) (African)
 RKA = "countries/Reichskommisariat Mittelafrika.txt"
 RNA = "countries/Reichskommisariat Nordafrika.txt"
+
+# REICHSKOMMISSARIATS (no cores) (American)
+RKV = "countries/Reichskommisariat Klein Venedig.txt"
+RAN = "countries/Reichskommisariat Anden.txt"
+RCO = "countries/Reichskommisariat Kolumbus.txt"
+RUS = "countries/Reichskommisariat Nordamerika.txt"
 
 # REICHSKOMMISSARIATS (no cores) (Asian)
 RHD = "countries/Reichskommisariat Grosshindustan.txt"
@@ -111,6 +118,33 @@ ASY = "countries/Assyria.txt"
 BHR = "countries/Bahrain.txt"
 IMO = "countries/Omani Imamate.txt"
 BLC = "countries/Balochistan.txt"
+
+# SEA 
+# ALL OF THEM NEED TO BE REMOVED INCLUDING THE OTHER CHINA CORES, SEA ON ACTIONS IS THE ISSUE
+
+EZO = "countries/Ezo Republic.txt"
+OKN = "countries/Okinawa.txt"
+ANU = "countries/Ainu.txt"
+PLU = "countries/Palau.txt"
+FOR = "countries/Formosa.txt"
+TML = "countries/Timor Leste.txt"
+CHM = "countries/Champa.txt"
+SNG = "countries/Singapore.txt"
+SAR = "countries/Sarawak.txt"
+SAB = "countries/Sabah.txt"
+BRN = "countries/Brunei.txt"
+WPG = "countries/West Papua.txt"
+KUM = "countries/Kumul Khanate.txt"
+GSM = "countries/Gansu Ma.txt"
+GDC = "countries/Guangdong.txt"
+KHM = "countries/Khotan Ma.txt"
+NXM = "countries/Ningxia Ma.txt"
+SND = "countries/Shandong.txt"
+SIC = "countries/Sichuan.txt"
+XIC = "countries/Xian.txt"
+RNG = "countries/Reorganized National Government.txt"
+PSR = "countries/Philippine Second Republic.txt"
+HBC = "countries/Hebei-Chahar.txt"
 
 BLM = "countries/Black.txt" # NEVER FORGET TO UPDATE WHEN NEW DLC DROPS GAME RULE AND OTHER MECHANICS LIKE HOST TOOL W THIS TAG 
 
