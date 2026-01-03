@@ -2,8 +2,8 @@
 state={
 	id=416
 	name="STATE_416"
-	manpower = 706493
-	state_category = rural
+	manpower = 1
+	state_category = wasteland
 
 	history={
 		owner = BLM
@@ -11,9 +11,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 		}
-		victory_points = {
-			5029 5 
-		}
+		
 		add_core_of = BLM
 	}
 
@@ -21,5 +19,5 @@ state={
 		1888 1957 2000 5029 5073 10806 
 	}
 
-	local_supplies=5.0 
+	local_supplies = 0.0 
 }

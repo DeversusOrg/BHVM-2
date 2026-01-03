@@ -2,12 +2,10 @@ state=
 {
 	id=312
 	name="STATE_312"
-	manpower=859761
-	resources={
-		chromium=1 # was: 1
-	}
+	manpower = 1
 	
-	state_category = town
+	
+	state_category = wasteland
 	history=
 	{
 		owner = BLM
@@ -24,14 +22,12 @@ state=
 			}
 		}
 		add_core_of = BLM
-		victory_points = {
-			12865 3 
-		}
+		
 
 	}
 	provinces={
 		2031 8017 12865
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

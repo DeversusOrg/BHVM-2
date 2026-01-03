@@ -5,14 +5,18 @@ state={
 	manpower = 1
 	
 	
-	state_category = town
+	state_category = wasteland
 	
-	resources={
-		tungsten=2 # was: 2
-	}
+	
 
 	history={
 		owner = BLM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2 
+		}
+		
 		add_core_of = BLM
 	}
 
@@ -20,5 +24,5 @@ state={
 		8010 12860 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

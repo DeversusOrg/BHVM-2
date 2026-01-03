@@ -2,12 +2,10 @@
 state={
 	id=413
 	name="STATE_413"
-	manpower = 797356
-	resources={
-		oil=28 # was: 42
-	}
+	manpower = 1
 	
-	state_category = rural
+	
+	state_category = wasteland
 	
 
 	history={
@@ -18,9 +16,7 @@ state={
 				naval_base = 1
 			}
 		}
-		victory_points = {
-			7953 1 
-		}
+		
 		add_core_of = BLM
 	}
 
@@ -28,5 +24,5 @@ state={
 		1922 5005 5089 7953 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

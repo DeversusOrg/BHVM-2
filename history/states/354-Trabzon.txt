@@ -4,7 +4,7 @@ state={
 	name="STATE_354"
 	manpower = 1
 	
-	state_category = town
+	state_category = wasteland
 
 	history={
 		owner = BLM
@@ -19,6 +19,10 @@ state={
 			3979 3 
 		}
 		buildings = {
+			infrastructure = 2
+			9932 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = BLM
 	}

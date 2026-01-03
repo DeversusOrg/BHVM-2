@@ -40,7 +40,7 @@ state = {
 		
 		owner = ETH
 		add_core_of = ETH
-		add_core_of = SOM
+		add_core_of = BLM
 		add_core_of = BLM
 
 		1936.6.1 = {

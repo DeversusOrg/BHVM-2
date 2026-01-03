@@ -2,9 +2,9 @@
 state={
 	id=306
 	name="STATE_306" # Cundinamarca
-	manpower = 4953049
+	manpower = 1
 	
-	state_category = city
+	state_category = wasteland
 	
 	history={
 		owner = BLM
@@ -15,9 +15,7 @@ state={
 			air_base = 2
 		}
 		add_core_of = BLM
-		victory_points = {
-			10747 10
-		}
+		
 
 	}
 
@@ -25,5 +23,5 @@ state={
 		2079 7936 7991 7993 10747 10790 10846 
 	}
 
-	local_supplies=4.0 
+	local_supplies = 0.0 
 }

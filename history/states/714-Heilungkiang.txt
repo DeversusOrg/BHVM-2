@@ -24,9 +24,6 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		resources={
-		oil = 4 #Japan extracted 1m barrels annually from Manhuria
-	}
 
 	}
 

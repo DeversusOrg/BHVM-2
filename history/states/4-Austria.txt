@@ -13,7 +13,7 @@ state = {
 
 		owner = AUS
 		add_core_of = AUS
-		add_core_of = ISR
+
 		victory_points = {
 			11666 30 
 		}

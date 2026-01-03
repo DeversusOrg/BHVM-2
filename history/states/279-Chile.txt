@@ -1,15 +1,11 @@
 state = {
 	id = 279
 	name = "STATE_279" # Santiago
-	manpower = 2635146 # Was 3935146
+	manpower = 1 # Was 3935146
 	
-	state_category = large_city
+	state_category = wasteland
 	
-	resources = {
-		steel = 14 # was: 24, then 16
-		tungsten = 8 # In replacement of nitrate
-		chromium = 4 # in replacement of nitrate
-	}
+	
 
 	history = {
 
@@ -31,25 +27,15 @@ state = {
 			}
 		}
 		
-		victory_points = {
-			650 15
-		}
+		
 
-		victory_points = {
-			8194 3
-		}
+		
 
-		victory_points = {
-			8222 5
-		}
+		
 
-		victory_points = {
-			12984 2
-		}
+		
 
-		victory_points = {
-			8251 1
-		}
+		
 
 	}
 

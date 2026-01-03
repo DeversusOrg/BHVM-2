@@ -9,7 +9,7 @@ state={
 		coal = 5 #initial distribution
 	}
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = BLM
@@ -20,7 +20,11 @@ state={
 			904 1 
 		}
 		buildings = {
-			
+			infrastructure = 2
+			industrial_complex = 1
+			904 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = BLM
 	}

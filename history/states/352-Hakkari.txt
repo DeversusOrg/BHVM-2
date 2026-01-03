@@ -4,7 +4,7 @@ state={
 	name="STATE_352" # Van
 	manpower = 1
 
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = BLM
@@ -20,7 +20,19 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = BLM
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = BLM
+			
+		}
 	}
 
 	provinces={

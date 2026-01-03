@@ -3,12 +3,8 @@ state = {
 	name = "STATE_181"
 	manpower = 1
 	
-	state_category = town
+	state_category = wasteland
 	
-	resources = {
-		tungsten = 95 #was 150 # was: 300
-		coal = 1 #initial distribution
-	}
 
 	history = {
 
@@ -24,6 +20,9 @@ state = {
 		}
 
 		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
 			# Cabril Dam
 			#11885 = { dam = 1 }
 			

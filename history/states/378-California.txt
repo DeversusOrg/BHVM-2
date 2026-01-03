@@ -4,7 +4,7 @@ state={
 	name="STATE_378"
 	manpower = 5677248
 	
-	state_category = megalopolis
+	state_category = metropolis
 	
 	resources={
 		oil=180 # was: 350
@@ -13,9 +13,7 @@ state={
 
 	history={
 		owner = USA
-		add_extra_state_shared_building_slots = 3
 		buildings = {
-			
 			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 6

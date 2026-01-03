@@ -1,14 +1,11 @@
 state = {
 	id = 954
 	name = "STATE_954"
-	manpower = 132000
+	manpower = 1
 	
-	state_category = rural
+	state_category = wasteland
 	
-	resources = {
-		oil = 3
-		coal = 2 # initial distribution = with infra 2.4 / 2 total
-	}
+	
 
 	history = {
 
@@ -20,9 +17,7 @@ state = {
 			infrastructure = 1
 		}
 
-		victory_points = {
-			5173 1 
-		}
+		
 		
 	}
 

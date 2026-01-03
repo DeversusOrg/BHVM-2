@@ -15,6 +15,7 @@ state = {
 		owner = GER
 		add_core_of = GER
 		
+		add_core_of = BLM
 
 		victory_points = { 
 			11435 1 # Bitburg

@@ -21,7 +21,7 @@ state = {
 			air_base = 1
 
 			# 22nd Congress of the CPSU Stalingrad Hydroelectric Power Station
-			3555 = { dam = 1 }
+			#3555 = { dam = 1 }
 
 		}
 		

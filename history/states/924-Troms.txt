@@ -8,7 +8,7 @@ state = {
 	resources = {
 		tungsten = 5
 	}
-
+	impassable = yes
 	history = {
 		victory_points = {
 			11050 1

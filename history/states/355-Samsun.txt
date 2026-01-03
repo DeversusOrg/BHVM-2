@@ -2,8 +2,8 @@
 state={
 	id=355
 	name="STATE_355"
-	manpower = 1151863
-	state_category = rural
+	manpower = 1
+	state_category = wasteland
 
 	history={
 		owner = BLM

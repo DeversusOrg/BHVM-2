@@ -5,11 +5,9 @@ state={
 	manpower = 3694611
 	
 	state_category = rural
-	resources = {
-		rubber = 1
-	}
+	
 	history={
-		add_core_of = MAD
+		add_core_of = BLM
 		owner = FRA
 		victory_points = {
 			5128 1

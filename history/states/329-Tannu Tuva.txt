@@ -2,26 +2,24 @@
 state={
 	id=329
 	name="STATE_329"
-	manpower = 137000
+	manpower = 85000
 	resources={
-		chromium=7 # was: 2
-		coal = 1
+		chromium=2 # was: 2
 	}
 	
 	state_category = rural
 
 	history={
-		owner = MON
-		add_extra_state_shared_building_slots = 2
+		owner = TAN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
 		}
 		victory_points = {
 			10627 3
 		}
-		add_core_of = MON
+		add_core_of = TAN
 		add_core_of = SOV
 	}
 

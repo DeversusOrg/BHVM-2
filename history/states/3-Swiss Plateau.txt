@@ -2,29 +2,28 @@
 state={
 	id=3
 	name="STATE_3"
-	manpower = 1216838
-	resources={
-	}
+	manpower = 1
+	
 
-	state_category = city
+	state_category = wasteland
 
 
 	history={
-		owner = NONE
-		victory_points = { 9620 15 }
-		victory_points = { 663 10 }
+		owner = BLM
+		
+		
 		buildings = {
 			infrastructure = 4
 			arms_factory = 3
 			industrial_complex = 3
 			air_base = 4
 		}
-		add_core_of = NONE
+		add_core_of = BLM
 	}
 
 	provinces={
 		663 9620 11590 11604 11623
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

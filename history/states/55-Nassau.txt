@@ -13,6 +13,9 @@ state = {
 
 		owner = GER
 		add_core_of = GER
+		add_core_of = BLM
+		add_core_of = BLM
+
 		buildings = {
 
 			infrastructure = 4

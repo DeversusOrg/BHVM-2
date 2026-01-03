@@ -2,9 +2,9 @@
 state={
 	id=486
 	name="STATE_486"
-	manpower = 213160
+	manpower = 1
 	
-	state_category = pastoral
+	state_category = wasteland
 
 	history={
 		owner = BLM
@@ -18,5 +18,5 @@ state={
 		1887 2007 5026 10792 12729 12770 12825 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

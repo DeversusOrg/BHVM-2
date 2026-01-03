@@ -2,9 +2,9 @@
 state = {
 	id = 490
 	name = "STATE_490"
-	manpower = 70020
+	manpower = 1
 	
-	state_category = pastoral
+	state_category = wasteland
 
 	history = {
 		owner = BLM #Used to be PRU but should become theirs through the Peruvian-Ecuadorian War
@@ -14,9 +14,7 @@ state = {
 			air_base = 1
 		}
 
-		victory_points = {
-			13289 2
-		}
+		
 
 		add_core_of = BLM
 		add_core_of = BLM
@@ -26,5 +24,5 @@ state = {
 		8149 10942 13289 13290
 	}
 
-	local_supplies = 6.0 
+	local_supplies = 0.0 
 }

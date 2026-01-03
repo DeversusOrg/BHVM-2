@@ -1,13 +1,11 @@
 state = {
 	id = 950
 	name = "STATE_950"
-	manpower = 1300000
+	manpower = 1
 	
-	state_category = town
+	state_category = wasteland
 	
-	resources = {
-		steel = 24 # Steel + replacement of copper
-	}
+	
 
 	history = {
 
@@ -25,13 +23,9 @@ state = {
 			}
 		}
 		
-		victory_points = {
-			5121 2
-		}
+		
 
-		victory_points = {
-			5169 1
-		}
+		
 
 	}
 

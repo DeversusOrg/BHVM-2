@@ -6,7 +6,6 @@ state={
 	resources={
 		aluminium = 2
 		coal = 1 #initial distribution
-		steel = 18 #Pernik steel mine
 	}
 	
 	
@@ -24,6 +23,9 @@ state={
 			infrastructure = 3
 			industrial_complex = 6
 			air_base = 3
+			949 = {
+				land_facility = 1
+			}
 		}
 		add_core_of = BUL
 	}

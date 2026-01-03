@@ -2,13 +2,11 @@
 state = {
 	id = 305
 	name = "STATE_305"
-	manpower = 2000000
+	manpower = 1
 
-	resources = {
-		oil = 2 # was: 2
-	}
 	
-	state_category = city
+	
+	state_category = wasteland
 
 	history = {
 
@@ -25,17 +23,11 @@ state = {
 			}
 		}
 		
-		victory_points = {
-			12798 10
-		}
+		
 
-		victory_points = {
-			8252 5
-		}
+		
 
-		victory_points = {
-			5120 2
-		}
+		
 
 	}
 
