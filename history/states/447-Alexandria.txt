@@ -32,7 +32,7 @@ state={
 			}
 		}
 
-		add_core_of = BLM
+		add_core_of = ISR
 	}
 
 	provinces={

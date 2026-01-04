@@ -7,7 +7,7 @@ state = {
 		coal = 2 # local bituminous coal being developed in a factory
 	}
 	
-	state_category = town
+	state_category = city
 
 	history = {
 
