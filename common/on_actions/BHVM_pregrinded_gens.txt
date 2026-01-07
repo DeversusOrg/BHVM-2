@@ -282,9 +282,9 @@ on_actions = {
 						character = JAP_hitoshi_imamura
 						traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
 						skill=7
-						attack_skill=2
+						attack_skill=4
 						defense_skill=7
-						planning_skill=2
+						planning_skill=3
 						logistics_skill=5
 					}
 				}
@@ -635,9 +635,9 @@ on_actions = {
 						character = JAP_hitoshi_imamura
 						traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
 						skill=7
-						attack_skill=2
+						attack_skill=4
 						defense_skill=7
-						planning_skill=2
+						planning_skill=3
 						logistics_skill=5
 					}
 				}
