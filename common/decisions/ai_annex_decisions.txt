@@ -1075,7 +1075,6 @@ operations = {
             }
             activate_mission = GER_recieving_ll_gun_1a    
         }
-    }
 	GER_annex_FIN = {
         icon = GFX_decision_eng_trade_unions_support
 		targets = {
