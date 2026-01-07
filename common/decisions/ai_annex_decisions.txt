@@ -28,6 +28,7 @@ operations = {
 			controls_state = 115 # Sicilia
 			controls_state = 114 # Sardegna
             controls_state = 1 # Corsica
+            controls_state = 118 # Giblatar
             controls_state = 116 # Malta
             controls_state = 182 # Crete
             controls_state = 183 # Cyprus
