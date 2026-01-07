@@ -59,6 +59,7 @@ AOI = "countries/Italian East Africa.txt"
 VIC = "countries/Vichy France.txt"
 ICE = "countries/Iceland.txt" # Empty file
 POR = "countries/Portugal.txt" # Empty file
+TUR = "countries/Turkey.txt" # Empty file
 SWI = "countries/Switzerland.txt" # Empty file
 
 # REICHSKOMMISSARIATS (no cores) (European)

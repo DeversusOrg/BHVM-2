@@ -27,7 +27,8 @@ on_actions = {
     }
 	on_weekly = { ### MASTERIES FOR PEACE TRAINING
 		effect = {
-			limit = {
+			if = {
+				limit = {
 					is_playable_country = yes
 					has_game_rule = { rule = peace_training_xp option = on }
                     has_idea = peace_training_xp 
@@ -47,17 +48,31 @@ on_actions = {
 						}
 					}
 				}
-			add_mastery = {
-				folder = land
-				amount = 2
+				add_daily_mastery = {
+					amount = 1
+					days = 7
+					name = Mastery
+				}
 			}
-			add_mastery = {
-				folder = navy
-				amount = 2
-			}
-			add_mastery = {
-				folder = air
-				amount = 2
+		}
+	}
+	on_weekly = { ### MASTERIES FOR WAR
+		effect = {
+			if ={
+				limit = {
+					is_playable_country = yes
+					has_game_rule = { rule = peace_training_xp option = on }
+                    has_war = yes
+					NOT = {
+						has_idea = peace_training_xp 
+						is_ai = yes
+					}
+				}
+				add_daily_mastery = {
+					amount = 0.35 
+					days = 7
+					name = Mastery
+				}
 			}
 		}
 	}
