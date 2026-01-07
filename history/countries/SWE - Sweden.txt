@@ -68,6 +68,13 @@ send_embargo = RAJ
 send_embargo = AST
 send_embargo = SOV
 send_embargo = NZL
+send_embargo = NOR
+send_embargo = YUG
+send_embargo = GRE
+send_embargo = BLM
+send_embargo = DEN
+send_embargo = POL
+send_embargo = ALB
 
 set_technology = {
 	tech_trucks = 1

@@ -631,3 +631,21 @@ Hungarian events that used to fire non stop might have been fixed - needs testin
 Duplicate game rules for totalen krieg have been deleted
 Decreased the size of game rules by like 3% late game
 CS:13cd
+
+Debloat save game file by around -~20% 
+Made the mod way smaller , debloated and removed everything usless that was not needed will need to check on that
+Reworked mastery:
+Mastery at peace with peace time training xp banked per week is 1 , and when you start a subdoctrine is 7 per day
+mastery at war is 0.35 banked and when you start a subdoctrine is 3.5 a day
+max banked mastery is 300
+converstion from changing a subdoctrine is 75% aka swtiching subdoctrine with the banked mastery you use 75% of it
+subdoctrines ratios are now vanilla
+Added game rules for railway guns and fixed the armored vechile one for assault engineers and so on
+Finish gun should now be lend leaseable 
+Italy no longer needs to be the owner of gibi to do greater italy
+1.16 legacy map has been imported back aka the states are like pre dlc with their classification
+The game should no longer crash in 39
+Venezuella is back on the map 
+The time of recently promoted unit trait has been reduced from 100 to 30 days
+Removed all game rules for AI
+CS:d385

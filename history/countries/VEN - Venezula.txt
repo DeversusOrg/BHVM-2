@@ -19,7 +19,23 @@ if = {
 		early_fighter = 1
 	}
 }
-
+send_embargo = USA
+send_embargo = ENG
+send_embargo = FRA
+send_embargo = MEX
+send_embargo = CAN
+send_embargo = SAF
+send_embargo = RAJ
+send_embargo = AST
+send_embargo = SOV
+send_embargo = NZL
+send_embargo = NOR
+send_embargo = YUG
+send_embargo = GRE
+send_embargo = BLM
+send_embargo = DEN
+send_embargo = POL
+send_embargo = ALB
 recruit_character = VEN_eleazar_lópez_contreras
 recruit_character = VEN_juan_bautista_fuenmayor
 recruit_character = VEN_luis_figueroa
