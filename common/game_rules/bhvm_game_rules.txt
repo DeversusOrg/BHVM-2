@@ -1229,6 +1229,51 @@ sp_land = {
 		desc = "You will be allowed to research these:flametanks,SAV,SHH,SPSHH,SPRG,strongholds, (Recommmended)"
 	}
 }
+urban_assault_vechile= {
+	name = "Select if Urban Assault Vehicle is allowed or not "
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = off
+		text = "You CANNOT research armoured engineer company."
+		desc = "You also don't get the urban assault vehicle."
+	}
+	default = {
+		name = on
+		text = "You CAN research armoured engineer company"
+		desc = "You also get the urban assault vehicle."
+	}
+}
+railway_gun= {
+	name = "Select if Railway Gun is allowed or not "
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_ignite_civil_war"
+	default = {
+		name = off
+		text = "You CANNOT research Railway Battery."
+		desc = "###."
+	}
+	option = {
+		name = on
+		text = "You CAN research Railway Battery."
+		desc = "###"
+	}
+}
+super_heavy_railway_gun= {
+	name = "Select if Super Heavy Railway Battery is allowed or not "
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_ignite_civil_war"
+	default = {
+		name = off
+		text = "You CANNOT research Super Heavy Railway Battery."
+		desc = "###."
+	}
+	option = {
+		name = on
+		text = "You CAN research Super Heavy Railway Battery."
+		desc = "###"
+	}
+}
 sp_nuke = {
 	name = "Special Nuke projects" 
 	group = "BHVM game rules"

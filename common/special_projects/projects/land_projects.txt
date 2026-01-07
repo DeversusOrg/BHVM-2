@@ -143,6 +143,12 @@ sp_land_military_engineering_vehicles = {
 		}
 
 		enable_subunits = {
+			limit = {
+				has_game_rule = {
+					rule = urban_assault_vechile
+					option = on
+				}
+			}
 			assault_engineer
 		}
 
@@ -1189,7 +1195,9 @@ sp_land_self_propelled_super_heavy_howitzer = {
 
 sp_land_super_heavy_railway_gun = {
 	specialization = specialization_land
-
+	visible = {
+		has_game_rule = { rule = super_heavy_railway_gun option = on }
+	}
 	project_tags = sp_tag_artillery
 
 	allowed = {
