@@ -1,11 +1,11 @@
-1 TOP PRIORITIY: Update the mod to the newest version of the game - with all new features.Done?
+1 TOP PRIORITIY: Update the mod to the newest version of the game - with all new features.Done!Its done
 2 : Test the mod for compatibility issues with the latest game update.Done
 3 : Test every game rule and add new ones.Mixed done~
 4 : Make philipines playable.NOT DONE!
 5 : CHINA LA IMPORTANT! Not playable , different options with game rules for it. NOT DONE!
 6 : JAPAN LA IMPORTANT! Done
-7 : The states need fixing - made playable for now but will get back to it-MUST GET BACK TO OG STATE OF BHVM NOT HMM SOMEWHAT COPY PASTE!
+7 : The states need fixing - Done
 8 : New 3d map shit-Done
-9 : All bonuses for doctrines and some equipment needs updating-This needs change for doctrines
+9 : All bonuses for doctrines and some equipment needs updatingDone?
 10 : Make china playable.NOT DONE!
 11: Add a tooltip for peace time training w xp to say that it gives weekly mastery once you unlock a path.NOT DONE!

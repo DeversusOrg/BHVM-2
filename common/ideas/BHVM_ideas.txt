@@ -376,7 +376,7 @@ ideas = {
 			}
 		}
 
-		peace_training_xp = {
+		peace_training_xp = { #TODO: Add a tooltip for displaying how much mastery you gain from this
 			allowed = {
 				always = no
 			}
