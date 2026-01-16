@@ -1141,7 +1141,8 @@ leader_traits = {
 		cost = 1000
 		
 		field_marshal_modifier = {
-			max_army_group_size = 2
+			max_army_group_size = 3
+			max_commander_army_size = 24
 		}
 		
 		slot = army_chief
@@ -1258,7 +1259,7 @@ leader_traits = {
 		cost = 2000
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 6
+			max_commander_army_size = 16
 		}
 		
 		ai_will_do = {

@@ -526,39 +526,6 @@ operations = {
         days_mission_timeout = 30
     
         timeout_effect = {
-            SPR = {
-                if = {
-                    limit = { date > 1943.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 }
-                }
-                else_if = {
-                    limit = { date > 1942.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 }
-                }
-                else_if = {
-                    limit = { date > 1941.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 }
-                }
-                else_if = {
-                    limit = { date > 1940.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 }
-                }
-                else_if = {
-                    limit = { date > 1940.5.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 }
-                }
-                else_if = {
-                    limit = { date > 1939.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2000 }
-                }
-                else_if = {
-                    limit = { date > 1939.5.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1300 }
-                }
-                else = {
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 900 }
-                }
-            }
             if = {
                 limit = { date > 1943.12.31 }
                 BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 } }
@@ -615,39 +582,6 @@ operations = {
         days_mission_timeout = 30
     
         timeout_effect = {
-            SPR = {
-                if = {
-                    limit = { date > 1943.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 }
-                }
-                else_if = {
-                    limit = { date > 1942.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 }
-                }
-                else_if = {
-                    limit = { date > 1941.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 }
-                }
-                else_if = {
-                    limit = { date > 1940.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 }
-                }
-                else_if = {
-                    limit = { date > 1940.5.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 }
-                }
-                else_if = {
-                    limit = { date > 1939.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2000 }
-                }
-                else_if = {
-                    limit = { date > 1939.5.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1300 }
-                }
-                else = {
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 900 }
-                }
-            }
             if = {
                 limit = { date > 1943.12.31 }
                 BUL = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3300 } }
@@ -704,31 +638,6 @@ operations = {
         days_mission_timeout = 30
     
         timeout_effect = {
-            SPR = {
-                if = {
-                    limit = { date > 1943.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 }
-                }
-                else_if = {
-                    limit = { date > 1942.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 }
-                }
-                else_if = {
-                    limit = { date > 1941.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 }
-                }
-                else_if = {
-                    limit = { date > 1940.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2100 }
-                }
-                else_if = {
-                    limit = { date > 1939.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1350 }
-                }
-                else = {
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 }
-                }
-            }
             if = {
                 limit = { date > 1943.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 } }
@@ -774,31 +683,6 @@ operations = {
         days_mission_timeout = 30
     
         timeout_effect = {
-            SPR = {
-                if = {
-                    limit = { date > 1943.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 }
-                }
-                else_if = {
-                    limit = { date > 1942.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3100 }
-                }
-                else_if = {
-                    limit = { date > 1941.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2800 }
-                }
-                else_if = {
-                    limit = { date > 1940.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2100 }
-                }
-                else_if = {
-                    limit = { date > 1939.12.31 }
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 1350 }
-                }
-                else = {
-                    add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 750 }
-                }
-            }
             if = {
                 limit = { date > 1943.12.31 }
                 GER = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 3200 } }
