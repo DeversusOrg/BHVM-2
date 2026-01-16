@@ -136,6 +136,7 @@ buildings = {
 		need_detection = yes
 		detecting_intel_type = navy
 		only_display_if_exists = yes
+		infrastructure_construction_effect = yes
 		special_icon = GFX_specialization_naval
 		level_cap = {
 			province_max = 1
@@ -502,7 +503,7 @@ buildings = {
 		need_supply = yes
 		need_detection = yes
 		tags = { facility }
-		 
+		infrastructure_construction_effect = yes
 		only_display_if_exists = yes
 		special_icon = GFX_specialization_nuclear
 		#state_damage_modifier = { conscription_exemptions_granted }
@@ -536,7 +537,7 @@ buildings = {
 		need_supply = yes
 		need_detection = yes
 		detecting_intel_type = airforce
-		 
+		infrastructure_construction_effect = yes
 		only_display_if_exists = yes
 		special_icon = GFX_specialization_air
 		level_cap = {
@@ -556,7 +557,7 @@ buildings = {
 		spawn_point = special_project_facility_spawn 
 		specialization = { specialization_land }
 		tags = { facility }
-		 
+		infrastructure_construction_effect = yes
 		need_supply = yes
 		need_detection = yes
 		detecting_intel_type = army

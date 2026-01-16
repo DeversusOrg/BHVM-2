@@ -649,3 +649,14 @@ Venezuella is back on the map
 The time of recently promoted unit trait has been reduced from 100 to 30 days
 Removed all game rules for AI
 CS:d385
+
+Debloated save game file by 200kbs early game 
+Buildings readjustments , you can now also construct railways in allied terriroty 
+Naval supply hubs require lvl 4 naval bases and now cost 8500 from 12500
+Facilities are once again affected by infra levels
+Spain now starts with a facility day 1 in valladolid
+Spanish pregrind now instead of having 1 inf expert has 2 inf leaders
+Some french focuses can be done when capitulated , the focus "buy time" now bypasses if ger has eaten czeks or controls the sudetanland or yugo has caped
+Corps commander trait has been changed from 6 to 16 and the field marshal trait has been increased from 2 max army groups to 3 army groups and 24 extra commander size 
+Some sov pregrinds (tank ones) have gotten 2 more planing that before
+CS:1b52 
