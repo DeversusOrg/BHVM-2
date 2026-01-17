@@ -660,3 +660,7 @@ Some french focuses can be done when capitulated , the focus "buy time" now bypa
 Corps commander trait has been changed from 6 to 16 and the field marshal trait has been increased from 2 max army groups to 3 army groups and 24 extra commander size 
 Some sov pregrinds (tank ones) have gotten 2 more planing that before
 CS:1b52 
+
+Fixed an issue with motor bikes
+Fixed spain having 2 land facilites
+CS:993f
