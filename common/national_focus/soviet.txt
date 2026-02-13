@@ -7506,7 +7506,7 @@ focus = {
 		available = {
 			has_government = communism
 			NOT = { has_global_flag = AAT_trotsky_sent_to_stalin }
-			has_global_flag = AAT_trotsky_in_mexico
+			#has_global_flag = AAT_trotsky_in_mexico
 		}
 		
 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
