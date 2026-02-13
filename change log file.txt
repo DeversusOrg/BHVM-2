@@ -664,3 +664,13 @@ CS:1b52
 Fixed an issue with motor bikes
 Fixed spain having 2 land facilites
 CS:993f
+
+Sims stuff got fixed for the 10^6878349857 time how ever , there was a psyops from certain players that they  said were getting the stuff and could lend lease it , this has been proven false and it doesnt actually work in game. So now you get the actual stuff back but you cant really lend lease it (apparently)
+On another note , if germany chooses to lend lease to itself it now gets the spanish trait of caudillo and italy gets what it would normaly get in factories to the bg sim
+Trotsky can be killed when ever from focus
+Romania now actually needs time to be stolen land from and you get 2 civs spawned in moscow from finland - Soviet focuses
+Spain is guaranteed to get 6 civs and 4 mills in madrid now
+Bulgaria IMRO shenanigans has been railroaded
+Hungarian rubber and other stuff has been railroaded
+Proximity fuze has been fixed and actually does something now
+CS:73dc
