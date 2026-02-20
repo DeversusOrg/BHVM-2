@@ -4046,9 +4046,10 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
+			# Pdx devs were finally smart enough to make this on default be basic , how ever it shall be kept as a game rule
 			if = {
 				limit = {
 					has_game_rule = {
@@ -4093,7 +4094,7 @@ focus = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = armor
 			}
@@ -4209,7 +4210,7 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -4223,7 +4224,7 @@ focus = {
 
 			add_tech_bonus = {
 				name = SOV_the_means_to_wage_war
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = support_tech
 			}
@@ -4691,9 +4692,14 @@ focus = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 }
-			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 }
-			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt
+			custom_effect_tooltip = modify_the_red_army_tt
+			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 tooltip = mobilization_speed_tt}
+			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 tooltip = conscription_factor_tt }
+			add_to_variable = { SOV_the_red_army_mastery_loss_factor = 0.05 tooltip = land_mastery_gain_factor_tt }
+
+			#Need for tooltip
+			set_variable = { SOV_the_red_army_mastery_loss_factor_inverted = SOV_the_red_army_mastery_loss_factor }
+			multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
 		}
 	}
 
@@ -6069,8 +6075,19 @@ focus = {
 		search_filters = {}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
-			custom_effect_tooltip = SOV_rehabilitated_military_ns_tt
+			custom_effect_tooltip = modify_the_red_army_tt
+			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+			if = {
+				limit = {
+					NOT = { has_completed_focus = SOV_lessons_of_war }
+				}
+				
+				add_to_variable = { SOV_the_red_army_mastery_loss_factor = 0.15 tooltip = land_mastery_gain_factor_tt }
+
+				#Need for tooltip
+				set_variable = { SOV_the_red_army_mastery_loss_factor_inverted = SOV_the_red_army_mastery_loss_factor }
+				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+			}
 
 			add_ideas = SOV_rehabilitated_military_ns
 		}
@@ -6188,14 +6205,17 @@ focus = {
 
 		completion_reward = {
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
-			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
+			set_variable = { SOV_the_red_army_mastery_loss_factor = 0 }
 
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
 			unlock_decision_tooltip = SOV_order_227
 			custom_effect_tooltip = SOV_lessons_of_war_unlock_military_operations_tt
-
+			effect_tooltip = {
+				#this should be the positive of whatever the negative mastery lsos is, only used for tooltip
+				add_to_variable = { SOV_the_red_army_mastery_loss_factor = SOV_the_red_army_mastery_loss_factor_inverted tooltip = land_mastery_gain_factor_tt } 
+			}
 			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
 			hidden_effect = {
 				every_army_leader = {
@@ -6880,6 +6900,18 @@ focus = {
 				SOV_trigger_great_purge_moscow_trial_effect = yes #FIRST MOSCOW TRIAL -> Zinovyev & friends
 			}
 			custom_effect_tooltip = SOV_trigger_first_moscow_trial_tt
+
+			custom_effect_tooltip = newline_tt
+			if = {
+				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+				
+				custom_effect_tooltip = modify_the_red_army_tt
+				add_to_variable = { SOV_the_red_army_mastery_loss_factor  = -0.05 tooltip = land_mastery_gain_factor_tt }
+
+				#Need for tooltip
+				set_variable = { SOV_the_red_army_mastery_loss_factor_inverted = SOV_the_red_army_mastery_loss_factor }
+				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+			}
 		}
 	}
 
@@ -7168,6 +7200,19 @@ focus = {
 				SOV_paranoia_modifier_update_gui_tooltip = yes
 			}		
 			custom_effect_tooltip = SOV_increase_weekly_paranoia_in_trait_tt
+
+			custom_effect_tooltip = newline_tt
+
+			if = {
+				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+				
+				custom_effect_tooltip = modify_the_red_army_tt
+				add_to_variable = { SOV_the_red_army_mastery_loss_factor = -0.05 tooltip = land_mastery_gain_factor_tt }
+
+				#Need for tooltip
+				set_variable = { SOV_the_red_army_mastery_loss_factor_inverted = SOV_the_red_army_mastery_loss_factor }
+				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+			}
 		}
 	}
 
@@ -7393,6 +7438,17 @@ focus = {
 			}
 
 			set_country_flag = SOV_stalinist_military_flag #New Generals have more chances of being Stalinists after this
+			custom_effect_tooltip = newline_tt
+			if = {
+				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+				
+				custom_effect_tooltip = modify_the_red_army_tt
+				add_to_variable = { SOV_the_red_army_mastery_loss_factor = -0.05 tooltip = land_mastery_gain_factor_tt }
+
+				#Need for tooltip
+				set_variable = { SOV_the_red_army_mastery_loss_factor_inverted = SOV_the_red_army_mastery_loss_factor }
+				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+			}
 		}
 	}
 
@@ -7491,6 +7547,17 @@ focus = {
 			custom_effect_tooltip = SOV_trigger_third_moscow_trial_tt
 
 			SOV_remove_paranoia_effect = yes #REMOVE PARANOIA SYSTEM
+			custom_effect_tooltip = newline_tt
+			if = {
+				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+				
+				custom_effect_tooltip = modify_the_red_army_tt
+				add_to_variable = { SOV_the_red_army_mastery_loss_factor = -0.05 tooltip = land_mastery_gain_factor_tt }
+
+				#Need for tooltip
+				set_variable = { SOV_the_red_army_mastery_loss_factor_inverted = SOV_the_red_army_mastery_loss_factor }
+				multiply_variable = { SOV_the_red_army_mastery_loss_factor_inverted = -1 }
+			}
 		}
 	}
 
