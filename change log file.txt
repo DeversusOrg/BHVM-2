@@ -674,3 +674,11 @@ Bulgaria IMRO shenanigans has been railroaded
 Hungarian rubber and other stuff has been railroaded
 Proximity fuze has been fixed and actually does something now
 CS:73dc
+
+All new changes from 1.17.4 have been implemented
+Clicking "Xp from Spain" decisions now grants mastery for land (Reminder which nations get xp from spain : GER , SOV , ITA , FRA , JAP , NZL , AST.)
+Mobilizing is now 3x times base faster so that you can actually have manpower faster when you up laws 
+Ship modules have been updated
+Belguim should no longer (how ever rarely) civil war itself with fascism 
+Soviets focuses for eastern nations aid now get bypassed resulting in soviets being able to complete the "annex tana tuva" focus and get its benefits
+CS:c90d

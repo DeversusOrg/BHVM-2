@@ -482,7 +482,14 @@ SOV_spain = {
 		complete_effect = {
 			SOV = {
 				army_experience = 300
+				add_daily_mastery = {
+					amount = 1
+					days = 50
+					name = "Mastery From Spain"
+					folder = land
+				}
 			}
+			
 		}
 	}
     GER_assist_republican_spain = {
@@ -501,6 +508,12 @@ SOV_spain = {
 		complete_effect = {
 			GER = {
 				army_experience = 300
+				add_daily_mastery = {
+					amount = 1
+					days = 50
+					name = "Mastery From Spain"
+					folder = land
+				}
 			}
 		}
 	}
@@ -520,6 +533,12 @@ SOV_spain = {
 		complete_effect = {
 			ITA = {
 				army_experience = 300
+				add_daily_mastery = {
+					amount = 1
+					days = 50
+					name = "Mastery From Spain"
+					folder = land
+				}
 			}
 		}
 	}
@@ -539,6 +558,12 @@ SOV_spain = {
 		complete_effect = {
 			JAP = {
 				army_experience = 300
+				add_daily_mastery = {
+					amount = 1
+					days = 50
+					name = "Mastery From Spain"
+					folder = land
+				}
 			}
 		}
 	}
@@ -558,6 +583,12 @@ SOV_spain = {
 		complete_effect = {
 			FRA = {
 				army_experience = 125
+				add_daily_mastery = {
+					amount = 0.5
+					days = 30
+					name = "Mastery From Spain"
+					folder = land
+				}
 			}
 		}
 	}
