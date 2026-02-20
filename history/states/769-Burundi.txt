@@ -9,7 +9,6 @@ state = {
 
 		owner = BEL
 
-		add_core_of = BLM
 
 		victory_points = {
 			2220 1
