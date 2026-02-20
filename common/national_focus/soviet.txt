@@ -8537,7 +8537,6 @@ focus = {
 			}
 		}
 	}
-
 	focus = {
 		id = SOV_development_aid_for_eastern_allies
 		icon = GFX_goal_generic_construct_civilian
@@ -8552,9 +8551,14 @@ focus = {
 			modifier = {
 				factor = 0
 				has_civil_war = yes
-			}	
+			}
 		}
-
+		bypass = {
+			OR = {
+				NOT = { country_exists = MON }
+				NOT = { 330 = { is_controlled_by = MON } }
+			}
+		}
 		available = {
 			any_allied_country = {
 				capital_scope = { is_on_continent = asia }
@@ -8609,15 +8613,20 @@ focus = {
 			modifier = {
 				factor = 0
 				has_civil_war = yes
-			}	
+			}
 		}
 
 		available = {
 			is_subject = no
 		}
-		
-		search_filters = {}
 
+		search_filters = {}
+		bypass = {
+			OR = {
+				NOT = { country_exists = MON }
+				NOT = { 330 = { is_controlled_by = MON } }
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = SOV_war_measures_scope_tt
 			every_other_country = {
