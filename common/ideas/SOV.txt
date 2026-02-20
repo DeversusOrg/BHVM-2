@@ -16,7 +16,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SOV_second_five_year_plan
+			picture = SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
 
 			allowed = {
 				always = no
@@ -35,7 +35,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SOV_third_five_year_plan
+			picture = SOV_third_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
 
 			allowed = {
 				always = no
@@ -55,7 +55,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = trotskyite_plot
+			picture = trotskyite_plot_nsb_ccp_sov_compatibility
 
 			allowed = {
 				always = no
@@ -64,10 +64,7 @@ ideas = {
 			allowed_civil_war = {
 				OR = {
 					SOV_is_right_opposition = yes
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
+					NOT = { tag = SOV } #Stalin/Beriya
 				}
 			}
 
@@ -76,27 +73,10 @@ ideas = {
 				political_power_factor = -0.15
 			}
 		}
-		SOV_nuhuh_air = {
-
-			removal_cost = -1
-
-			picture = air_war_plans_division_focus
-
-			allowed = {
-				always = no # added via gamerule
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			rule = {
-				can_not_produce_air = yes
-			}
-			modifier = {
-				custom_modifier_tooltip = SOV_no_air_tooltip
-			}
-		}
 
 		trotskyite_plot_purged = {
+			name = trotskyite_plot
+			picture = trotskyite_plot_purged_nsb_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -153,16 +133,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_country_leader = {
-					character = SOV_iosif_stalin
-					ruling_only = yes
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = generic_democratic_opposition
 
 			modifier = {
-				
+				political_power_factor = -0.10
+				production_speed_buildings_factor = -0.10
+				political_advisor_cost_factor = 0.25
 			}
 		}
 
@@ -176,16 +155,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			research_bonus = {
@@ -211,16 +181,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			modifier = {
@@ -239,16 +200,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_purged_junior_army_officers
@@ -280,16 +232,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_purged_junior_army_officers
@@ -321,16 +264,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_purged_junior_army_officers
@@ -362,16 +296,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			modifier = {
@@ -390,16 +315,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_shipyard_staff_purged
@@ -423,16 +339,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_purged_junior_navy_officers
@@ -455,16 +362,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_purged_junior_navy_officers
@@ -487,16 +385,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_purged_junior_navy_officers
@@ -520,16 +409,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			modifier = {
@@ -547,16 +427,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = SOV_lavrenty_beriya
-						ruling_only = yes
-					}
-				}
+				NOT = { tag = SOV } #Go to Stalinist side
 			}
 
 			picture = SOV_ground_based_training
@@ -905,7 +776,7 @@ ideas = {
 				tag = SOV
 			}
 
-			picture = generic_exploit_mines
+			picture = SOV_restoration_and_development_idea_ccp_sov_compatibility
 
 			modifier = {
 				industry_repair_factor = 0.1
@@ -1175,7 +1046,7 @@ ideas = {
 		SOV_defense_industry_artillery_bonus = {
 			name = SOV_soviet_artillery
 
-			picture = generic_artillery_regiments
+			picture = SOV_defense_industry_artillery_bonus_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -1224,7 +1095,7 @@ ideas = {
 		SOV_desperate_measures_ns = {
 			name = SOV_desperate_measures
 
-			picture = tfv_can_conscription_crisis
+			picture = SOV_desperate_measures_ns_nsb_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -1246,7 +1117,7 @@ ideas = {
 		SOV_smersh = {
 			name = SOV_smersh
 
-			picture = smersh
+			picture = smersh_nsb_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -1263,7 +1134,7 @@ ideas = {
 		SOV_smersh_no_lar = {
 			name = SOV_smersh
 
-			picture = smersh
+			picture = SOV_smersh_no_lar_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -1338,8 +1209,7 @@ ideas = {
 			modifier = {
 				military_leader_cost_factor = -0.2
 				promote_cost_factor	 = -0.15
-				army_org_factor = 0.1
-				max_command_power = 10
+				army_org_factor = 0.05
 			}
 		}
 
@@ -1906,18 +1776,23 @@ ideas = {
 			}
 
 			on_remove = {
-				var:SOV_capital_for_soviet_imports = { #This is where the German capital is stored and where Soviet Imports state modifier was added
-					if = {
-						limit = {
-							has_dynamic_modifier = { modifier = SOV_soviet_imports }
-						}
-						remove_dynamic_modifier = { modifier = SOV_soviet_imports }
-					}
-				}
+				#var:SOV_capital_for_soviet_imports = { #This is where the German capital is stored and where Soviet Imports state modifier was added
+				#	if = {
+				#		limit = {
+				#			has_dynamic_modifier = { modifier = SOV_soviet_imports }
+				#		}
+				#		remove_dynamic_modifier = { modifier = SOV_soviet_imports }
+				#	}
+				#}
 			}
 
 			modifier = {
 				consumer_goods_factor = -0.10
+				country_resource_steel = 20 
+				country_resource_oil = 30
+				country_resource_chromium = 6
+				country_resource_rubber = 6
+				country_resource_tungsten = 4
 			}
 		}
 
@@ -1959,7 +1834,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_morale_bonus
+			picture = SOV_rehabilitated_military_ns_nsb_ccp_sov_compatibility
 
 			modifier = {
 				land_reinforce_rate = 0.02
@@ -1983,7 +1858,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.1
-				experience_gain_army_factor = -1
+				experience_gain_army_factor = -0.9
 				army_org_regain = -0.15
 				custom_modifier_tooltip = SOV_military_reorganization_ns_removal_tt
 			}
@@ -2289,7 +2164,7 @@ ideas = {
 		}
 
 		SOV_consolidate_power = {
-			picture = generic_volunteer_expedition_bonus
+			picture = SOV_consolidate_power_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2308,7 +2183,7 @@ ideas = {
 		}
 
 		SOV_rebuild_the_nation = {
-			picture = generic_goods_red_bonus
+			picture = SOV_rebuild_the_nation_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2327,7 +2202,7 @@ ideas = {
 		}
 
 		SOV_restore_the_glory_of_the_motherland = {
-			picture = generic_morale_bonus
+			picture = SOV_restore_the_glory_of_the_motherland_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2432,7 +2307,7 @@ ideas = {
 		}
 
 		SOV_rebuild_the_savior_cathedral = {
-			picture = generic_exploit_mines
+			picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2472,7 +2347,7 @@ ideas = {
 
 		SOV_honest_serfdom_idea = {
 
-			picture = generic_manpower_bonus
+			picture = SOV_honest_serfdom_idea_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2493,7 +2368,7 @@ ideas = {
 
 		SOV_memories_of_1905_idea = {
 
-			picture = generic_japanese_conflict
+			picture = SOV_memories_of_1905_idea_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2514,7 +2389,7 @@ ideas = {
 
 		SOV_modernize_the_far_eastern_fleet = {
 
-			picture = generic_navy_bonus
+			picture = SOV_modernize_the_far_eastern_fleet_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2535,7 +2410,7 @@ ideas = {
 		SOV_modernize_the_far_eastern_fleet_vanilla = { #Non-MTG version of the NS above
 			name = SOV_modernize_the_far_eastern_fleet
 
-			picture = generic_navy_bonus
+			picture = SOV_modernize_the_far_eastern_fleet_vanilla_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2554,7 +2429,7 @@ ideas = {
 
 		SOV_an_empire_in_the_pacific_idea = {
 
-			picture = generic_sea_focused_navy
+			picture = SOV_an_empire_in_the_pacific_idea_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -2585,7 +2460,7 @@ ideas = {
 
 		SOV_national_brotherhood_idea = {
 
-			picture = generic_infantry_bonus
+			picture = SOV_national_brotherhood_idea_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2636,7 +2511,7 @@ ideas = {
 		}
 
 		SOV_legacy_of_rome = {
-			picture = generic_monarchist_uprising
+			picture = SOV_legacy_of_rome_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2656,7 +2531,7 @@ ideas = {
 		}
 
 		SOV_the_iron_wall_of_russian_resolve = {
-			picture = man_five_year_plan_tank
+			picture = SOV_the_iron_wall_of_russian_resolve_nsb_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2676,7 +2551,7 @@ ideas = {
 		}
 
 		SOV_russian_corporate_state = {
-			picture = man_five_year_plan_industry
+			picture = SOV_russian_corporate_state_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2693,7 +2568,7 @@ ideas = {
 		}
 
 		SOV_our_slavic_commitments = {
-			picture = FRA_matignon_agreements
+			picture = SOV_our_slavic_commitments_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2710,7 +2585,7 @@ ideas = {
 		}
 
 		SOV_siberian_lessons = {
-			picture = can_wartime_prices_and_trade_board
+			picture = SOV_siberian_lessons_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2727,7 +2602,7 @@ ideas = {
 		}
 
 		SOV_romanov_reconstruction = {
-			picture = generic_intel_bonus
+			picture = SOV_romanov_reconstruction_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -2815,7 +2690,7 @@ ideas = {
 
 		SOV_the_local_soviets_idea = {
 
-			picture = generic_morale_bonus
+			picture = SOV_the_local_soviets_idea_nsb_ccp_sov_compatibility
 			removal_cost = -1
 
 			allowed = {
@@ -3014,7 +2889,7 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = {
-				#has_completed_focus = SOV_the_fourth_international
+				has_completed_focus = SOV_the_fourth_international
 				SOV_is_left_opposition = yes
 			}
 
@@ -3165,6 +3040,7 @@ ideas = {
 				attrition = -0.1
 			}
 		}
+
 		SOV_trotskyist_revolutionary_agitation = {
 			removal_cost = -1
 
@@ -3201,7 +3077,7 @@ ideas = {
 
 		SOV_politicized_military = {
 
-			picture = generic_reserve_divisions
+			picture = SOV_politicized_military_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -3227,7 +3103,7 @@ ideas = {
 		SOV_politicized_military_humanism = {
 			name = SOV_politicized_military
 
-			picture = generic_reserve_divisions
+			picture = SOV_politicized_military_humanism_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -3254,7 +3130,7 @@ ideas = {
 		SOV_politicized_military_keep = {
 			name = SOV_politicized_military
 
-			picture = generic_reserve_divisions
+			picture = SOV_politicized_military_keep_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -3281,7 +3157,7 @@ ideas = {
 		SOV_politicized_military_keep_humanism = {
 			name = SOV_politicized_military
 
-			picture = generic_reserve_divisions
+			picture = SOV_politicized_military_keep_humanism_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -3308,7 +3184,7 @@ ideas = {
 
 		SOV_politicized_military_swap = {
 
-			picture = generic_reserve_divisions
+			picture = SOV_politicized_military_swap_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -3333,7 +3209,7 @@ ideas = {
 		SOV_politicized_military_swap_humanism = {
 			name = SOV_politicized_military_swap
 
-			picture = generic_reserve_divisions
+			picture = SOV_politicized_military_swap_humanism_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -3357,7 +3233,7 @@ ideas = {
 		}
 
 		SOV_politicized_military_battle_priests = { #Exiles version of Keep Commissars
-			picture = YUG_orthodox_church_support
+			picture = SOV_politicized_military_battle_priests_ccp_sov_compatibility
 
 			removal_cost = -1
 
@@ -4535,11 +4411,25 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
 					NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
 				}
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender"
+						FROM = { original_tag = CHI }
+					}
+					FROM = { 
+						has_completed_focus = CHI_secure_the_soviet_border 
+						NOT = {
+							has_country_flag = SOV_accepted_Astrov
+							has_country_flag = SOV_accepted_OKMO
+						}
+					}
+				}	
 			}
 
 			available = {
-				if = {
+				IF = {
 					limit = {
+						NOT = { has_dlc = "No Compromise, No Surrender" }
 						OR = {
 							is_literally_china = yes
 							tag = MAN
@@ -4549,6 +4439,13 @@ ideas = {
 					NOT = {
 						has_war_with = SOV
 					}
+				}
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender" 
+						original_tag = CHI
+					}
+					has_country_flag = SOV_accepted_Morozov
 				}
 			}
 
@@ -4569,6 +4466,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SOV
+
 			}
 
 			visible = {
@@ -4795,7 +4693,13 @@ ideas = {
 			picture = astrov_design_bureau
 
 			allowed = {
-				original_tag = SOV
+				OR = {
+					original_tag = SOV
+					AND = {
+						tag = CHI
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 
 			visible = {
@@ -4803,6 +4707,28 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
 					NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
 					NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
+				}
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender"
+						FROM = { original_tag = CHI }
+					}
+					FROM = { 
+						has_completed_focus = CHI_secure_the_soviet_border 
+						NOT = {
+							has_country_flag = SOV_accepted_Morozov
+							has_country_flag = SOV_accepted_OKMO
+						}
+					}
+				}
+			}
+			available = {
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender" 
+						original_tag = CHI
+					}
+					has_country_flag = SOV_accepted_Astrov
 				}
 			}
 
@@ -5049,7 +4975,13 @@ ideas = {
 			picture = okmo
 
 			allowed = {
-				original_tag = SOV
+				OR = {
+					original_tag = SOV
+					AND = {
+						tag = CHI
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 
 			visible = {
@@ -5057,6 +4989,29 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
 					NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
 					NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
+				}
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender"
+						FROM = { original_tag = CHI }
+					}
+					FROM = { 
+						has_completed_focus = CHI_secure_the_soviet_border 
+						NOT = {
+							has_country_flag = SOV_accepted_Morozov
+							has_country_flag = SOV_accepted_Astrov
+						}
+					}
+				}
+			}
+
+			available = {
+				IF = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender" 
+						original_tag = CHI
+					}
+					has_country_flag = SOV_accepted_OKMO
 				}
 			}
 
@@ -9638,6 +9593,14 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
+			
+			ai_will_do = {
+				base = 2
+				modifier = {
+					factor = 4
+					date > 1937.1.1
+				}
+			}
 		}
 
 
@@ -10284,5 +10247,4 @@ ideas = {
 			}
 		}
 
-    }
 }
