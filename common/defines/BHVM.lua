@@ -30,7 +30,7 @@ NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0128                     -- 
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200						    -- Lets go back to vanilla!! Game rule for "unlimited" special forces
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.03                        -- Lets go back to vanilla!! Game rule for "unlimited" special forces
 
-
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.047
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                        -- Free license
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lended license
