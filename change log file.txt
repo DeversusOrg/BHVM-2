@@ -682,3 +682,15 @@ Ship modules have been updated
 Belguim should no longer (how ever rarely) civil war itself with fascism 
 Soviets focuses for eastern nations aid now get bypassed resulting in soviets being able to complete the "annex tana tuva" focus and get its benefits
 CS:c90d
+
+DESPERATE DEFENSE FOR NOW DOESNT NEED TO HAVE A DEFENSIVE WAR TO BE PICKED - WILL BE TURNED INTO A GAME RULE INTO THE FEATURE!
+This update is a big nothing burger fyi* 
+London starts with another 1+ building slot
+Liverpool starts with another 3+ builslots
+Piedmont starts with 2 more bs
+Lombardy starts  with 3 more bs
+Fixed an issue with paris
+Venezuella should have no buildings anymore
+Louisiana starts with 2 more bs
+Litorale starts with 4 more slots (due to " hist appealing borders " aka germany owning slovenia after yugo caps)
+CS:44d4
