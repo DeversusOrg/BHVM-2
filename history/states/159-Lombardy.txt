@@ -6,6 +6,7 @@ state = {
 	state_category = metropolis
 
 	history = {
+		add_extra_state_shared_building_slots = 3
 		owner = ITA
 		victory_points = { #Milano
 			3780 15 
