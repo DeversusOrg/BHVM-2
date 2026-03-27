@@ -231,7 +231,7 @@ country_event = {
     is_triggered_only = yes
     
     option = {
-        name = "Yes, move the host tool"
+        name = "Yes, move the host tool to [?temp_new_host.GetName] ([?temp_new_host.GetTag])"
         # Store new host globally BEFORE clearing flags
         set_global_variable = { new_host_country = temp_new_host }
         # Clear host flag from everyone
@@ -253,6 +253,7 @@ country_event = {
     option = {
         name = "No, cancel"
         clear_variable = temp_new_host
+        set_country_flag = host 
     }
 }
 
