@@ -708,12 +708,12 @@ spy_tech_stealing = {
 	name = "Spy Tech Stealing"
 	group = " Chapter 2: Global Gameplay & Balance"
 	icon = "GFX_decision_generic_intelligence_operation"
-	default = {
+	option = {
 		name = on
 		text = "GAllowed"
 		desc = "Spies can steal technology as normal (Recommended)"
 	}
-	option = {
+	default = {
 		name = off
 		text = "RDisabled"
 		desc = "Spies cannot steal technology (Not Recommended)"
