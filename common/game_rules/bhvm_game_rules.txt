@@ -7,220 +7,15 @@
 #	 $$ |  $$ |$$ |  $$ |$$ |\$  /$$ |$$ |            $$ |  $$ |$$ |  $$ |$$ |     $$ |      $$\   $$ |
 #	 \$$$$$$  |$$ |  $$ |$$ | \_/ $$ |$$$$$$$$\       $$ |  $$ |\$$$$$$  |$$$$$$$$\$$$$$$$$\ \$$$$$$  |
 #	  \______/ \__|  \__|\__|     \__|\________|      \__|  \__| \______/ \________\________| \______/ 
-                                                                                       
-sov_no_tradebacks = {
-	name = "Soviets No Tradeback"
-	group = "BHVM game rules"
-	icon = "GFX_decision_eng_trade_unions_support"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "Soviets won't have tradeback on thier own (Recommmended)"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Soviets get their own no-tradeback spirit (no factory resource penalty) until war with Germany (Not Recommmended)"
-	}
-}
-sov_basic_heavy = {
-	name = "Soviets start with basic heavy"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "Soviets START with basic heavy tech(Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "Soviets DON'T start with basic heavy tech(Not Recommmended)"
-	}
-}
 
-sov_closed_eco = {
-	name = "Soviet Closed Economy"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_prospect_for_resources"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "Soviets start on export focus (Recommmended)"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Soviets start the game on closed eco, free trade bonuses and cannot change it , as well 5 civs (Not Recommmended)"
-	}
-}
-
-japan_closed_eco = {
-	name = "Japan Closed Economy"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_prospect_for_resources"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "Japan starts on limited exports (Recommmended)"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Japan start the game on closed eco, free trade bonuses and cannot change it , as well 5 civs (Not Recommmended)"
-	}
-}
-tradebacks = {
-	name = "Tradbacking is cancer"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_trade"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "No tradeback idea (Recommmended)"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty until September 1939. Germany must declare war then (Not usually Recommmended)"
-	}
-	option = {
-		name = no_export
-		text = "BNo Exports"
-		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty and no exports until September 1939. Germany must declare war then (Not usually Recommmended)"
-	}
-	option = {
-		name = not_allies
-		text = "YNot Allies"
-		desc = "Everyone has no tradeback idea except for Allies. Germany has to attack Sept 1939 (Not usually Recommmended)"
-	}
-}
-
-#max_submarine_tech = {
-#	name = "Max Submarine Tech"
-#	group = "elwolfmod Rules"
-#	icon = "GFX_decision_generic_research"
-#	default = {
-#		name = sub2
-#		text = "G1936"
-#		desc = "Submarine 3 and Snorkel 1 banned (Recommmended)"
-#	}
-#	option = {
-#		name = sub3
-#		text = "R1940"
-#		desc = "Submarine 3 and Snorkel 1 allowed (Not Recommmended)"
-#	}
-#	option = {
-#		name = sub4
-#		text = "R1944"
-#		desc = "Submarine 4 and Snorkel 2 allowed (Not Recommmended)"
-#	}
-#}
-
-sov_one_research_slot = {
-	name = "Soviet +1 research slot from start"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "Soviets DON'T gain a research slot"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Soviets GAINS a research slot"
-	}
-}
-ger_one_research_slot = {
-	name = "Germany +1 research slot from start"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = off
-		text = "GOff"
-		desc = "Germany DON'T gain a research slot"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Germany GAINS a research slot"
-	}
-}
-#free_collabs = {
-#	name = "Free Collabs"
-#	group = "BHVM game rules"
-#	icon = "GFX_decision_category_generic_formable_nations"
-#	option = {
-#		name = on
-#		text = "ROn"
-#		desc = "Italy free compliance on greece/yugo and Japan free compliance on China (Not Recommmended)"
-#	}
-#	default = {
-#		name = off
-#		text = "GOff"
-#		desc = "Countries need to do their own collaboration governments (Recommmended)"
-#	}
-#}
-
-no_brazil&finland = {
-	name = "Question for Brazil & Finland"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_FIN_national_defense"
-	default = {
-		name = off
-		text = "GAllowed"
-		desc = "Brazil and Finland are alive and playable"
-	}
-	option = {
-		name = fin
-		text = "RFinland annexed"
-		desc = "Finland is annexed , brazil is playable"
-	}
-	option = {
-		name = bra
-		text = "RBrazil annexed"
-		desc = "Brazil is annexed, finland is playable"
-	}
-	option = {
-		name = both
-		text = "BNo Brazil AND Finland"
-		desc = "Finland and Brazil went on a vacation in Brazil :)"
-	}
-}
-killable_fin = {
-	name = "Can we Kill finland?"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_coastal_fortification"
-	default = {
-		name = off
-		text = "GNo"
-		desc = "Finland cant be killed"
-	}
-	option = {
-		name = on
-		text = "RFinland will died"
-		desc = "GEGE VELL PLEIYED FEMLAND"
-	}
-}
-no_collabs = {
-	name = "Collaboration Governments Countries"
-	group = "BHVM game rules"
-	icon = "GFX_decision_revolt"
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You CAN NOT create collaboration governments (Recommmended)"
-	}
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You CAN create collaboration governments"
-	}
-}   
+# #############################################################################
+# #                                                                           #
+# #             BHVM -  Chapter 1: Country Balancing & Starters              #
+# #                                                                           #
+# #############################################################################
 sov_boost = {
 	name = "Soviets Civ Boost"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -242,11 +37,10 @@ sov_boost = {
 		text = "ROn-12"
 		desc = "Soviets get 12 Civilian factories (Not Recommmended)"
 	}
-}     
-  
+}
 ger_boost = {
 	name = "German Civ Boost"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -268,10 +62,10 @@ ger_boost = {
 		text = "ROn-12"
 		desc = "Germany get 12 Civilian factories (Not Recommmended)"
 	}
-} 
+}
 jap_boost = {
 	name = "Japan Civ Boost"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -293,10 +87,10 @@ jap_boost = {
 		text = "ROn-12"
 		desc = "Japan get 12 Civilian factories (Not Recommmended)"
 	}
-}          
+}
 eng_boost = {
 	name = "Britain Civ Boost"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -321,7 +115,7 @@ eng_boost = {
 }
 ita_boost = {
 	name = "Italiano Civ Boost"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -346,7 +140,7 @@ ita_boost = {
 }
 fra_boost = {
 	name = "Français Civ Boost"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -371,7 +165,7 @@ fra_boost = {
 }
 usa_boost = {
 	name = "USA Civ Boost?Are you ok , like mentaly??"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -389,147 +183,99 @@ usa_boost = {
 		desc = "USA get 8 Civilian factories (Not Recommmended)"
 	}
 }
-eng_ape_convoys = {
-	name = "Give Britain some convoys if hes ape?"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_human_torpedo"
+sov_basic_heavy = {
+	name = "Soviets start with basic heavy"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_research"
 	default = {
 		name = on
-		text = "POn"
-		desc = "The Uk is silly-gives 2.5k convoys(Recommmended)"
+		text = "GOn"
+		desc = "Soviets START with basic heavy tech(Recommmended)"
 	}
 	option = {
 		name = off
-		text = "WOff"
-		desc = "The Uk has more than 10 hours-does not give 2.5k convoys(Not Recommmended)"
-	}
-}     
-#	 ________ ________  ________  ________  _______           ________  _________  _________  ________  ________  ___  __            ___       ________  ________  _________        ________  _________  ________  ________   ________     
-#	|\  _____\\   __  \|\   __  \|\   ____\|\  ___ \         |\   __  \|\___   ___\\___   ___\\   __  \|\   ____\|\  \|\  \         |\  \     |\   __  \|\   ____\|\___   ___\     |\   ____\|\___   ___\\   __  \|\   ___  \|\   ___ \    
-#	\ \  \__/\ \  \|\  \ \  \|\  \ \  \___|\ \   __/|        \ \  \|\  \|___ \  \_\|___ \  \_\ \  \|\  \ \  \___|\ \  \/  /|_       \ \  \    \ \  \|\  \ \  \___|\|___ \  \_|     \ \  \___|\|___ \  \_\ \  \|\  \ \  \\ \  \ \  \_|\ \   
-#	 \ \   __\\ \  \\\  \ \   _  _\ \  \    \ \  \_|/__       \ \   __  \   \ \  \     \ \  \ \ \   __  \ \  \    \ \   ___  \       \ \  \    \ \   __  \ \_____  \   \ \  \       \ \_____  \   \ \  \ \ \   __  \ \  \\ \  \ \  \ \\ \  
-#	  \ \  \_| \ \  \\\  \ \  \\  \\ \  \____\ \  \_|\ \       \ \  \ \  \   \ \  \     \ \  \ \ \  \ \  \ \  \____\ \  \\ \  \       \ \  \____\ \  \ \  \|____|\  \   \ \  \       \|____|\  \   \ \  \ \ \  \ \  \ \  \\ \  \ \  \_\\ \ 
-#	   \ \__\   \ \_______\ \__\\ _\\ \_______\ \_______\       \ \__\ \__\   \ \__\     \ \__\ \ \__\ \__\ \_______\ \__\\ \__\       \ \_______\ \__\ \__\____\_\  \   \ \__\        ____\_\  \   \ \__\ \ \__\ \__\ \__\\ \__\ \_______\
-#	    \|__|    \|_______|\|__|\|__|\|_______|\|_______|        \|__|\|__|    \|__|      \|__|  \|__|\|__|\|_______|\|__| \|__|        \|_______|\|__|\|__|\_________\   \|__|       |\_________\   \|__|  \|__|\|__|\|__| \|__|\|_______|
-#	                                                                                                                                                       \|_________|               \|_________|                                         
-#
-
-force_attack_last_stand = {
-	name = "Force Attack & Last Stand"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_protection"
-	default = {
-		name = on
-		text = "POn"
-		desc = "I am noob and i like vanila (Recommmended)"
-	}
-	option = {
-		name = off
-		text = "BOff"
-		desc = "Enjoy TFB but vanila (Not Recommmended)"
+		text = "ROff"
+		desc = "Soviets DON'T start with basic heavy tech(Not Recommmended)"
 	}
 }
-
-
-acoustic_guerilla_tatctics = {
-	name = "Guerilla TacticsRDOES NOT WORK RN"
-	group = "BHVM game rules"
-	icon = "GFX_decision_eng_trade_unions_support"
+sov_one_research_slot = {
+	name = "Soviet +1 research slot from start"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_research"
 	default = {
-		name = ALLOWED
-		text = "GAllowed"
-		desc = "Normal Gurilla Tatics are able to be Selected"
-	}
-	option = {
-		name = BLOCKED
-		text = "RBanned"
-		desc = "Gurilla Tatics are not able to be Selected"
-	}
-	option = {
-		name = PLAINS
-		text = "PPlains"
-		desc = "Guerilla Tatics are RNOT able to get rolled on plains"
-	}
-}
-space_marine_deleter = {
-	name = "Mixing inf and armor"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_tank"
-	default = {
-		name = Allowed
-		text = "GYes"
-		desc = "You will be allowed to mix in armor and inf in one division"
-	}
-	option = {
-		name = BLOCKED
-		text = "RBLOCKED"
-		desc = "You will RNOT Wbe allowed to mix armor and inf in one division"
-	}
-}
-naval_treaties = {
-	name = "Naval Treaty"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_MTG_naval_treaties"
-	option = {
 		name = off
 		text = "GOff"
-		desc = "Naval Treaty disabled (Recommmended)"
+		desc = "Soviets DON'T gain a research slot"
 	}
-	default = {
+	option = {
 		name = on
 		text = "ROn"
-		desc = "Naval Treaty enabled (Not Recommmended)"
+		desc = "Soviets GAINS a research slot"
 	}
 }
-
-BHVM_adaptable = {
-	name = "Adaptable yes or no"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_political_actions"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "Adaptable will BE pickable"
-	}
+ger_one_research_slot = {
+	name = "Germany +1 research slot from start"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_research"
 	default = {
 		name = off
-		text = "ROff"
-		desc = "Adaptable will NOT be pickable"
+		text = "GOff"
+		desc = "Germany DON'T gain a research slot"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Germany GAINS a research slot"
 	}
 }
-BHVM_thorough_planner = {
-	name = "Through planner yes or no"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_political_actions"
+sov_no_tradebacks = {
+	name = "Soviets No Tradeback"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
-		name = on
-		text = "GOn"
-		desc = "Through planner will BE pickable"
+		name = off
+		text = "GOff"
+		desc = "Soviets won't have tradeback on thier own (Recommmended)"
 	}
 	option = {
-		name = off
-		text = "ROff"
-		desc = "Through planner will NOT be pickable"
+		name = on
+		text = "ROn"
+		desc = "Soviets get their own no-tradeback spirit (no factory resource penalty) until war with Germany (Not Recommmended)"
 	}
 }
-BHVM_sick_wounded = {
-	name = "Generals are very healthy and bulky"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic_political_actions"
+sov_closed_eco = {
+	name = "Soviet Closed Economy"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_category_generic_prospect_for_resources"
 	default = {
-		name = on
-		text = "GOn"
-		desc = "Sick and wounded DOES get removed"
+		name = off
+		text = "GOff"
+		desc = "Soviets start on export focus (Recommmended)"
 	}
 	option = {
+		name = on
+		text = "ROn"
+		desc = "Soviets start the game on closed eco, free trade bonuses and cannot change it , as well 5 civs (Not Recommmended)"
+	}
+}
+japan_closed_eco = {
+	name = "Japan Closed Economy"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_category_generic_prospect_for_resources"
+	default = {
 		name = off
-		text = "ROff"
-		desc = "Sick and wounded DOES NOT get removed"
+		text = "GOff"
+		desc = "Japan starts on limited exports (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Japan start the game on closed eco, free trade bonuses and cannot change it , as well 5 civs (Not Recommmended)"
 	}
 }
 soviet_airforce = {
 	name = "Soviet can make air"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_air"
 	default = {
 		name = on
@@ -542,283 +288,54 @@ soviet_airforce = {
 		desc = "Soviets are NOT ALLOWED to make air"
 	}
 }
-soviet_focus_buffs = {
-	name = "Soviet can do Fighters Against fascism"
-	group = "BHVM game rules"
-	icon = "GFX_decision_SOV_place_hq"
+sov_purges = {
+	name = "Soviet general purges"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_assassination"
 	option = {
-		name = on
-		text = "GYes they can"
-		desc = "Soviets can do the funny focus(RECOMENDED)"
-	}
-	default = {
-		name = off
-		text = "RNo they can't"
-		desc = "Soviets can't do the funny focus(NOT REALLY RECOMENDED)"
-	}
-}
-barb_gorila = {
-	name = "Guerilla On Barb settingsRDOES NOT WORK RN"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_tank"
-	default = {
-		name = ALLOWED
-		text = "GSoviets can do guerilla warfare"
-		desc = "Soviets can pick the guerilla warfare (tactic) doctrine tech(RECOMENDED?)"
-	}
-	option = {
-		name = DISALLOWED
-		text = "RSoviets cannot do guerilla warfare"
-		desc = "Soviets can't pick the guerilla warfare (tactic) doctrine tech(NOT REALLY RECOMENDED)"
-	}
-}
-sov_tashek_tungsten = {
-	name = "Soviets tungsten"
-	group = "BHVM game rules"
-	icon = "GFX_decision_tungsten"
-	default = {
-		name = on
+		name = yes
 		text = "GOn"
-		desc = "Soviets HAVE tungsten in Tashek(Not Recommmended If Soviet Closed Eco is on)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "Soviets DON'T HAVE tungsten in Tashek(Recommmended IF Soviet Closed Eco is off)"
-	}
-}
-spr_asturias_tungsten = {
-	name = "Spanish Tungsten"
-	group = "BHVM game rules"
-	icon = "GFX_decision_tungsten"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "Spain has nuts tungsten"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "Spain DOES NOT have nuts tungsten"
-	}
-}
-auto_tech_rush = {
-	name = "Auto Tech Rush"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = on
-		text = "ROn"
-		desc = "There will be decisions for auto-tech rushing (Recommmended)"
-	}
-	option = {
-		name = off
-		text = "GOff"
-		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended , If noob)"
-	}
-}
-vanila_bonuses = {
-	name = "Cool vanila bonuses from minors"
-	group = "BHVM game rules"
-	icon = "GFX_decision_gre_paying_ifc_debt"
-	option = {
-		name = on-overall
-		text = "1Real100%Balance"
-		desc = "Swedish Swiss and Denmark bonuses will apply to Italy Germany and England , swiss bonuses only to France(Not exactly Recommmended)"
-	}
-	option = {
-		name = on-axis
-		text = "KAxis-Bias"
-		desc = "Swedish Swiss and Denmark bonuses will apply to Italy and Germany(Not Recommmended)"
-	}
-	option = {
-		name = on-allies
-		text = "5Allies-Bias"
-		desc = "Swedish and Swiss bonuses will apply to England , swiss bonuses only to France(Not Recommmended)"
+		desc = "There is a chance that top SOV generals will get purged(Recommmended)"
 	}
 	default = {
-		name = off
-		text = "YOff"
-		desc = "Absolutely no bonuses from vanila based countries(Recommmended)"
+		name = no
+		text = "PNone"
+		desc = "There is no chance that top SOV will get purged(Not balanced)"
 	}
 }
-#upgradable_amb_mech = {
-#	name = "Upgradable Amb. Mechanized"
-#	group = "BHVM game rules"
-#	icon = "GFX_decision_generic_motorized"
-#	default = {
-#		name = on
-#		text = "ROn"
-#		desc = "You CAN upgrade amb mech and mot rocket arty(Recommmended)"
-#	}
-#	option = {
-#		name = off
-#		text = "GOff"
-#		desc = "You ARE UNABLE TO upgrade amb mech and mot rocket arty (Not Recommmended)"
-#	}
-#}
-vichy_france = {
-	name = "Vichy France"
-	group = "BHVM game rules"
-	icon = "GFX_decision_eng_trade_unions_support"
-	option = {
-		name = forced
-		text = "RForce"
-		desc = "Germany has to make Vichy (Not Recommmended)"
-	}
+sov_tech_tank_focus = {
+	name = "Soviet Superior War machines tech"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_assassination"
 	default = {
-		name = banned
-		text = "GBanned"
-		desc = "Germany can't make Vichy (Recommmended)"
+		name = basic
+		text = "GBasic med research needed"
+		desc = "The Soviets need to research basic med tank for the focus(Recommmended)"
+	}
+	option = {
+		name = improved
+		text = "PImproved med research needed"
+		desc = "The Soviets need to research improved med tank for the focus(Not Recommmended)"
 	}
 }
-super_heavy_tanks = {
-	name = "Super Heavy tanks armor meme"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_ger_military_buildup"
+sov_collab_limit = {
+	name = "SOV Collab Limit"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_unknown"
 	default = {
-		name = on
-		text = "GOn"
-		desc = "You're ALLOWED to research Super-Heavy tank technology(Recommmended)"
+		name = one_only
+		text = "ROne Only"
+		desc = "After completing a collab on SOV, no more collabs can be completed on SOV (Recommmended)"
 	}
 	option = {
-		name = off
-		text = "ROff"
-		desc = "You're NOT ALLOWD TO research Super-Heavy tank technology(Not Recommmended)"
-	}
-}
-mental_hospitals = {
-	name = "Allow Hospital 2"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_cavalry"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You're ALLOWED to research Mental Hospital technology(Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You're NOT ALLOWD TO research Mental Hospital technology(Not Recommmended)"
-	}
-}
-finish_support_comp = {
-	name = "Finland has its support compnaies"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_army_support"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "Finland has its companies(Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "Finland DOES NOT have its companies avaible(Not Recommmended)"
-	}
-}
-finish_production = {
-	name = "Finish Production"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_industry"
-	option = {
-		name = ger_gun
-		text = "GGerman Lend Lease for Gun"
-		desc = "It progresivly gets better as more time passes"
-	}
-	option = {
-		name = off
-		text = "RGermany doesn't get a button for Gun lend lease"
-		desc = "GG no gun factory ic"
-	}
-}
-spanish_production = {
-	name = "Spanish Production"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_industry"
-	option = {
-		name = ger_mech
-		text = "GGerman Lend Lease for Mech"
-		desc = "It progresivly gets better as more time passes"
-	}
-	option = {
-		name = bul_mech
-		text = "BGerman-Bulgarian Lend Lease for Mech"
-		desc = "It progresivly gets better as more time passes , for bulgaria"
-	}
-	default = {
-		name = mixer
-		text = "4Germany can choose either BUL or GER"
-		desc = "It progresivly gets better as more time passes , Germany can choose between itself and bulgaria"
-	}
-	option = {
-		name = off
-		text = "RGermany doesn't get a button for Mech lend lease"
-		desc = "No DDAY wall :("
-	}
-}
-spanish_franco_cp = {
-	name = "Spanish Franco CP"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_army_support"
-	default = {
-		name = on
-		text = "GVanilla CP"
-		desc = "Spain has vanilla CP from franco focus"
-	}
-	option = {
-		name = off
-		text = "RNo CP"
-		desc = "Spain doesn't get CP from franco focus and less CP gain"
-	}
-}
-brazil_nerf = {
-	name = "Brazil Rubber Nerf"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_industry"
-	option = {
-		name = off
-		text = "Brazil isn't nerfed"
-	}
-	option = {
-		name = on
-		text = "Brazil is nerfed"
-		desc = "Brazil rubber is reduced by ~50%"
-	}
-}
-no_market = {
-	name = "Market options"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_NOR_fascist_deploy_prep"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "You won't be able to acces the market(Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "You are bale to acces the market(Not Recommmended)"
-	}
-}
-anti_troll = {
-	name = "Anti Funny production fuckery"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_fundraising"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "IF on accident you delete your starting production line , it will give back efficiency(Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "You won't get efficiency when you fuck up your production line(Not Recommmended)"
+		name = unlimited
+		text = "GUnlimited"
+		desc = "Multiple collabs can be completed on SOV (Not Recommmended)"
 	}
 }
 ger_focus_datelock = {
 	name = "German Focus Time checks"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_category_generic_fascism"
 	default = {
 		name = enabled
@@ -833,7 +350,7 @@ ger_focus_datelock = {
 }
 ger_balkanizing = {
 	name = "German Focuses for Balkans"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_confiscation"
 	default = {
 		name = enabled
@@ -848,7 +365,7 @@ ger_balkanizing = {
 }
 ger_eco = {
 	name = "Germany eco paths allownonce "
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_category_generic_arms_trade"
 	option = {
 		name = both
@@ -868,7 +385,7 @@ ger_eco = {
 }
 ger_totaler_krieg_law = {
 	name = "Germanan totalen krieg settings"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_generic_fundraising"
 	option = {
 		name = disabled
@@ -888,7 +405,7 @@ ger_totaler_krieg_law = {
 }
 ger_mefo = {
 	name = "Germany can cancel MEFO bills"
-	group = "BHVM game rules"
+	group = " Chapter 1: Country Balancing & Starters"
 	icon = "GFX_decision_category_generic_arms_trade"
 	default = {
 		name = yes
@@ -901,9 +418,270 @@ ger_mefo = {
 		desc = "Germany CANNOT cancel MEFO bills(Not Recommmended)"
 	}
 }
+ger_supreme_leader = {
+	name = "German Supreme Leader focuses"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_GER_flag"
+	default = {
+		name = ALLOWED
+		text = "GGermany can do the focuses"
+		desc = "Demonstration of military achievements is allowed(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RGermany CAN'T do the focuses"
+		desc = "Demonstration of military achievements iS DISALLOWED(NOT RECOMMENDED)"
+	}
+}
+spanish_franco_cp = {
+	name = "Spanish Franco CP"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_generic_army_support"
+	default = {
+		name = on
+		text = "GVanilla CP"
+		desc = "Spain has vanilla CP from franco focus"
+	}
+	option = {
+		name = off
+		text = "RNo CP"
+		desc = "Spain doesn't get CP from franco focus and less CP gain"
+	}
+}
+ac_brazil = {
+	name = "Brazil AC"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_SWE_set_air_budget"
+	default = {
+		name = ALLOWED
+		text = "RBrazil AC is allowed"
+		desc = "Brazil CAN do its air focuses and joins allies day 1(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "GBrazil AC is BANNED"
+		desc = "Brazil can't do its air focuses and doesnt join allies day 1 of WW2(NOT RECOMMENDED)"
+	}
+}
+anti_noob_modefier = {
+	name = "France Anti-Noob state mod"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_eng_trade_unions_support"
+	option = {
+		name = off
+		text = "GOff"
+		desc = "France can build in mainland(Not Recommmended)"
+	}
+	default = {
+		name = on
+		text = "ROn"
+		desc = "France CAN'T build in mainland(Recommmended)"
+	}
+}
+BHVM_adaptable = {
+	name = "Adaptable yes or no"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_category_generic_political_actions"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "Adaptable will BE pickable"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "Adaptable will NOT be pickable"
+	}
+}
+BHVM_thorough_planner = {
+	name = "Through planner yes or no"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_category_generic_political_actions"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Through planner will BE pickable"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Through planner will NOT be pickable"
+	}
+}
+BHVM_sick_wounded = {
+	name = "Generals are very healthy and bulky"
+	group = " Chapter 1: Country Balancing & Starters"
+	icon = "GFX_decision_category_generic_political_actions"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Sick and wounded DOES get removed"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Sick and wounded DOES NOT get removed"
+	}
+}
+
+# #############################################################################
+# #                                                                           #
+# #              BHVM -  Chapter 2: Global Gameplay & Balance                 #
+# #                                                                           #
+# #############################################################################
+tradebacks = {
+	name = "Tradbacking is cancer"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_category_generic_trade"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "No tradeback idea (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty until September 1939. Germany must declare war then (Not usually Recommmended)"
+	}
+	option = {
+		name = no_export
+		text = "BNo Exports"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty and no exports until September 1939. Germany must declare war then (Not usually Recommmended)"
+	}
+	option = {
+		name = not_allies
+		text = "YNot Allies"
+		desc = "Everyone has no tradeback idea except for Allies. Germany has to attack Sept 1939 (Not usually Recommmended)"
+	}
+}
+force_attack_last_stand = {
+	name = "Force Attack & Last Stand"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_generic_protection"
+	default = {
+		name = on
+		text = "POn"
+		desc = "I am noob and i like vanila (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "BOff"
+		desc = "Enjoy TFB but vanila (Not Recommmended)"
+	}
+}
+naval_treaties = {
+	name = "Naval Treaty"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_category_MTG_naval_treaties"
+	option = {
+		name = off
+		text = "GOff"
+		desc = "Naval Treaty disabled (Recommmended)"
+	}
+	default = {
+		name = on
+		text = "ROn"
+		desc = "Naval Treaty enabled (Not Recommmended)"
+	}
+}
+no_collabs = {
+	name = "Collaboration Governments Countries"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_revolt"
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You CAN NOT create collaboration governments (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You CAN create collaboration governments"
+	}
+}
+sf_multiplier = {
+	name = "Special Forces Multiplier"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_category_generic"
+	option = {
+		name = capped
+		text = "RSF cap is almost vanilla"
+		desc = "Every nation has the same SF cap , unless national ideas(NOT RECOMMENDED)"
+	}
+	option = {
+		name = unlimited
+		text = "YSF is unlimted"
+		desc = "Every nation has unlimited SF cap!(NOT RECOMMENDED)"
+	}
+	default = {
+		name = uncapped
+		text = "GSF are boosted"
+		desc = "The important SF nations have a higher SF cap(Recommmended)"
+	}
+}
+no_market = {
+	name = "Market options"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_category_NOR_fascist_deploy_prep"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "You won't be able to acces the market(Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "You are bale to acces the market(Not Recommmended)"
+	}
+}
+juggle_slot = {
+	name = "Juggling esport"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = ALLOWED
+		text = "GALLOWED"
+		desc = "There is a special juggle slot(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RDISALLOWED"
+		desc = "There is NO special juggle slot(Not Recommmended)"
+	}
+}
+manpower_cont_focus = {
+	name = "Continuous Manpower: On/Off"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_generic_military"
+	option = {
+		name = off
+		text = "GOff"
+		desc = "The cont. focus Manpower recruitment is OFF(Not Recommmended)"
+	}
+	default = {
+		name = on
+		text = "ROn"
+		desc = "The cont. focus Manpower recruitment is ON(Recommmended)"
+	}
+}
+peace_training_xp= {
+	name = "Peace time with xp/no xp"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_eng_trade_unions_demand"
+	option = {
+		name = off
+		text = "GOff"
+		desc = "No xp from peace time trraining!(Not Recommmended)"
+	}
+	default = {
+		name = on
+		text = "ROn"
+		desc = "You gain daily xp with peace time training(Recommmended)"
+	}
+}
 pregrinds_4_factions = {
 	name = "Pregrinds: Game rule"
-	group = "BHVM game rules"
+	group = " Chapter 2: Global Gameplay & Balance"
 	icon = "GFX_decision_category_spr_reassert_american_dominance"
 	default = {
 		name = on
@@ -926,9 +704,300 @@ pregrinds_4_factions = {
 		desc = "No one has pregrinds!(XD)"
 	}
 }
+spy_tech_stealing = {
+	name = "Spy Tech Stealing"
+	group = " Chapter 2: Global Gameplay & Balance"
+	icon = "GFX_decision_generic_intelligence_operation"
+	default = {
+		name = on
+		text = "GAllowed"
+		desc = "Spies can steal technology as normal (Recommended)"
+	}
+	option = {
+		name = off
+		text = "RDisabled"
+		desc = "Spies cannot steal technology (Not Recommended)"
+	}
+}
+
+# #############################################################################
+# #                                                                           #
+# #            BHVM -  Chapter 3: Technology & Unit Restrictions    #
+# #                                                                           #
+# #############################################################################
+super_heavy_tanks = {
+	name = "Super Heavy tanks armor meme"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_category_ger_military_buildup"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "You're ALLOWED to research Super-Heavy tank technology(Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "You're NOT ALLOWED TO research Super-Heavy tank technology(Not Recommmended)"
+	}
+}
+mental_hospitals = {
+	name = "Allow Hospital 2"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_cavalry"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You're ALLOWED to research Mental Hospital technology(Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You're NOT ALLOWED TO research Mental Hospital technology(Not Recommmended)"
+	}
+}
+mech_2_tech = {
+	name = "Mechanized 2 (Amtrac 2 too)"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = ALLOWED
+		text = "GALLOWED"
+		desc = "Mech 2 and amtrac 2 onwards are researchable(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RDISALLOWED"
+		desc = "Mech 2 is NOT researchable(Not Recommmended)"
+	}
+}
+acoustic_guerilla_tatctics = {
+	name = "Guerilla TacticsRDOES NOT WORK RN"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = ALLOWED
+		text = "GAllowed"
+		desc = "Normal Gurilla Tatics are able to be Selected"
+	}
+	option = {
+		name = BLOCKED
+		text = "RBanned"
+		desc = "Gurilla Tatics are not able to be Selected"
+	}
+	option = {
+		name = PLAINS
+		text = "PPlains"
+		desc = "Guerilla Tatics are RNOT able to get rolled on plains"
+	}
+}
+barb_gorila = {
+	name = "Guerilla On Barb settingsRDOES NOT WORK RN"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_tank"
+	default = {
+		name = ALLOWED
+		text = "GSoviets can do guerilla warfare"
+		desc = "Soviets can pick the guerilla warfare (tactic) doctrine tech(RECOMENDED?)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RSoviets cannot do guerilla warfare"
+		desc = "Soviets can't pick the guerilla warfare (tactic) doctrine tech(NOT REALLY RECOMENDED)"
+	}
+}
+space_marine_deleter = {
+	name = "Mixing inf and armor"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_tank"
+	default = {
+		name = Allowed
+		text = "GYes"
+		desc = "You will be allowed to mix in armor and inf in one division"
+	}
+	option = {
+		name = BLOCKED
+		text = "RBLOCKED"
+		desc = "You will RNOT Wbe allowed to mix armor and inf in one division"
+	}
+}
+urban_assault_vechile= {
+	name = "Select if Urban Assault Vehicle is allowed or not "
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = off
+		text = "You CANNOT research armoured engineer company."
+		desc = "You also don't get the urban assault vehicle."
+	}
+	default = {
+		name = on
+		text = "You CAN research armoured engineer company"
+		desc = "You also get the urban assault vehicle."
+	}
+}
+railway_gun= {
+	name = "Select if Railway Gun is allowed or not "
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_ignite_civil_war"
+	default = {
+		name = off
+		text = "You CANNOT research Railway Battery."
+		desc = "###."
+	}
+	option = {
+		name = on
+		text = "You CAN research Railway Battery."
+		desc = "###"
+	}
+}
+super_heavy_railway_gun= {
+	name = "Select if Super Heavy Railway Battery is allowed or not "
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_ignite_civil_war"
+	default = {
+		name = off
+		text = "You CANNOT research Super Heavy Railway Battery."
+		desc = "###."
+	}
+	option = {
+		name = on
+		text = "You CAN research Super Heavy Railway Battery."
+		desc = "###"
+	}
+}
+finish_support_comp = {
+	name = "Finland has its support compnaies"
+	group = " Chapter 3: Technology & Unit Restrictions"
+	icon = "GFX_decision_generic_army_support"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Finland has its companies(Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Finland DOES NOT have its companies avaible(Not Recommmended)"
+	}
+}
+# #############################################################################
+# #                                                                           #
+# #              BHVM -  Chapter 4: Focus Trees & Decisions                   #
+# #                                                                           #
+# #############################################################################
+auto_tech_rush = {
+	name = "Auto Tech Rush"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		text = "ROn"
+		desc = "There will be decisions for auto-tech rushing (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "GOff"
+		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended , If noob)"
+	}
+}
+soviet_focus_buffs = {
+	name = "Soviet can do Fighters Against fascism"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_SOV_place_hq"
+	option = {
+		name = on
+		text = "GYes they can"
+		desc = "Soviets can do the funny focus(RECOMENDED)"
+	}
+	default = {
+		name = off
+		text = "RNo they can't"
+		desc = "Soviets can't do the funny focus(NOT REALLY RECOMENDED)"
+	}
+}
+vichy_france = {
+	name = "Vichy France"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_eng_trade_unions_support"
+	option = {
+		name = forced
+		text = "RForce"
+		desc = "Germany has to make Vichy (Not Recommmended)"
+	}
+	default = {
+		name = banned
+		text = "GBanned"
+		desc = "Germany can't make Vichy (Recommmended)"
+	}
+}
+finish_production = {
+	name = "Finish Production"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_generic_industry"
+	option = {
+		name = ger_gun
+		text = "GGerman Lend Lease for Gun"
+		desc = "It progresivly gets better as more time passes"
+	}
+	option = {
+		name = off
+		text = "RGermany doesn't get a button for Gun lend lease"
+		desc = "GG no gun factory ic"
+	}
+}
+spanish_production = {
+	name = "Spanish Production"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_generic_industry"
+	option = {
+		name = ger_mech
+		text = "GGerman Lend Lease for Mech"
+		desc = "It progresivly gets better as more time passes"
+	}
+	option = {
+		name = bul_mech
+		text = "BGerman-Bulgarian Lend Lease for Mech"
+		desc = "It progresivly gets better as more time passes , for bulgaria"
+	}
+	default = {
+		name = mixer
+		text = "4Germany can choose either BUL or GER"
+		desc = "It progresivly gets better as more time passes , Germany can choose between itself and bulgaria"
+	}
+	option = {
+		name = off
+		text = "RGermany doesn't get a button for Mech lend lease"
+		desc = "No DDAY wall :("
+	}
+}
+vanila_bonuses = {
+	name = "Cool vanila bonuses from minors"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_gre_paying_ifc_debt"
+	option = {
+		name = on-overall
+		text = "1Real100%Balance"
+		desc = "Swedish Swiss and Denmark bonuses will apply to Italy Germany and England , swiss bonuses only to France(Not exactly Recommmended)"
+	}
+	option = {
+		name = on-axis
+		text = "KAxis-Bias"
+		desc = "Swedish Swiss and Denmark bonuses will apply to Italy and Germany(Not Recommmended)"
+	}
+	option = {
+		name = on-allies
+		text = "5Allies-Bias"
+		desc = "Swedish and Swiss bonuses will apply to England , swiss bonuses only to France(Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "YOff"
+		desc = "Absolutely no bonuses from vanila based countries(Recommmended)"
+	}
+}
 mios_for_minors = {
     name = "MIOs for X minorsRDOES NOT WORK RN"
-    group = "BHVM game rules"
+    group = " Chapter 4: Focus Trees & Decisions"
     icon = "GFX_decision_generic_merge_plant_materiel"
     default = {
         name = on
@@ -951,122 +1020,9 @@ mios_for_minors = {
         desc = "No minors have MIOs of the major nation(Vanila)"
     }
 }
-#I CAMA BACK AT YOU , SILLY BILLY GAME!
-sov_purges = {
-	name = "Soviet general purges"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_assassination"
-	option = {
-		name = yes
-		text = "GOn"
-		desc = "There is a chance that top SOV generals will get purged(Recommmended)"
-	}
-	default = {
-		name = no
-		text = "PNone"
-		desc = "There is no chance that top SOV will get purged(Not balanced)"
-	}
-}
-sov_tech_tank_focus = {
-	name = "Soviet Superior War machines tech"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_assassination"
-	default = {
-		name = basic
-		text = "GBasic med research needed"
-		desc = "The Soviets need to research basic med tank for the focus(Recommmended)"
-	}
-	option = {
-		name = improved
-		text = "PImproved med research needed"
-		desc = "The Soviets need to research improved med tank for the focus(Not Recommmended)"
-	}
-}
-juggle_slot = {
-	name = "Juggling esport"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = ALLOWED
-		text = "GALLOWED"
-		desc = "There is a special juggle slot(Recommmended)"
-	}
-	option = {
-		name = DISALLOWED
-		text = "RDISALLOWED"
-		desc = "There is NO special juggle slot(Not Recommmended)"
-	}
-}
-
-mech_2_tech = {
-	name = "Mechanized 2 (Amtrac 2 too)"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = ALLOWED
-		text = "GALLOWED"
-		desc = "Mech 2 and amtrac 2 onwards are researchable(Recommmended)"
-	}
-	option = {
-		name = DISALLOWED
-		text = "RDISALLOWED"
-		desc = "Mech 2 is NOT researchable(Not Recommmended)"
-	}
-}
-
-sf_multiplier = {
-	name = "Special Forces Multiplier"
-	group = "BHVM game rules"
-	icon = "GFX_decision_category_generic"
-	option = {
-		name = capped
-		text = "RSF cap is almost vanilla"
-		desc = "Every nation has the same SF cap , unless national ideas(NOT RECOMMENDED)"
-	}
-	option = {
-		name = unlimited
-		text = "YSF is unlimted"
-		desc = "Every nation has unlimited SF cap!(NOT RECOMMENDED)"
-	}
-	default = {
-		name = uncapped
-		text = "GSF are boosted"
-		desc = "The important SF nations have a higher SF cap(Recommmended)"
-	}
-}
-ac_brazil = {
-	name = "Brazil AC"
-	group = "BHVM game rules"
-	icon = "GFX_decision_SWE_set_air_budget"
-	default = {
-		name = ALLOWED
-		text = "RBrazil AC is allowed"
-		desc = "Brazil CAN do its air focuses and joins allies day 1(Recommmended)"
-	}
-	option = {
-		name = DISALLOWED
-		text = "GBrazil AC is BANNED"
-		desc = "Brazil can't do its air focuses and doesnt join allies day 1 of WW2(NOT RECOMMENDED)"
-	}
-}
-ger_supreme_leader = {
-	name = "German Supreme Leader focuses"
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_GER_flag"
-	default = {
-		name = ALLOWED
-		text = "GGermany can do the focuses"
-		desc = "Demonstration of military achievements is allowed(Recommmended)"
-	}
-	option = {
-		name = DISALLOWED
-		text = "RGermany CAN'T do the focuses"
-		desc = "Demonstration of military achievements iS DISALLOWED(NOT RECOMMENDED)"
-	}
-}
 ger_pupets = {
 	name = "German PupetRDOES NOT WORK RN"
-	group = "BHVM game rules"
+	group = " Chapter 4: Focus Trees & Decisions"
 	icon = "GFX_decision_generic_nationalism"
 	option = {
 		name = pupets
@@ -1079,9 +1035,230 @@ ger_pupets = {
 		desc = "You get factories and compliance in the benelux"
 	}
 }
+
+# #############################################################################
+# #                                                                           #
+# #           BHVM -  Chapter 5: Resources, Production & Logistics             #
+# #                                                                           #
+# #############################################################################
+sov_tashek_tungsten = {
+	name = "Soviets tungsten"
+	group = " Chapter 5: Resources, Production & Logistics"
+	icon = "GFX_decision_tungsten"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Soviets HAVE tungsten in Tashek(Not Recommmended If Soviet Closed Eco is on)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Soviets DON'T HAVE tungsten in Tashek(Recommmended IF Soviet Closed Eco is off)"
+	}
+}
+spr_asturias_tungsten = {
+	name = "Spanish Tungsten"
+	group = " Chapter 5: Resources, Production & Logistics"
+	icon = "GFX_decision_tungsten"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Spain has nuts tungsten"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Spain DOES NOT have nuts tungsten"
+	}
+}
+brazil_nerf = {
+	name = "Brazil Rubber Nerf"
+	group = " Chapter 5: Resources, Production & Logistics"
+	icon = "GFX_decision_generic_industry"
+	option = {
+		name = off
+		text = "Brazil isn't nerfed"
+	}
+	option = {
+		name = on
+		text = "Brazil is nerfed"
+		desc = "Brazil rubber is reduced by ~50%"
+	}
+}
+eng_ape_convoys = {
+	name = "Give Britain some convoys if hes ape?"
+	group = " Chapter 5: Resources, Production & Logistics"
+	icon = "GFX_decision_generic_human_torpedo"
+	default = {
+		name = on
+		text = "POn"
+		desc = "The Uk is silly-gives 2.5k convoys(Recommmended)"
+	}
+	option = {
+		name = off
+		text = "WOff"
+		desc = "The Uk has more than 10 hours-does not give 2.5k convoys(Not Recommmended)"
+	}
+}
+anti_troll = {
+	name = "Anti Funny production fuckery"
+	group = " Chapter 5: Resources, Production & Logistics"
+	icon = "GFX_decision_generic_fundraising"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "IF on accident you delete your starting production line , it will give back efficiency(Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "You won't get efficiency when you fuck up your production line(Not Recommmended)"
+	}
+}
+air_production_cont_focus = {
+	name = "Continuous Air production: On/Off"
+	group = " Chapter 5: Resources, Production & Logistics"
+	icon = "GFX_decision_generic_air"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "Its on and there for air war is a joke(Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "Its OFF there for the air war is not a joke(Recommmended)"
+	}
+}
+
+# #############################################################################
+# #                                                                           #
+# #              BHVM -  Chapter 6: Special Projects & Systems                #
+# #                                                                           #
+# #############################################################################
+sp_air = {
+	name = "Special Air projects"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_decision_generic_air"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to research every single special air projects (Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You will be allowed to research these:Air jets,axial jets,supersonic jets,helicopters(Recommmended)"
+	}
+}
+sp_land = {
+	name = "Special Land projects"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_decision_generic_tank"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to research every single special land projects (Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You will be allowed to research these:flametanks,SAV,SHH,SPSHH,SPRG,strongholds, (Recommmended)"
+	}
+}
+sp_nuke = {
+	name = "Special Nuke projects"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_raid_unit_icon_nuclear_raids"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to research every single special nuclear projects that isnt affiliated with the atom bombs game rule (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "You will be allowed research these:NONE XD (Not Recommmended)"
+	}
+}
+atom_bombs = {
+	name = "Nukes"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_raid_unit_icon_nuclear_raids"
+	default = {
+		name = ALLOWED
+		text = "GALLOWED"
+		desc = "There is researchable nukes, thermonukes and warheads(Recommmended)"
+	}
+	option = {
+		name = DISALLOWED
+		text = "RDISALLOWED"
+		desc = "There is NO nukes, thermonukes and warheads(Not Recommmended)"
+	}
+}
+sp_navy = {
+	name = "Special Navy projects"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_decision_generic_naval"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to research every single special navy projects (Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You will be ale to research these:cruiser sub,midget sub,naval torpedo cruiser,super heavy battleship,modern ships (Recommmended)"
+	}
+}
+air_raids = {
+	name = "Air raids avaiblity"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_decision_generic_intelligence_operation"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to conduct special air raids on places (Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You will NOT BE able to conduct special air raids on places (Recommmended)"
+	}
+}
+nuclear_raids = {
+	name = "Nuclear raids avaiblity"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_decision_generic_intelligence_operation"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to conduct special nuclear raids on places (Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You will NOT BE able to conduct special nuclear raids on places (Recommmended)"
+	}
+}
+para_raids = {
+	name = "Paratroopers raids avaiblity"
+	group = " Chapter 6: Special Projects & Systems"
+	icon = "GFX_decision_generic_intelligence_operation"
+	option = {
+		name = on
+		text = "GOn"
+		desc = "You will be able to conduct special para raids on places (Not Recommmended)"
+	}
+	default = {
+		name = off
+		text = "ROff"
+		desc = "You will NOT BE able to conduct special para raids on places (Recommmended)"
+	}
+}
 collab_compliance = {
 	name = "Collab Compliance"
-	group = "BHVM game rules"
+	group = " Chapter 6: Special Projects & Systems"
 	icon = "GFX_decision_generic_nationalism"
 	default = {
 		name = fixed
@@ -1094,24 +1271,9 @@ collab_compliance = {
 		desc = "Collabs give random compliance like vanilla (Not Recommmended)"
 	}
 }
-sov_collab_limit = {
-	name = "SOV Collab Limit"
-	group = "BHVM game rules"
-	icon = "GFX_decision_unknown"
-	default = {
-		name = one_only
-		text = "ROne Only"
-		desc = "After completing a collab on SOV, no more collabs can be completed on SOV (Recommmended)"
-	}
-	option = {
-		name = unlimited
-		text = "GUnlimited"
-		desc = "Multiple collabs can be completed on SOV (Not Recommmended)"
-	}
-}
 rb_vps_system = {
 	name = "Victory Points"
-	group = "BHVM game rules"
+	group = " Chapter 6: Special Projects & Systems"
 	icon = "GFX_decision_category_usa_intervention_mandate"
 	default = {
 		name = on
@@ -1129,9 +1291,55 @@ rb_vps_system = {
 		desc = "There is a modified VP system made for no-asia/alt-asia(Not Recommmended)"
 	}
 }
+
+# #############################################################################
+# #                                                                           #
+# #                 BHVM -  Chapter 7: Game Mode & Map Setup                   #
+# #                                                                           #
+# #############################################################################
+no_brazil&finland = {
+	name = "Question for Brazil & Finland"
+	group = " Chapter 7: Game Mode & Map Setup"
+	icon = "GFX_decision_category_FIN_national_defense"
+	default = {
+		name = off
+		text = "GAllowed"
+		desc = "Brazil and Finland are alive and playable"
+	}
+	option = {
+		name = fin
+		text = "RFinland annexed"
+		desc = "Finland is annexed , brazil is playable"
+	}
+	option = {
+		name = bra
+		text = "RBrazil annexed"
+		desc = "Brazil is annexed, finland is playable"
+	}
+	option = {
+		name = both
+		text = "BNo Brazil AND Finland"
+		desc = "Finland and Brazil went on a vacation in Brazil :)"
+	}
+}
+killable_fin = {
+	name = "Can we Kill finland?"
+	group = " Chapter 7: Game Mode & Map Setup"
+	icon = "GFX_decision_generic_coastal_fortification"
+	default = {
+		name = off
+		text = "GNo"
+		desc = "Finland cant be killed"
+	}
+	option = {
+		name = on
+		text = "RFinland will died"
+		desc = "GEGE VELL PLEIYED FEMLAND"
+	}
+}
 no_asia_gamemode = {
 	name = "No Asia gamemode!"
-	group = "BHVM game rules"
+	group = " Chapter 7: Game Mode & Map Setup"
 	icon = "GFX_decision_category_jap_southern_expansion"
 	option = {
 		name = on
@@ -1151,7 +1359,7 @@ no_asia_gamemode = {
 }
 playable_mongolia = {
 	name = "Playable Mongolia?"
-	group = "BHVM game rules"
+	group = " Chapter 7: Game Mode & Map Setup"
 	icon = "GFX_decision_category_generic_prospect_for_resources"
 	default = {
 		name = no
@@ -1166,7 +1374,7 @@ playable_mongolia = {
 }
 playable_iraq = {
 	name = "Playable Iraq?"
-	group = "BHVM game rules"
+	group = " Chapter 7: Game Mode & Map Setup"
 	icon = "GFX_decision_category_usa_intervention_mandate"
 	option = {
 		name = no
@@ -1181,7 +1389,7 @@ playable_iraq = {
 }
 china_war_difficulty = {
 	name = "Difficulty for China" 
-	group = "BHVM game rules"
+	group = " Chapter 7: Game Mode & Map Setup"
 	icon = "GFX_decision_jap_conquer_china"
 	option = {
 		name = hard
@@ -1199,228 +1407,4 @@ china_war_difficulty = {
 		desc = "China will get in total 54 divs , under equiped (Recommmended)"
 	}
 }
-sp_air = {
-	name = "Special Air projects" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_air"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to research every single special air projects (Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You will be allowed to research these:Air jets,axial jets,supersonic jets,helicopters(Recommmended)"
-	}
-}
-sp_land = {
-	name = "Special Land projects" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_tank"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to research every single special land projects (Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You will be allowed to research these:flametanks,SAV,SHH,SPSHH,SPRG,strongholds, (Recommmended)"
-	}
-}
-urban_assault_vechile= {
-	name = "Select if Urban Assault Vehicle is allowed or not "
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_tank"
-	option = {
-		name = off
-		text = "You CANNOT research armoured engineer company."
-		desc = "You also don't get the urban assault vehicle."
-	}
-	default = {
-		name = on
-		text = "You CAN research armoured engineer company"
-		desc = "You also get the urban assault vehicle."
-	}
-}
-railway_gun= {
-	name = "Select if Railway Gun is allowed or not "
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_ignite_civil_war"
-	default = {
-		name = off
-		text = "You CANNOT research Railway Battery."
-		desc = "###."
-	}
-	option = {
-		name = on
-		text = "You CAN research Railway Battery."
-		desc = "###"
-	}
-}
-super_heavy_railway_gun= {
-	name = "Select if Super Heavy Railway Battery is allowed or not "
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_ignite_civil_war"
-	default = {
-		name = off
-		text = "You CANNOT research Super Heavy Railway Battery."
-		desc = "###."
-	}
-	option = {
-		name = on
-		text = "You CAN research Super Heavy Railway Battery."
-		desc = "###"
-	}
-}
-sp_nuke = {
-	name = "Special Nuke projects" 
-	group = "BHVM game rules"
-	icon = "GFX_raid_unit_icon_nuclear_raids"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to research every single special nuclear projects that isnt affiliated with the atom bombs game rule (Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "You will be allowed research these:NONE XD (Not Recommmended)"
-	}
-}
-atom_bombs = {
-	name = "Nukes"
-	group = "BHVM game rules"
-	icon = "GFX_raid_unit_icon_nuclear_raids"
-	default = {
-		name = ALLOWED
-		text = "GALLOWED"
-		desc = "There is researchable nukes, thermonukes and warheads(Recommmended)"
-	}
-	option = {
-		name = DISALLOWED
-		text = "RDISALLOWED"
-		desc = "There is NO nukes, thermonukes and warheads(Not Recommmended)"
-	}
-}
-sp_navy = {
-	name = "Special Navy projects" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_naval"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to research every single special navy projects (Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You will be ale to research these:cruiser sub,midget sub,naval torpedo cruiser,super heavy battleship,modern ships (Recommmended)"
-	}
-}
-air_raids = {
-	name = "Air raids avaiblity" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_intelligence_operation"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to conduct special air raids on places (Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You will NOT BE able to conduct special air raids on places (Recommmended)"
-	}
-}
-nuclear_raids = {
-	name = "Nuclear raids avaiblity" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_intelligence_operation"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to conduct special nuclear raids on places (Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You will NOT BE able to conduct special nuclear raids on places (Recommmended)"
-	}
-}
-para_raids = {
-	name = "Paratroopers raids avaiblity" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_intelligence_operation"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "You will be able to conduct special para raids on places (Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "You will NOT BE able to conduct special para raids on places (Recommmended)"
-	}
-}
-air_production_cont_focus = {
-	name = "Continuous Air production: On/Off" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_air"
-	option = {
-		name = on
-		text = "GOn"
-		desc = "Its on and there for air war is a joke(Not Recommmended)"
-	}
-	default = {
-		name = off
-		text = "ROff"
-		desc = "Its OFF there for the air war is not a joke(Recommmended)"
-	}
-}
-manpower_cont_focus = {
-	name = "Continuous Manpower: On/Off" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_generic_military"
-	option = {
-		name = off
-		text = "GOff"
-		desc = "The cont. focus Manpower recruitment is OFF(Not Recommmended)"
-	}
-	default = {
-		name = on
-		text = "ROn"
-		desc = "The cont. focus Manpower recruitment is ON(Recommmended)"
-	}
-}
-anti_noob_modefier = {
-	name = "France Anti-Noob state mod" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_eng_trade_unions_support"
-	option = {
-		name = off
-		text = "GOff"
-		desc = "France can build in mainland(Not Recommmended)"
-	}
-	default = {
-		name = on
-		text = "ROn"
-		desc = "France CAN'T build in mainland(Recommmended)"
-	}
-}
-peace_training_xp= {
-	name = "Peace time with xp/no xp" 
-	group = "BHVM game rules"
-	icon = "GFX_decision_eng_trade_unions_demand"
-	option = {
-		name = off
-		text = "GOff"
-		desc = "No xp from peace time trraining!(Not Recommmended)"
-	}
-	default = {
-		name = on
-		text = "ROn"
-		desc = "You gain daily xp with peace time training(Recommmended)"
-	}
-}
+```
