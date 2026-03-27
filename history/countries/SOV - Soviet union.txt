@@ -175,6 +175,18 @@ SOV_nikita_khrushchyov = {
 SOV_lazar_kaganovich = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_vasily_kuznetsov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
+SOV_nikolay_berzarin= {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_leonid_govorov= {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_genrikh_yagoda = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
 	set_character_flag = SOV_safe_from_purge_flag
 }
