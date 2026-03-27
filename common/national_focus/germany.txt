@@ -8035,23 +8035,6 @@ focus_tree = {
 
 		mutually_exclusive = { focus = GER_oppose_hitler_ww focus = GER_oppose_hitler }
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = GER_oppose_hitler_ww
-						has_completed_focus = GER_oppose_hitler
-					}
-				}
-			}
-		}
-
 		x = 33
 		y = 0
 		relative_position_id = GER_prioritize_economic_growth
@@ -8097,18 +8080,6 @@ focus_tree = {
 				FRA = {
 					country_event = { id = germany.60 hours = 1 }
 					custom_effect_tooltip = may_provoke_hostility
-				}
-			}
-
-			hidden_effect = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-					}
-					mark_focus_tree_layout_dirty = yes
 				}
 			}
 
