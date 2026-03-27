@@ -694,3 +694,13 @@ Venezuella should have no buildings anymore
 Louisiana starts with 2 more bs
 Litorale starts with 4 more slots (due to " hist appealing borders " aka germany owning slovenia after yugo caps)
 CS:44d4
+
+EXPERIMENTAL!! Reorganized the game rules in 7 groups , these 7 groups being: Country Balancing & Starters ;Global Gameplay & Balance;Technology & Unit Restrictions;Focus Trees & Decisions;Resources, Production & Logistics;Special Projects & Systems;Game Mode & Map Setup
+As of right now this is still in somewhat test phase , but everything works as before and as intended (that is unless the game rule has red text for it not working), this should make setting up and finding game rules easier 
+A BUG TO THIS! Right now due to some forgetfull modding, category 3 will be displayed at the incorrect place , will get fixed next patch.
+Spy stealing is now a game rule
+Some localization has been fixed regarding game rules , as well host tool
+Host tool 6 has now entered develepoment and hopefull in the next update it will be completed, some major functions will be : a state interactions menu where you can edit buildings and other stuff to a state , new cheats such as mastery , setting a capital button , mini ui showing which nation has the host tool and so on.
+Rhineland focus for ger should no longer tick up the game for 1 tick up to 9k ms
+Soviet pregrinds are now safe from Stalin 
+CS:762b
