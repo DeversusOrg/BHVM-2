@@ -1950,14 +1950,6 @@ operation_steal_tech_civilian = { ### 12 3/35
 	required_tokens = {
 		token_civilian
 	}
-	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = spy_tech_stealing
-				option = default
-			}
-		}
-	}
 	risk_chance = 0.2
 	experience = 2
 	outcome_extra_chance = 0.25
@@ -2524,14 +2516,7 @@ operation_steal_tech_army = { ### 16 3/55
 	equipment = {
 		
 	}
-	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = spy_tech_stealing
-				option = default
-			}
-		}
-	}
+
 	required_tokens = {
 		token_army
 	}
@@ -2810,14 +2795,7 @@ operation_steal_tech_navy = { ### 17 3/55
 	equipment = {
 		
 	}
-	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = spy_tech_stealing
-				option = default
-			}
-		}
-	}
+
 	required_tokens = {
 		token_navy
 	}
@@ -3053,14 +3031,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 	equipment = {
 		
 	}
-	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = spy_tech_stealing
-				option = default
-			}
-		}
-	}
+
 	required_tokens = {
 		token_airforce
 	}
