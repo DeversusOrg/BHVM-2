@@ -906,7 +906,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		cost = 10
+		cost = 5
 		x = 0
 		y = 2
 		available = {
@@ -917,9 +917,15 @@ focus_tree = {
 					bonus = 0.75
 					uses = 2
 					category = motorized_equipment
-					category = suupport_equipment
 					category = infantry_weapons
+					category = support_tech
 			}
+#			add_tech_bonus = {
+#				name = "Mongolian Engineering"
+#				bonus = 1
+#				ahead_reduction = 2
+#				category = support_tech
+#			}
 			add_breakthrough_progress = {
 				specialization = specialization_land
 				value = 0.5
@@ -1045,8 +1051,8 @@ focus_tree = {
         completion_reward = {
             add_tech_bonus = {
                 name = nuclear_bonus
-                bonus = 1.5
-                uses = 2
+                bonus = 3
+                uses = 1
                 category = nuclear
             }
         }
@@ -1380,6 +1386,17 @@ focus_tree = {
 					producer = SOV
 				}
 			}
+			create_corps_commander ={
+				name=CHI_hsueh_yueh
+				picture = "GFX_portrait_chi_xue_yue"
+				traits = { trait_reckless war_hero inflexible_strategist cavalry_leader infantry_leader commando trickster }
+				skill=7
+				attack_skill=5
+				defense_skill=7
+				planning_skill=3
+				logistics_skill=5
+				legacy_id=-1
+			}
 		}
 	}
 
@@ -1549,7 +1566,7 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_new_constitution }
 
 		available_if_capitulated = yes
@@ -1783,7 +1800,7 @@ focus_tree = {
 		icon = GFX_focus_spr_unify_the_london_bureau
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_new_constitution }
 
 		available_if_capitulated = yes  
@@ -2261,7 +2278,7 @@ focus = {
 			create_corps_commander ={
 				name="Dagva Skibidriosil-Reborn of Genkhis Khan"
 				picture = "Portrait_Asia_Generic_warlord2.dds"
-				traits={ trait_engineer commando cavalry_officer cavalry_leader skilled_staffer }
+				traits={ trait_engineer commando cavalry_officer cavalry_leader skilled_staffer infantry_leader }
 				skill=6
 				attack_skill=6
 				defense_skill=5
