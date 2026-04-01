@@ -816,6 +816,26 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			IF = {
+				limit = { 
+					330 = {
+						is_fully_controlled_by = ROOT
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					}
+				}
+
+				330 = {
+					add_building_construction = {
+						type = land_facility
+						level = 1
+						instant_build = yes
+						province = 4801 # South London
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -832,6 +852,14 @@ focus_tree = {
 			has_tech = advanced_machine_tools
 		}
 		completion_reward = { 
+			add_tech_bonus = {
+					name = "Mongolian weaponary"
+					bonus = 0.75
+					uses = 2
+					category = motorized_equipment
+					category = infantry_weapons
+					category = support_tech
+			}
 			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
@@ -913,42 +941,14 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_tech_bonus = {
-					name = "Mongolian weaponary"
-					bonus = 0.75
-					uses = 2
-					category = motorized_equipment
-					category = infantry_weapons
-					category = support_tech
+				name = "Mongolian Engineering"
+				bonus = 1
+				ahead_reduction = 2
+				category = support_tech
 			}
-#			add_tech_bonus = {
-#				name = "Mongolian Engineering"
-#				bonus = 1
-#				ahead_reduction = 2
-#				category = support_tech
-#			}
 			add_breakthrough_progress = {
 				specialization = specialization_land
 				value = 0.5
-			}
-			IF = {
-				limit = { 
-					330 = {
-						is_fully_controlled_by = ROOT
-						air_facility < 1
-						land_facility < 1
-						naval_facility < 1
-						nuclear_facility < 1
-					}
-				}
-
-				330 = {
-					add_building_construction = {
-						type = land_facility
-						level = 1
-						instant_build = yes
-						province = 4801 # South London
-					}
-				}
 			}
 		}
 	}
@@ -2312,11 +2312,11 @@ focus = {
 					random_select_amount = 5
 					add_divisional_commander_xp = 1850
 			}
-			add_doctrine_cost_reduction = {
-					name = "Doctrine branching"
-					cost_reduction = 0.5
-					uses = 1
-					category = land_doctrine 
+			add_daily_mastery = {
+				amount = 0.5
+				days = 100
+				name =  "Inf bonus"
+				track = infantry					
 			}
 		}
 	}
@@ -2325,7 +2325,7 @@ focus = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = -2
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_doctrine }
 		relative_position_id = MON_army
 		mutually_exclusive = { focus = MON_follow_allied }
@@ -2342,11 +2342,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Lighting Warfare"
-				cost_reduction = 0.2
-				uses = 1
-				category = cat_mobile_warfare 
+			add_daily_mastery = {
+				amount = 0.2
+				days = 100
+				name =  "Armor bonus"
+				track = armor					
 			}
 		}
 	}
@@ -2370,11 +2370,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Modern warfare"
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_mobile_warfare  
+			add_daily_mastery = {
+				amount = 0.5
+				days = 100
+				name =  "Armor bonus"
+				track = armor					
 			}
 			add_tech_bonus = {
 				name = "Tank researching"
@@ -2483,11 +2483,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Fast Warfare"
-				cost_reduction = 1
-				uses = 1
-				category = cat_mobile_warfare  
+			add_daily_mastery = {
+				amount = 0.5
+				days = 200
+				name =  "Armor bonus"
+				track = armor					
 			}
 			add_tech_bonus = {
 				name = "Meduim tank variants"
@@ -2561,7 +2561,7 @@ focus = {
 		mutually_exclusive = { focus = MON_follow_soviet }
 		x = 2
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_doctrine }
 		relative_position_id = MON_army
 
@@ -2576,11 +2576,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Long-line battle"
-				cost_reduction = 0.2
-				uses = 1
-				category = cat_grand_battle_plan 
+			add_daily_mastery = {
+				amount = 0.2
+				days = 100
+				name =  "Operations bonus"
+				track = operations					
 			}
 		}
 	}
@@ -2604,11 +2604,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Prepartion warfare"
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_grand_battle_plan 
+			add_daily_mastery = {
+				amount = 0.5
+				days = 100
+				name =  "Operations bonus"
+				track = operations
 			}
 			add_tech_bonus = {
 				name = "British breakthrough armor"
@@ -2644,16 +2644,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Prepartion warfare"
-				cost_reduction = 1.0
-				uses = 1
-				category = cat_grand_battle_plan 
-			}
 			add_tech_bonus = {
 				name = "Advanced artillery programs"
-				bonus = 0.25
-				uses = 2
+				bonus = 1
+				uses = 1
+				ahead_reduction = 2
 				category = artillery
 			}
 		}
@@ -2701,17 +2696,17 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Hit and scouch"
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_superior_firepower
+			add_daily_mastery = {
+				amount = 0.3
+				days = 100
+				name =  "Operations bonus"
+				track = operations					
 			}
-			add_doctrine_cost_reduction = {
-				name = "Bomb and run"
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
+			add_daily_mastery = {
+				amount = 0.4
+				days = 300
+				name = MON_fighter_bonus
+				track = fighter_aircraft
 			}
 			add_tech_bonus = {
 				name = "British agile fighters"
@@ -2775,11 +2770,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Women ideas"
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
+			add_daily_mastery = {
+				amount = 0.4
+				days = 300
+				name = "Women Ideas"
+				track = fighter_aircraft
 			}
 			add_tech_bonus = {
 				name = "Women moduled plane ideas"
@@ -2801,7 +2796,7 @@ focus = {
 		mutually_exclusive = { focus = MON_follow_axis }
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = MON_doctrine }
 		relative_position_id = MON_army
 
@@ -2816,11 +2811,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Long-line battle"
-				cost_reduction = 0.2
-				uses = 1
-				category = cat_mass_assault 
+			add_daily_mastery = {
+				amount = 0.2
+				days = 100
+				name =  "Inf bonus"
+				track = infantry					
 			}
 		}
 	}
@@ -2844,11 +2839,11 @@ focus = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = "Deep Battle"
-				cost_reduction = 0.75
-				uses = 1
-				category = cat_mass_assault 
+			add_daily_mastery = {
+				amount = 0.3
+				days = 100
+				name =  "Inf bonus"
+				track = infantry					
 			}
 			add_tech_bonus = {
 				name = "Tank researching"
@@ -2907,11 +2902,11 @@ focus = {
 
 		completion_reward = {
 			add_manpower = 135000
-			add_doctrine_cost_reduction = {
-				name = "Long-line battle"
-				cost_reduction = 0.75
-				uses = 1
-				category = cat_mass_assault 
+			add_daily_mastery = {
+				amount = 0.3
+				days = 100
+				name =  "Inf bonus"
+				track = infantry					
 			}
 			add_tech_bonus = {
 				name = "Arms for the people"
@@ -3277,11 +3272,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 3
-				category = air_doctrine
+			add_daily_mastery = {
+				amount = 0.5
+				days = 300
+				name = MON_fighter_bonus
+				track = fighter_aircraft
 			}
 		}
 	}
