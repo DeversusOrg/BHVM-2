@@ -713,4 +713,5 @@ Made further progress on the host tool 6 in private beta
 Israel is now playable with functions that are half baked because I'm lazy and stupid 
 Still have yet to figure out possition prio for game rules trust i will fix it next update
 Nerfed German eatable nations as such: -10 civs and 2 mills from denmark , norway and poland in total
-CS:5159
+Buffed mastery gain by 15% during peace and 50% during war
+CS:fc46
