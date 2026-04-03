@@ -1313,6 +1313,12 @@ add_mastery = {
 
 set_convoys = 50
 
+set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_sov_dominion
+		freedom_level = 0.4
+	}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1933.7.1"
