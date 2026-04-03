@@ -87,7 +87,10 @@ form_levant_category = {
 	picture = GFX_decision_cat_generic_arabia
 
 	allowed = {
-		original_tag = IRQ
+		OR = {
+			original_tag = IRQ
+			original_tag = ISR
+		}
 	}
 }
 templates = {

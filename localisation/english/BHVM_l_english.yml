@@ -42,7 +42,7 @@
  GER_mech_delivery_SPR_to_BUL:0 "Start Spanish Mech. Delivery to Bulgaria"
  bul_caudillo:0 "Bulgarian Caudillo"
  jew:0 "Jewish"
- genuis:0 "Genius Mind"
+ genius:0 "Genius Mind"
  GER_recieving_ll_mech_1a:0 "Receiving Spanish Mech. Delivery"
  GER_recieving_ll_mech_2a:0 "Receiving Spanish Mech. Delivery"
  GER_recieving_ll_mech_bul_1a:0 "Receiving Spanish Mech. Delivery"
@@ -572,3 +572,248 @@
  RULE_OPTION_DISALLOWED:0"Blocked"
  RULE_OPTION_DISALLOWED_DESC:0"Factions cannot be dismantled."
  RULE_DISMANTLE_FACTION_BLOCKED_TOOLTIP:0"Dismantling factions is blocked by game rules."
+
+
+
+ l_english:
+ # Core Focuses
+ ISR_zionist_dream:0 "The Zionist Dream"
+ ISR_zionist_dream_desc:0 "For centuries we have dreamed of returning to our ancestral homeland. That dream is now within reach."
+ 
+ ISR_unify_the_command:0 "Unify the Command"
+ ISR_unify_the_command_desc:0 "The Haganah, Irgun, and Lehi must set aside their differences and unite under a single command structure."
+ 
+ ISR_progress_our_education:0 "Progress Our Education"
+ ISR_progress_our_education_desc:0 "An educated populace is the foundation of a strong nation. We must invest heavily in our universities and schools."
+ 
+ ISR_built_new_schools:0 "Build New Schools"
+ ISR_built_new_schools_desc:0 "With our growing population, we need more educational institutions to prepare the next generation."
+ 
+ ISR_living_space:0 "Living Space"
+ ISR_living_space_desc:0 "Our people need room to grow. We must expand our settlements and develop new lands."
+ 
+ ISR_chok_sherut_bitachon:0 "Chok Sherut Bitachon"
+ ISR_chok_sherut_bitachon_desc:0 "The National Service Law will ensure every citizen contributes to our defense and development."
+ 
+ ISR_deal_with_the_muslim_goyim:0 "Deal with the Muslim Goyim"
+ ISR_deal_with_the_muslim_goyim_desc:0 "We must address the demographic challenges facing our young nation."
+ 
+ ISR_remove_the_muslim_goyim:0 "Remove the Muslim Goyim"
+ ISR_remove_the_muslim_goyim_desc:0 "A difficult solution for a difficult problem. The demographic balance must shift in our favor."
+ ISR_remove_the_muslim_goyim_tt:0 "Reduces Muslim population and removes Muslim majority idea."
+ 
+ ISR_purge_the_muslims_off_greater_yisrael:0 "Purge the Muslims from Greater Yisrael"
+ ISR_purge_the_muslims_off_greater_yisrael_desc:0 "Greater Israel must be pure. Non-Jewish populations will be removed from our claimed territories."
+ ISR_purge_muslims_tt:0 "Unlocks decisions to purge non-Jewish populations from conquered states, eventually allowing cores."
+ 
+ ISR_gerush_hagadish:0 "Gerush Hagadish"
+ ISR_gerush_hagadish_desc:0 "The Great Expulsion - a comprehensive plan to arm our people with superior weaponry."
+ 
+ ISR_lahav_or_ora:0 "Lahav or Ora"
+ ISR_lahav_or_ora_desc:0 "Blade or Light - we must choose our path to victory on the battlefield."
+ 
+ ISR_desert_blitz:0 "Desert Blitz"
+ ISR_desert_blitz_desc:0 "Speed and mobility will be our greatest assets in the arid battlefields of the Middle East."
+ 
+ ISR_palmach_commandos:0 "Palmach Commandos"
+ ISR_palmach_commandos_desc:0 "Our elite striking force will conduct operations deep behind enemy lines."
+ ISR_palmach_decisions_tt:0 "Unlocks special operations decisions to sabotage infrastructure in enemy territory."
+ 
+ ISR_sherut_avir:0 "Sherut Avir"
+ ISR_sherut_avir_desc:0 "The Air Service will give us dominion over the skies above our homeland."
+ 
+ ISR_seek_allies:0 "Seek Allies"
+ ISR_seek_allies_desc:0 "We cannot stand alone. We must find powerful nations to support our cause."
+ ISR_alliance_paths_tt:0 "Unlocks diplomatic paths for alignment with major powers."
+ 
+ ISR_no_goyim_assitance:0 "No Goyim Assistance"
+ ISR_no_goyim_assitance_desc:0 "We trust only ourselves. No foreign gentile nation will dictate our destiny."
+ ISR_unlock_fascist_leader_tt:0 "Unlocks Palm Beach Pete as an advisor and agent."
+ 
+ ISR_decieve_the_goy_world:0 "Deceive the Goy World"
+ ISR_decieve_the_goy_world_desc:0 "Let them believe we are loyal subjects while we build our strength in secret."
+ ISR_deception_phase_tt:0 "Begin deception phase - appear as a loyal puppet while secretly preparing for independence."
+ 
+ ISR_initiate_doom:0 "Initiate Doom"
+ ISR_initiate_doom_desc:0 "The time has come. All Jews will rise and claim what is rightfully theirs."
+ ISR_apocalypse_begins_tt:0 "Trigger the final rising - nations with Jewish populations face ultimatums."
+ 
+ ISR_the_third_heaven:0 "The Third Heaven"
+ ISR_the_third_heaven_desc:0 "With the world conquered, a new era of Jewish dominion begins."
+ ISR_world_domination_tt:0 "Annexes all puppets, declares war on the Black Nation. Victory cores the entire world."
+ 
+ ISR_surrender_to_our_enemies:0 "Surrender to Our Enemies"
+ ISR_surrender_to_our_enemies_desc:0 "We have been defeated. Now we must negotiate our survival."
+ 
+ ISR_german_zionist_pupet:0 "German Zionist Puppet"
+ ISR_german_zionist_pupet_desc:0 "The Reich has spared us. We will serve them and wait for our opportunity."
+ 
+ ISR_proclaimed_defenders_of_the_lower_levant:0 "Proclaimed Defenders of the Lower Levant"
+ ISR_proclaimed_defenders_of_the_lower_levant_desc:0 "We will ask our overlords for control of the Lower Levant to secure our position."
+ ISR_levante_control_tt:0 "Requests control of Lower Levant states from your overlord."
+ 
+ ISR_freedom_atlas:0 "Freedom Atlas"
+ ISR_freedom_atlas_desc:0 "Liberation comes from unexpected places. The West may yet save us."
+ 
+ ISR_japaneese_tetra_pupet:0 "Japanese Tetra Puppet"
+ ISR_japaneese_tetra_pupet_desc:0 "The Rising Sun casts its light upon us. We will serve the Emperor."
+ 
+ ISR_convert_to_shogunism:0 "Convert to Shogunism"
+ ISR_convert_to_shogunism_desc:0 "The old ways must die. A new faith will unite us with our masters."
+ ISR_shogun_conversion_tt:0 "Converts Jewish population, removes cores, changes state religion."
+ 
+ ISR_nation_of_israeli_commuinism:0 "Nation of Israeli Communism"
+ ISR_nation_of_israeli_commuinism_desc:0 "Marx's dream realized in Zion - a communist homeland for the Jewish people."
+ ISR_unlock_communist_leader_tt:0 "Unlocks Ben Shapiro as a potential leader."
+ 
+ ISR_cooperate_with_soviet_jews:0 "Cooperate with Soviet Jews"
+ ISR_cooperate_with_soviet_jews_desc:0 "Our brethren in the USSR hold power and influence. We must reach out to them."
+ ISR_soviet_cooperation_tt:0 "Unlocks Bibi Netanyahu as country leader and recruits Ivan Fedyunisky as a general."
+ 
+ ISR_abolish_religion:0 "Abolish Religion"
+ ISR_abolish_religion_desc:0 "Religion is the opiate of the masses. True communism requires its eradication."
+ ISR_atheist_zionism_tt:0 "Removes Judaism idea, adds stability. Atheist Zionism becomes the state ideology."
+ 
+ ISR_rebuild_the_perfect_world:0 "Rebuild the Perfect World"
+ ISR_rebuild_the_perfect_world_desc:0 "A utopia awaits if we can convince the world to join us."
+ ISR_zionist_influence_tt:0 "Nations with Jewish cores receive events about aligning with Israeli Zionism."
+ 
+ ISR_kill_the_false_kings_of_blood:0 "Kill the False Kings of Blood"
+ ISR_kill_the_false_kings_of_blood_desc:0 "Those who reject our vision will face the consequences."
+ ISR_declare_war_non_compliant_tt:0 "Declares war on all nations that refused to join Israel."
+ 
+ ISR_live_in_the_mud_of_war:0 "Live in the Mud of War"
+ ISR_live_in_the_mud_of_war_desc:0 "Peace is an illusion. Total war is the only reality."
+ ISR_final_war_tt:0 "Declares war on all non-puppet nations when conditions are met."
+ 
+ ISR_economical_american_support:0 "Economical American Support"
+ ISR_economical_american_support_desc:0 "American investment will transform our economy and military."
+ ISR_unlock_democratic_advisor_tt:0 "Unlocks democratic support advisor."
+ 
+ ISR_jewish_american_refugees:0 "Jewish American Refugees"
+ ISR_jewish_american_refugees_desc:0 "Our American cousins seek a homeland. We will welcome them with open arms."
+ ISR_refugee_decisions_tt:0 "Unlocks decisions to relocate Jewish Americans to Israel. Recruits Lloyd Fredenfall as a general after two relocations."
+ 
+ ISR_american_jewish_leader_for_us:0 "American Jewish Leader for Us"
+ ISR_american_jewish_leader_for_us_desc:0 "Great leaders emerge from our diaspora. Who will guide us?"
+ ISR_choose_american_leader_tt:0 "Event to choose between Albert Einstein and David Ben Gurion as national leader."
+ 
+ ISR_atom_threat:0 "Atom Threat"
+ ISR_atom_threat_desc:0 "The power of the atom will be our ultimate deterrent and weapon."
+ 
+ ISR_alternative_humans:0 "Alternative Humans"
+ ISR_alternative_humans_desc:0 "Einstein's genius reveals hidden paths - Agarthan technology awaits."
+ ISR_agartha_technology_tt:0 "Unlocks secret Jewish Agarthan technology and population bonuses."
+ 
+ ISR_god_choosen_leaders:0 "God-Chosen Leaders"
+ ISR_god_choosen_leaders_desc:0 "Our leader carries divine favor. All will witness God's blessing upon us."
+ 
+ ISR_god_kings:0 "God Kings"
+ ISR_god_kings_desc:0 "Ben Gurion's leadership borders on the divine. Our people rally behind our chosen king."
+ 
+ ISR_the_end_for_them:0 "The End for Them"
+ ISR_the_end_for_them_desc:0 "Humanity has failed. Extermination is the only answer."
+ ISR_extermination_campaign_tt:0 "Triggers global extermination campaign after WW2 concludes."
+ 
+ ISR_britain_recognition:0 "Britain's Recognition"
+ ISR_britain_recognition_desc:0 "The British Empire's acknowledgment legitimizes our nation on the world stage."
+ 
+ ISR_force_british_investors:0 "Force British Investors"
+ ISR_force_british_investors_desc:0 "British capital will build our industries, whether they like it or not."
+ 
+ ISR_british_guarantees:0 "British Guarantees"
+ ISR_british_guarantees_desc:0 "London's promise to protect us deters our many enemies."
+ 
+ ISR_british_jewish_governors:0 "British Jewish Governors"
+ ISR_british_jewish_governors_desc:0 "Our people will administer our own affairs under British oversight."
+ ISR_choose_real_leader_1940_tt:0 "Event in 1940 to choose Israel's true leader."
+ 
+ ISR_the_promises_of_1912_19:0 "The Promises of 1912-1919"
+ ISR_the_promises_of_1912_19_desc:0 "The Balfour Declaration and other commitments must be honored."
+ ISR_claims_to_cores_tt:0 "Unlocks decisions to convert claims into cores over time."
+ 
+ ISR_greater_yisrael_project:0 "Greater Yisrael Project"
+ ISR_greater_yisrael_project_desc:0 "Our biblical borders await. We will claim what was promised."
+ ISR_ask_for_states_decisions_tt:0 "Unlocks diplomatic decisions to request neighboring states from overlords."
+ 
+ ISR_british_backed_indepent_israeli_state:0 "British-Backed Independent Israeli State"
+ ISR_british_backed_indepent_israeli_state_desc:0 "With Britain's blessing, we finally achieve full sovereignty."
+ 
+ ISR_mossad_is_born:0 "Mossad Is Born"
+ ISR_mossad_is_born_desc:0 "The Institute for Intelligence and Special Operations will protect Israel from shadows."
+ 
+ ISR_israel_recognized_on_map:0 "Israel Recognized on Map"
+ ISR_israel_recognized_on_map_desc:0 "The world acknowledges our existence. Now our true path begins."
+ 
+ ISR_zchot_shanitna_al_yedi_elohim_operations:0 "Zchot Shanitna al Yedi Elohim Operations"
+ ISR_zchot_shanitna_al_yedi_elohim_operations_desc:0 "Our divine right demands action. Special operations against our enemies commence."
+ ISR_unlock_mossad_advisor_tt:0 "Unlocks Shaul Avigur as an intelligence advisor."
+ 
+ ISR_nokmin_v_nakam:0 "Nokmin v'Nakam"
+ ISR_nokmin_v_nakam_desc:0 "The Avengers will exact vengeance upon those who harmed our people."
+ 
+ ISR_operation_magic_carpet:0 "Operation Magic Carpet"
+ ISR_operation_magic_carpet_desc:0 "We will rescue our brethren from the Nazi regime before it's too late."
+ ISR_magic_carpet_rescue_tt:0 "Unlocks operations to rescue Jews from Nazi-occupied Europe."
+ 
+ ISR_kibbutzim_world_wide:0 "Kibbutzim World Wide"
+ ISR_kibbutzim_world_wide_desc:0 "Collective settlements around the globe will strengthen our diaspora network."
+ 
+ ISR_develop_the_negev_unit:0 "Develop the Negev Unit"
+ ISR_develop_the_negev_unit_desc:0 "Our southern desert warriors will become legends of unconventional warfare."
+ 
+ ISR_military_aeronautical_institute:0 "Military Aeronautical Institute"
+ ISR_military_aeronautical_institute_desc:0 "Dedicated aeronautical research will give us wings."
+ 
+ ISR_import_foreign_fighters:0 "Import Foreign Fighters"
+ ISR_import_foreign_fighters_desc:0 "We will acquire and reverse-engineer the world's best aircraft."
+ 
+ ISR_light_fighter_focus:0 "Light Fighter Focus"
+ ISR_light_fighter_focus_desc:0 "Agile, lightweight fighters for air superiority."
+ 
+ ISR_heavy_fighter_focus:0 "Heavy Fighter Focus"
+ ISR_heavy_fighter_focus_desc:0 "Heavy fighters for long-range escort and interception."
+ 
+ ISR_air_is_our_sea:0 "The Air is Our Sea"
+ ISR_air_is_our_sea_desc:0 "For a small nation, air power is our ocean - vast and decisive."
+ 
+ ISR_rule_the_air:0 "Rule the Air"
+ ISR_rule_the_air_desc:0 "Complete air superiority over our homeland and beyond."
+ 
+ ISR_rocket_effort:0 "Rocket Research"
+ ISR_rocket_effort_desc:0 "Advanced rocketry will put us at the forefront of military technology."
+ 
+ ISR_import_foreign_bombers:0 "Import Foreign Bombers"
+ ISR_import_foreign_bombers_desc:0 "Strategic bombing capability through foreign acquisition."
+ 
+ ISR_cas_focus:0 "Close Air Support Focus"
+ ISR_cas_focus_desc:0 "Aircraft designed to support our ground forces directly."
+ 
+ ISR_tac_focus:0 "Tactical Bomber Focus"
+ ISR_tac_focus_desc:0 "Tactical bombers for operational-level strikes."
+ israel.1.t:0 "The Bright Future of Israel"
+ israel.1.d:0 "After decades of struggle and centuries of longing, the Jewish people have finally secured their homeland. The State of Israel stands ready to take its place among the nations of the world. But what path shall we walk? Shall we follow the historical course laid out before us, maintaining our bonds with the Western powers that supported our cause? Or shall we forge a new, more radical destiny for our people?\n\nThe world watches with bated breath as we decide our future. The choices we make today will echo through generations."
+ israel.1.a:0 "We shall follow the historical path, maintaining our alliances with Britain and America."
+ # ── EVENT 1: American Path Leader Choice ──────────────────────
+ ISR_leader_events.1.t:0 "The American Road — Who Leads Israel?"
+ ISR_leader_events.1.d:0 "The Jewish diaspora in America has answered our call. Funds, volunteers, and diplomatic pressure are flowing in. Now Israel must decide: who will lead us forward as we sever ties with the old Council?"
+ ISR_leader_events.1.a:0 "David Ben Gurion — A man of the people."
+ ISR_leader_events.1.b:0 "Albert Einstein — The genius of our age."
+ ISR_leader_events.1.c:0 "Ben Shapiro — Facts do not care about your feelings."
+ 
+ # ── EVENT 2: British Path Leader Choice ───────────────────────
+ ISR_leader_events.2.t:0 "Under British Wings — Who Leads Israel?"
+ ISR_leader_events.2.d:0 "London has extended its guarantee. In exchange for British recognition and protection, the old Council must step aside. It is time to put a singular face to the new State of Israel."
+ ISR_leader_events.2.a:0 "Benjamin Disraeli — A statesman the British respect."
+ ISR_leader_events.2.b:0 "Israel Kocach — A strong hand for a young nation."
+ 
+ # ── EVENT 3: Path Locked Notification ─────────────────────────
+ ISR_leader_events.3.t:0 "A Path Chosen, A Door Closed"
+ ISR_leader_events.3.d:0 "Our commitment to one great power means we cannot court the other. The alternative path is now closed to us."
+ ISR_leader_events.3.a:0 "We have made our choice."
+ 
+ # ── Custom tooltip ─────────────────────────────────────────────
+ ISR_council_dissolved_tt:0 "The United Arab-Muslim-Jewish Council is dissolved. A new leader steps forward."
+ 
+ ISR_british_trained_administrators:0 "British-Schooled Governance"
+ ISR_divine_right_operations:0 "Operations by Divine Right"

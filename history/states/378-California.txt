@@ -34,6 +34,7 @@ state={
 			}
 		}
 		add_core_of = USA
+		add_core_of = ISR
 		victory_points = {
 			9814 30
 		}

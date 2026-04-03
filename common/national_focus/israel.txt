@@ -1,0 +1,1117 @@
+﻿focus_tree = {
+    id = israel_focus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 100
+            tag = ISR
+        }
+    }
+
+    default = no
+
+    # Required stuff for focus tree ^
+
+    focus = {
+        id = ISR_zionist_dream
+        icon = GFX_SOV_bringing_breakaways_back_to_the_fold_ccp_2d_sov_compatibility
+        x = 25
+        y = 0
+        cost = 0
+        complete_tooltip = {
+        }
+        available = {
+            GER = {
+                has_completed_focus = GER_remilitarize_the_rhineland
+            }
+        }
+        completion_reward = {
+            add_political_power = 300
+            country_event = { id = israel.1 } # Event for the future of Israel or smt
+        }
+    }
+
+    focus = {
+        id = ISR_unify_the_command
+        icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
+        x = 0
+        y = 2
+        cost = 14.4
+        relative_position_id = ISR_zionist_dream
+        prerequisite = { focus = ISR_zionist_dream }
+        completion_reward = {
+            army_experience = 50
+            add_war_support = 0.15
+            add_ideas = ISR_haganah_spirit
+
+            # Drops the shitty united_israeli_council trait for the council and adds a united_israeli_council_grand trait
+            if = {
+                limit = {
+                    has_country_leader_with_trait = united_israeli_council
+                }
+                remove_country_leader_trait = united_israeli_council
+                add_country_leader_trait = united_israeli_council_grand
+            }
+        }
+    }
+    focus = {
+        id = ISR_progress_our_education
+        icon = GFX_SOV_the_ussr_academy_of_sciences_ccp_2d_sov_compatibility
+        x = 7
+        y = 2
+        cost = 10
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_unify_the_command }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+    focus = {
+        id = ISR_built_new_schools
+        icon = GFX_focus_research2
+        x = 8
+        y = 3
+        cost = 15
+        available = {
+            # the state of israel to have more than 4 million people in it
+            # more than 25 factories
+            454 = {
+                population > 4000000
+            }
+            num_of_factories > 25
+        }
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_progress_our_education }
+        completion_reward = {
+            add_research_slot = 2
+        }
+    }
+    focus = {
+        id = ISR_living_space
+        icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
+        x = 10
+        y = 3
+        cost = 10
+        available = {
+            # the state of israel to have more than 4 million people in it
+            # more than 10 factories
+            num_of_factories > 10
+            454 = {
+            population > 3000000
+        }
+        }
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_progress_our_education }
+        completion_reward = {
+            # moves the category of israel 
+            # 2 more civs or smt
+            454 = {
+                add_extra_state_shared_building_slots = 5
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 4
+                    instant_build = yes
+                }
+            }
+            set_state_category = metropolis
+        }
+    }
+    focus = {
+        id = ISR_civilian_development
+        icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
+        x = 12
+        y = 3
+        cost = 10
+        available = {
+        }
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_progress_our_education }
+        completion_reward = {
+            454 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = ISR_chok_sherut_bitachon
+        icon = GFX_focus_generic_full_social_mobilization
+        x = -2
+        y = 2
+        cost = 10
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_unify_the_command }
+        available = {
+            has_war_support > 0.5
+            has_stability > 0.5
+            threat > 0.7
+        }
+        completion_reward = {
+            # Forces Israel to go service by requirement, war economy
+            add_ideas = service_by_requirement
+            add_ideas = war_economy
+        }
+    }
+
+    focus = {
+        id = ISR_deal_with_the_muslim_goyim
+        icon = GFX_focus_BRA_reach_out_to_military_dem
+        x = -4
+        y = 1
+        cost = 5
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_unify_the_command }
+        completion_reward = {
+            # Swaps from disarmed nation to limited
+            add_ideas = limited_conscription
+            remove_ideas = disarmed_nation
+        }
+    }
+
+    focus = {
+        id = ISR_remove_the_muslim_goyim
+        icon = GFX_focus_BRA_end_the_state_of_emergency
+        x = -4
+        y = 2
+        cost = 12.2
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_deal_with_the_muslim_goyim }
+        completion_reward = {
+            # ISR_muslim_minority give this idea and remove the muslim majority one, remove also -200k population from israel
+            swap_ideas = {
+                remove_idea = ISR_muslim_majority
+                add_idea = ISR_muslim_minority
+            }
+            add_manpower = -350000
+        }
+    }
+
+    focus = {
+        id = ISR_purge_the_muslims_off_greater_yisrael
+        icon = GFX_focus_PER_state_atheism
+        x = -4
+        y = 11
+        cost = 5
+        relative_position_id = ISR_unify_the_command
+        prerequisite = { focus = ISR_remove_the_muslim_goyim }
+        completion_reward = {
+            # Purges in non-jewish states to make them racially pure for jews, available after greater yisrael focus - decisions gives cores
+            custom_effect_tooltip = ISR_purge_muslims_tt
+            # Decisions will handle the purging and core application
+        }
+    }
+
+    focus = {
+        id = ISR_gerush_hagadish
+        x = -10
+        y = 5
+        cost = 10
+        relative_position_id = ISR_unify_the_command
+        icon = GFX_focus_SOV_organize_wreckers
+        prerequisite = { focus = ISR_unify_the_command }
+        mutually_exclusive = { focus = ISR_palmach_commandos }
+        completion_reward = {
+            # Gives a gun ahead of time bonus like 300%
+            add_tech_bonus = {
+                name = infantry_weapons_bonus
+                bonus = 3.0
+                uses = 1
+                category = infantry_weapons
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_lahav_or_ora
+        x = 0
+        y = 1
+        cost = 0
+        relative_position_id = ISR_gerush_hagadish
+        icon = GFX_focus_SWE_lottakoren
+        prerequisite = { focus = ISR_gerush_hagadish }
+        completion_reward = {
+            # Gives an anti-tank ahead of time buff
+            add_tech_bonus = {
+                name = antitank_bonus
+                bonus = 2.5
+                uses = 2
+                category = cat_anti_tank
+            }
+            # Gives offense genius and like an idea that makes gun 10% cheaper but -5% less reliability
+            add_ideas = {
+                ISR_gun_production_idea
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_desert_blitz
+        x = 0
+        y = 3
+        cost = 5
+        relative_position_id = ISR_gerush_hagadish
+        icon = GFX_focus_PER_desert_training
+        prerequisite = { focus = ISR_lahav_or_ora }
+        completion_reward = {
+            # Mechanized and motorized tech that gives extra desert attack and more soft attack and speed for it - copy from Mongolia stuff
+            add_ideas = ISR_desert_warfare_buff
+        }
+    }
+
+    focus = {
+        id = ISR_palmach_commandos
+        x = -5
+        y = 5
+        cost = 10
+        relative_position_id = ISR_unify_the_command
+        icon = GFX_goal_generic_special_forces
+        prerequisite = { focus = ISR_unify_the_command }
+        mutually_exclusive = { focus = ISR_gerush_hagadish }
+        completion_reward = {
+            # Add idea for special unit attack
+            add_ideas = ISR_special_forces_buff
+
+            # Decisions for blowing up something in Germany when WW2 begins and France has capitulated
+            # For example, to blow up a civ in France or something - limit of clicking it 5 times,
+            # in each major eco state, 1st time 1 civ 2nd time 2 civs and so until 5,
+            # cost inf eq like 300-500-700-1200-2000
+            custom_effect_tooltip = ISR_palmach_decisions_tt
+            # Actual decisions will be defined separately
+        }
+    }
+
+    focus = {
+        id = ISR_sherut_avir
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = ISR_palmach_commandos
+        icon = GFX_SOV_muster_the_old_guard_ccp_2d_sov_compatibility
+        prerequisite = { focus = ISR_palmach_commandos }
+        completion_reward = {
+            # Gives an idea for all new military leaders to start with 1 more attack and 2 more levels,
+            # also gives defense high command guy and attrition genius
+            add_ideas = ISR_air_force_buff
+        }
+    }
+
+    focus = {
+        id = ISR_seek_allies
+        x = 0
+        y = 4
+        cost = 10
+        relative_position_id = ISR_zionist_dream
+        icon = GFX_focus_generic_diplomatic_treaty
+        prerequisite = { focus = ISR_unify_the_command }
+        completion_reward = {
+            # Should restrict your paths and "remove" them aka make them invisible
+            # Event, depending on what you choose in the zionist dream, this event should be different
+            custom_effect_tooltip = ISR_alliance_paths_tt
+            # Logic for path restriction will be handled by events and focus visibility
+        }
+    }
+
+    focus = { # "fascist"
+        id = ISR_no_goyim_assitance
+        x = 0
+        y = 5
+        cost = 5
+        relative_position_id = ISR_zionist_dream
+        icon = GFX_focus_hol_united_netherlands
+        prerequisite = { focus = ISR_seek_allies }
+        allow_branch = {
+            always = no
+        }
+        completion_reward = {
+            # Unlocks the fascist guy
+            # Boosts independence by 1 level - if max level of autonomy aka dominion or whatever don't free from UK
+            # These need to have like a tooltip to show they are unlocked
+            # Unlocks "Palm Beach Pete"(Jeffrey Epstein) advisor and agent
+            add_autonomy_ratio = {
+                value = 0.1
+                localization = ISR_fascist_path
+            }
+            custom_effect_tooltip = ISR_unlock_fascist_leader_tt
+            # Unlock Palm Beach Pete advisor/agent logic goes here
+        }
+    }
+
+    focus = {
+        id = ISR_decieve_the_goy_world
+        x = 0
+        y = 7
+        cost = 5
+        relative_position_id = ISR_zionist_dream
+        icon = GFX_focus_RAJ_headhunt_army_personell
+        prerequisite = { focus = ISR_no_goyim_assitance }
+        completion_reward = {
+            # Appear to be a British puppet until Germany capitulates,
+            # build your strength with decisions and operations across the world and act nice and innocent
+            custom_effect_tooltip = ISR_deception_phase_tt
+            # Decisions and operations logic for deception phase
+        }
+    }
+
+    focus = {
+        id = ISR_initiate_doom
+        x = 0
+        y = 9
+        cost = 1
+        relative_position_id = ISR_zionist_dream
+        icon = GFX_focus_RAJ_a_private_military
+        prerequisite = { focus = ISR_decieve_the_goy_world }
+        completion_reward = {
+            # The final apocalypse, the monolithic juggernaut that is Israel forces all Jews to rise up and kill the world,
+            # the nations of the world depending on stuff from deceivement
+            # Should become your puppets and stuff,
+            custom_effect_tooltip = ISR_apocalypse_begins_tt
+            # Trigger global war mechanics and puppet logic
+        }
+    }
+
+    focus = {
+        id = ISR_the_third_heaven
+        x = 0
+        y = 10
+        cost = 25
+        relative_position_id = ISR_zionist_dream
+        icon = GFX_focus_RAJ_the_crown_and_the_world
+        prerequisite = { focus = ISR_initiate_doom }
+        completion_reward = {
+            # If you are able to conquer the world this focus should be available,
+            # this focus annexes all your puppets, declares war on the black nation, you fight it
+            # If you cap them too you annex them all with core, the world becomes all cored
+            # A lot of schizoid events
+            custom_effect_tooltip = ISR_world_domination_tt
+            # Annex puppets, declare war on Black Nation, apply cores globally
+        }
+    }
+
+    focus = {
+        id = ISR_surrender_to_our_enemies
+        x = 12
+        y = 2
+        cost = 0
+        relative_position_id = ISR_seek_allies
+        icon = GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility
+        prerequisite = { focus = ISR_seek_allies }
+        allow_branch = {
+            always = no
+        }
+        completion_reward = {
+            # This focus is for when you capitulate as Israel either to GEACPS or AXIS
+            # It should fire an event once it gets completed so that you choose your fate, will be dynamic ig
+            # And once you click on the event it should either complete ger puppet or jap puppet
+            country_event = { id = israel_capitulation_event } # Placeholder event ID
+        }
+    }
+
+    focus = {
+        id = ISR_german_zionist_pupet
+        x = 2
+        y = 3
+        cost = 0
+        relative_position_id = ISR_surrender_to_our_enemies
+        icon = GFX_focus_FIN_national_fanatism
+        mutually_exclusive = { focus = ISR_japaneese_tetra_pupet }
+        prerequisite = { focus = ISR_surrender_to_our_enemies }
+        completion_reward = {
+            # Auto completed from an event
+            # Event handling the German puppet transition
+        }
+    }
+
+    focus = {
+        id = ISR_proclaimed_defenders_of_the_lower_levant
+        x = 2
+        y = 4
+        cost = 20
+        relative_position_id = ISR_surrender_to_our_enemies
+        icon = GFX_focus_CHL_strengthen_the_carabinieros
+        prerequisite = { focus = ISR_surrender_to_our_enemies }
+        completion_reward = {
+            # It would be best if we ask our superior to control the lower Levant in order to secure our way in the future
+            custom_effect_tooltip = ISR_levante_control_tt
+            # Diplomatic request logic to overlord
+        }
+    }
+
+    focus = {
+        id = ISR_freedom_atlas
+        x = 0
+        y = 7
+        cost = 0
+        relative_position_id = ISR_surrender_to_our_enemies
+        icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+        prerequisite = { focus = ISR_convert_to_shogunism focus = ISR_proclaimed_defenders_of_the_lower_levant }
+        completion_reward = {
+            # Get capped as puppet, become a puppet of the West again
+            # Logic for becoming a western puppet
+        }
+    }
+
+    focus = {
+        id = ISR_japaneese_tetra_pupet
+        x = -2
+        y = 3
+        cost = 0
+        relative_position_id = ISR_surrender_to_our_enemies
+        icon = GFX_SOV_request_imperial_protection_ccp_2d_sov_compatibility
+        mutually_exclusive = { focus = ISR_german_zionist_pupet }
+        prerequisite = { focus = ISR_surrender_to_our_enemies }
+        completion_reward = {
+            # Auto completed from an event
+            # Event handling the Japanese puppet transition
+        }
+    }
+
+    focus = {
+        id = ISR_convert_to_shogunism
+        x = -2
+        y = 4
+        cost = 20
+        relative_position_id = ISR_surrender_to_our_enemies
+        icon = GFX_focus_jap_spiritual_mobilization
+        prerequisite = { focus = ISR_surrender_to_our_enemies }
+        completion_reward = {
+            # Converts all the Jews and loses every core Israel has, the Jews are terminated from the face of Earth, or are they?
+            custom_effect_tooltip = ISR_shogun_conversion_tt
+            # Remove Jewish cores, change religion, potential hidden event chain
+        }
+    }
+
+    focus = {
+        id = ISR_nation_of_israeli_commuinism
+        x = 7
+        y = 2
+        cost = 5
+        icon = GFX_focus_PAR_align_with_the_guion_rojo
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_seek_allies }
+        allow_branch = {
+            always = no
+        }
+        completion_reward = {
+            # Unlocks communist guy Ben Shapiro
+            # These need to have like a tooltip to show they are unlocked
+            custom_effect_tooltip = ISR_unlock_communist_leader_tt
+            # Unlock Ben Shapiro logic
+        }
+    }
+
+    focus = {
+        id = ISR_cooperate_with_soviet_jews
+        x = 7
+        y = 4
+        cost = 5
+        icon = GFX_focus_AFG_integrate_tajik_and_uzbek_republics
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_nation_of_israeli_commuinism }
+        completion_reward = {
+            # These need to have like a tooltip to show they are unlocked
+            # You get Bibi Netnyuahi as your country leader
+            # Gets unit leader Ivan Fedyunisky from SOV
+            custom_effect_tooltip = ISR_soviet_cooperation_tt
+            # Unlock Bibi Netnyuahi, recruit Ivan Fedyunisky
+        }
+    }
+
+    focus = {
+        id = ISR_abolish_religion
+        x = 7
+        y = 6
+        cost = 5
+        icon = GFX_focus_ARG_state_atheism
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_cooperate_with_soviet_jews }
+        completion_reward = {
+            # Gives you 20 stab, you also lose the idea of Judaism
+            # The Judaism no longer fits you, communist Zionism is what does
+            add_stability = 0.20
+            remove_ideas = ISR_judaism
+            custom_effect_tooltip = ISR_atheist_zionism_tt
+            # Apply atheist Zionist ideology effects
+        }
+    }
+
+    focus = {
+        id = ISR_rebuild_the_perfect_world
+        x = 7
+        y = 7
+        cost = 5
+        icon = GFX_focus_ETH_callout_to_the_world
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_abolish_religion }
+        completion_reward = {
+            # All countries that still have Jewish cores get influence by Israeli Zionism,
+            # they can choose to expel, exterminate or fall in with the Jews
+            custom_effect_tooltip = ISR_zionist_influence_tt
+            # Implement influence mechanics on target nations
+        }
+    }
+
+    focus = {
+        id = ISR_kill_the_false_kings_of_blood
+        x = 7
+        y = 8
+        cost = 5
+        icon = GFX_focus_GER_spheres_of_influence
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_rebuild_the_perfect_world }
+        completion_reward = {
+            # Declare war on all nations that chose not to join Israel under its mantle
+            custom_effect_tooltip = ISR_declare_war_non_compliant_tt
+            # Scripted war declarations against specific nations
+        }
+    }
+
+    focus = {
+        id = ISR_live_in_the_mud_of_war
+        x = 7
+        y = 9
+        cost = 5
+        icon = GFX_focus_SOV_military_purge
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_kill_the_false_kings_of_blood }
+        available = {
+            has_war = no
+            has_stability > 0.90
+            # Check that all non-puppet nations refusing zionism have been dealt with
+        }
+        completion_reward = {
+            # Available after you've capitulated all nations that didn't choose to join Israel and is at peace and has more than 90 stab
+            # Declare war on all except puppets nations and expect death
+            custom_effect_tooltip = ISR_final_war_tt
+            # Global war declaration script
+        }
+    }
+
+    focus = {
+        id = ISR_economical_american_support
+        x = 3
+        y = 2
+        cost = 5
+        icon = GFX_focus_generic_american_investments
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_seek_allies }
+        available = {
+            USA = { has_completed_focus = USA_scientist_haven }
+            # has good relations with america
+            has_country_flag = ISR_historical_path_chosen
+        }
+        completion_reward = {
+            # Gives 8 civs 2 mills and lvl 10 airport in Israel aka state 454
+            # Unlocks democracy support guy
+            # These need to have like a tooltip to show they are unlocked
+            add_autonomy_ratio = {
+                value = 0.2
+                #localization = ISR_british_recognition
+            }
+            454 = {
+                add_extra_state_shared_building_slots = 11
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 8
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+            }
+            553 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+            }
+            453 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = ISR_unlock_democratic_advisor_tt
+            # Unlock democratic advisor logic
+        }
+    }
+
+    focus = {
+        id = ISR_jewish_american_refugees
+        x = 3
+        y = 3
+        cost = 5
+        icon = GFX_focus_generic_industrialists
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_economical_american_support }
+        available = {
+            # after the usa joins the war
+        }
+        completion_reward = {
+            # Decisions to move Jews from America to Israel
+            # These need to have like a tooltip to show they are unlocked
+            # After you've clicked move Jews from Michigan twice you get unit leader Lloyd Fredenfall from USA characters
+            custom_effect_tooltip = ISR_refugee_decisions_tt
+            # Decision logic for refugee relocation
+        }
+    }
+
+    focus = {
+        id = ISR_american_jewish_leader_for_us
+        x = 3
+        y = 4
+        cost = 5
+        icon = GFX_focus_generic_strike_at_democracy2
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_jewish_american_refugees }
+        available = {
+            NOT = { has_country_flag = ISR_british_path_chosen }
+		    NOT = { has_country_flag = ISR_leader_chosen }
+        }
+        completion_reward = {
+            # Options for Albert Einstein leader or David Ben Gurion
+            custom_effect_tooltip = ISR_choose_american_leader_tt
+            country_event = { id = ISR_leader_events.1 }
+            # Event or effect to choose between Einstein and Ben Gurion
+        }
+    }
+
+    focus = {
+        id = ISR_atom_threat
+        x = 4
+        y = 5
+        cost = 10
+        icon = GFX_focus_RAJ_uranium_tipped_bullets
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_american_jewish_leader_for_us }
+        completion_reward = {
+            # Gives a 15% army defense and attack buff if ISR_albert_einstein,
+            # if ISR_david_ben_gurion is chosen as leader only 5% army defense and attack buff
+            # Buffs for nukes, atomic weapons, a lot of research speed of 15%,
+            # ISR_albert_einstein is chosen buffs this focus by giving a nuclear land facility
+            # Other effects such as nuclear boost remain the same
+            if = {
+                limit = { has_country_flag = ISR_albert_einstein_chosen }
+                add_ideas = ISR_nuclear_facility
+                add_tech_bonus = {
+                    name = nuclear_bonus
+                    bonus = 1.5
+                    uses = 2
+                    category = nuclear
+                }
+                add_ideas = ISR_nuclear_army_buff_large
+            }
+            else_if = {
+                limit = { has_country_flag = ISR_david_ben_gurion_chosen }
+                add_ideas = ISR_nuclear_army_buff_small
+                add_tech_bonus = {
+                    name = nuclear_bonus
+                    bonus = 1.5
+                    uses = 2
+                    category = nuclear
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_alternative_humans
+        x = 4
+        y = 6
+        cost = 10
+        icon = GFX_focus_GER_divide_and_conquer
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_atom_threat }
+        mutually_exclusive = { focus = ISR_god_kings }
+        available = {
+            # albert_einstein is leader
+        }
+        completion_reward = {
+            # Spawns secret Jewish Agarthan technology, a lot of people spawn inside Israel,
+            # new technology for Israel etc etc
+            custom_effect_tooltip = ISR_agartha_technology_tt
+            # Add Agarthan technology and population effects
+        }
+    }
+
+    focus = {
+        id = ISR_god_choosen_leaders
+        x = 2
+        y = 5
+        cost = 10
+        icon = GFX_focus_ITA_democratic_leadership
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_american_jewish_leader_for_us }
+        completion_reward = {
+            # ISR_david_ben_gurion path gives 50% monthly pop and 20% build speed,
+            # if ISR_albert_einstein 25% monthly pop and 5% build speed
+            # Gives a core defense boost and attack of like 20% if ISR_david_ben_gurion is chosen as leader
+            # 5% core defense and attack if ISR_albert_einstein is chosen
+            if = {
+                limit = { has_country_flag = ISR_david_ben_gurion_chosen }
+                add_ideas = ISR_david_ben_gurion_buffs
+            }
+            else_if = {
+                limit = { has_country_flag = ISR_albert_einstein_chosen }
+                add_ideas = ISR_albert_einstein_buffs
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_god_kings
+        x = 2
+        y = 6
+        cost = 10
+        icon = GFX_focus_eng_god_save_the_king
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_god_choosen_leaders }
+        mutually_exclusive = { focus = ISR_alternative_humans }
+        available = {
+            #ben gurion is leader
+        }
+        completion_reward = {
+            # Idk some randomium civs or mills or whatever pop might be good
+            add_timed_idea = { idea = ISR_divine_mandate days = 365 }
+            # Or some other beneficial effect
+        }
+    }
+
+    focus = {
+        id = ISR_the_end_for_them
+        x = 3
+        y = 8
+        cost = 1
+        icon = GFX_focus_POL_support_global_falangism
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_god_kings focus = ISR_alternative_humans }
+        allow_branch = {
+            always = no
+        }
+        completion_reward = {
+            # It appears your godly hood reach or your technologic reach has driven the Jews to exterminate everyone in a war,
+            # you are alone and can only declare after WW2 is over and concluded
+            custom_effect_tooltip = ISR_extermination_campaign_tt
+            # Trigger conditions for global extermination campaign post-WW2
+        }
+    }
+
+    focus = { # "non-aligned"
+        id = ISR_britain_recognition
+        x = -3
+        y = 2
+        cost = 5
+        icon = GFX_focus_generic_british_trade
+        relative_position_id = ISR_seek_allies
+        prerequisite = { focus = ISR_seek_allies }
+        available = {
+            ENG = { has_completed_focus = uk_commonwealth_focus}
+            has_country_flag = ISR_historical_path_chosen
+        }
+        completion_reward = {
+            # Boost independence stuff
+            # Give a trait white_liberal to the council that gives neutrality boost
+            add_autonomy_ratio = {
+                value = 0.5
+                #localization = ISR_british_recognition
+            }
+            add_war_support = 0.05
+            add_country_leader_trait = white_liberal
+        }
+    }
+
+    focus = {
+        id = ISR_force_british_investors
+        x = 0
+        y = 2
+        cost = 5
+        icon = GFX_focus_generic_currency_reforms
+        relative_position_id = ISR_britain_recognition
+        prerequisite = { focus = ISR_britain_recognition }
+        completion_reward = {
+            # Boosts level of autonomy
+            # Gets eco in Israel like 4-6 civs and 2 mills and 1 dockyard aka state 454
+            add_autonomy_ratio = {
+                value = 0.1
+                localization = ISR_british_investment
+            }
+            454 = {
+                add_extra_state_shared_building_slots = 9
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 5
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_british_guarantees
+        x = 0
+        y = 3
+        cost = 5
+        icon = GFX_focus_generic_league_of_nations
+        relative_position_id = ISR_britain_recognition
+        prerequisite = { focus = ISR_force_british_investors }
+        available = {
+            GER = { has_completed_focus = GER_fate_of_czechoslovakia }
+            NOT = { has_country_flag = ISR_american_path_chosen }
+		    NOT = { has_country_flag = ISR_leader_chosen }
+        }
+        completion_reward = {
+            # Gain claims on states, available after Germany eats Czechs
+            # Gets unit leader Neil Ritchie from ENG characters
+            add_autonomy_ratio = {
+                value = 0.35
+                #localization = ISR_british_recognition
+            }
+            country_event = { id = ISR_leader_events.2 }
+        }
+    }
+
+    focus = {
+        id = ISR_british_jewish_governors
+        x = 1
+        y = 4
+        cost = 10
+        icon = GFX_focus_generic_whispers
+        relative_position_id = ISR_britain_recognition
+        prerequisite = { focus = ISR_british_guarantees }
+        completion_reward = {
+            # These need to have like a tooltip to show they are unlocked
+            # Event for choosing a real leader of Israel, available in 1940
+            #custom_effect_tooltip = ISR_choose_real_leader_1940_tt
+            add_autonomy_ratio = {
+                value = -0.25
+            }
+            add_ideas = ISR_british_trained_administrators
+            # Trigger event in 1940 for leader selection
+        }
+    }
+
+    focus = {
+        id = ISR_the_promises_of_1912_19
+        x = -1
+        y = 4
+        cost = 10
+        icon = GFX_focus_generic_national_security
+        relative_position_id = ISR_britain_recognition
+        prerequisite = { focus = ISR_british_guarantees }
+        available = {
+            # israel has more than 4 million people in it
+        }
+        completion_reward = {
+            # From British guarantees the claims -> with decision play they must become core in order to do Greater Yisrael
+            custom_effect_tooltip = ISR_claims_to_cores_tt
+            # Decision logic to convert claims to cores
+            add_autonomy_ratio = {
+                value = 0.5
+                #localization = ISR_british_recognition
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_greater_yisrael_project
+        x = -1
+        y = 5
+        cost = 10
+        icon = GFX_focus_PER_middle_east_protectorate
+        relative_position_id = ISR_britain_recognition
+        prerequisite = { focus = ISR_the_promises_of_1912_19 }
+        completion_reward = {
+            # After you've played enough with the claim decisions stuff, you get new decisions to ask for states
+            custom_effect_tooltip = ISR_ask_for_states_decisions_tt
+            # Unlock new diplomatic decisions for territorial acquisition
+        }
+    }
+
+    focus = {
+        id = ISR_british_backed_indepent_israeli_state
+        x = 0
+        y = 6
+        cost = 15
+        icon = GFX_focus_RAJ_seven_shackles
+        relative_position_id = ISR_britain_recognition
+        prerequisite = { focus = ISR_british_jewish_governors }
+        prerequisite = { focus = ISR_the_promises_of_1912_19 }
+        completion_reward = {
+            # Free from Britain
+            ENG = {
+                end_puppet = ISR
+            }
+        }
+    }
+
+    focus = {
+        id = ISR_mossad_is_born
+        x = 1
+        y = 1
+        cost = 5
+        icon = GFX_focus_generic_secret_service_agency
+        relative_position_id = ISR_zionist_dream
+        prerequisite = { focus = ISR_zionist_dream }
+        available = {
+            has_completed_focus = ISR_unify_the_command
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_intelligence_agency = no
+                }
+                create_intelligence_agency = yes
+            }
+            add_ideas = ISR_mossad_agency
+            remove_ideas = ISR_lack_of_secret_services_funds
+            # Give the Mossad idea and advisor
+            # Available only unify the command has been completed
+        }
+    }
+
+    focus = {
+        id = ISR_israel_recognized_on_map
+        x = -1
+        y = 1
+        cost = 5
+        icon = GFX_SOV_the_lonely_island_ccp_2d_sov_compatibility
+        relative_position_id = ISR_zionist_dream
+        prerequisite = { focus = ISR_zionist_dream }
+        available = {
+            # Has chosen non-historical path in the event zionist dreams
+            has_country_flag = ISR_non_historical_path_chosen
+        }
+        completion_reward = {
+            remove_ideas = ISR_unrecognized_world_state
+            # Completing this focus makes it so that you can't do: British and American paths
+            # But allows to do no goyim assistance and Israeli communism
+            set_country_flag = ISR_recognized_on_map
+        }
+    }
+
+    focus = {
+        id = ISR_zchot_shanitna_al_yedi_elohim_operations
+        x = 1
+        y = 2
+        cost = 10
+        relative_position_id = ISR_mossad_is_born
+        prerequisite = { focus = ISR_mossad_is_born }
+        icon = GFX_focus_RAJ_contamination_cleanup_crew
+        completion_reward = {
+            # Show that you get a new advisor for agency
+            # These need to have like a tooltip to show they are unlocked
+            # Allows for special military operations against Germany
+            custom_effect_tooltip = ISR_unlock_mossad_advisor_tt
+            add_ideas = ISR_divine_right_operations
+            # Unlock Shaul Avigur advisor (already defined in characters)
+        }
+    }
+
+    focus = {
+        id = ISR_nokmin_v_nakam
+        x = 1
+        y = 3
+        cost = 10
+        icon = GFX_SOV_the_modern_war_in_the_skies_ccp_2d_sov_compatibility
+        relative_position_id = ISR_mossad_is_born
+        prerequisite = { focus = ISR_zchot_shanitna_al_yedi_elohim_operations }
+        available = {
+            has_completed_focus = ISR_palmach_commandos 
+        }
+        completion_reward = {
+            add_political_power = -100
+            # Unlocks operations against Axis members
+            add_ideas = ISR_death_to_nazis
+        }
+    }
+
+    focus = {
+        id = ISR_operation_magic_carpet
+        x = 4
+        y = 0
+        relative_position_id = ISR_unify_the_command
+        icon = GFX_focus_generic_vatican_agents
+        visible = {
+            # Has completed certain decisions and operations
+            has_country_flag = ISR_prepared_for_magic_carpet
+        }
+        available = {
+            # Available only when Ger starts WW2 kills Poland and decides to kill Jews
+            GER = {
+                has_war_with = POL
+                has_completed_focus = GER_panzergrenadier
+            }
+        }
+        completion_reward = {
+            # Save Jews from the Nazi regime via operations
+            custom_effect_tooltip = ISR_magic_carpet_rescue_tt
+            # Operation logic to rescue Jews
+        }
+    }
+
+    focus = {
+        id = ISR_kibbutzim_world_wide
+        x = -7
+        y = 1
+        cost = 10
+        relative_position_id = ISR_unify_the_command
+        icon = GFX_focus_AUS_womens_education_initiative
+        prerequisite = { focus = ISR_unify_the_command }
+        completion_reward = {
+            # Gives decision for boosting population and moving Jews from around the world
+            add_stability = 0.10
+            add_ideas = ISR_kibbutz_spirit # This spirit is to be made and makes it so that you gain more pp flat like 5% and 10% more production output
+        }
+    }
+
+    focus = {
+        id = ISR_develop_the_negev_unit
+        x = 0
+        y = 3
+        cost = 10
+        icon = GFX_focus_AUS_frontmiliz_focus
+        relative_position_id = ISR_kibbutzim_world_wide
+        prerequisite = { focus = ISR_kibbutzim_world_wide }
+        completion_reward = {
+            # SPR_anti_fascist_crusade use this later
+            # Boost for inf eq, like 10% more defense -5% IC for gun and inf divs gives 5% more attack and 12% more defense
+            add_ideas = ISR_negev_infantry_buff
+            add_tech_bonus = {
+                name = "Shalom Karza"
+                bonus = 1.0
+                uses = 3
+                category = support_tech
+            }
+            # allows the creation of militia units
+        }
+    }
+}

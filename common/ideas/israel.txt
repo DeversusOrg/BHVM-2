@@ -1,0 +1,175 @@
+ideas = {
+	country = {
+
+		ISR_mossad_agency = {
+			allowed = {
+				always = yes
+			}
+			name = "Mossad"
+			removal_cost = -1
+			picture = mossad
+			modifier = {
+				agency_upgrade_time = -0.5
+				intel_network_gain = 0.5
+				intelligence_agency_defense = 1
+				army_intel_factor = 0.15
+				operative_slot = 2
+				org_loss_at_low_org_factor = -0.2
+				female_random_operative_chance = 1
+			}
+		}
+
+		ISR_lack_of_secret_services_funds = {
+			allowed = {
+				always = yes
+			}
+			name = "Lack of Agency Funds"
+			removal_cost = -1
+			picture = generic_army_problems
+			modifier = {
+				agency_upgrade_time = 0.5
+				intel_network_gain = -0.5
+			}
+		}
+		ISR_judaism = {
+			allowed = {
+				always = yes
+			}
+			name = "Judism Country Religion"
+			removal_cost = -1
+			picture = MEX_church_power_1
+			modifier = {
+				improve_relations_maintain_cost_factor = 0.25
+				drift_defence_factor = 0.05
+			}
+		}
+		ISR_unrecognized_world_state = {
+			allowed = {
+				always = yes
+			}
+			name = "Unrecognized Nation"
+			removal_cost = -1
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_factor = -0.35
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				mobilization_speed = -0.5
+				recruitable_population_factor = -0.1
+			}
+		}
+		ISR_haganah_spirit = {
+			allowed = {
+				always = yes
+			}
+			name = "Zionist paramilitary organization Haganah"
+			removal_cost = -1
+			picture = SOV_honest_serfdom_idea_ccp_sov_compatibility
+			modifier = {
+				political_power_factor = 0.1
+				mobilization_speed = 0.1
+				monthly_population = 0.2
+				non_core_manpower = 0.06
+				weekly_manpower = 250
+				max_command_power = 25
+				equipment_capture = 0.15
+				army_core_attack_factor	= 0.15	
+				army_core_defence_factor = 0.15
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.35
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.35
+			}
+		}
+		ISR_muslim_majority = {
+			allowed = {
+				always = yes
+			}
+			name = "Muslim Majority"
+			removal_cost = -1
+			picture = raj_marginalized_muslim_community
+			modifier = {
+				mobilization_speed = -0.2
+				recruitable_population_factor = -0.45
+				planning_speed = -0.15
+				research_speed = -0.05
+				autonomy_gain = -0.1
+				monthly_population = 1
+				female_random_operative_chance = -1
+				female_random_army_leader_chance = -1
+				female_divisional_commander_chance = -1
+				female_random_scientist_chance = -1
+				female_random_country_leader_chance = -1
+			}
+		}
+		ISR_muslim_minority = {
+			allowed = {
+				always = yes
+			}
+			name = "Muslim Yom Shaion"
+			removal_cost = -1
+			picture = raj_marginalized_muslim_community_happy
+			modifier = {
+				mobilization_speed = -0.05
+				recruitable_population_factor = -0.1
+				monthly_population = 0.2
+				planning_speed = -0.05
+			}
+		}
+		ISR_kibbutz_spirit = {
+			allowed = {
+				always = yes
+			}
+			name = "Kibbutz hafa"
+			removal_cost = -1
+			picture = BEL_rexist_legion
+			modifier = {
+				political_power_gain = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_death_to_the_muslim_goyim = {
+			allowed = {
+				always = yes
+			}
+			name = "Unrecognized Nation"
+			removal_cost = -1
+			picture = raj_marginalized_muslim_community_angry
+			modifier = {
+				monthly_population = -0.1
+				planning_speed = 0.25
+				mobilization_speed = 0.35
+				max_planning = 0.1
+			}
+		}
+
+		ISR_british_trained_administrators = {
+			allowed = {
+				always = yes
+			}
+			name = "British-Schooled Governance"
+			removal_cost = -1
+			picture = eng_imperial_spirits
+			modifier = {
+				political_power_gain = 0.15
+				research_speed = 0.05
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+		ISR_divine_right_operations = {
+			allowed = {
+				always = yes
+			}
+			name = "Operations by Divine Right"
+			removal_cost = -1
+			picture = generic_secret_police
+			modifier = {
+				operative_slot = 1
+				intelligence_agency_defense = 1
+				army_intel_factor = 0.10
+				decryption_factor = 0.10
+				encryption_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+	}
+}
