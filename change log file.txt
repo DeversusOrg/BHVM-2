@@ -704,3 +704,13 @@ Host tool 6 has now entered develepoment and hopefull in the next update it will
 Rhineland focus for ger should no longer tick up the game for 1 tick up to 9k ms
 Soviet pregrinds are now safe from Stalin 
 CS:762b
+
+Mongolia slight rebalance by ShadowD (if something may seem to broken dont direct it at me pls)
+Mongolia now starts as a "pupet" of the soviets
+Exact Mongolia changes: +5% cap from Economic Boom , Civilian economy boom now gives 2 ,1 year ahead 200% bonuses for industry , Mongolia develop weapons now is 35 days and gives ahead of time 2 years for support equipment,The nuclear bonus focus is now 1 use 300% , Helping china focus now gives an pretty good unit leader and is 35 days , All doctrine stuff has been updated to mastery
+Mongolia can now directly trade with the USA and ENG (why???)
+Made further progress on the host tool 6 in private beta 
+Israel is now playable with functions that are half baked because I'm lazy and stupid 
+Still have yet to figure out possition prio for game rules trust i will fix it next update
+Nerfed German eatable nations as such: -10 civs and 2 mills from denmark , norway and poland in total
+CS:5159
