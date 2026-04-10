@@ -720,4 +720,4 @@ Minor update
 Allegedly fixed some host tool problems with the clear button
 Changed the mech sim , now it also provides mech 2 after 42 but you might have to cancel it once and start it again nothing major
 Added caudillo to be given to bulgaria for the gun sim
-CS:1255
+CS:9501
