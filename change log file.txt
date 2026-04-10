@@ -715,3 +715,9 @@ Still have yet to figure out possition prio for game rules trust i will fix it n
 Nerfed German eatable nations as such: -10 civs and 2 mills from denmark , norway and poland in total
 Buffed mastery gain by 15% during peace and 50% during war
 CS:fc46
+
+Minor update
+Allegedly fixed some host tool problems with the clear button
+Changed the mech sim , now it also provides mech 2 after 42 but you might have to cancel it once and start it again nothing major
+Added caudillo to be given to bulgaria for the gun sim
+CS:1255
