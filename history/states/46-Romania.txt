@@ -12,7 +12,7 @@ state = {
 
 		owner = ROM
 		add_core_of = ROM
-		add_core_of = ISR
+
 		victory_points = { 
 			9617 20 
 		}

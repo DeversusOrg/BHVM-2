@@ -3108,7 +3108,7 @@ focus_tree = {
 					is_in_faction_with = ROOT
 				}
 				any_country = {
-					original_tag = ISR
+					original_tag = PAL
 					is_in_faction_with = ROOT
 				}
 				any_country = {
@@ -3145,7 +3145,7 @@ focus_tree = {
 			MAL = {
 				exists = no
 			}
-			ISR = {
+			PAL = {
 				exists = no
 			}
 			JOR = {
@@ -3245,7 +3245,7 @@ focus_tree = {
 			}
 			random_country = {
 				limit = {
-					original_tag = ISR
+					original_tag = PAL
 					exists = yes
 					is_in_faction_with = ROOT
 				}

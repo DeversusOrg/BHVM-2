@@ -6931,16 +6931,10 @@ form_levant_category = {
 		on_map_mode = decision_view_only
 
 		allowed = {
-			OR = {
-				original_tag = IRQ
-				original_tag = ISR
-			}
+			original_tag = IRQ
 		}
 		visible ={
-			OR = {
-				original_tag = IRQ
-				original_tag = ISR
-			}
+			original_tag = IRQ
 			NOT = { has_global_flag = form_levant_flag }
 		}
 		highlight_states = { 

@@ -28,44 +28,10 @@ leader_traits = {
 	}
 	jew = {
 		consumer_goods_expected_value = -0.01
-		fascism_acceptance = -10
+		fascism_acceptance = -100
 	}
-	genius = {
+	genuis = {
 		research_sharing_per_country_bonus = 0.1
 		research_speed_factor = 0.15
-	}
-	enigmatic = {
-		civilian_intel_to_others = -0.5
-		army_inte_to_others = -0.5
-	}
-	united_israeli_council = {
-		random = no
-		name = "Disgrunteled United council"
-		war_support_factor = -0.05
-		political_power_factor = -0.10
-		stability_factor = -0.05
-	}
-	united_israeli_council_grand = {
-		random = no
-		name = "Satisfied Grand united Council"
-		political_power_factor = -0.02
-		experience_gain_army = 0.03
-		experience_gain_air = 0.03
-		experience_gain_navy = 0.03
-		land_doctrine_cost_factor = -0.05
-		air_doctrine_cost_factor = -0.05
-		naval_doctrine_cost_factor = -0.05
-		custom_modifier_tooltip = ITA_political_reformer_tt
-		hidden_modifier = {
-			political_advisor_cost_factor = -0.25
-			air_advisor_cost_factor = -0.25
-			army_advisor_cost_factor = -0.25
-			navy_advisor_cost_factor = -0.25
-		}
-		mobilization_laws_cost_factor = -0.1
-		economy_cost_factor = -0.1
-		weekly_casualties_war_support = 0.005
-		weekly_bombing_war_support = 0.005
-		weekly_convoys_war_support = 0.005
 	}
 }

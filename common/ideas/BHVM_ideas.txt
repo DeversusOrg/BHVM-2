@@ -541,6 +541,22 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
+		ISR_jewish_state = {
+			allowed = {
+				always = yes
+			}
+			name = "Mossad"
+			removal_cost = -1
+			picture = mossad
+			modifier = {
+				war_support_factor = 0.25
+				agency_upgrade_time = -0.5
+				intel_network_gain = 1
+				intelligence_agency_defense = 0.5
+				operative_slot = 2
+				org_loss_at_low_org_factor = -0.5
+			}
+		}
 		tradeback_is_cancer_no_export = {
 			allowed = {
 				always = no

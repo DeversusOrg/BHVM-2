@@ -13,7 +13,8 @@ state = {
 
 		owner = CAN
 		add_core_of = CAN
-		add_core_of = ISR
+		add_core_of = BLM
+
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
