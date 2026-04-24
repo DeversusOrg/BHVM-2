@@ -721,3 +721,12 @@ Allegedly fixed some host tool problems with the clear button
 Changed the mech sim , now it also provides mech 2 after 42 but you might have to cancel it once and start it again nothing major
 Added caudillo to be given to bulgaria for the gun sim
 CS:9501
+
+DLC 1.18 UPDATE
+Added new focuses to Germany from czeks
+Czeks will remain unplayable and just food for germany , so is slovakia (*if for some reason someone thought it was playable*)
+Fixed Manchuria not doing the correct focus order
+Removed non hist paths from china and philipines 
+Fixed AI in sp not to do stupid shit
+Fixed soviet no air production game rule
+CS:6e98
