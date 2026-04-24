@@ -90,6 +90,9 @@ focus_tree = {
 		available = {
 		}
 		allow_branch = {
+			always = {
+                NO
+            }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -2099,6 +2102,7 @@ focus_tree = {
 		available = {
 		}
 		allow_branch = {
+            
 			if = {
 				limit = {
 					has_game_rule = {
@@ -2177,6 +2181,9 @@ focus_tree = {
 		available = {
 		}
 		allow_branch = {
+			always = {
+                NO
+            }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -3996,6 +4003,7 @@ focus_tree = {
 	
 		x = 0
 		y = 1
+		allow_branch ={}
 		relative_position_id = CHI_denounce_feudalism
 		cost = 10
 		available = {
@@ -7062,6 +7070,9 @@ focus_tree = {
 		available = {
 		}
 		allow_branch = {
+			always = {
+                NO
+            }
 			if = {
 				limit = {
 					has_game_rule = {

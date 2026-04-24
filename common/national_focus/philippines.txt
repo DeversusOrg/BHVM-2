@@ -151,7 +151,11 @@ initial_show_position = {
 
 		bypass = {
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		available_if_capitulated = no
 	
 		completion_reward = {
@@ -256,7 +260,11 @@ initial_show_position = {
 		y = 1
 	
 		cost = 10
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		available = {
 			327 = { #Manila
 				is_owned_and_controlled_by = ROOT
@@ -1078,7 +1086,11 @@ initial_show_position = {
 		available = {
 			PHI_central_focuses_done_T1_4 = yes
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		ai_will_do = {
 			base = 1
 
@@ -1915,7 +1927,11 @@ initial_show_position = {
 		available = {
 			PHI_central_focuses_done_T2_4 = yes
 		}
-
+		allow_branch = {
+			always = {
+                NO
+            }
+		}
 		ai_will_do = {
 			base = 1
 

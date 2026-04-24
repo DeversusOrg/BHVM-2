@@ -92,6 +92,7 @@ mio_policy_NOR_general_permanent_industrial_revolution = {
 		}
 	}
 }
+
 mio_policy_RAJ_general_ordnance_factory_board = {
 	icon = GFX_idea_eng_spirit_of_the_industrial_revolution
 	allowed = { 
@@ -116,3 +117,4 @@ mio_policy_RAJ_general_ordnance_factory_board = {
 		}
 	}
 }
+

@@ -788,7 +788,7 @@ JAP_yokosuka_naval_arsenal_organization = {
 
 		equipment_bonus = {
 			anti_air_attack = 0.1
-			naval_light_gun_hit_chance_factor = 0.05
+			naval_light_gun_hit_chance_factor = 0.025
 		}
 
 		ai_will_do = {
@@ -1198,7 +1198,7 @@ JAP_maizuru_naval_arsenal_organization = {
 
 		equipment_bonus = {
 			anti_air_attack = 0.1
-			naval_light_gun_hit_chance_factor = 0.05
+			naval_light_gun_hit_chance_factor = 0.025
 		}
 
 		ai_will_do = {
@@ -1344,7 +1344,7 @@ JAP_sasebo_naval_arsenal_organization = {
 		limit_to_equipment_type = { screen_ship }
 
 		equipment_bonus = {
-			naval_torpedo_hit_chance_factor	= 0.1
+			naval_torpedo_hit_chance_factor	= 0.05
 		}
 
 		ai_will_do = {
@@ -2883,12 +2883,10 @@ JAP_tokyo_automobile_industries_organization = {
 	
 	allowed = {	
 		OR = {
-			AND = {
-				original_tag = JAP
-				has_dlc = "La Resistance"
-			}
+			original_tag = JAP
 			PHI_SEA = yes
 		}
+		has_dlc = "La Resistance"
 		has_dlc = "Arms Against Tyranny"
 	}
 	
@@ -3187,3 +3185,64 @@ JAP_hitachi_arms_department_organization = {
 	}
 
 }
+
+JAP_nippon_sharyo_organization = {
+	include = generic_train_organization
+	icon = GFX_idea_JAP_nippon_sharyo
+
+	allowed = {
+		original_tag = JAP
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_generic_train_manufacturer
+		limit_to_equipment_type = { 
+			train_equipment 
+			#support_equipment
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05 #5% from MIO base
+		}
+	}
+
+	add_trait = {
+		token = JAP_mio_trait_zaibatsu_production_capabilities_trait
+		name = JAP_mio_trait_zaibatsu_production_capabilities_trait
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+		special_trait_background = yes
+
+		position = { x = 9 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			FROM = {
+				JAP_zaibatsu_faction_is_at_least_influential = yes
+			}
+		}
+
+		on_complete = {
+			
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+

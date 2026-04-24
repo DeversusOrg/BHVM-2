@@ -22,6 +22,7 @@ MAN_historical_plan = {
 		MAN_develop_aluminum_sources
         MAN_expand_showa_steel_works
         MAN_mukden_arsenal
+        MAN_collective_farms
 	}
 
 	

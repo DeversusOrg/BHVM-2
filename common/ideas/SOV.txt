@@ -50,6 +50,26 @@ ideas = {
 			}
 		}
 
+		SOV_nuhuh_air = {
+
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+
+			allowed = {
+				always = no # added via gamerule
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			rule = {
+				can_not_produce_air = yes
+			}
+			modifier = {
+				custom_modifier_tooltip = SOV_no_air_tooltip
+			}
+		}
+
 		trotskyite_plot_nsb = {
 			name = trotskyite_plot
 
