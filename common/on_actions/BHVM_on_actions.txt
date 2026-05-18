@@ -101,9 +101,14 @@ on_actions = {
 		effect = {
 			# Greece dockyards
 			47 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -305,7 +310,7 @@ on_actions = {
 			7 = {
 				add_building_construction = {
 					type = industrial_complex
-					level = 12
+					level = 10
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -313,7 +318,7 @@ on_actions = {
 					level = 4
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 16
+				add_extra_state_shared_building_slots = 14
 			}
 			6 = {
 				add_building_construction = {
@@ -349,14 +354,6 @@ on_actions = {
 				}
 				add_extra_state_shared_building_slots = 8
 			}
-			9 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 3
-			}
 			44 = {
 				add_building_construction = {
 					type = industrial_complex
@@ -370,10 +367,10 @@ on_actions = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 9
+				add_extra_state_shared_building_slots = 10
 			}
 			105 = {
 				add_building_construction = {
@@ -417,10 +414,10 @@ on_actions = {
 			10 = {
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 			88 = {
 				add_building_construction = {
@@ -430,18 +427,18 @@ on_actions = {
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 			}
 			807 = {
 				add_building_construction = {
 					type = dockyard
-					level = 8
+					level = 6
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 			}
 			762 = {
 				add_building_construction = {
@@ -479,12 +476,7 @@ on_actions = {
 					level = 4
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 5
 			}
 			191 = {
 				add_building_construction = {
@@ -549,7 +541,7 @@ on_actions = {
 			808 = {
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -557,7 +549,7 @@ on_actions = {
 					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 7
+				add_extra_state_shared_building_slots = 5
 			}
 			812 = {
 				add_building_construction = {
