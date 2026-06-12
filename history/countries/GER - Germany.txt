@@ -51,7 +51,6 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 			air_torpedoe_1 = 1
-			photo_reconnaisance = 1
 			bba_early_transport_plane = 1
 		}
 	else = {
@@ -66,6 +65,15 @@ if = {
 			naval_bomber1 = 1
 			early_transport_plane = 1
 		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+					photo_reconnaisance = 1
 	}
 }
 
@@ -641,6 +649,39 @@ set_war_support = 0.3
 	#Remove too much PP from focuses
 	add_political_power = -150
 
+	#Bohemia related setup - Pfot
+	activate_decision = GER_reichsprotektorat_bohemia_moravia
+	set_nationality = {
+		target_country = RKH
+		character = GER_konstantin_von_neurath
+	}
+	RKH = {
+		add_ideas = GER_reichsprotectorate_idea
+		GER_konstantin_von_neurath = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = nazism
+					expire = 1960.1.1
+					traits = { GER_reichsprotektor_trait } 
+				}
+			}	
+		}
+		set_research_slots = 3	#otherwise inherits Germany's 5
+	}
+
+	if = {
+		limit = {
+			has_dlc = "Peace For Our Time"
+		}
+		unlock_national_focus = GER_integrate_czech_manufacturers
+		RKH = {
+			add_ideas = {
+				CZE_form_the_government_army_idea
+			}
+		}
+	}
+
 	#Remove cooldown flag
 	clr_country_flag = GER_inner_circle_cd_flag
 
@@ -1072,7 +1113,7 @@ if = {
 		obsolete = yes
 		icon = "GFX_GER_gwtank_medium"
 	}
-	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
+	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts) and Chinese history file. Any changes here should also be applied there
 		name = "Panzer I Ausf. A"
 		type = light_tank_chassis_1
 		parent_version = 0
@@ -1150,6 +1191,24 @@ if = {
 			tank_nsb_armor_upgrade = 3
 		}
 		icon = "GFX_GER_improved_light_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "StuG III"
+		type = medium_tank_destroyer_chassis_1
+		design_team = mio:GER_alkett_organization
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_medium_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 3
+		}
 	}
 }
 if = {

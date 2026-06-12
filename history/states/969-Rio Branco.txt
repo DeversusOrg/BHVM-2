@@ -7,6 +7,11 @@ state={
 	history={
 		owner = BRA
 		add_core_of = BRA
+
+		victory_points = {
+			5214 1 
+		}
+		
 	}
 	manpower=10000
 	buildings_max_level_factor=1.000

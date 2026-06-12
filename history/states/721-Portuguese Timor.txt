@@ -3,22 +3,14 @@ state = {
 	name = "STATE_721"
 	manpower = 1
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history = {
 
 		owner = BLM
 		add_core_of = BLM
 
-		victory_points = {
-			12190 2 # Dili
-		}
-
 		buildings = {
-			infrastructure = 2
-			12190 = {
-				naval_base = 1
-			}
 		}
 	}
 

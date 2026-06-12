@@ -9,10 +9,6 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_game_rule = {
-				rule = force_attack_last_stand
-				option = on
-			}
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {
@@ -25,20 +21,15 @@ ability = {
 		
 		cost = 0.05
 		duration = 168
-		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_defense = 0.2
-				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				cannot_retreat_while_defending = 1.0
-				
-				days = 7
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
-			}
+
+		unit_modifiers = {
+			defence = 0.2
+			combat_entrenchment = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			cannot_retreat_while_defending = 1.0
 		}
-		
+
 		ai_will_do = {
 			factor = -1
 			modifier = {
@@ -68,10 +59,6 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
-			has_game_rule = {
-				rule = force_attack_last_stand
-				option = on
-			}
 			OWNER = {
 				OR = {
 					has_completed_focus = JAP_indoctrination_in_the_military_academy
@@ -81,21 +68,16 @@ ability = {
 		}
 		
 		cost = 0.05
-		duration = 240 
-		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_defense = 0.2
-				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				cannot_retreat_while_defending = 1.0
-				
-				days = 10
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
-			}
+		duration = 240
+
+		unit_modifiers = {
+			defence = 0.2
+			combat_entrenchment = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			cannot_retreat_while_defending = 1.0
 		}
-		
+
 		ai_will_do = {
 			factor = -1
 			modifier = {
@@ -130,7 +112,7 @@ ability = {
 		}
 		
 		cost = 0.06
-		duration = 182
+		duration = 216
 		
 		unit_modifiers = {
 			planning_speed = 4.0

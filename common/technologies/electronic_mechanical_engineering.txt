@@ -289,13 +289,27 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
 				}
-				factor = 5
+				factor = 10
+			}
+			modifier = {
+				OR = {
+					tag = USA
+					date > "1939.6.1"
+				}
+				factor = 10
 			}
 			modifier = {
 				date < "1938.1.1"
-				factor = 0.5
+				factor = 0.1
+			}
+			modifier = {
+				date > "1939.6.1"
+				factor = 2
+			}
+			modifier = {
+				date > "1940.6.1"
+				factor = 2
 			}
 		}
 		
@@ -401,7 +415,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.1
 				date < "1940.1.1"
 			}
 		}
@@ -1401,6 +1415,10 @@ technologies = {
 			soft_attack = 0.1
 		}
 		
+		rocket_battery = {
+			soft_attack = 0.1
+		}
+
 		research_cost = 1
 		start_year = 1943
 		
@@ -1637,12 +1655,7 @@ technologies = {
 	}
 	
 	atomic_research = {
-		allow = {
-			has_game_rule = {
-				rule = sp_nuke
-				option = on
-			}
-		}
+
 		research_speed_factor = 0.04
 		
 		#path = {
@@ -1685,6 +1698,12 @@ technologies = {
 			modifier = {
 				factor = 4
 				tag = USA
+			}
+
+			modifier = {
+				add = 50
+				PHI_SEA = yes
+				has_completed_focus = PHI_weapons_of_war
 			}
 		}
 		

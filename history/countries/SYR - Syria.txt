@@ -91,6 +91,7 @@ set_popularities = {
 
 recruit_character = SYR_mehemed_ali_abed
 recruit_character = SYR_hashim_al_atassi
+recruit_character = FRA_henri_dentz
 
 create_country_leader = {
 	name = "Antun Saadeh"

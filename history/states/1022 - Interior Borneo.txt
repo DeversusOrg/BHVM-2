@@ -2,7 +2,7 @@ state = {
 	id = 1022
 	name = "STATE_1022"
 
-	manpower = 1
+	manpower = 8600
 
 	impassable = yes 
 	force_link_ownership_to = 334 # Kalimantan
@@ -10,12 +10,14 @@ state = {
 	resources = {
 	}
 	
-	state_category = rural
+	state_category = enclave
 
 	history = {
 
-		owner = NONE
+		owner = INS
 		add_core_of = INS
+		add_core_of = GOW 
+		add_core_of = POK  
 
 		buildings = {
 			infrastructure = 0

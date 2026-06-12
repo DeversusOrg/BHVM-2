@@ -715,3 +715,15 @@ news_event = {
         clear_global_variable = resistance_state
     }
 }
+
+news_event = {
+	id = hosttool.56
+	title = "Hosttool"
+	desc = " [From.Getname] gave 50 Mastery to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major =  yes
+	is_triggered_only = yes
+	option = {
+		name = "ok cool"
+	}
+}

@@ -2,10 +2,13 @@
 state={
 	id=266
 	name="STATE_266" # Tehran
-	manpower = 1
+	manpower = 3446250
+	resources = {
+		aluminium = 2
+		tungsten = 2
+	}
 	
-	
-	state_category = wasteland
+	state_category = city
 
 	history={
 		owner = BLM
@@ -24,7 +27,12 @@ state={
                 }
 			}
 		}
-		
+		victory_points = {
+			10837 10 # Tehran 
+		}
+		victory_points = {
+			7602 2 # Esterabad 
+		}
 		add_core_of = BLM
 	}
 
@@ -32,5 +40,5 @@ state={
 		4580 7602 10385 10768 10837 
 	}
 
-	local_supplies = 0.0 
+	local_supplies=5.0 
 }

@@ -7,11 +7,10 @@ state={
 	state_category = city
 	
 	resources={
-		oil=44 # was: 66
+		oil=29 # was: 66 #2025-12-12: was: 44
 	}
 
 	history={
-		add_extra_state_shared_building_slots = 2
 		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 5

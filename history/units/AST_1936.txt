@@ -72,17 +72,34 @@ units = {
 }
 
 
-
-
 ##### Starting Production #####
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "AST"
+	IF = {
+		limit = {
+			has_dlc = "Thunder at Our Gates"
+			has_dlc = "Arms Against Tyranny"
 		}
-		requested_factories = 1
-		progress = 0.75
-		efficiency = 100
+		add_equipment_production = {
+			equipment = {
+				type = infantry_equipment_1
+				creator = "AST"
+			}
+			requested_factories = 4
+			progress = 0.75
+			efficiency = 100
+			industrial_manufacturer = mio:AST_lithgow_arms_organization
+		}
+
+		ELSE = {
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment_1
+					creator = "AST"
+				}
+				requested_factories = 4
+				progress = 0.75
+				efficiency = 100
+			}
+		}
 	}
 }

@@ -60,6 +60,7 @@ focus_tree = {
 			add = 100
 			tag = POL
 		}
+		#WESTERN LANDS
 		modifier = {
 			add = 1000
 			tag = BEL
@@ -71,6 +72,11 @@ focus_tree = {
 		modifier = {
 			add = 100
 			tag = DEN
+		}
+		#THE EAST
+		modifier = {
+			add = 1000
+			tag = INS
 		}
 	}
 	default = no

@@ -5,9 +5,7 @@ state={
 
 	history={
 		owner = BLM
-		victory_points = {
-			11853 3
-		}
+		
 		victory_points = {
 			9860 1
 		}
@@ -21,19 +19,7 @@ state={
 			infrastructure = 1
 
 		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			add_core_of = BLM
-			
-		}
+		add_core_of = BLM
 	}
 
 	provinces={
@@ -41,7 +27,7 @@ state={
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=rural
 
 	local_supplies=0.0 
 }

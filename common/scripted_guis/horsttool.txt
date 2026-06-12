@@ -510,6 +510,7 @@ st_country_powers = {
 					if = { limit = { check_variable = { Root.selected_cheat = 30 } } naval_bonus_2y = yes }
 					if = { limit = { check_variable = { Root.selected_cheat = 31 } } add_equipment_to_stockpile = { type = convoy_1 amount = 100 } }
 					if = { limit = { check_variable = { Root.selected_cheat = 32 } } add_fuel = 50000 }
+					if = { limit = { check_variable = { Root.selected_cheat = 33 } } add_mastery = { amount = 50 } }
 				}	
 			}
 			GER={
@@ -725,6 +726,7 @@ st_country_powers = {
 		cheat30_click = { set_variable = { Root.selected_cheat = 30 } ROOT = { clr_country_flag = cheating } }
 		cheat31_click = { set_variable = { Root.selected_cheat = 31 } ROOT = { clr_country_flag = cheating } }
 		cheat32_click = { set_variable = { Root.selected_cheat = 32 } ROOT = { clr_country_flag = cheating } }
+		cheat33_click = { set_variable = { Root.selected_cheat = 33 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
@@ -821,6 +823,8 @@ st_country_powers = {
 		cheat31_text_visible = { ROOT = { has_country_flag = cheating } }
 		cheat32_visible = { ROOT = { has_country_flag = cheating } }
 		cheat32_text_visible = { ROOT = { has_country_flag = cheating } }
+		cheat33_visible = { ROOT = { has_country_flag = cheating } }
+		cheat33_text_visible = { ROOT = { has_country_flag = cheating } }
 		set_capital_click_enabled = {
 			always = yes
 		}

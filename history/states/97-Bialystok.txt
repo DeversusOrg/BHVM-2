@@ -7,9 +7,7 @@ state={
 		victory_points = {
 			11301 3
 		}
-		victory_points = {
-			3393 3
-		}
+		
 		victory_points = {
 			3254 1
 		}
@@ -20,7 +18,7 @@ state={
 
 		}
 		add_core_of = POL
-		add_core_of = BLM
+		add_core_of = BLR
 
 	}
 

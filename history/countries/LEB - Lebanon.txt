@@ -90,16 +90,7 @@ set_popularities = {
 }
 
 recruit_character = LEB_abdallah_beyhum
-
-create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = GFX_portrait_Pierre_Gemayel
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = LEB_alfred_naqqache
 
 create_country_leader = {
 	name = "Melick Yarad"

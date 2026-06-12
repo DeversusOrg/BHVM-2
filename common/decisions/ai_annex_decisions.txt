@@ -1918,6 +1918,36 @@ operations = {
             }
         }
     }
+    JAP_give_MAN_to_SIA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            MAN
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = JAP
+            MAN = { is_ai = yes }
+        }
+        visible = {
+            original_tag = JAP
+            MAN = { is_ai = yes }
+            is_ai = NO
+            country_exists = MAN
+        }
+        complete_effect = {
+           SIA = {
+                annex_country = { target = MAN transfer_troops = yes }
+                    every_state = {
+                    limit = {
+                        is_core_of = MAN
+                        is_controlled_by = SIA
+                    }
+                    set_compliance = 100
+                }
+            }
+        }
+    }
     JAP_annex_MAN = {
         # icon used to be here rip icon 04/29/2024
         targets = {
@@ -2017,6 +2047,9 @@ political_actions = {
             286 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
             728 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
             1017 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+            1068 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+			1067 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
+			1066 = { remove_dynamic_modifier = { modifier = FRA_anti_noob }}
         }
     }
     FRA_get_BEL_colonies = {

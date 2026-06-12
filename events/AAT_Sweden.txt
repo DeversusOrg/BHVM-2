@@ -391,7 +391,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = Sweden_rearnament.4.a
+		name = Sweden_rearnament.4.desc.a
 	}
 
 }
@@ -1928,6 +1928,14 @@ country_event = {
 				long_name = SWE_aat_hogern_long
 			}		
 		}
+		else = {
+			SWE_gosta_bagge = {
+				remove_trait = {
+					trait = SWE_minor_opposition_party_in_power
+					ideology = liberalism
+				}
+			}
+		}
 	}
 
 	#Wigfors
@@ -2963,36 +2971,30 @@ country_event = {
 				limit = {
 					FROM = { has_idea = SWE_ball_bearing_idea_food_partner }
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = SWE_ball_bearing_food_exchange
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = SWE_ball_bearing_food_exchange
+					}
+				}
+				add_to_variable = { SWE_ball_bearing_food_exchange_stab_factor = 0.02
+					tooltip  = stability_factor_tt
+				}
+
+				add_to_variable = { 
+					SWE_ball_bearing_food_exchange_weekly_manpower = 15 
+					tooltip = weekly_manpower_tt 
+				}
 			}
 		}
 	}
 }
-#Remove ball bearing ideas any of them
-country_event = {
-    id = AAT_Sweden_ball_bearing.remove
-    title = AAT_Sweden_ball_bearing.remove.t
-    desc = AAT_Sweden_ball_bearing.remove.desc
-    picture = GFX_report_event_generic_sign_treaty2
-    
-    is_triggered_only = yes
-    
-    option = {
-        name = AAT_Sweden_ball_bearing.remove.a
-        if = {
-            limit = { has_idea = SWE_ball_bearing_idea }
-            remove_ideas = SWE_ball_bearing_idea
-        }
-        if = {
-            limit = { has_idea = SWE_ball_bearing_idea_food_partner }
-            remove_ideas = SWE_ball_bearing_idea_food_partner
-        }
-        if = {
-            limit = { has_idea = SWE_ball_bearing_idea_research_parther }
-            remove_ideas = SWE_ball_bearing_idea_research_parther
-        }
-    }
-}
-
 
 #Rejected trade ball bearing 
 country_event = {
@@ -3204,10 +3206,26 @@ country_event = {
 		}
 		set_country_flag = SWE_has_rangers
 		add_doctrine_cost_reduction = {
+		 	name = SWE_special_forces
 		 	cost_reduction = 0.65
 		 	uses = 1
-		 	category = cat_mountaineers_doctrine
-		 } 
+		 	category = special_forces_doctrine
+		 }
+		custom_effect_tooltip = mountaineer_subdoctrines_default_add_mastery_bonus_effect_tooltip
+		hidden_effect = {
+			add_mastery_bonus = {
+				name = SWE_special_forces
+				bonus = 0.1
+				days = 240
+				sub_doctrine = mountaineers_1
+			}
+			add_mastery_bonus = {
+				name = SWE_special_forces
+				bonus = 0.1
+				days = 240
+				sub_doctrine = mountaineers_2
+			}
+		}	
 	}
 	# Marines
 	option = { 
@@ -3229,10 +3247,26 @@ country_event = {
 		}
 		set_country_flag = SWE_has_marines
 		add_doctrine_cost_reduction = {
+		 	name = SWE_special_forces
 		 	cost_reduction = 0.65
 		 	uses = 1
-		 	category = cat_marines_doctrine
-		 } 
+		 	category = special_forces_doctrine
+		 }
+		custom_effect_tooltip = mountaineer_subdoctrines_default_add_mastery_bonus_effect_tooltip
+		hidden_effect = {
+			add_mastery_bonus = {
+				name = SWE_special_forces
+				bonus = 0.1
+				days = 240
+				sub_doctrine = mountaineers_1
+			}
+			add_mastery_bonus = {
+				name = SWE_special_forces
+				bonus = 0.1
+				days = 240
+				sub_doctrine = mountaineers_2
+			}
+		}		  
 	}
 	# Paratroopers
 	option = { 
@@ -3254,10 +3288,26 @@ country_event = {
 		}
 		set_country_flag = SWE_has_paratroopers
 		add_doctrine_cost_reduction = {
+			name = SWE_special_forces
 			cost_reduction = 0.65
 			uses = 1
-			category = cat_paratroopers_doctrine
-		} 
+			category = special_forces_doctrine
+		}
+		custom_effect_tooltip = paratrooper_subdoctrines_default_add_mastery_bonus_effect_tooltip
+		hidden_effect = {
+			add_mastery_bonus = {
+				name = SWE_special_forces
+				bonus = 0.1
+				days = 240
+				sub_doctrine = paratroopers_1
+			}
+			add_mastery_bonus = {
+				name = SWE_special_forces
+				bonus = 0.1
+				days = 240
+				sub_doctrine = paratroopers_2
+			}
+		}		 
 	}
 }
 
@@ -4025,7 +4075,7 @@ country_event = { #yes
 				factor = 3
 				strength_ratio = {
 					tag = FROM
-					ratio < 0.7
+					ratio > 0.3 # previously implemented as 'ratio < 0.7', which was not the expected effect
 				}
 			}
 		}
@@ -7602,7 +7652,7 @@ country_event = {
 	id = AAT_Sweden_nordic_defense_council.1
 	title = AAT_Sweden_nordic_defense_council.1.t
 	desc = AAT_Sweden_nordic_defense_council.1.desc
-	picture = GFX_report_event_generic_panzer_attack
+	picture = GFX_report_event_SWE_defense_act
 	is_triggered_only = yes
 	immediate = {
         hidden_effect = {
@@ -7970,6 +8020,7 @@ country_event = {
 	id = AAT_Sweden_nordic_defense_council.2	
 	title = AAT_Sweden_nordic_defense_council.2.t
 	desc = AAT_Sweden_nordic_defense_council.2.desc
+	picture = GFX_report_event_SWE_defense_act
 	is_triggered_only = yes
 
 	option = {
@@ -7983,6 +8034,7 @@ country_event = {
 	id = AAT_Sweden_nordic_defense_council.3	
 	title = AAT_Sweden_nordic_defense_council.3.t
 	desc = AAT_Sweden_nordic_defense_council.3.desc
+	picture = GFX_report_event_SWE_defense_act
 	is_triggered_only = yes
 
 	option = {
@@ -8009,7 +8061,7 @@ country_event = {
 	id = AAT_Sweden_communism.2
 	title = AAT_Sweden_communism.2.t
 	desc = AAT_Sweden_communism.2.desc
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_report_event_soldiers_parade
 	fire_only_once = yes
 	trigger = {
 		fascism > 0.2
