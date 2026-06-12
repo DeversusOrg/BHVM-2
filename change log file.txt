@@ -730,3 +730,17 @@ Removed non hist paths from china and philipines
 Fixed AI in sp not to do stupid shit
 Fixed soviet no air production game rule
 CS:6e98
+
+
+DLC 1.19 UPDATE
+
+Removed railways because theres gonna be light reworks
+Removed the non hist paths from siam and austrlia
+Emptied the focus tree for indonesia
+Removed the branch for air for australia
+Updated the map to the current dlc checksum
+Added mastery to the hosttool
+Updated doctrines  (desperate defense is the same aka unchanged)
+CURRENT GAME RULES FOR FALS DONT WORK - Need to add game rules for old fals and shit
+Added extra fuel to Japan +8 more fuel
+CS:44f8
