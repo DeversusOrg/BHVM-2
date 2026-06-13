@@ -40,4 +40,17 @@ leader_traits = {
         }
 	}
 
+	commandeer_general = { 
+		type = land
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		corps_commander_modifier = {
+			max_commander_army_size = 50
+		}
+		field_marshal_modifier = {
+			max_commander_army_size = 50
+		}
+	}
 }

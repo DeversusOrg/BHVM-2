@@ -22,7 +22,7 @@ sub_units = {
 			category_all_armor
 			category_army
 		}
-
+		regimental = no
 		combat_width = 0
 
 		#Size Definitions
@@ -110,7 +110,7 @@ sub_units = {
 			category_all_armor
 			category_army
 		}
-
+		regimental = no
 		combat_width = 0
 		
 		battalion_mult = {
@@ -188,7 +188,7 @@ sub_units = {
 			flame
 			support
 		}
-
+		regimental = no
 		group = support
 		
 		battalion_mult = {

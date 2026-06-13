@@ -11,15 +11,12 @@ equipments = {
 			#infantry #Removing inf type 
 			mechanized
 		}
-		if = {
-            limit = { has_game_rule = { rule = upgradable_amb_mech option = on } }
-            upgrades = {
+		upgrades = {
                 tank_reliability_upgrade
                 tank_engine_upgrade
                 tank_armor_upgrade
                 mech_cost_upgrade
             }
-        }
 		group_by = archetype
 		
 		interface_category = interface_category_land
