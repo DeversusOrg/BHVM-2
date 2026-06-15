@@ -12,10 +12,7 @@ state = {
 	history = {
 
 		owner = INS
-		add_core_of = PNG
-		add_core_of = WPG
-		set_resistance = 0
-		set_compliance = 5
+		add_core_of = INS
 
 		victory_points = {
 			12371 2 # Hollandia

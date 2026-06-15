@@ -615,57 +615,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
 			add_threat = 1
-
-			IF = {
-				limit = {
-					FRA = {
-						has_completed_focus = FRA_strengthen_the_little_entente
-						exists = yes
-						is_subject = no
-					}
-				}
-				FRA = {
-					country_event = {
-						id = DOD_hungary.40
-						days = 1
-					}
-				}
-			}
-
-			IF = {
-				limit = {
-					OR = {
-						NOT = {
-							FRA = {
-								has_completed_focus = FRA_strengthen_the_little_entente
-							}
-						}
-						FRA = {
-							exists = no
-						}
-						FRA = {
-							is_subject = yes
-						}
-						ROM = {
-							exists = yes
-						}
-					}
-				}
-				#Romania gets the event if France not engaged in Balkans
-				ROM = {
-					country_event = {
-						id = DOD_hungary.40
-						days = 1
-					}
-				}
-				ELSE = {
-					HUN_remove_trianon_effect = yes
-					news_event = { id = news.298 days = 1 }
-				}
-			}
-
+			HUN_remove_trianon_effect = yes
+			news_event = { id = news.298 days = 1 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
@@ -677,9 +629,6 @@ focus_tree = {
 					add_idea = volunteer_only
 				}
 			}
-
-
-
 		}
 	}
 

@@ -4,7 +4,11 @@ state = {
 
 	state_category = wasteland
 	manpower = 10000
-
+	resources={
+		#steel=8938 # Im adding this just for who ever might be looking , but fact: 
+		# Austrlia is the worlds largest IRON/STEEL producer, it produces over 96% of the world supply of it and it should be in this state technicly
+		# 55 BILLION tons - aproximatly thats how much it is
+	}
 	impassable = yes
 	force_link_ownership_to = 870 # Northwest Australia 
 

@@ -7,11 +7,11 @@ state=
 	state_category = rural
 
 	resources={
-		rubber=60 # was: 116
+		rubber=67 # 6776767667676776767667667777776767677676766767676767676767767667676767
 	}
 
 	history={
-		add_core_of = BLM
+		add_core_of = RAJ
 		owner = ENG
 		victory_points = {
 			10201 3 

@@ -6,7 +6,7 @@ state = {
 	history = {
 
 		owner = ENG 
-		add_core_of = SOL
+		add_core_of = BLM
 
 		buildings = {
 			infrastructure = 1

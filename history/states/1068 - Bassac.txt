@@ -8,8 +8,7 @@ state = {
 	history = {
 
 		owner = FRA
-		add_core_of = LAO
-		add_core_of = CPS
+		add_core_of = BLM
 
 		victory_points = {
 			1592 1 # Champasak 

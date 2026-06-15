@@ -682,9 +682,14 @@
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = FRA_colonial_industry_effect_tt
-			every_owned_state = {
+			every_state = {
 				limit = {
-					is_controlled_by = ROOT
+					OR = {
+						is_controlled_by = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
 					has_state_flag = FRA_colonial_industry_target
 				}
 				add_building_construction = {

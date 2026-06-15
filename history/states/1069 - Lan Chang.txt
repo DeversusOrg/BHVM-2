@@ -8,7 +8,7 @@ state = {
 	history = {
 
 		owner = FRA
-		add_core_of = LAO
+		add_core_of = BLM
 
 		victory_points = {
 			10330 1 # Xayabuli  

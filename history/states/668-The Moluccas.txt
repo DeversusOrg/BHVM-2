@@ -9,10 +9,7 @@ state={
 	history = {
 
 		owner = INS
-		add_core_of = TNE
-
-		set_resistance = 0
-		set_compliance = 55
+		add_core_of = INS
 
 		victory_points = {
 			7413 1 # Ternate   

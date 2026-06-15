@@ -12,8 +12,7 @@ state = {
 	history = {
 		
 		owner = FRA
-		add_core_of = VIN
-		add_core_of = CHM
+		add_core_of = BLM
 
 		victory_points = {
 			12204 1 # Phan Rang
