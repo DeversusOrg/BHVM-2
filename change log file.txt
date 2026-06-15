@@ -755,3 +755,13 @@ Fixed sick and wounded
 Fixed soviet purges
 Yerushalayim is again an urban tile
 CS:7ad9
+
+Regrimental fix for italian assault battalions
+Fixed Indonesia to actually export resources on the market (for now will keep it so that any faction can buy because Im not really sure if embargoes should be set)
+Fixed france focus not spawning factories for syrian invested states (it will be random for the actual states that are invested its just how it works , its an intended buff that france gets extra 2 building slots nothing else)
+Self sealing fuel tanks no longer cost any rubber again
+Fixed hungary focus not to give event to Romania for Trianon Rearm
+Readded back in the old railways
+Optimized the map a  bit
+Added watching youtube reels back into the game via doing some shenanigans with the built in browser
+CS:e4c7
