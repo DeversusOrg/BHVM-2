@@ -231,7 +231,7 @@ focus_tree = {
 					AND = {
 						has_opinion = {
 							target = ROOT 
-							value > -1
+							value > 14
 						}
 						NOT = {
 							has_war_with = ROOT
@@ -247,7 +247,7 @@ focus_tree = {
 					AND = {
 						has_opinion = {
 							target = ROOT 
-							value > -1
+							value > 14
 						}
 						NOT = {
 							has_war_with = ROOT
@@ -263,7 +263,7 @@ focus_tree = {
 					AND = {
 						has_opinion = {
 							target = ROOT 
-							value > -1
+							value > 14
 						}
 						NOT = {
 							has_war_with = ROOT
@@ -1323,9 +1323,7 @@ focus_tree = {
 					compare = greater_than_or_equals
 				}
 			}
-
 			has_country_leader = { ruling_only = yes character = AST_john_curtin }
-			is_subject_of = ENG
 		}
 
 		bypass = {
@@ -1505,6 +1503,8 @@ focus_tree = {
 		available_if_capitulated = no
 	
 		completion_reward = {
+			add_country_leader_trait = rearmer
+
 			effect_tooltip = {
 				ENG = {
 					activate_mission = AST_japanese_war_mission
@@ -1608,6 +1608,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 523 872 } #Papua, NQ
 
 				add_building_construction = {
@@ -1636,6 +1640,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 870 520 } #NWA, NT
 
 				add_building_construction = {
@@ -1752,23 +1760,24 @@ focus_tree = {
 
 	   		custom_effect_tooltip = generic_skip_one_line_tt
 
-            add_equipment_to_stockpile = { #TODO_AL
+            add_equipment_to_stockpile = {
                 type = small_plane_airframe
                 amount = 100 
                 producer = USA 
             }   
 
-            add_equipment_to_stockpile = { #TODO_AL
+            add_equipment_to_stockpile = {
                 type = medium_plane_airframe
                 amount = 100 
                 producer = USA 
             }   
 
-            add_equipment_to_stockpile = { #TODO_AL
- 				type = light_tank_chassis
-  				amount = 200 
-  				producer = USA
-  			}
+            add_equipment_to_stockpile = {
+	 			type = light_tank_chassis
+	  			amount = 200 
+	  			producer = USA
+	  		}
+            
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -1787,7 +1796,10 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			is_in_faction_with = ENG 
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
 		}
 
 		bypass = {
@@ -1796,7 +1808,6 @@ focus_tree = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-
 			remove_dynamic_modifier = { 
 				modifier = AST_war_angst_spirit
 			}
@@ -1812,6 +1823,10 @@ focus_tree = {
 				}
 				custom_effect_tooltip = AST_seven_million_britishers_reinforcements_tt
 				random_owned_state = {
+					limit = {
+						is_coastal = yes
+						is_fully_controlled_by = ROOT
+					}
 					prioritize = { 523 872 } #Papua, NQ
 
 					add_building_construction = {
@@ -1956,9 +1971,11 @@ focus_tree = {
 				}
 				MAL = {
 					is_puppet_of = ENG
+					is_ai = yes
 				}
 				BRM = { 
 					is_puppet_of = ENG
+					is_ai = yes
 				}
 			}
 		}
@@ -1968,10 +1985,16 @@ focus_tree = {
 				NOT = { is_owned_and_controlled_by = ENG }
 			}
 			MAL = {
-				NOT = { is_puppet_of = ENG }
+				OR = {
+					NOT = { is_puppet_of = ENG }
+					is_ai = no
+				}
 			}
 			BRM = { 
-				NOT = { is_puppet_of = ENG }
+				OR = {
+					NOT = { is_puppet_of = ENG }
+					is_ai = no
+				}
 			}
 		}
 
@@ -1996,6 +2019,7 @@ focus_tree = {
 					limit = { 
 						MAL = {
 							is_puppet_of = ENG
+							is_ai = yes
 						}
 					}
 					AST = {
@@ -2006,7 +2030,8 @@ focus_tree = {
 				IF = {	
 					limit = { 
 						BRM = { 
-							is_puppet_of = ENG	
+							is_puppet_of = ENG
+							is_ai = yes	
 						}
 					}
 					AST = {
@@ -2264,9 +2289,6 @@ focus_tree = {
 		cost = 5
 
 		allow_branch = {
-			always = {
-                NO
-            }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -2304,7 +2326,7 @@ focus_tree = {
 			add_political_power = 75
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_or_modify_AST_no_foreign_battlefields_spirit = yes
-			add_to_variable = { AST_no_foreign_battlefields_autonomy_gain = 0.1 tooltip = autonomy_gain_tt }
+			add_to_variable = { AST_no_foreign_battlefields_autonomy_gain = 0.3 tooltip = autonomy_gain_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country_with_original_tag = {
@@ -2328,7 +2350,7 @@ focus_tree = {
 #		mutually_exclusive = { }
 		relative_position_id = 	AST_no_foreign_battlefields
 
-		x = 0
+		x = -1
 		y = 1
 	
 		cost = 5
@@ -2353,6 +2375,9 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 979 } #New Guinea
 
 				add_building_construction = {
@@ -2363,6 +2388,9 @@ focus_tree = {
 			}
 
 			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 520 } #NT
 
 				add_building_construction = {
@@ -2375,6 +2403,40 @@ focus_tree = {
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = AST_volunteers
+		icon = GFX_goal_generic_political_pressure
+
+		prerequisite = { focus = AST_no_foreign_battlefields }
+#		mutually_exclusive = { }
+		relative_position_id = 	AST_no_foreign_battlefields
+		x = 1
+		y = 1
+	
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = no
+	
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = {
+				AST_voluntary_foreign_service_idea
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -2411,6 +2473,11 @@ focus_tree = {
 		available_if_capitulated = no
 	
 		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = AST_ratify_westminster_adoption_act
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = AST_unratified_westminster_act_idea
 			custom_effect_tooltip = AST_ratify_westminster_adoption_act_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2427,7 +2494,7 @@ focus_tree = {
 		prerequisite = { focus = AST_ratify_westminster_adoption_act }
 #		mutually_exclusive = { }
 		relative_position_id = 	AST_ratify_westminster_adoption_act
-		x = -2
+		x = -1
 		y = 1
 	
 		cost = 10
@@ -2505,7 +2572,7 @@ focus_tree = {
 		prerequisite = { focus = AST_ratify_westminster_adoption_act }
 #		mutually_exclusive = { }
 		relative_position_id = 	AST_ratify_westminster_adoption_act
-		x = 0
+		x = 1
 		y = 1
 	
 		cost = 10
@@ -2517,7 +2584,7 @@ focus_tree = {
 			}
 
 			is_in_faction_with = ENG
-			compare_autonomy_progress_ratio > 0.60
+			compare_autonomy_progress_ratio > 0.50
 		}
 
 		bypass = {
@@ -2552,40 +2619,6 @@ focus_tree = {
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER }
-	}
-
-	focus = {
-		id = AST_volunteers
-		icon = GFX_goal_generic_political_pressure #GFX_focus_AST_volunteers
-
-		prerequisite = { focus = AST_ratify_westminster_adoption_act }
-#		mutually_exclusive = { }
-		relative_position_id = 	AST_ratify_westminster_adoption_act
-		x = 2
-		y = 1
-	
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = no
-	
-		completion_reward = {
-			set_rule = {
-				can_send_volunteers = yes
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = {
-				AST_voluntary_foreign_service_idea
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -2670,6 +2703,10 @@ focus_tree = {
 		completion_reward = {
 
 			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 979 12237 } #Lae, New Guinea
 
 				add_building_construction = { 
@@ -2685,6 +2722,10 @@ focus_tree = {
 			}
 
 			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 979 10251 } #New Guinea
 
 				add_building_construction = { 
@@ -2700,6 +2741,10 @@ focus_tree = {
 			}
 
 			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 737 7251 } #Rabaul, Bismarck
 
 				add_building_construction = { 
@@ -2714,6 +2759,10 @@ focus_tree = {
 			}
 
 			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 523 4329 } #Port Moresby, Papua
 
 				add_building_construction = { 
@@ -2729,6 +2778,9 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 737 10206 } #Air base Bismarck
 
 				add_building_construction = { 
@@ -2742,6 +2794,9 @@ focus_tree = {
 			}
 
 			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
 				prioritize = { 737 1286 } #Air base Bismarck
 
 				add_building_construction = { 
@@ -2879,8 +2934,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_autonomy_ratio = {
-				value = 0.1
-				localization = AST_united_states_as_our_keystone
+				value = 0.075
+				localization = AST_liberty_loans
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3467,6 +3522,10 @@ focus_tree = {
 			add_to_variable = { AST_australia_first_fascism_drift = 0.02 tooltip = fascism_drift_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = AST_public_meetings_tt
+
+			hidden_effect = {
+				country_event = { id = AST_political_events.5 days = 75 }
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3521,11 +3580,6 @@ focus_tree = {
 			AST_adela_walsh = {
 				set_character_flag = AST_fascist_leader
 			}
-
-			hidden_effect = {
-				country_event = { id = AST_political_events.5 days = 30 }
-			}
-
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
@@ -3580,11 +3634,6 @@ focus_tree = {
 			AST_percy_stephensen = {
 				set_character_flag = AST_fascist_leader
 			}
-
-			hidden_effect = {
-				country_event = { id = AST_political_events.5 days = 30 }
-			}
-
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
@@ -3601,7 +3650,7 @@ focus_tree = {
 		x = -2
 		y = 1
 	
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -3613,11 +3662,6 @@ focus_tree = {
 	
 		completion_reward = {
 			add_political_power = 75
-
-			add_popularity = {
-				ideology = communism
-				popularity = -0.05
-			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			AST_add_or_modify_forging_australias_future = yes
@@ -3702,6 +3746,10 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.01
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = AST_australia_first_spirit_tt
+			add_to_variable = { AST_australia_first_war_support_factor = 0.05 tooltip = war_support_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
@@ -3803,7 +3851,7 @@ focus_tree = {
 			add_political_power = 75
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_or_modify_AST_no_foreign_battlefields_spirit = yes
-			add_to_variable = { AST_no_foreign_battlefields_autonomy_gain = 0.1 tooltip = autonomy_gain_tt }
+			add_to_variable = { AST_no_foreign_battlefields_autonomy_gain = 0.3 tooltip = autonomy_gain_tt }
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4077,16 +4125,21 @@ focus_tree = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			remove_ideas = AST_anti_fascist_measures
-
-			custom_effect_tooltip = AST_afm_decisions_fascism_upgrade_tt
-
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
 			}
 			add_political_power = 75
-			custom_effect_tooltip = generic_skip_one_line_tt
+
+			IF = {
+				limit = {
+					has_country_flag = AST_anti_fascist_measures_triggered_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				remove_ideas = AST_anti_fascist_measures
+			}
+
+			custom_effect_tooltip = AST_afm_decisions_fascism_upgrade_tt
 
 			set_party_name = {
 				ideology = fascism
@@ -4128,21 +4181,116 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			517 = {	# Victoria
-				add_building_construction = { type = coastal_bunker level = 2 instant_build = yes province = { all_provinces = yes limit_to_naval_base = yes } }
-				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			random_owned_controlled_state = {
+				limit = {
+					impassable = no
+					is_core_of = AST
+					is_fully_controlled_by = AST
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
 			}
-			519 = {	# South Australia
-				add_building_construction = { type = coastal_bunker level = 2 instant_build = yes province = { all_provinces = yes limit_to_naval_base = yes } }
-				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 737 7251 } #Rabaul, Bismarck
+		
+				add_building_construction = { 
+					type = coastal_bunker 
+					level = 2 
+					instant_build = yes 
+					province = { 
+						all_provinces = yes 
+						limit_to_naval_base = yes 
+					} 
+				}
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 1 
+					instant_build = yes 
+				}
 			}
-			285 = {	# New South Wales
-				add_building_construction = { type = coastal_bunker level = 2 instant_build = yes province = { all_provinces = yes limit_to_naval_base = yes } }
-				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 737 10206 } #Air Base, Bismarck
+		
+				add_building_construction = { 
+					type = coastal_bunker 
+					level = 2 
+					instant_build = yes 
+					province = { 
+						all_provinces = yes 
+						limit_to_naval_base = yes 
+					} 
+				}
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 1 
+					instant_build = yes 
+				}
 			}
-			521 = {	# Queensland
-				add_building_construction = { type = coastal_bunker level = 2 instant_build = yes province = { all_provinces = yes limit_to_naval_base = yes } }
-				add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 979 12237 } #Naval Base, New Guinea
+		
+				add_building_construction = { 
+					type = coastal_bunker 
+					level = 2 
+					instant_build = yes 
+					province = { 
+						all_provinces = yes 
+						limit_to_naval_base = yes 
+					} 
+				}
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 523 4329 } #Port Moresby, Papua
+		
+				add_building_construction = { 
+					type = coastal_bunker 
+					level = 2 
+					instant_build = yes 
+					province = { 
+						all_provinces = yes 
+						limit_to_naval_base = yes 
+					} 
+				}
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 1 
+					instant_build = yes 
+				}
 			}
 		}
 
@@ -4179,6 +4327,7 @@ focus_tree = {
 			set_variable = { AST_national_defense_production_speed_dockyard_factor = 0 }
 			set_variable = { AST_national_defense_conversion_cost_civ_to_mil_factor = 0 }
 			set_variable = { AST_national_defense_production_factory_max_efficiency_factor = 0 }
+			set_variable = { AST_national_defense_production_factory_efficiency_gain_factor = 0 }
 			add_dynamic_modifier = { modifier = AST_national_defense }
 			add_to_variable = { var = AST_national_defense_production_speed_arms_factory_factor value = 0.15 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { var = AST_national_defense_production_speed_dockyard_factor value = 0.15 tooltip = production_speed_dockyard_factor_tt }
@@ -4214,7 +4363,9 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = modify_AST_national_defense_tt
-			add_to_variable = { var = AST_national_defense_production_factory_max_efficiency_factor value = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { var = AST_national_defense_production_speed_arms_factory_factor value = 0.05 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { var = AST_national_defense_production_speed_dockyard_factor value = 0.05 tooltip = production_speed_dockyard_factor_tt }
+			add_to_variable = { var = AST_national_defense_production_factory_max_efficiency_factor value = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -4287,9 +4438,28 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = modify_AST_national_defense_tt
-			add_to_variable = { var = AST_national_defense_production_speed_arms_factory_factor value = 0.05 tooltip = production_speed_arms_factory_factor_tt }
-			add_to_variable = { var = AST_national_defense_production_speed_dockyard_factor value = 0.05 tooltip = production_speed_dockyard_factor_tt }
-			add_to_variable = { var = AST_national_defense_production_factory_max_efficiency_factor value = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { var = AST_national_defense_production_factory_efficiency_gain_factor value = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { var = AST_national_defense_production_factory_max_efficiency_factor value = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					impassable = no
+					is_core_of = AST
+					is_fully_controlled_by = AST
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -4407,7 +4577,7 @@ focus_tree = {
 
 	focus = {
 		id = AST_energy_independence
-		icon = GFX_focus_generic_electrification
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = AST_big_business_pact }
 #		mutually_exclusive = { }
 		relative_position_id = AST_big_business_pact
@@ -4694,7 +4864,7 @@ focus_tree = {
 	focus = {
 		id = AST_done_meddling
 		icon = GFX_focus_generic_total_war
-		prerequisite = { focus = AST_vichy_out_of_africa }
+		prerequisite = { focus = AST_the_pacific_garrison focus = AST_vichy_out_of_africa }
 #		mutually_exclusive = { }
 		relative_position_id = AST_vichy_out_of_africa
 		x = 1
@@ -4780,41 +4950,44 @@ focus_tree = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-
 			IF = {
 				limit = {
-					OR = {
-						BRM = {
-							OR = {
-								is_subject_of = ENG
-								any_core_state = {
-									is_owned_by = ENG
-								}
-							}	
-						}
-						MAL = {
-							OR = {
-								is_subject_of = ENG
-								any_core_state = {
-									is_owned_by = ENG
-								}
-							}	
+					BRM = {
+						OR = { 
+							is_ai = no 
+							NOT = { is_subject_of = ENG }
 						}
 					}
+					MAL = { 
+						OR = {
+							is_ai = no 
+							NOT = { is_subject_of = ENG }
+						}
+					}
+					NOT = {
+			            any_state = {
+			                is_core_of = BRM
+			                is_owned_by = ENG
+			            }
+			        }
+			        NOT = {
+			            any_state = {
+			                is_core_of = MAL
+			                is_owned_by = ENG
+			            }
+			        }
 				}
+				AST_hand_in_glove_deny_effect = yes
+			}
+
+			ELSE = {
 				ENG = { country_event = { id = AST_diplomatic_events.43 days = 3 } }
 				custom_effect_tooltip = if_they_accept_tt
 				effect_tooltip = {
 					AST_hand_in_glove_effect = yes
 				}
 			}
-
-			ELSE = {
-				AST_hand_in_glove_deny_effect = yes
-			}
-			
 		}
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
@@ -4827,7 +5000,7 @@ focus_tree = {
 		x = 1
 		y = 1
 	
-		cost = 10 
+		cost = 5 
 
 		available = {
 			FRA = {
@@ -5118,7 +5291,7 @@ focus_tree = {
 		x = 3
 		y = 1
 	
-		cost = 10
+		cost = 5
 
 		available = {
 			has_dynamic_modifier = AST_royal_australian_navy_spirit
@@ -6138,6 +6311,10 @@ focus_tree = {
 				remove_idea = ast_support_for_comrades_idea
 				add_idea = ast_support_for_comrades_idea_improved
 			}
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = AST_conscription_law_so_far
 			hidden_effect = {
@@ -7426,8 +7603,10 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
+			add_or_modify_AST_strength_in_numbers_spirit = yes
+			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.05 tooltip = monthly_population_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			AST_add_or_modify_forging_australias_future = yes
-			add_to_variable = { AST_forging_australias_future_spirit_monthly_population = 0.30 tooltip = monthly_population_tt }
 			add_to_variable = { AST_forging_australias_future_spirit_conscription_factor = 0.10 tooltip = conscription_factor_tt }
 		}
 
@@ -7823,6 +8002,9 @@ focus = {
 		cost = 5
 
 		available = {
+			AST = {
+				owns_state = 725
+			}
 		}
 
 		bypass = {
@@ -8757,7 +8939,7 @@ focus = {
 	
 		completion_reward = {
 			add_or_modify_AST_strength_in_numbers_spirit = yes
-			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.02 tooltip = monthly_population_tt }
+			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.05 tooltip = monthly_population_tt }
 			add_to_variable = { AST_strength_in_numbers_weekly_manpower = 150 tooltip = weekly_manpower_tt }
 			add_to_variable = { AST_strength_in_numbers_stability_factor = -0.05 tooltip = stability_factor_tt }
 		}
@@ -8931,7 +9113,7 @@ focus = {
 	
 		completion_reward = {
 			add_or_modify_AST_strength_in_numbers_spirit = yes
-			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.01 tooltip = monthly_population_tt }
+			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.025 tooltip = monthly_population_tt }
 			add_to_variable = { AST_strength_in_numbers_weekly_manpower = 100 tooltip = weekly_manpower_tt }
 		}
 
@@ -8963,7 +9145,7 @@ focus = {
 	
 		completion_reward = {
 			add_or_modify_AST_strength_in_numbers_spirit = yes
-			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.02 tooltip = monthly_population_tt }
+			add_to_variable = { AST_strength_in_numbers_monthly_population = 0.05 tooltip = monthly_population_tt }
 			add_to_variable = { AST_strength_in_numbers_weekly_manpower = 200 tooltip = weekly_manpower_tt }
 			add_to_variable = { AST_strength_in_numbers_stability_factor = -0.1 tooltip = stability_factor_tt }
 		}
@@ -9413,7 +9595,6 @@ focus = {
 			add_tech_bonus = {
 				name = AST_lee_enfield_no1_mark3
 			    bonus = 0.5
-			    ahead_reduction = 1
 			    uses = 1
 				category = infantry_weapons
 			}
@@ -9624,7 +9805,7 @@ focus = {
 			add_tech_bonus = {
 				name = AST_owen_gun
 			    bonus = 0.75
-			    ahead_reduction = 2
+			    ahead_reduction = 1
 			    uses = 1
 				category = infantry_weapons
 			}
@@ -9903,7 +10084,7 @@ focus = {
 
 	focus = {
 		id = AST_army_inventions_directorate_taog
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_allies_build_infantry
 
 		prerequisite = { focus = AST_department_of_supply_and_development_taog }
 		#mutually_exclusive = { }
@@ -10040,7 +10221,7 @@ focus = {
 					controls_state = 519 #South Australia
 				}
 				build_railway = { 
-					path = { 2223 12992 7623 8165 }
+					path = { 2223 12992 7623 8165 10927 8186 }
 				}
 				674 = {
 					add_building_construction = {
@@ -10195,7 +10376,7 @@ focus = {
 
 		bypass = {
 		}
-
+		
 		available_if_capitulated = no
 	
 		completion_reward = {
@@ -10860,6 +11041,7 @@ focus = {
 			custom_effect_tooltip = AST_royal_australian_navy_spirit_tt
 			add_to_variable = { AST_royal_australian_navy_spirit_navy_intel_factor = 0.10 tooltip = navy_intel_factor_tt }
 			add_to_variable = { AST_royal_australian_navy_spirit_airforce_intel_factor = 0.10 tooltip = airforce_intel_factor_tt }
+			add_to_variable = { AST_royal_australian_navy_spirit_air_wing_xp_loss_when_killed_factor = -0.10 tooltip = air_wing_xp_loss_when_killed_factor_tt }
 		}
 
 		search_filters = {  }
@@ -10932,6 +11114,8 @@ focus = {
 			custom_effect_tooltip = AST_royal_australian_navy_spirit_tt
 			add_to_variable = { AST_royal_australian_navy_spirit_spotting_chance = 0.10 tooltip = spotting_chance_tt }
 			add_to_variable = { AST_royal_australian_navy_spirit_navy_weather_penalty = -0.10 tooltip = navy_weather_penalty_tt }
+			add_to_variable = { AST_royal_australian_navy_spirit_navy_intel_factor = 0.05 tooltip = navy_intel_factor_tt }
+			add_to_variable = { AST_royal_australian_navy_spirit_navy_casualty_on_sink = -0.10 tooltip = navy_casualty_on_sink_tt }
 		}
 		search_filters = {  }
 	}
@@ -11037,24 +11221,28 @@ focus = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			if = {
 				limit = {
-					impassable = no
-					is_core_of = AST
-					is_fully_controlled_by = AST
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
+					521 = {
+						impassable = no
+						is_core_of = AST
+						is_fully_controlled_by = AST
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}	
+				521 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 		}
 

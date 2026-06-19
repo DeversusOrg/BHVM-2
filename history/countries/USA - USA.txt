@@ -4,13 +4,14 @@ oob = "USA_1936"
 
 starting_train_buffer = 5
 
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "USA_1936_naval_legacy"
-	}
-}
+
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "USA_1936_naval_mtg"
+#	else = {
+#		set_naval_oob = "USA_1936_naval_legacy"
+#	}
+#}
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "USA_1936_air_bba"
