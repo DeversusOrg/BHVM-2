@@ -765,3 +765,10 @@ Readded back in the old railways
 Optimized the map a  bit
 Added watching youtube reels back into the game via doing some shenanigans with the built in browser
 CS:e4c7
+
+
+Railways have been reverted for now to see if that causes any issues
+Made bulgaria start with no divs and extra manpower and equipment
+Fixed USA starting with double navy
+Australia focus tree hopefully updated properly (i have no clue tbh)
+CS:*clueless*
