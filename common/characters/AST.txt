@@ -658,7 +658,7 @@ characters={
 					has_completed_focus = AST_second_australian_imperial_force
 				}
 
-				traits={ infantry_leader adaptable expeditionary_leader_trait }
+				traits={ infantry_leader expeditionary_leader_trait }
 				skill=3
 				attack_skill=3
 				defense_skill=2
