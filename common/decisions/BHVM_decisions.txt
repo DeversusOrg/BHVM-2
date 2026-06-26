@@ -1529,6 +1529,229 @@ E_ll = {
 	
 }
 operations = {
+	SOV_spawn_barb_railways_frontline = {
+		icon = GFX_decision_generic_tank
+
+		visible = {	
+			original_tag = SOV
+		}
+		available = {
+			#date > 1941.1.1
+			date > 1935.1.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 188
+						state = 189
+						state = 190
+						state = 809
+						state = 815
+						state = 11
+						state = 814
+						state = 97
+						state = 94
+						state = 93
+						state = 91
+						state = 89
+						state = 199
+						state = 198
+						state = 834
+						state = 192
+						state = 197
+						state = 203
+						state = 201
+						state = 194
+						state = 204
+						state = 206
+						state = 207
+						state = 96
+						state = 784
+						state = 95
+						state = 78
+							state = 226
+					}
+				}
+				every_neighbor_state = {
+					limit = {
+						is_owned_by = SOV
+						OR = {
+							state = 188
+							state = 189
+							state = 190
+							state = 809
+							state = 815
+							state = 11
+							state = 814
+							state = 97
+							state = 94
+							state = 93
+							state = 91
+							state = 89
+							state = 199
+							state = 198
+							state = 834
+							state = 192
+							state = 197
+							state = 203
+							state = 201
+							state = 194
+							state = 204
+							state = 206
+							state = 207
+							state = 96
+							state = 784
+							state = 95
+							state = 78
+							state = 226
+						}
+					}
+					
+					build_railway = {
+						level = 5
+						start_state = PREV
+						target_state = THIS
+					}
+				}
+			}
+		}
+	}
+
+	SOV_spawn_barb_railways_stalinline = {
+		icon = GFX_decision_generic_tank
+
+		visible = {	
+			original_tag = SOV
+		}
+		available = {
+			#date > 1941.1.1
+			date > 1935.1.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 196
+						state = 200
+						state = 227
+						state = 218
+						state = 245
+						state = 217
+						state = 265
+						state = 239
+						state = 257
+						state = 258
+						state = 254
+						state = 219
+						state = 247
+						state = 264
+						state = 216
+						state = 215
+						state = 213
+						state = 244
+						state = 195
+						state = 208
+						state = 813
+						state = 812
+						state = 13
+						state = 191
+						state = 12
+						state = 808
+						state = 810
+						state = 209
+						state = 210
+						state = 207
+						state = 241
+						state = 193
+						state = 202
+						state = 259
+						state = 226
+						state = 221
+						state = 228
+						state = 260
+						state = 223
+						state = 205
+						state = 242
+						state = 246
+						state = 263
+						state = 224
+						state = 220
+						state = 225
+						state = 240
+						state = 137
+					}
+				}
+				every_neighbor_state = {
+					limit = {
+						is_owned_by = SOV
+						OR = {
+							state = 196
+							state = 200
+							state = 227
+							state = 218
+							state = 245
+							state = 217
+							state = 265
+							state = 239
+							state = 257
+							state = 258
+							state = 254
+							state = 219
+							state = 247
+							state = 264
+							state = 216
+							state = 215
+							state = 213
+							state = 244
+							state = 195
+							state = 208
+							state = 813
+							state = 812
+							state = 13
+							state = 191
+							state = 12
+							state = 808
+							state = 810
+							state = 209
+							state = 210
+							state = 207
+							state = 241
+							state = 193
+							state = 202
+							state = 259
+							state = 226
+							state = 221
+							state = 228
+							state = 260
+							state = 223
+							state = 205
+							state = 242
+							state = 246
+							state = 263
+							state = 224
+							state = 220
+							state = 225
+							state = 240
+						}
+					}
+					
+					build_railway = {
+						level = 5
+						start_state = PREV
+						target_state = THIS
+					}
+				}
+			}
+		}
+	}
+
 	give_axis_mio_access = {
 		icon = generic_industry
 	
