@@ -772,3 +772,16 @@ Made bulgaria start with no divs and extra manpower and equipment
 Fixed USA starting with double navy
 Australia focus tree hopefully updated properly (i have no clue tbh)
 CS:*clueless*
+
+Done by Shadow
+Mon MIO focus fixed + added option for SOV to give them a coastline so they can trade with allies
+Bra typo fixed (missing "}" )
+Moved Rom annex decisions to Ger and added Hun as an option
+Cleaned up alt-asia USA resource rights + added 2 states for more alu - ts ape forgot to add the new states i guarantee it 
+Scripted Trotsky events
+---
+Australia should no longer have an adaptable leader
+Blockade runner trait has the same requirments as vanilla for gaining it , the convoy retreat speed by buffed on it by 100%
+SAF first econmic focus is now updated , later down the line a focus for research slots has been modified so that if saf either has 50 factories or is free it can do the focus
+Added ABDA ideas to france
+CS:a5ba
