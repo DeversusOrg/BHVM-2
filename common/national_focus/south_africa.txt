@@ -611,7 +611,7 @@
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -632,6 +632,23 @@
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			IF = {
+				limit = {
+					NOT = { has_tech = basic_train }
+				}
+				set_technology = { 
+					basic_train = 1
+					popup = yes
+				}
+			}
+			add_equipment_to_stockpile = { 
+				type = train_equipment_1
+				amount = 30
+				producer = ENG
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = SAF_south_african_railways
 		}
@@ -1104,7 +1121,10 @@
 		}
 
 		available = {
-			is_subject = no
+			OR = {
+				is_subject = no
+				num_of_factories > 50
+			}
 		}
 		
 		bypass = {
