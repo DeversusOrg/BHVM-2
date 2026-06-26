@@ -1066,83 +1066,83 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = mexico.17.a # We aren't Stalin's puppets, let him stay
-		
-		if = {
-			limit = {
-				SOV = {
-					has_country_leader = { character = SOV_iosif_stalin }
-				}
-			}
-			SOV = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = mexico_trotskyite_wreckers
-				}
-			}
-		}
-		USA = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = mexico_snubbed_stalin
-			}
-		}
-		set_global_flag = trotsky_exile_mexico
-		set_global_flag = AAT_trotsky_in_mexico
-		ai_chance = {
-			factor = 1
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = DEFAULT
-					}
-					has_country_flag = MEX_AI_SECULAR_REPUBLIC 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SECULAR_REPUBLIC
-					}
-					has_country_flag = MEX_AI_SOCIAL_CATHOLICISM 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SOCIAL_CATHOLICISM
-					}
-					has_country_flag = MEX_AI_FASCIST_DICTATORSHIP 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = FASCIST_DICTATORSHIP
-					}
-				}
-			}
-			
-			modifier = {
-				add = 100
-				is_historical_focus_on = yes
-				NOT = {
-					OR = {
-						has_country_flag = MEX_AI_THEOCRATIC_ORDER 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = THEOCRATIC_ORDER
-						}
-						has_country_flag = MEX_AI_SOVIET_REPUBLIC 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = SOVIET_REPUBLIC
-						}
-						has_country_flag = MEX_AI_CARDENISMO 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = CARDENISMO
-						}
-					}
-				}
-			}
-		}
-	}
+#	option = {
+#		name = mexico.17.a # We aren't Stalin's puppets, let him stay
+#		
+#		if = {
+#			limit = {
+#				SOV = {
+#					has_country_leader = { character = SOV_iosif_stalin }
+#				}
+#			}
+#			SOV = {
+#				add_opinion_modifier = {
+#					target = ROOT
+#					modifier = mexico_trotskyite_wreckers
+#				}
+#			}
+#		}
+#		USA = {
+#			add_opinion_modifier = {
+#				target = ROOT
+#				modifier = mexico_snubbed_stalin
+#			}
+#		}
+#		set_global_flag = trotsky_exile_mexico
+#		set_global_flag = AAT_trotsky_in_mexico
+#		ai_chance = {
+#			factor = 1
+#			
+#			modifier = {
+#				add = 100
+#				OR = {
+#					has_game_rule = {
+#						rule = MEX_ai_behavior
+#						option = DEFAULT
+#					}
+#					has_country_flag = MEX_AI_SECULAR_REPUBLIC 
+#					has_game_rule = {
+#						rule = MEX_ai_behavior
+#						option = SECULAR_REPUBLIC
+#					}
+#					has_country_flag = MEX_AI_SOCIAL_CATHOLICISM 
+#					has_game_rule = {
+#						rule = MEX_ai_behavior
+#						option = SOCIAL_CATHOLICISM
+#					}
+#					has_country_flag = MEX_AI_FASCIST_DICTATORSHIP 
+#					has_game_rule = {
+#						rule = MEX_ai_behavior
+#						option = FASCIST_DICTATORSHIP
+#					}
+#				}
+#			}
+#			
+#			modifier = {
+#				add = 100
+#				is_historical_focus_on = yes
+#				NOT = {
+#					OR = {
+#						has_country_flag = MEX_AI_THEOCRATIC_ORDER 
+#						has_game_rule = {
+#							rule = MEX_ai_behavior
+#							option = THEOCRATIC_ORDER
+#						}
+#						has_country_flag = MEX_AI_SOVIET_REPUBLIC 
+#						has_game_rule = {
+#							rule = MEX_ai_behavior
+#							option = SOVIET_REPUBLIC
+#						}
+#						has_country_flag = MEX_AI_CARDENISMO 
+#						has_game_rule = {
+#							rule = MEX_ai_behavior
+#							option = CARDENISMO
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
 	
 	option = {
 		trigger = {
@@ -1206,61 +1206,61 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = mexico.17.c # Invite him to join the government
-		
-		trigger = {
-			OR = {
-				has_government = communism
-				has_government = neutrality
-			}
-			has_dlc = "Man the Guns"
-		}
-		
-		custom_effect_tooltip = available_chief_of_army
-		show_ideas_tooltip = MEX_leon_trotsky
-		
-		add_stability = -0.03
-		
-		if = {
-			limit = {
-				SOV = {
-					has_country_leader = { character = SOV_iosif_stalin }
-				}
-			}
-			SOV = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = mexico_trotskyite_wreckers
-				}
-			}
-		}
-		USA = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = mexico_communist_menace
-			}
-		}
-		
-		set_global_flag = flag_mexico_invited_trotsky_to_government
-		set_global_flag = AAT_trotsky_in_mexico
-		
-		ai_chance = {
-			factor = 0
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_country_flag = MEX_AI_CARDENISMO 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = CARDENISMO
-					}
-				}
-			}
-		}
-	}
-}
+#	option = {
+#		name = mexico.17.c # Invite him to join the government
+#		
+#		trigger = {
+#			OR = {
+#				has_government = communism
+#				has_government = neutrality
+#			}
+#			has_dlc = "Man the Guns"
+#		}
+#		
+#		custom_effect_tooltip = available_chief_of_army
+#		show_ideas_tooltip = MEX_leon_trotsky
+#		
+#		add_stability = -0.03
+#		
+#		if = {
+#			limit = {
+#				SOV = {
+#					has_country_leader = { character = SOV_iosif_stalin }
+#				}
+#			}
+#			SOV = {
+#				add_opinion_modifier = {
+#					target = ROOT
+#					modifier = mexico_trotskyite_wreckers
+#				}
+#			}
+#		}
+#		USA = {
+#			add_opinion_modifier = {
+#				target = ROOT
+#				modifier = mexico_communist_menace
+#			}
+#		}
+#		
+#		set_global_flag = flag_mexico_invited_trotsky_to_government
+#		set_global_flag = AAT_trotsky_in_mexico
+#		
+#		ai_chance = {
+#			factor = 0
+#			
+#			modifier = {
+#				add = 100
+#				OR = {
+#					has_country_flag = MEX_AI_CARDENISMO 
+#					has_game_rule = {
+#						rule = MEX_ai_behavior
+#						option = CARDENISMO
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
 
 # The 1940 election begins
 # First the player is asked if he wants to change the law to remain in office a second term

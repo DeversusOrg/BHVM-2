@@ -345,6 +345,9 @@ SOV_astrov_design_bureau_organization = {
 				original_tag = CHI
 				has_dlc = "No Compromise, No Surrender"
 			}
+			AND = {
+				tag = MON
+			}
 		}	
 	}
 	available = {
@@ -360,6 +363,10 @@ SOV_astrov_design_bureau_organization = {
 				FROM = { original_tag = CHI }
 			}
 			FROM = { has_country_flag = SOV_accepted_Astrov }
+		}
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 	visible = {
@@ -508,6 +515,9 @@ SOV_okmo_organization = {
 				FROM = { original_tag = CHI }
 				has_dlc = "No Compromise, No Surrender"
 			}
+			AND = {
+				tag = MON
+			}
 		}
 	}
 
@@ -542,6 +552,10 @@ SOV_okmo_organization = {
 				FROM = { original_tag = CHI }
 			}
 			FROM = { has_country_flag = SOV_accepted_OKMO }
+		}
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 	visible = {
@@ -838,6 +852,9 @@ SOV_kirov_organization = {
 			    tag = AST
 			    has_dlc = "Thunder at Our Gates"
 			}
+			AND = {
+				tag = MON
+			}
 		}
 	}
 
@@ -862,6 +879,11 @@ SOV_kirov_organization = {
 		if = {
 		    limit = { FROM = { original_tag = AST } }
 		    FROM = { has_completed_focus = AST_westward_battles }
+		}
+
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 
@@ -1753,6 +1775,9 @@ SOV_mig_design_bureau_organization = {
 				tag = BRA
 				has_dlc = "Trial of Allegiance" #TODO MH Change DLC
 			}
+			AND = {
+				tag = MON
+			}
 		}
 	}
 	
@@ -1794,6 +1819,10 @@ SOV_mig_design_bureau_organization = {
 				FROM = { original_tag = BRA }
 			}
 			FROM = { has_completed_focus = BRA_soviet_arms_industry }
+		}
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 
@@ -1933,6 +1962,9 @@ SOV_ilyushin_design_bureau_organization = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = MON
+			}
 		}
 	}
 	
@@ -1967,6 +1999,11 @@ SOV_ilyushin_design_bureau_organization = {
 				#is_in_faction_with = SOV
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
+		}
+
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 
@@ -2478,6 +2515,9 @@ SOV_grabin_design_bureau_organization = {
 				tag = GRE
 				has_dlc = "Battle for the Bosporus"
 			}
+			AND = {
+				tag = MON
+			}
 		}
 	}
 	
@@ -2495,6 +2535,11 @@ SOV_grabin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = GRE_appeal_to_the_soviet_union 
 			}
+		}
+
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 
@@ -2605,8 +2650,20 @@ SOV_tula_arms_plant_organization = {
 	include = generic_infantry_equipment_organization	
 	icon = GFX_idea_tula_arms_plant
 	
-	allowed = {	
-		original_tag = SOV
+	allowed = {
+		OR = {
+			original_tag = SOV
+			AND = {
+				tag = MON
+			}
+		}
+	}
+
+	available = {
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
+		}
 	}
 
 	tree_header_text = {
@@ -2771,6 +2828,9 @@ SOV_gaz_organization = {
 				has_dlc = "Graveyard of Empires"
 			}
 			NOR_AAT = yes
+			AND = {
+				tag = MON
+			}
 		}
 	}
 
@@ -2832,6 +2892,10 @@ SOV_gaz_organization = {
 				FROM = { original_tag = AFG }
 			}
 			FROM = { has_completed_focus = AFG_truck_factory }
+		}
+		IF = {
+			limit = { FROM = { original_tag = MON } }
+			FROM = { has_completed_focus = MON_invite_soviet_companies }
 		}
 	}
 

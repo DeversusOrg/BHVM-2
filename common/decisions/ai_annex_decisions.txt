@@ -47,49 +47,49 @@ operations = {
         }
     }
 
-    ITA_annex_ROM = {
-            # icon used to be here rip icon 04/29/2024
-        targets = {
-            ROM
-        }
-        fire_only_once = yes
-
-        available = {
-            original_tag = ITA
-            ROM = { is_ai = yes }
-            date > 1939.01.01
-        }
-        visible = {
-            original_tag = ITA
-            ROM = { is_ai = yes }
-            is_ai = NO
-            country_exists = ROM
-        }
-        complete_effect = {
-            ITA = { 
-                set_technology = { fuel_refining2 = 1				popup = no }
-                set_technology = { fuel_refining3 = 1				popup = no }
-                set_technology = { fuel_refining4 = 1				popup = no }
-                set_technology = { fuel_refining5 = 1 				popup = no }
-            }
-            hidden_effect = {
-            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
-            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
-            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
-            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
-            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
-            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
-            }
-            ITA = { annex_country = { target = ROM transfer_troops = yes }}
-            every_state = {
-                limit = {
-                    is_core_of = ROM
-                    is_controlled_by = ITA
-                }
-                set_compliance = 100
-            }
-        }
-    }
+#    ITA_annex_ROM = {
+#            # icon used to be here rip icon 04/29/2024
+#        targets = {
+#            ROM
+#        }
+#        fire_only_once = yes
+#
+#        available = {
+#            original_tag = ITA
+#            ROM = { is_ai = yes }
+#            date > 1939.01.01
+#        }
+#        visible = {
+#            original_tag = ITA
+#            ROM = { is_ai = yes }
+#            is_ai = NO
+#            country_exists = ROM
+#        }
+#        complete_effect = {
+#            ITA = { 
+#                set_technology = { fuel_refining2 = 1				popup = no }
+#                set_technology = { fuel_refining3 = 1				popup = no }
+#                set_technology = { fuel_refining4 = 1				popup = no }
+#                set_technology = { fuel_refining5 = 1 				popup = no }
+#            }
+#            hidden_effect = {
+#            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
+#            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
+#            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
+#            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
+#            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
+#            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
+#            }
+#            ITA = { annex_country = { target = ROM transfer_troops = yes }}
+#            every_state = {
+#                limit = {
+#                    is_core_of = ROM
+#                    is_controlled_by = ITA
+#                }
+#                set_compliance = 100
+#            }
+#        }
+#    }
     ITA_annex_BUL = {
         # icon used to be here rip icon 04/29/2024
          targets = {
@@ -147,6 +147,135 @@ operations = {
                         }
                     set_compliance = 100
                 }
+            }
+        }
+    }
+    GER_annex_ROM = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            ROM
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            ROM = { is_ai = yes }
+            date > 1939.01.01
+        }
+        visible = {
+            original_tag = GER
+            ROM = { is_ai = yes }
+            is_ai = NO
+            country_exists = ROM
+        }
+        complete_effect = {
+            GER = { 
+                set_technology = { fuel_refining2 = 1				popup = no }
+                set_technology = { fuel_refining3 = 1				popup = no }
+                set_technology = { fuel_refining4 = 1				popup = no }
+            }
+            hidden_effect = {
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
+            }
+            GER = { annex_country = { target = ROM transfer_troops = yes }}
+            every_state = {
+                limit = {
+                    is_core_of = ROM
+                    is_controlled_by = GER
+                }
+                set_compliance = 100
+            }
+        }
+    }
+    GER_give_ROM_to_ITA = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            ROM
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            ROM = { is_ai = yes }
+            date > 1939.01.01
+        }
+        visible = {
+            original_tag = GER
+            ROM = { is_ai = yes }
+            is_ai = NO
+            country_exists = ROM
+        }
+        complete_effect = {
+            ITA = { 
+                set_technology = { fuel_refining2 = 1				popup = no }
+                set_technology = { fuel_refining3 = 1				popup = no }
+                set_technology = { fuel_refining4 = 1				popup = no }
+            }
+            hidden_effect = {
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
+            }
+            ITA = { annex_country = { target = ROM transfer_troops = yes }}
+            every_state = {
+                limit = {
+                    is_core_of = ROM
+                    is_controlled_by = ITA
+                }
+                set_compliance = 100
+            }
+        }
+    }
+    GER_give_ROM_to_HUN = {
+        # icon used to be here rip icon 04/29/2024
+        targets = {
+            ROM
+        }
+        fire_only_once = yes
+
+        available = {
+            original_tag = GER
+            ROM = { is_ai = yes }
+            date > 1939.01.01
+        }
+        visible = {
+            original_tag = GER
+            ROM = { is_ai = yes }
+            is_ai = NO
+            country_exists = ROM
+        }
+        complete_effect = {
+            HUN = {
+                add_country_leader_trait = bul_caudillo
+            }
+            HUN = { 
+                set_technology = { fuel_refining2 = 1				popup = no }
+                set_technology = { fuel_refining3 = 1				popup = no }
+                set_technology = { fuel_refining4 = 1				popup = no }
+            }
+            hidden_effect = {
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
+            if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
+            }
+            HUN = { annex_country = { target = ROM transfer_troops = yes }}
+            every_state = {
+                limit = {
+                    is_core_of = ROM
+                    is_controlled_by = HUN
+                }
+                set_compliance = 100
             }
         }
     }
@@ -385,7 +514,7 @@ operations = {
 		complete_effect = {
             activate_mission = GER_recieving_ll_mech_1a
             set_country_flag = GER_started_ll_mech
-            add_country_leader_trait = caudillo_2
+            add_country_leader_trait = bul_caudillo
             ITA = { 
                 add_offsite_building = { type = industrial_complex level = 4 } 
                 add_offsite_building = { type = arms_factory level = 3 }
@@ -528,7 +657,7 @@ operations = {
 		complete_effect = {
 			clr_country_flag = GER_started_ll_mech
             GER = {
-                remove_country_leader_trait = caudillo_2
+                remove_country_leader_trait = bul_caudillo
             }
             ITA = { 
                 add_offsite_building = { type = industrial_complex level = -4 } 
@@ -813,8 +942,8 @@ operations = {
 		complete_effect = {
             activate_mission = GER_recieving_ll_gun_1a
             set_country_flag = GER_started_ll_gun
-            BUL = {
-                add_country_leader_trait = caudillo_2
+            ITA = {
+                add_country_leader_trait = bul_caudillo
             }
 			FIN = {	
 				set_technology = {
@@ -851,7 +980,7 @@ operations = {
 		complete_effect = {
 			clr_country_flag = GER_started_ll_gun
             BUL = {
-                remove_country_leader_trait = caudillo_2
+                remove_country_leader_trait = bul_caudillo
             }
 		}
 	}

@@ -36,9 +36,51 @@ country_event = {
 	option = {
 		name = mongolia.2.a
 		MON = { 
-			transfer_state = 564
+			IF = {
+				limit = {
+					MON = {
+						NOT = {
+							controls_state = 329
+						}
+					}
+				}
+				transfer_state = 329
+			}
             transfer_state = 563
+			transfer_state = 564
             transfer_state = 566
+		}
+	}
+	option = {
+		name = mongolia.2.c
+		MON = { 
+			IF = {
+				limit = {
+					MON = {
+						NOT = {
+							controls_state = 329
+						}
+					}
+				}
+				transfer_state = 329
+				add_state_core = 329
+			}
+            transfer_state = 560
+			transfer_state = 561
+			transfer_state = 562
+            transfer_state = 563
+			transfer_state = 564
+			transfer_state = 565
+            transfer_state = 566
+			transfer_state = 574
+			560 = {
+				add_building_construction = {
+					type = naval_base
+					province = 12559
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
     option = {

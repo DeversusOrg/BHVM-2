@@ -1217,11 +1217,6 @@ on_actions = {
 						add_extra_state_shared_building_slots = 6
 					}
 				}
-				BLM = {
-					give_resource_rights = { receiver = USA state = 375 }
-					give_resource_rights = { receiver = USA state = 379 }
-					give_resource_rights = { receiver = USA state = 391 }
-				}
 				BLM = { 
 					transfer_state = 378
 					transfer_state = 379
@@ -1255,7 +1250,15 @@ on_actions = {
 				}
 				BLM = {
 					if = {
+						limit = { owns_state = 374 }
+						give_resource_rights = { receiver = USA state = 375 }
+					}
+					if = {
 						limit = { owns_state = 375 }
+						give_resource_rights = { receiver = USA state = 375 }
+					}
+					if = {
+						limit = { owns_state = 376 }
 						give_resource_rights = { receiver = USA state = 375 }
 					}
 					if = {
@@ -1268,9 +1271,6 @@ on_actions = {
 					}
 				}
 				BLM = {
-					give_resource_rights = { receiver = USA state = 375 }
-					give_resource_rights = { receiver = USA state = 379 }
-					give_resource_rights = { receiver = USA state = 391 }
 					every_state = {
                         limit = {
                             is_core_of = USA

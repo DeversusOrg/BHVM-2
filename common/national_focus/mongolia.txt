@@ -1514,6 +1514,12 @@ focus_tree = {
 			add_state_claim = 621
 			add_state_claim = 756
 			add_state_claim = 611
+			
+			add_state_claim = 560
+			add_state_claim = 561
+			add_state_claim = 562
+			add_state_claim = 565
+			add_state_claim = 574
 		}
 	}
 	focus = {
@@ -1903,7 +1909,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-
+			show_mio_tooltip = SOV_tula_arms_plant_organization
 			show_mio_tooltip = SOV_astrov_design_bureau_organization			
 			show_mio_tooltip = SOV_okmo_organization
 			show_mio_tooltip = SOV_kirov_organization
@@ -1919,37 +1925,37 @@ focus_tree = {
 				unlock_mio_trait_tooltip = SOV_mio_trait_better_rockets
 			}
 			mio:SOV_astrov_design_bureau_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
 			mio:SOV_okmo_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
 			mio:SOV_kirov_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
 			mio:SOV_mig_design_bureau_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
 			mio:SOV_ilyushin_design_bureau_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
 			mio:SOV_grabin_design_bureau_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
 			mio:SOV_gaz_organization = {
-				add_mio_size = 4
+				add_mio_size = 5
 				add_mio_funds_gain_factor = 0.35
 				add_mio_research_bonus = 0.05
 			}
