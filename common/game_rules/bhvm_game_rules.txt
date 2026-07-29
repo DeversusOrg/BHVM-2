@@ -820,7 +820,7 @@ space_marine_deleter = {
 		desc = "You will RNOT Wbe allowed to mix armor and inf in one division"
 	}
 }
-urban_assault_vechile= {
+urban_assault_vechile = {
 	name = "Select if Urban Assault Vehicle is allowed or not "
 	group = " Chapter 3: Technology & Unit Restrictions"
 	icon = "GFX_decision_generic_tank"
@@ -835,34 +835,34 @@ urban_assault_vechile= {
 		desc = "You also get the urban assault vehicle."
 	}
 }
-railway_gun= {
+railway_gun_gamerule = {
 	name = "Select if Railway Gun is allowed or not "
 	group = " Chapter 3: Technology & Unit Restrictions"
 	icon = "GFX_decision_generic_ignite_civil_war"
 	default = {
-		name = off
-		text = "You CANNOT research Railway Battery."
-		desc = "###."
-	}
-	option = {
 		name = on
 		text = "You CAN research Railway Battery."
-		desc = "###"
+		desc = "You CAN research Railway Guns."
+	}
+	option = {
+		name = off
+		text = "You CANNOT research Railway Battery."
+		desc = "You CANNOT research Railway Guns."
 	}
 }
-super_heavy_railway_gun= {
+super_heavy_railway_gun_gamerule = {
 	name = "Select if Super Heavy Railway Battery is allowed or not "
 	group = " Chapter 3: Technology & Unit Restrictions"
 	icon = "GFX_decision_generic_ignite_civil_war"
 	default = {
-		name = off
-		text = "You CANNOT research Super Heavy Railway Battery."
-		desc = "###."
-	}
-	option = {
 		name = on
 		text = "You CAN research Super Heavy Railway Battery."
-		desc = "###"
+		desc = "You CAN research Super Heavy Railway Guns."
+	}
+	option = {
+		name = off
+		text = "You CANNOT research Super Heavy Railway Battery."
+		desc = "You CANNOT research Super Heavy Railway Guns."
 	}
 }
 finish_support_comp = {
@@ -898,6 +898,21 @@ auto_tech_rush = {
 		name = off
 		text = "GOff"
 		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended , If noob)"
+	}
+}
+spawn_barb_railways = {
+	name = "Spawn Barb Railways"
+	group = " Chapter 4: Focus Trees & Decisions"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		text = "ROn"
+		desc = "There will be decisions for Germany and Soviets to spawn in railways (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "GOff"
+		desc = "There will NOT be decisions for Germany and Soviets to spawn in railways (Not Recommmended)"
 	}
 }
 soviet_focus_buffs = {

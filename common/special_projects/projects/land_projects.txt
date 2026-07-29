@@ -1215,7 +1215,10 @@ sp_land_self_propelled_super_heavy_howitzer = {
 sp_land_super_heavy_railway_gun = {
 	specialization = specialization_land
 	visible = {
-		has_game_rule = { rule = super_heavy_railway_gun option = on }
+		has_game_rule = { 
+			rule = super_heavy_railway_gun_gamerule 
+			option = on 
+		}
 	}
 	project_tags = sp_tag_artillery
 

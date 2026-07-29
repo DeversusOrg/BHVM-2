@@ -1529,15 +1529,121 @@ E_ll = {
 	
 }
 operations = {
+	GER_spawn_barb_railways = {
+		icon = GFX_decision_generic_tank
+
+		visible = {	
+			original_tag = GER
+			has_game_rule = {
+				rule = spawn_barb_railways
+				option = on
+			}
+		}
+		available = {
+			date > 1941.1.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_faction_member = {
+				every_controlled_state = {
+					limit = {
+						OR = {
+							state = 188
+							state = 763
+							state = 5
+							state = 85
+							state = 98
+							state = 10
+							state = 92
+							state = 90
+							state = 88
+							state = 87
+							state = 807
+							state = 63
+							state = 86
+							state = 68
+							state = 66
+							state = 64
+							state = 67
+							state = 90
+							state = 88
+							state = 71
+							state = 43
+							state = 73
+							state = 154
+							state = 76
+							state = 84
+							state = 79
+							state = 46
+							state = 971
+							state = 80
+							state = 78
+							state = 766
+						}
+					}
+					every_neighbor_state = {
+						limit = {
+							is_controlled_by_ROOT_or_ally = yes
+							OR = {
+								state = 188
+								state = 763
+								state = 5
+								state = 85
+								state = 98
+								state = 10
+								state = 92
+								state = 90
+								state = 88
+								state = 87
+								state = 807
+								state = 63
+								state = 86
+								state = 68
+								state = 66
+								state = 64
+								state = 67
+								state = 90
+								state = 88
+								state = 71
+								state = 43
+								state = 73
+								state = 154
+								state = 76
+								state = 84
+								state = 79
+								state = 46
+								state = 971
+								state = 80
+								state = 78
+								state = 766
+							}
+						}
+						
+						build_railway = {
+							level = 5
+							start_state = PREV
+							target_state = THIS
+						}
+					}
+				}
+			}
+		}
+	}
+
 	SOV_spawn_barb_railways_frontline = {
 		icon = GFX_decision_generic_tank
 
 		visible = {	
 			original_tag = SOV
+			has_game_rule = {
+				rule = spawn_barb_railways
+				option = on
+			}
 		}
 		available = {
-			#date > 1941.1.1
-			date > 1935.1.1
+			date > 1941.1.1
 		}
 
 		fire_only_once = yes
@@ -1573,12 +1679,12 @@ operations = {
 						state = 784
 						state = 95
 						state = 78
-							state = 226
+						state = 226
 					}
 				}
 				every_neighbor_state = {
 					limit = {
-						is_owned_by = SOV
+						is_controlled_by_ROOT_or_ally = yes
 						OR = {
 							state = 188
 							state = 189
@@ -1626,10 +1732,13 @@ operations = {
 
 		visible = {	
 			original_tag = SOV
+			has_game_rule = {
+				rule = spawn_barb_railways
+				option = on
+			}
 		}
 		available = {
-			#date > 1941.1.1
-			date > 1935.1.1
+			date > 1941.1.1
 		}
 
 		fire_only_once = yes
@@ -1690,7 +1799,7 @@ operations = {
 				}
 				every_neighbor_state = {
 					limit = {
-						is_owned_by = SOV
+						is_controlled_by_ROOT_or_ally = yes
 						OR = {
 							state = 196
 							state = 200
