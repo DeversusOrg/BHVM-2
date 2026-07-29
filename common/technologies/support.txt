@@ -1913,6 +1913,13 @@ technologies = {
 			}
 		}
 
+		allow = {
+			has_game_rule = {
+				rule = railway_gun_gamerule
+				option = on
+			}
+		}
+
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
