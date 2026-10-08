@@ -972,8 +972,9 @@ technologies = {
 		armored_car = {
 			hard_attack = 0.1
 		}
-		static_anti_air_damage_factor = 0.1
-
+		static_anti_air_damage_factor = 0.15
+		static_anti_air_hit_chance_factor = 0.35
+		tech_air_damage_factor = -0.012
 		enable_equipment_modules = {
 			ship_anti_air_4
 			tank_heavy_cannon_3
@@ -1680,8 +1681,8 @@ technologies = {
 			}
 		}
 
-		static_anti_air_damage_factor = 0.15
-		static_anti_air_hit_chance_factor = 0.3 
+		static_anti_air_damage_factor = 0.25
+		static_anti_air_hit_chance_factor = 0.5 
 
 		path = {
 			leads_to_tech = sp_variable_time_fuze_shells

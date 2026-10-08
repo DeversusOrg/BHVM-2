@@ -74,7 +74,8 @@ NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.5 --makes redeployement of fighters
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player have brain 
 NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 10.0 -- How much air superiority reduction to the enemy does our AA guns? Normally each building level = -1 reduction. With this multiplier.
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.25 -- this is buffed by .25 I AM NOT 100% SURE THIS MAKES ANY CHANGE TO SAA (state aa) BUT IT GOODS TO HAVE , IF SHREDS CAS = REMOVED
-
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.9 --Vanilla 2
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.09 -- Vanilla 0.07
 NDefines.NMilitary.COMMANDER_ABILITY_BASE_RANGE = 200                  -- Base radius range of commander abilities
 
 NDefines.NMilitary.COMMS_MAX_DISTANCE = 40											-- If N is >= the size of the below arrays, the last value will be considered repeated

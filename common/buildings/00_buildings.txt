@@ -57,7 +57,6 @@ buildings = {
 		base_cost = 7200
 		base_cost_conversion = 4000
 		military_production = 1
-		 
 		icon_frame = 2
 		value = 8
 		infrastructure_construction_effect = yes
@@ -101,7 +100,7 @@ buildings = {
 		icon_frame = 15
 		centered = yes
 		supply_node = yes
-		damage_factor = 0.1
+		damage_factor = 0
 		allied_build = yes
 		always_shown = yes
 		infrastructure_construction_effect = yes
@@ -120,6 +119,7 @@ buildings = {
 		level_cap = {
 			province_max = 1
 		}
+		damage_factor = 0
 	}
 	
 	naval_facility = {
@@ -241,14 +241,14 @@ buildings = {
 		base_cost = 2500
 		icon_frame = 9
 		anti_air = yes
-		 
 		air_defence = 1
-		damage_factor = 0.1
+		damage_factor = 0.01
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
 			state_max = 5
 		}
+		industry_air_damage_factor = -0.02
 	}
 
 	synthetic_refinery = {
@@ -260,7 +260,7 @@ buildings = {
 		refinery = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		
+		damage_factor = 0
 		show_modifier = yes
 
 		country_modifiers = {
@@ -284,6 +284,7 @@ buildings = {
 		fuel_silo = yes
 		per_level_extra_cost = -500		
 		show_modifier = yes
+		damage_factor = 0
 		country_modifiers = {
 			modifiers = {
 				max_fuel_building = 100.0 #k

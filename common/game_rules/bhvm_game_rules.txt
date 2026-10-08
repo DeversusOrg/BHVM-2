@@ -1422,4 +1422,3 @@ china_war_difficulty = {
 		desc = "China will get in total 54 divs , under equiped (Recommmended)"
 	}
 }
-```
