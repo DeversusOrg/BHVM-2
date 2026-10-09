@@ -785,3 +785,11 @@ Blockade runner trait has the same requirments as vanilla for gaining it , the c
 SAF first econmic focus is now updated , later down the line a focus for research slots has been modified so that if saf either has 50 factories or is free it can do the focus
 Added ABDA ideas to france
 CS:a5ba
+
+If you were to max out anti air tech and get radar and such , in a zone with 45 SAA (State Anti Air) vs 2k strat bombers , you will be shooting daily around 14 strats avg. The damage will be minimal with some of the SAA being bombed for a day or a week at best at 5 max and the factory damage will be at best 3 factories and some infra. Railways and such cannot be strat bombed now so do every refinery for game balance sake. Max SAA gives -70% reduction to strat bombing damage and with max tech it becomes -95%.
+also small issue in game rules fixed in this
+Game rule issue where the game rules were scrambled has been finally fixed  , the fix was so stupid I might as well kill myself
+Experimental stuff about agency where 1 value was added back where it should maybe fix the crashes but it really is not guaranteed so do not get hyped about about big mp games being stable finally that needs proper testing and fucking around
+Cas doctrines are now game ruled and are available in chapter 2 gameplay balance 
+Germany no longer starts with cas air doctrine for balance reasons with the above ^
+CS:e250(maybe)
