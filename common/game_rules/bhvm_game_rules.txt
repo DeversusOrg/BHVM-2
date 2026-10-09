@@ -561,12 +561,17 @@ force_attack_last_stand = {
 	default = {
 		name = on
 		text = "POn"
-		desc = "I am noob and i like vanila (Recommmended)"
+		desc = "FALS is on 1.17 working principle (Recommmended)"
 	}
 	option = {
 		name = off
 		text = "BOff"
 		desc = "Enjoy TFB but vanila (Not Recommmended)"
+	}
+	option = {
+		name = old
+		text = "yOld"
+		desc = "FALS is on PRE 1.17 working principle (Not Recommmended)"
 	}
 }
 naval_treaties = {
