@@ -33,7 +33,7 @@ add_breakthrough_progress = {
 
 set_grand_doctrine = new_mobile_warfare
 set_grand_doctrine = new_convoy_raiding
-set_grand_doctrine = new_battlefield_support
+
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }

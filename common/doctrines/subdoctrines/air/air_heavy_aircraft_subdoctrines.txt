@@ -238,9 +238,6 @@ air_subdoctrine_coastal_air_patrol = {
 	}
 
     rewards = {
-		coastal_air_minelaying = {
-			mines_planting_by_air_factor = 0.2
-		}
         evasive_techniques = {
 			category_maritime_patrol_bomber = {
 				air_agility = 0.05

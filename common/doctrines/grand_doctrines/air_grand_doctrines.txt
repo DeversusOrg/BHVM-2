@@ -32,7 +32,7 @@ new_strategic_destruction = {
 			category_fighter = {
                 air_agility = 0.1
             }
-            air_intercept_efficiency = 0.2
+            air_intercept_efficiency = 0.15
 
             effect = {
                 if = {
@@ -117,7 +117,42 @@ new_battlefield_support = {
     description = GRAND_DOCTRINE_BATTLEFIELD_SUPPORT_DESC
     icon = GFX_doctrine_direct_ground_support_medium
     available = {
-        always = yes
+        if = {
+            limit = {
+                has_game_rule = {
+                    rule = cas_doctrines_status
+                    option = banned
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = HMM_banned_by_rules
+                always = no
+            }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule = cas_doctrines_status
+                    option = axis
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = HMM_axis_only
+                axis = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule = cas_doctrines_status
+                    option = allies
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = HMM_allies_only
+                allies = yes
+            }
+        }
     }
 
     xp_cost = 100
