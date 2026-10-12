@@ -11,15 +11,32 @@ NZL_historical = {
 	}
 
 	ai_national_focuses = {
+		# HMM: pick up focuses that give civs, mils, and dams first
+        NZL_bureau_of_industry
+		NZL_ministry_of_public_works
 		NZL_national_roads_board
-		NZL_new_zealand_steel
-		NZL_bureau_of_industry
-		NZL_wairarapa_sheep_farms
-		NZL_industrial_conscription
+		NZL_restart_the_onekaka_ironworks
+		NZL_domestic_car_industry
+        NZL_full_employment
+		NZL_electrification
 		NZL_army_reforms
-		NZL_charlton_automatic_rifle
+		NZL_charlton_automatic_rifle	
 		NZL_domestic_arms_industry
 		NZL_think_big
+        # HMM: put this focus here instead of earlier on when it'd be more efficient so that players can choose if they'd rather have the extra civ or the faster annex
+        NZL_wairarapa_sheep_farms
+        NZL_support_allies_with_meat # Note: this won't fire until/unless we are at war, but if it can, prioritize this because it's extremely good
+		# HMM: bonus optionals that give us more resources
+		NZL_scrap_metal_recycling
+		NZL_new_zealand_steel
+		NZL_taranaki_oil
+		# HMM: political tree stuff for building slots
+		NZL_the_first_labor_government
+		NZL_ratana_alliance	
+		NZL_maori_affairs_act
+		NZL_the_manpower_act
+		NZL_amend_the_maori_affairs_act
+		# HMM: naval focuses for dockyards
 		NZL_transfer_the_new_zealand_division
 		NZL_form_the_rnzn
 		NZL_expand_devonport_naval_base
@@ -29,7 +46,6 @@ NZL_historical = {
 	research = {
 		industry = 1000
 		air_equipment = -1000
-		air_doctrine = -1000
 	}
 	
     traits = {
@@ -38,13 +54,6 @@ NZL_historical = {
         victory_through_airpower = -1000
         close_air_support_proponent = -1000
         assault_avaition = -1000
-        light_aircraft_manufacturer = -1000
-        light_aircraft_manufacturer_2 = -1000
-        CAS_manufacturer = -1000
-        medium_aircraft_manufacturer = -1000
-        fuel_efficient_aircraft_manufacturer = -1000
-        heavy_aircraft_manufacturer = -1000
-        naval_aircraft_manufacturer = -1000
         air_chief_reform_1 = -1000
         air_chief_reform_2 = -1000
         air_chief_reform_3 = -1000
